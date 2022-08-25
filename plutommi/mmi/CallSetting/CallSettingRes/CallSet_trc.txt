@@ -1,0 +1,10 @@
+[APP NAME] = APP_CALLSET
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#starttrace
+#callset app
+
+#CallSetCore.c
+TRC_MSG(TRC_MMI_CALLSET_UTIL_LSW_UPDATE_STATUS_ICON,"mmi_callset_util_lsw_update_status_icon, sim=%d, line_id=%d")
+TRC_MSG(TRC_MMI_CALLSET_UTIL_CF_UPDATE_STATUS_ICON,"mmi_callset_util_cf_update_status_icon, sim=%d, status=%d")

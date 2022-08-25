@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	skb_cache_flag="false" skb_bg="@drawable/popup_keyboard_background"
+	kb_width="42.5%p" kb_height="15%p" width="29.42%p" height="70.84%p"
+	key_xmargin="0.99%p" key_ymargin="4.17%p" key_type="5">	
+	<row start_pos_x="5.89%p" start_pos_y="8.34%p">
+		<key code="-8" label="\xa460" />
+		<key code="-9" label="\xa461" />
+		<key code="-10" label="\xa462" />
+	</row>
+</keyboard>

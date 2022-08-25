@@ -1,0 +1,16 @@
+meta\cct
+interface\meta
+interface\hal\audio
+applib\misc\include
+dp_engine\che\include
+cmmb\hostdrv\inc
+matv\inc
+ps\l4\include
+hal\system\init\inc
+meta\ft\inc
+interface\nfc
+tst\local_inc
+interface\media\hal
+nvram\include
+interface\gps
+interface\hal\bluetooth

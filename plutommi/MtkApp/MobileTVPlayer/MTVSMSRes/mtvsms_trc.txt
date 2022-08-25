@@ -1,0 +1,44 @@
+[APP NAME] = MTVSMS 
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+//File mtvsmsmain.c
+TRC_MSG(TRC_MMI_MTV_SMS_MAIN_ENTRY,         "[MTV SMS][File]mtvsmsmain.c [Function]mmi_mtv_sms_entry()[Value]inbox = %d, outbox = %d, draftbox = %d, sentbox = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_MAIN_SELECT,        "[MTV SMS][File]mtvsmsmain.c [Function]mmi_mtv_sms_select()[Value]select_index = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_MAIN_REFRESH,       "[MTV SMS][File]mtvsmsmain.c [Function]mmi_mtv_sms_refresh()[Value]inbox = %d, outbox = %d, draftbox = %d, sentbox = %d")
+//File mtvsmslist.c
+TRC_MSG(TRC_MMI_MTV_SMS_LIST_ENTRY,         "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_list_entry()[Value]list_type = %d, number = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_LIST_REFRESH,       "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_list_refresh()[Value]list_type = %d, number = %d, curr_list_type = %d, msg_id = %d, event_type = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_LIST_HILITE,        "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_sms_msgbox_list_highlight_hdlr()[Value]list_type = %d,list_index = %d, msg_id = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_LIST_SELECT,        "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_list_select()[Value]select_index = %d, curr_list_type = %d, msg_id = %d, list_index = %d")
+//File mtvsmscommon.c
+TRC_MSG(TRC_MMI_MTV_SMS_CONFIRM_CNTX,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_set_confirm_generic()[Value]str_id = %d, scr_id = %d, lsk_func = %d, rsk_func = %d, event_type = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_POPUP,              "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_display_popup()[Value]str_id = %d, nofity_id = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SCRN_CLOSE,         "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_scrn_close()[Value]scr_id = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_READ_MSG,           "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_read_msg()[Value]msg_id = %d, change_statuc = %d, callback_func = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_GET_ADDRESS,        "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_get_address()[Value]msg_id = %d, address_ptr = %d, name_len = %d, statuc = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SCRN_REPLACE,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_scrn_replace()[Value]old = %d, new = %d, entry_func = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_ENTRY_OPTION,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_entry_common_options()[Value]root_id = %d, scrn_id = %d, number = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_EMS_COPY,           "[MTV SMS][File]mtvsmscomon.c [Function]MTVCopyEMSViewToEditBuffer()[Value]result = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_GET_EDIT_EMS,       "[MTV SMS][File]mtvsmscomon.c [Function]MtvGetEMSDataForEdit()[Value]result = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_GET_VIEW_EMS,       "[MTV SMS][File]mtvsmscomon.c [Function]MtvGetEMSDataForView()[Value]result = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_RELEASE_EDIT_EMS,       "[MTV SMS][File]mtvsmscomon.c [Function]MtvReleaseEMSDataForEdit()[Value]origin = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_RELEASE_VIEW_EMS,       "[MTV SMS][File]mtvsmscomon.c [Function]MtvReleaseEMSDataForView()[Value]origin = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_COMMON_EXIT,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_scrn_common_exit()[Value]scrn_id_new = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_COMMON_EXIT_STOP_VEDIO,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_scrn_common_exit_stop_video()")
+TRC_MSG(TRC_MMI_MTV_SMS_EMD_DATA_OBJECT_FIRST,       "[MTV SMS][File]mtvsmscomon.c [Function]mmi_mtv_sms_is_any_objce()[Value]object_ptr = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_EMS_DATA_COPY_TO_EDIT,       "[MTV SMS][File]mtvsmscomon.c [Function]MTVCopyEMSViewToEditBuffer()[Value]dcs = %d, ps_dcs = %d, isConcat = %d, udhi = %d, textLength = %d, NLTable = %d, string_len = %d, status = %d")
+//File mtvsmseditor.c
+TRC_MSG(TRC_MMI_MTV_SMS_EDITOR_INSERT,       "[MTV SMS][File]mtvsmseditor.c [Function]mmi_mtv_sms_insert_text_to_editor()[Value]length = %d, dcs = %d, result = %d")
+//File mtvsmssend.c
+TRC_MSG(TRC_MMI_MTV_SMS_ENTRY_WRITE,      "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_start_send_msg_flow()[Value]send_case = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_INFO1,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_trace_send_info1()[Value]is_sending = %d, is_aborting = %d, is_sent = %d, msg_id = %d, send_case = % d, send_result = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_INFO2,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_trace_send_info2()[Value]send_result = %d, sim_id = %d, call_back_func = %d, caller_call_back = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_SAVE_CNTX,   "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_send_save_delete_struct()[Value]del_succ = %d, save_succ = %d, del_failed = %d, save_failed = %d, result = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_HANDLE1,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_trace_send_handle1()[Value]recipient = %d, reply_msg_id = %d, content_ems = %d, is_recipient_modified = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_HANDLE2,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_trace_send_handle2()[Value]send_msg_case = %d, srv_send_handle = %d, sim_id = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_PROCESSING_PROC,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_processing_proc()[Value]result = %d, srv_send_handle = %d, mtv_sms_send_handler = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_SEND_RESAULT_PROC,       "[MTV SMS][File]mtvsmssend.c [Function]mmi_mtv_sms_result_proc()[Value]result = %d, srv_send_handle = %d, mtv_sms_send_handler = %d")
+//File mtvsmsviewer.c
+TRC_MSG(TRC_MMI_MTV_SMS_VIEW_HILITE,        "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_sms_msgbox_view_highlight_hdlr()[Value]list_type = %d,list_index = %d, msg_id = %d")
+TRC_MSG(TRC_MMI_MTV_SMS_VIEW_SELECT,        "[MTV SMS][File]mtvsmslist.c [Function]mmi_mtv_list_entry()[Value]list_type = %d, select_index = %d, curr_list_type = %d, msg_id = %d, list_index = %d")

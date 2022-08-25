@@ -1,0 +1,15 @@
+track\os\os_inc
+track\drv\drv_inc
+track\at\at_inc
+track\soc\soc_inc
+track\cmd\cmd_inc
+track\cust\cust_inc
+track\fun\fun_inc
+gps\mnl\include
+hal\peripheral\inc
+C_STL\C_STLInc
+track_agps\inc
+kal\include
+interface\fs
+interface\hal\peripheral
+track\nvram

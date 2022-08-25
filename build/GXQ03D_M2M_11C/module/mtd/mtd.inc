@@ -1,0 +1,15 @@
+inc
+sss\interface\inc
+drv\include
+hal\system\fota\inc
+sst\include
+init\include
+hal\system\GFH\public
+interface\hal\system
+hal\system\dma\inc
+hal\storage\flash\fdm\inc
+hal\storage\flash\mtd\inc
+hal\peripheral\inc
+custom\common\hal
+interface\hal\L1
+hal\system\DP\inc

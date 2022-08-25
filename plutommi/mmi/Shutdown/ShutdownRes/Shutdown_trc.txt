@@ -1,0 +1,8 @@
+[APP NAME] = Shutdown
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_MMI_SHUTDOWN_NORMAL_START,      "[Shutdown] mmi_shutdown_normal_start(): cntx = 0x%x")
+TRC_MSG(TRC_MMI_SHUTDOWN_FLOW_COMPLETED,    "[Shutdown] mmi_shutdown_flow_completed()")
+TRC_MSG(TRC_MMI_SHUTDOWN_TIMEOUT,           "[Shutdown] mmi_shutdown_process_timeout_hdlr(): Shutdown directly")

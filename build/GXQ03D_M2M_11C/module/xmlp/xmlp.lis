@@ -1,0 +1,4 @@
+xmlp\src\xml_main.c
+xmlp\src\xmlgen_common.c
+xmlp\src\xmlgen_main.c
+xmlp\src\xmlgen_test.c

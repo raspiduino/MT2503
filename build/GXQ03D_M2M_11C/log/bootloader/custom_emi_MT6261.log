@@ -1,0 +1,5 @@
+Compiling custom\common\hal\custom_emi_MT6261.c ... 
+"custom\common\hal\custom_emi_MT6261.c", line 980: Warning:  #177-D: variable "delay" was declared but never referenced
+     register kal_uint32 delay;
+                         ^
+custom\common\hal\custom_emi_MT6261.c: 1 warning, 0 errors

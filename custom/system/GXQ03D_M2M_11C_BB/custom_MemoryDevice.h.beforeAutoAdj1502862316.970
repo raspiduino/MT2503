@@ -1,0 +1,756 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2008
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ *   custom_MemoryDevice.h
+ *
+ * Project:
+ * --------
+ *   Maui_Software
+ *
+ * Description:
+ * ------------
+ *   This Module defines the part number of physical memory device,
+ *   and flash logical layout configure.
+ *
+ * Author:
+ * -------
+ *  mcu\custom\System\BB_Folder Configuration Template
+ *
+ *============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *------------------------------------------------------------------------------
+ * $Revision$
+ * $Modtime$
+ * $Log$
+ *
+ * 03 05 2014 money.kang
+ * [MAUI_03487305] [MakeFile] [Config project makefile] xxx.mak
+ * cloned from 11C\mcu\custom\system\_Default_BB\MT6261\3232\custom_MemoryDevice.h.
+ *
+ * 01 22 2014 chun-hung.wu
+ * [MAUI_03483671] [6261 Driver][Serial Flash] Support SFC driver
+ * .
+ *
+ * 01 22 2014 chun-hung.wu
+ * [MAUI_03483671] [6261 Driver][Serial Flash] Support SFC driver
+ * .
+ *
+ * 04 29 2013 chun-hung.wu
+ * [MAUI_03393160] [Create New Project][PMA used]create new customer folder for 60A project
+ * .
+ *
+ * 04 26 2013 money.kang
+ * [MAUI_03393160] [Create New Project][PMA used]create new customer folder for 60A project
+ * request form ivan and Chun-Hung Wu.
+ *
+ * 03 05 2013 jiang.zhao
+ * [MAUI_03349141] Able to recieve files by BT in phone memory even when Phone memory is not present
+ * Rollback //MAUI/BRANCHES_11B/11BW1308MP/mcu/custom/system/COBRAS60A_DEMO_BB(6464_COSMOS_QVGA)/custom_MemoryDevice.h to revision 1
+ *
+ * 12 27 2012 yiquan.he
+ * [MAUI_03299515] [CosmosSlim][MT6260]check in
+ * .
+ *
+ * 12 26 2012 chun-hung.wu
+ * [MAUI_03258665] [Change Feature][Serial Flash] Support MT6260 project
+ * .
+ *
+ * 12 26 2012 money.kang
+ * [MAUI_03300687] [MakeFile] [New Flavor Request]COBRAS60A_DEMO_GPRS(12864_COSMOS_HVGA)...etc. custom system folder
+ * add custom system folder.
+ *
+ * 12 24 2012 money.kang
+ * [MAUI_03298709] [MakeFile] [New Flavor Request] Clone customer\system folder for COBRAS60A_DEMO_GPRS(COSMOS_JAVA)
+ * cloned from 11B\mcu\custom\system\COBRAS60A_DEMO_BB.
+ *
+ * 12 17 2012 chun-hung.wu
+ * [MAUI_03258665] [Change Feature][Serial Flash] Support MT6260 project
+ * .
+ *
+ * 11 11 2012 marvin.lin
+ * [MAUI_03253503] [MemoryStorage][EMI] EMI support MT6260
+ * .
+ *
+ * 11 08 2012 chun-hung.wu
+ * [MAUI_03258665] [Change Feature][Serial Flash] Support MT6260 project
+ * .
+ *
+ * 11 06 2012 chun-hung.wu
+ * [MAUI_03258665] [Change Feature][Serial Flash] Support MT6260 project
+ * .
+ *
+ * 11 06 2012 vicky.lin
+ * [MAUI_03258555] modifications for MT6260(16+32) slim
+ * 
+ * <saved by Perforce>
+ *
+ * 04 20 2012 diamond.lee
+ * [MAUI_03165124] [MMI] 6250 + HVGA check in
+ * .
+ *
+ * 04 05 2012 chun-hung.wu
+ * [MAUI_03162500] [MemoryStorage][Auto-Gen][EMI Gen/CFG Gen][Request For Design Change] emigen and cfggen support MT6250
+ * .
+ *
+ * 04 02 2012 chun-hung.wu
+ * [MAUI_03151471] [MT6250 merge-back] Serial Flash fdm/mtd merge back
+ * [MAUI_03130627] [MemoryStorage][Auto-Gen][EMI Gen/CFG Gen][Request For Design Change] re_structure for MT6250SP
+ * .
+ *
+ * 03 16 2012 cm.huang
+ * [MAUI_03113542] [MT6250] EMI driver check-in
+ * .
+ *
+ * 01 07 2012 cm.huang
+ * [MAUI_03113542] [MT6250] EMI driver check-in
+ * .
+ *
+ * 01 04 2012 chun-hung.wu
+ * [MAUI_03110648] [Custom File] MT6250
+ * .
+ *
+ * 09 05 2011 vicky.lin
+ * [MAUI_03020308] [Daily Build] 11B build error for LION52_V5_12864_gprs(SEC_REGRESSION)
+ * .
+ *
+ * 09 04 2011 claudia.lo
+ * [MAUI_03018782] [SystemService][Auto-Gen][CFG Gen][Scatter Gen][Sys Gen][Request for New Feature] Move memory-independent feature configurations to custom_FeatureConfig.h
+ * .
+ *
+ * 07 18 2011 stanley.chu
+ * [MAUI_02986197] [File System][Change Feature] eMMC: Give default setting of EMMC_BOOTING_GP1_PARTITION_SIZE
+ * <saved by Perforce>
+ *
+ * 07 05 2011 cm.huang
+ * [MAUI_02977138] [MT6252] Revise 128M SF part number for LION52_V5
+ * .
+ *
+ * 06 29 2011 nestor.yang
+ * [MAUI_02973916] [CustMemDev_H]11B build error for LION52_V5_12864_gprs
+ * .
+ *
+ * 06 27 2011 cm.huang
+ * [MAUI_02971786] [MT6252] Check-in for LION52_V5
+ * .
+ *
+ * 06 02 2011 carlos.yeh
+ * [MAUI_02954411] [FOTA][Change Feature] Adjust space for FOTA in maintrunk
+ * .
+ *
+ * 05 25 2011 vanessa.tsai
+ * [MAUI_02946938] create new projects (05/23~06/04)
+ * .
+ *
+ * 05 13 2011 claudia.lo
+ * [MAUI_02940732] [SystemService][Auto-Gen][ckScatter][EMI Gen][Scatter Gen][Sys Gen][Request for New Feature] Support eMMC Booting
+ * .
+ *
+ * 04 01 2011 claudia.lo
+ * [MAUI_02905699] [SystemService][custom][Request for Design Change] Modify LION52V2_3232 custom_MemoryDevice.h to remove 32Mb ROM limitation temporarily
+ * .
+ *
+ * 03 24 2011 claudia.lo
+ * [MAUI_02901363] [SystemService][Auto-Gen][EMI Gen][Scatter Gen][Sys Gen][Request for Design Change] Modify flash_opt.h to tune FS size for SDS; modify custom_secure_config.h to change SDS configurations as byte; modify custom_sds_dp.c to fine-tune error handling flow
+ * .
+ *
+ * 03 11 2011 claudia.lo
+ * [MAUI_02895405] [SystemService][Auto-Gen][Scatter Gen][CFG Gen][Request for New Feature] Add ROOT_CERT region and refine MT6251 image layout
+ * .
+ *
+ * 02 20 2011 claudia.lo
+ * [MAUI_02872830] [SystemService][Auto-Gen][Scatter Gen][Sys Gen][Request for Design Change] Separate D-C-D-C region into RW/ZI and put ZI at the front for COSMOS_MMI to prevent camera HW access 64MB limitation
+ * .
+ *
+ * 02 14 2011 nestor.yang
+ * [MAUI_02870091] [CustMemDev_H]MAUI build error for LION52_V2_6432_gprs
+ * Adjust FAT base address and size.
+ *
+ * 12 10 2010 claudia.lo
+ * [MAUI_02848004] [SystemService][Auto-Gen][EMI Gen][Scatter Gen][Request for New Feature] Support PROJECT_EXPECTED_RAM_LIMIT_NFB for NAND+DRAM projects to set RAM boundary
+ * .
+ *
+ * 12 07 2010 claudia.lo
+ * [MAUI_02845914] [SystemService][custom][Request for Design Change] Fine-tune LION52(H) 64+32 FAT configuration to fit-in code size
+ * .
+ *
+ * 11 28 2010 claudia.lo
+ * [MAUI_02842947] [SystemService][Auto-Gen][Scatter Gen][Request for New Feature] To support new feature ZIMAGE_SUPPORT
+ * .
+ *
+ * 11 23 2010 claudia.lo
+ * [MAUI_02840931] [SystemService][custom][Request for Design Change] Modify custom_MemoryDevice.h to set code/RAM limit for LION52_V2_DEMO projects
+ * .
+ *
+ * 11 15 2010 claudia.lo
+ * [MAUI_02838426] [SystemService][custom][Request for Design Change] Modify MT6252 custom_MemoryDevice.h to change to Serial Flash
+ * .
+ *
+ * 09 13 2010 claudia.lo
+ * [MAUI_02619079] [SystemService][Auto-Gen][EMI Gen][Scatter Gen][Sys Gen][Request for New Feature] To support MT6253E/L
+ * .
+ *
+ * 08 09 2010 claudia.lo
+ * [MAUI_02603005] [SystemService][Auto-Gen][custom][ckScatter][Request for New Feature] Merge MT6253EL_DVT to MAUI and 10A
+ * .
+ *
+ * 08 09 2010 claudia.lo
+ * [MAUI_02603005] [SystemService][Auto-Gen][custom][ckScatter][Request for New Feature] Merge MT6253EL_DVT to MAUI and 10A
+ * .
+ *
+ * Mar 20 2010 mtk01876
+ * [MAUI_02377141] [SystemService][Auto-Gen][EMI Gen][Request for Design Change] Modify EMI Gen for NOR
+ * 
+ *
+ * Mar 17 2010 mtk01876
+ * [MAUI_02375001] [SystemService][Auto-Gen][EMI Gen][Request for Design Change] Modify EMI Gen to supp
+ * 
+ *
+ * Dec 11 2009 mtk90269
+ * [MAUI_01666875] create new project
+ * created by clearfsimport
+ *
+ * Dec 3 2009 mtk02711
+ * [MAUI_02005554] Modify filesystem region for UNICORN53 projects
+ * 
+ *
+ * Oct 28 2009 mtk01876
+ * [MAUI_01970553] [SystemService][WISDOM] Merge WISE_Dev to MAUI, 09B, and LGE_WISE_SP
+ * Check-in for FDM multi-instance.
+ *
+ * Jul 14 2009 mtk90269
+ * [MAUI_01666875] create new project
+ * created by clearfsimport
+ *
+ * Jun 5 2009 mtk01876
+ * [MAUI_01698188] [SystemService][Auto-Gen][EMI Gen][Request For Design Change] Modify custom_MemoryDe
+ * 
+ *
+ * May 20 2009 mtk01876
+ * [MAUI_01690272] [SystemService][Auto-Gen][EMI Gen][Sys Gen][Request For Design Change] Modify custom
+ * 
+ *
+ * May 19 2009 mtk01876
+ * [MAUI_01690272] [SystemService][Auto-Gen][EMI Gen][Sys Gen][Request For Design Change] Modify custom
+ * 
+ *
+ * Mar 27 2009 eguo
+ * [MAUI_01413961] custom folder check-in for UNICORN53_V3
+ * 
+ *
+ * Mar 26 2009 mtk01876
+ * [MAUI_01654206] [SystemService][Auto-Gen][EMI Gen][Scatter Gen][Request For Design Change] Tune FAT
+ * 
+ *
+ * Mar 18 2009 mtk01876
+ * [MAUI_01649770] [SystemService][custom][Request For Design Change] Check-in custom_MemoryDevice.h fo
+ * 
+ *
+ * Mar 4 2009 mtk01876
+ * [MAUI_01640973] [SystemService][custom][Request For Design Change] Modify custom_MemoryDevice.h temp
+ * 
+ *
+ * Feb 25 2009 mtk90269
+ * [MAUI_01299708] create new project
+ * created by clearfsimport
+ *
+ * Feb 18 2009 mtk90269
+ * [MAUI_01299708] create new project
+ * 
+ *
+ * Feb 2 2009 mtk90269
+ * [MAUI_01299708] create new project
+ * created by clearfsimport
+ *
+ * Jan 13 2009 mtk01876
+ * [MAUI_01315041] [SystemService][custom][Request For New Feature] Check in MT6253 source codes to MT6
+ * 
+ *
+ * Jan 12 2009 mtk90202
+ * [MAUI_01314825] Modified memory for new project
+ * modified by wei du review
+ *
+ * Jan 12 2009 mtk90269
+ * [MAUI_01299708] create new project
+ * created by clearfsimport
+ *
+ * Nov 13 2008 mtk01876
+ * [MAUI_01274584] [SystemService][custom][Request For New Feature] Support MT6253T phase in to maintru
+ * 
+ *
+ * Nov 7 2008 MSZ00407
+ * [MAUI_01220163] Create a new Project
+ * 
+ *
+ * Nov 6 2008 mtk90269
+ * [MAUI_01248636] create a project
+ * 
+ *
+ * Aug 19 2008 mtk01954
+ * [MAUI_00821766] [System Service] MT6253T DVT phase-in
+ * Check-in MT6253T DVT
+ *
+ * Aug 16 2008 mtk90202
+ * [MAUI_00819858] Create New Project
+ * created by clearfsimport
+ *
+ * Apr 2 2008 MTK01876
+ * [MAUI_00747896] [SystemService][Auto-Gen][EMI Gen][Request For Design Change] Set erase queue size t
+ * 
+ *
+ * Mar 26 2008 MTK01876
+ * [MAUI_00737710] [SystemService][Auto-Gen][EMI Gen][Internal Bug Fix] Fix PROJECT_EXPECTED_CODE_LIMIT
+ * 
+ *
+ * Mar 14 2008 mtk01077
+ * [MAUI_00730898] [SystemService][Auto-Gen][EMI Gen][Request For Design Change]  New memory device sou
+ * 
+ *
+ * Sep 30 2006 mtk00303
+ * [MAUI_00118222] [make] update trunk make file
+ * 
+ *
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *============================================================================
+ ****************************************************************************/
+
+#ifndef __CUSTOM_MEMORYDEVICE__
+#define __CUSTOM_MEMORYDEVICE__
+
+/*
+ ****************************************************************************
+ [README , VERY IMPORTANT NOTICE]
+ --------------------------------
+ After user configured this C header file, not only C compiler compile it but
+ also auto-gen tool parse user's configure setting.
+ Here are recommend configure convention to make both work fine.
+
+ 1. All configurations in this file form as #define MACRO_NAME MACRO_VALUE format.
+    Note the #define must be the first non-space character of a line
+
+ 2. To disable the optional configurable item. Please use // before #define,
+    for example: //#define MEMORY_DEVICE_TYPE
+
+ 3. Please don't use #if , #elif , #else , #endif conditional macro key word here.
+    Such usage might cause compile result conflict with auto-gen tool parsing result.
+    Auto-Gen tool will show error and stop.
+    3.1.  any conditional keyword such as #if , #ifdef , #ifndef , #elif , #else detected.
+          execpt this #ifndef __CUSTOM_MEMORYDEVICE__
+    3.2.  any duplicated MACRO_NAME parsed. For example auto-gen tool got 
+          2nd MEMORY_DEVICE_TYPE macro value.
+ ****************************************************************************
+*/
+
+/*
+ ****************************************************************************
+ Step 1: Specify memory device type and its complete part number
+         Possible memory device type: NOR_RAM_MCP, LPSDRAM, NOR_LPSDRAM_MCP, SERIAL_FLASH
+ ****************************************************************************
+*/
+#define MEMORY_DEVICE_TYPE    SERIAL_FLASH
+#define CS0_PART_NUMBER       MTKSIP_6261_SF_32_01
+#define CS1_PART_NUMBER       MTKSIP_6261_SF_32_01
+/*
+ ****************************************************************************
+ Step 2: Specify part number for each device chosen when COMBO_MEMORY_SUPPORT is enabled
+         Please note that this section will only be used when COMBO_MEMORY_SUPPORT is enabled,
+         and will be ignored if COMBO_MEMORY_SUPPORT is disabled
+ ****************************************************************************
+*/
+#define COMBO_MEM_ENTRY_COUNT 6
+	
+#define COMBO_MEM01_CS0_PART_NUMBER MTKSIP_6261_SF_32_03
+#define COMBO_MEM01_CS1_PART_NUMBER MTKSIP_6261_SF_32_03
+	
+#define COMBO_MEM02_CS0_PART_NUMBER MTK_INTERNAL_MX25U12835FZNI_10G_FAKE32Mbits
+#define COMBO_MEM02_CS1_PART_NUMBER MTK_INTERNAL_MX25U12835FZNI_10G_FAKE32Mbits
+	
+#define COMBO_MEM03_CS0_PART_NUMBER MTKSIP_6261_SF_32_04
+#define COMBO_MEM03_CS1_PART_NUMBER MTKSIP_6261_SF_32_04
+
+#define COMBO_MEM04_CS0_PART_NUMBER MTKSIP_6261_SF_32_05
+#define COMBO_MEM04_CS1_PART_NUMBER MTKSIP_6261_SF_32_05
+
+#define COMBO_MEM05_CS0_PART_NUMBER MTKSIP_6261_SF_32_01
+#define COMBO_MEM05_CS1_PART_NUMBER MTKSIP_6261_SF_32_01
+
+#define COMBO_MEM06_CS0_PART_NUMBER MTKSIP_6261_SF_32_02
+#define COMBO_MEM06_CS1_PART_NUMBER MTKSIP_6261_SF_32_02
+
+
+
+
+/*
+ ****************************************************************************
+ Step 3: Specify access type for NOR_RAM_MCP; for LPSDRAM and serial Flash, just assign
+         UNDEF_ACCESS to both items (NOR_ACCESS_TYPE and RAM_ACCESS_TYPE)
+         Possible access types: ASYNC_ACCESS,
+                                SYNC_ACCESS,
+                                UNDEF_ACCESS
+ ****************************************************************************
+*/
+#define FLASH_ACCESS_TYPE     ASYNC_ACCESS
+#define RAM_ACCESS_TYPE       SYNC_ACCESS
+
+/*
+ ****************************************************************************
+ Step 4: Define the clock frequency of EMI and SFI
+
+         By default, the highest EMI speed that can be supported by memory will be used 
+         (define EMI_CLK to be DEFAULT).
+         By specifying EMI_CLK to be ¡§104M¡¨, ¡§52M¡¨, ¡§166M¡¨, or ¡§200M¡¨ can force EMI/memory to be configured
+         running at 104MHz, 52MHz, 166MHz, or 200MHz for special purpose.
+         Please note that this feature is only available on MT6253D and MT6276! All other chip must set to 
+         DEFAULT configuration.
+         Available EMI_CLK configurations are:
+         MT6253D: 104M, 52M, DEFAULT
+         MT6276: 166M, 200M, DEFAULT
+         other: DEFAULT
+
+         For SFI, the highest SFI speed that can be supported by memory will be used by default
+         (define SFI_CLK to be DEFAULT)
+         By specifying SFI_CLK to be "130M", "104M" or "78M" can force SFI to be configured running
+         at 130MHz, 104MHz or78MHz for special purpose.
+         Please note that this feature is only available for platforms which support Serial Flash!
+ ****************************************************************************
+*/
+#define EMI_CLK                 DEFAULT
+#define SFI_CLK                 DEFAULT
+
+/*
+ ****************************************************************************
+ Step 5: FDM Version Choose
+
+         MTK NOR FDM is upgraded to 5.0 from 2006/Q3 to support large NOR-flash
+         disk (multi-bank), for example, disk space larger than 64blocks.
+         
+         The major difference of NOR FDM 5.0 and NOR FDM 4.0 as below:
+         1. RAM consumption
+            To manage 32MB INTEL M18 NOR-flash disk, FDM 5.0 consumes 1KB,
+            but FDM 4.0 takes 32KB.
+         2. Addressable block numbers
+            The addressable space of NOR FDM 5.0 is 65K-1 blocks, but NOR FDM 4.0
+            is limited at 128-1 blocks.
+         3. Idle reclaim and manual reclaim are implemented on NOR FDM 5.0.
+
+         To enable NOR FDM 5.0 on NOR-flash disk, please enable the following 
+         definition and customize custom_flash_norfdm5.c; the option is switch on/off 
+         at customer site without deliver new library.
+         
+         [REMIND]
+         ========
+         To manage small disk space, like smaller than 64 blocks, FDM 4.0 is
+         recommended.
+
+ ****************************************************************************
+*/
+//#define __NOR_FDM5__
+
+/*
+ ****************************************************************************
+ Step 6: This is an optional step special for NOR-XIP configuration only.
+ 
+         This step configures the FS (file system) region information on NOR FLASH!
+
+         By default, FS region is located the last bank of NOR Flash.
+         For specific purpose, user are able to manually configure the
+         
+         Step 1. Start address of FS region on NOR-flash,
+         Step 2. Total FS size on NOR-flash disk
+         Step 3. The first drive (or partition) size of FS region. if no additional drive
+                 on NOR-flash disk, it should be 0. For more details, please refer to REMIND.
+         
+         [REMIND]
+         ========
+         It is special for flash disk which has two drives (or partitions), the
+         first leading is user drive, visible on USB disk, the second may be
+         system drive, and invisible from USB disk.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         1. Disable this definition and make auto Gen pick default setting from
+            Memory Device Excel Database is recommend.
+            
+         2. Please assign the exact integer value in terms of sectors (one sector equal
+            to 512 Bytes) in NOR_BOOTING_NOR_FS_FIRST_DRIVE_SECTORS.
+            MUST NOT assign as
+            (TOTAL_FS_SIZE - SIZE_OF_SYSTEM_DRIVE), because system will keep
+            some spaces for disk management.
+
+ ****************************************************************************
+*/
+
+#define NOR_BOOTING_NOR_FS_BASE_ADDRESS           0x03C0000
+#define NOR_BOOTING_NOR_FS_SIZE                   0x0040000
+#define NOR_BOOTING_NOR_FS_FIRST_DRIVE_SECTORS    0
+
+/*
+ ****************************************************************************
+ Step 7: For NOR raw disk configuration, if "NOR SUPPORT RAW DISK"
+ 
+         If raw disk feature turns on, user are able to manully config the
+         
+         Step 1. Number of raw disk region, it should be 1 or 2.
+         Step 2. Start address of raw disk region(s)
+         Step 3. Total size of raw disk region(s)
+         
+         [REMIND]
+         ========
+         If project with __SYSDRV_BACKUP_DISK_RAW__ defined, the first disk
+         would be treated as backup partition to backup NVRAM data.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         1. The values in step 1~3 MUST be set if __NOR_SUPPORT_RAW_DISK__ defined
+         
+         2. The raw disk region and FS region cannot be overlapped
+         
+         3. Both the start address and size should be block aligned
+         
+ ****************************************************************************
+*/         
+
+//#define NOR_BOOTING_NOR_DISK_NUM             2
+//#define NOR_BOOTING_NOR_DISK0_BASE_ADDRESS   0x1C00000
+//#define NOR_BOOTING_NOR_DISK0_SIZE         0x200000
+
+//#define NOR_BOOTING_NOR_DISK1_BASE_ADDRESS   0x1E00000
+//#define NOR_BOOTING_NOR_DISK1_SIZE         0x1E0000
+
+/*
+ ****************************************************************************
+ Step 8: For NOR-XIP configuration, if
+ 
+         1. "SYSTEM DRIVE ON NAND" or 
+         2. "SYSTEM DRIVE ON NOR" and FOTA "UPDATE PACKAGE ON NAND" 
+         
+         feature is enabled. Users are responsible to specify FS (file system) region 
+         information on NAND-flash here!
+         
+         Step 1. Start address of FS region on NAND-flash,
+         Step 2. Total FS size on NAND-flash disk
+         Step 3. The first drive (or partition) size of FS region. if no additional drive
+                 on NAND-flash disk, it should be 0. For more details, please refer to REMIND 1 and 2.
+            
+         For example, on 128MB NAND-flash, because code is already located on NOR flash,
+         total 128MB NAND-flash space is reserved for NAND-flash disk. Reserve ~110MB for user drive,
+         remain around 15MB for system drive.
+         
+         #define NOR_BOOTING_NAND_FS_BASE_ADDRESS        0x00000000
+         #define NOR_BOOTING_NAND_FS_SIZE                0x08000000  // 128MB
+         #define NOR_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS 220000      // 110000KB
+         
+         [REMIND]
+         ========
+         1. It is special for flash disk which has two drives (or partitions), the
+            first leading is user drive, visible on USB disk, the second may be
+            system drive, and invisible from USB disk.
+         
+         2. For projects with __UP_PKG_ON_NAND__ defined, NOR_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS will
+            be ignored. That is, NAND flash is allowed to create only one drive (or partition) in this case.
+            
+         3. For "SYSTEM DRIVE ON NOR" and FOTA "UPDATE PACKAGE ON NAND" configuration, FOTA
+            update package will be located in the top of FS region by default. Auto-Gen will
+            reserve required space automatically.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         1. The values in step 1~3 MUST be set if __FS_SYSDRV_ON_NAND__ or __UP_PKG_ON_NAND__ is defined !!
+         
+         2. The spare area is excluding from the FS SPACE !!
+            
+         3. Please assign the exact integer value in terms of sectors (one sector equal
+            to 512 Bytes) in NOR_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS.
+            MUST NOT assign as
+            (TOTAL_FS_SIZE - SIZE_OF_SYSTEM_DRIVE), because system will keep
+            some spaces for disk management.
+
+ ****************************************************************************
+*/
+
+#define NOR_BOOTING_NAND_FS_BASE_ADDRESS           0x00000000
+#define NOR_BOOTING_NAND_FS_SIZE                   0x08000000
+#define NOR_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS    220000
+
+/*
+ ****************************************************************************
+ Step 9: This is an optional step special for NFB (NAND-flash Booting)
+         system only.
+
+         Users are responsible to specify the drives (or partitions) on NAND-flash,
+         
+         Step 1. Start address of FS region on NAND-flash,
+         Step 2. Total FS size on NAND-flash disk
+         Step 3. The first drive (or partition) size of FS region. if no additional drive
+                 on NAND-flash disk, it should be 0. For more details, please refer to REMIND.
+
+         For example, on 128MB NAND-flash, code segment occupies 32MB, the
+         balanced 96MB is reserved for NAND-flash disk. Reserve ~80MB for user drive,
+         remain around 15MB for system drive.
+
+         #define NAND_BOOTING_NAND_FS_BASE_ADDRESS         0x02000000   // 32MB
+         #define NAND_BOOTING_NAND_FS_SIZE                 0x06000000   // 96MB
+         #define NAND_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS  160000       // 80000KB
+         
+         [REMIND]
+         ========
+         It is special for NAND-flash disk which has two drives (or partitions), the
+         first leading is user drive, visible on USB disk, the second may be
+         system drive or user drive.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         1. All values MUST be set if _NAND_FLASH_BOOTING_ are defined !!
+         
+         2. The spare area is excluding from the FS SPACE !!
+         
+         3. Please assign the exact integer value in terms of sectors (one sector equal
+            to 512 Bytes) in NAND_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS.
+            MUST NOT assign as
+            (TOTAL_FS_SIZE - SIZE_OF_SYSTEM_DRIVE), because system will keep
+            some spaces for disk management.
+ ****************************************************************************
+*/
+
+#define NAND_BOOTING_NAND_FS_BASE_ADDRESS         0x02000000
+#define NAND_BOOTING_NAND_FS_SIZE                 0x06000000
+#define NAND_BOOTING_NAND_FS_FIRST_DRIVE_SECTORS  160000
+
+//#define NAND_BOOTING_NAND_FS_DISK_NUMBER		  	4
+//#define NAND_BOOTING_NAND_FS_DISK0_BASE_ADDRESS		0x01800000
+//#define NAND_BOOTING_NAND_FS_DISK0_SIZE				0x03800000
+//#define NAND_BOOTING_NAND_FS_DISK0_REPLACE_RATIO	20			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK1_BASE_ADDRESS		0x05000000
+//#define NAND_BOOTING_NAND_FS_DISK1_SIZE				0x00800000
+//#define NAND_BOOTING_NAND_FS_DISK1_REPLACE_RATIO	20			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK2_BASE_ADDRESS		0x05800000
+//#define NAND_BOOTING_NAND_FS_DISK2_SIZE				0x02000000
+//#define NAND_BOOTING_NAND_FS_DISK2_REPLACE_RATIO	20			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK3_BASE_ADDRESS		0x07800000
+//#define NAND_BOOTING_NAND_FS_DISK3_SIZE				0x00800000
+//#define NAND_BOOTING_NAND_FS_DISK3_REPLACE_RATIO	20			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK4_BASE_ADDRESS		0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK4_SIZE				0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK4_REPLACE_RATIO	00			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK5_BASE_ADDRESS		0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK5_SIZE				0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK5_REPLACE_RATIO	00			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK6_BASE_ADDRESS		0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK6_SIZE				0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK6_REPLACE_RATIO	00			// Unit is 0.1% . 0 is using default value.
+//#define NAND_BOOTING_NAND_FS_DISK7_BASE_ADDRESS		0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK7_SIZE				0x00000000
+//#define NAND_BOOTING_NAND_FS_DISK7_REPLACE_RATIO	00			// Unit is 0.1% . 0 is using default value.
+
+/*
+ ****************************************************************************
+ Step 10: This is an optional step special for eMMC booting system only.
+
+         Users are responsible to specify the drives (or partitions) on eMMC,
+
+         Step 1. Start address of FS region on eMMC,
+         Step 2. Total FS size on NAND-flash disk
+         Step 3. The system drive size of FS region. It must be a positive integer.
+
+         For example, all User Area Partition will be used as FS region, 
+         and reserve ~2.5MB for system drive,
+
+         #define EMMC_BOOTING_UP_FS_BASE_ADDRESS         0          // 32MB
+         #define EMMC_BOOTING_UP_FS_SIZE                 0          // All User Area Partition will be used as File System
+         #define EMMC_BOOTING_UP_FS_SYSTEM_DRIVE_SIZE    5000       // 80000KB
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         1. All values MUST be set if __EMMC_BOOTING__ is defined !!
+
+         2. Please assign the exact integer value in terms of sectors (one sector equal
+            to 512 Bytes) in EMMC_BOOTING_UP_FS_SYSTEM_DRIVE_SIZE.
+ ****************************************************************************/
+
+#define EMMC_BOOTING_GP1_PARTITION_SIZE             0x10000000       // GP is general purpose partition for code
+#define EMMC_BOOTING_GP2_PARTITION_SIZE             0       // Reserved now
+#define EMMC_BOOTING_GP3_PARTITION_SIZE             0       // Reserved now
+#define EMMC_BOOTING_GP4_PARTITION_SIZE             0       // Reserved now
+#define EMMC_BOOTING_UP_FS_BASE_ADDRESS             0       // UP is user area partition for file system. File system base address (Range: 0 to 0xFFFF_FFFF_FFFF_FFFF)
+#define EMMC_BOOTING_UP_FS_SIZE                     0       // File system size. 0 means the all UP will be used for FS (Range: 0 to 0xFFFF_FFFF_FFFF_FFFF)
+#define EMMC_BOOTING_UP_FS_SYSTEM_DRIVE_SIZE        5000    // System drive size (Unit: #Sectors)
+
+#define EMMC_BOOTING_CODE_PARTITION_SIZE            0
+#define EMMC_BOOTING_FS_SYSTEM_DRIVE_SIZE           5000
+
+/*
+ ****************************************************************************
+ Step 11. Enhanced Single Bank NOR Flash Support Configure Parameter
+
+         Modify the size of block erase queue, which is the number of reserved 
+         blocks. It is recommended to be 10~20% of TOTAL_BLOCK value.
+         This value should be at least 3. Setting value less than 3 will cause errors.
+         When FS size is reduced (by configuring NOR_ALLOCATED_FAT_SPACE), 
+         set this value to 3 to avoid insufficient system drive space.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         Recommend comment out this value and use default setting.
+         Only for Enhanced Single Bank NOR Flash support
+ ****************************************************************************
+*/
+#define NOR_FDM4_ESB_PARAMETER_ERASE_QUEUE_SIZE    3
+
+/*
+ ****************************************************************************
+ Step 12. Multi Bank NOR Flash Configure Parameter
+
+         Modify the size of system drive reserved blocks. 
+         It is recommended to be 10~20% of TOTAL_BLOCK value.
+         This value should be at least 3. Setting value less than 3 will cause errors.
+         When FS size is reduced (by configuring NOR_ALLOCATED_FAT_SPACE), 
+         set this value to 3 to avoid insufficient system drive space.
+         The basic unit is 0.5 block. For example, reserved blocks can be set to 3.5 blocks.
+
+         [VERY IMPORTANT NOTICE]
+         =======================
+         Recommend comment out this value and use default setting.
+         Only for Multi Bank NOR Flash configuration
+ ****************************************************************************
+*/
+//#define NOR_PARAMETER_SYSTEM_DRIVE_RESERVED_BLOCK  3
+
+
+#endif /* __CUSTOM_MEMORYDEVICE__ */

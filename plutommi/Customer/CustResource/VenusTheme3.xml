@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Theme RES_THEME_ROOT="Theme3"
+       thumbnail="RES_THEME_ROOT\\Theme\\Thumbnail.jpg"
+       preview="RES_THEME_ROOT\\Theme\\Preview.jpg">
+
+#if defined(__COSMOS_MMI__)
+    <Component name="Global" imgPath="RES_THEME_ROOT\\Common">
+        <Image id="IMG_COSMOS_HEAD_PORTRAIT" src="Avatar_01.png"/>
+        <Image id="IMG_COSMOS_HEAD_PORTRAIT_2" src="Avatar_02.png"/>
+        <Image id="IMG_COSMOS_BUTTON_ARROW_LEFT" src="Button_Arrow_Left.png"/>
+        <Image id="IMG_COSMOS_BUTTON_ARROW_RIGHT" src="Button_Arrow_Right.png"/>
+        <Image id="IMG_COSMOS_LIST_ARROW_RIGHT" src="List_Arrow_N.png"/>
+        <Image id="IMG_COSMOS_DELETE" src="Delete.png"/>
+        <Image id="IMG_COSMOS_PLUS" src="Plus.png"/>
+        <Image id="IMG_COSMOS_SEARCH" src="Search.png"/>
+        <Image id="IMG_COSMOS_DIALED_CALL" src="DialedCall.png"/>
+        <Image id="IMG_COSMOS_MISSED_CALL" src="MissedCall.png"/>
+        <Image id="IMG_COSMOS_RECEIVED_CALL" src="ReceivedCall.png"/>
+        <Image id="IMG_COSMOS_EDIT" src="Edit.png"/>
+        <Image id="IMG_COSMOS_GROUP_LINE" src="Line_Group.9slice.png"/>
+        <Image id="IMG_COSMOS_SEPARATOR_LINE" src="SeperatorLine.9slice.png"/>
+        <Image id="IMG_COSMOS_SHADOW_DOWN" src="Shadow_D.9slice.png"/>
+        <Image id="IMG_COSMOS_SHADOW_UP" src="Shadow_U.9slice.png"/>
+        <Image id="IMG_COSMOS_SINGLE_SIM" src="Sim.png"/>
+
+#if (MMI_MAX_SIM_NUM >= 3)
+        <Image id="IMG_COSMOS_SIM1" src="Gemini\\Sim1.png"/>
+        <Image id="IMG_COSMOS_SIM2" src="Gemini\\Sim2.png"/>
+        <Image id="IMG_COSMOS_SIM3" src="Gemini\\Sim3.png"/>
+        #if (MMI_MAX_SIM_NUM >= 4)
+        <Image id="IMG_COSMOS_SIM4" src="Gemini\\Sim4.png"/>
+        #endif /* 4 */
+#else
+        <Image id="IMG_COSMOS_SIM1" src="Sim1.png"/>
+        #if (MMI_MAX_SIM_NUM >= 2)
+        <Image id="IMG_COSMOS_SIM2" src="Sim2.png"/>
+        #endif /* 2 */
+#endif
+
+        <Image id="IMG_COSMOS_GEMINI_LIST_CALL_N" src="Gemini\\List_Call_N.png"/>
+        <Image id="IMG_COSMOS_GEMINI_LIST_CALL_D" src="Gemini\\List_Call_D.png"/>
+        <Image id="IMG_COSMOS_GEMINI_LIST_CALL_P" src="Gemini\\List_Call_P.png"/>
+        
+        <Image id="IMG_COSMOS_GEMINI_SIM1_LIST_CALL_N" src="Gemini\\List_Sim1Call_N.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM1_LIST_CALL_D" src="Gemini\\List_Sim1Call_D.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM1_LIST_CALL_P" src="Gemini\\List_Sim1Call_P.png"/>
+        
+        #if (MMI_MAX_SIM_NUM >= 2)
+        <Image id="IMG_COSMOS_GEMINI_SIM2_LIST_CALL_N" src="Gemini\\List_Sim2Call_N.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM2_LIST_CALL_D" src="Gemini\\List_Sim2Call_D.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM2_LIST_CALL_P" src="Gemini\\List_Sim2Call_P.png"/>
+        
+        #if (MMI_MAX_SIM_NUM >= 3)
+        <Image id="IMG_COSMOS_GEMINI_SIM3_LIST_CALL_N" src="Gemini\\List_Sim3Call_N.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM3_LIST_CALL_D" src="Gemini\\List_Sim3Call_D.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM3_LIST_CALL_P" src="Gemini\\List_Sim3Call_P.png"/>
+        
+        #if (MMI_MAX_SIM_NUM >= 4)
+        <Image id="IMG_COSMOS_GEMINI_SIM4_LIST_CALL_N" src="Gemini\\List_Sim4Call_N.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM4_LIST_CALL_D" src="Gemini\\List_Sim4Call_D.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM4_LIST_CALL_P" src="Gemini\\List_Sim4Call_P.png"/>
+        #endif /* 4sim */
+        #endif /* 3sim */
+        #endif /* 2sim */  
+        <Image id="IMG_COSMOS_GEMINI_SIM_CALL" src="Gemini\\SimCall.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM1_CALL" src="Gemini\\Sim1Call.png"/>
+        #if (MMI_MAX_SIM_NUM >= 2)
+        <Image id="IMG_COSMOS_GEMINI_SIM2_CALL" src="Gemini\\Sim2Call.png"/>
+        #if (MMI_MAX_SIM_NUM >= 3)
+        <Image id="IMG_COSMOS_GEMINI_SIM3_CALL" src="Gemini\\Sim3Call.png"/>
+        #if (MMI_MAX_SIM_NUM >= 4)
+        <Image id="IMG_COSMOS_GEMINI_SIM4_CALL" src="Gemini\\Sim4Call.png"/>
+        #endif /* 4sim */
+        #endif /* 3sim */
+        #endif /* 2sim */
+        
+        <Image id="IMG_COSMOS_GEMINI_SIM_MSG" src="Gemini\\SimMessage.png"/>
+        <Image id="IMG_COSMOS_GEMINI_SIM1_MSG" src="Gemini\\Sim1Message.png"/>
+        #if (MMI_MAX_SIM_NUM >= 2)
+        <Image id="IMG_COSMOS_GEMINI_SIM2_MSG" src="Gemini\\Sim2Message.png"/>
+        #if (MMI_MAX_SIM_NUM >= 3)
+        <Image id="IMG_COSMOS_GEMINI_SIM3_MSG" src="Gemini\\Sim3Message.png"/>
+        #if (MMI_MAX_SIM_NUM >= 4)
+        <Image id="IMG_COSMOS_GEMINI_SIM4_MSG" src="Gemini\\Sim4Message.png"/>
+        #endif /* 4sim */
+        #endif /* 3sim */
+        #endif /* 2sim */
+                
+        <Image id="IMG_COSMOS_GEMINI_BUTTON_SIM" src="Gemini\\Button_Sim.png"/>
+        <Image id="IMG_COSMOS_GEMINI_BUTTON_SIM1" src="Gemini\\Button_Sim1.png"/>
+        #if (MMI_MAX_SIM_NUM >= 2)
+        <Image id="IMG_COSMOS_GEMINI_BUTTON_SIM2" src="Gemini\\Button_Sim2.png"/>
+        #if (MMI_MAX_SIM_NUM >= 3)
+        <Image id="IMG_COSMOS_GEMINI_BUTTON_SIM3" src="Gemini\\Button_Sim3.png"/>
+        #if (MMI_MAX_SIM_NUM >= 4)
+        <Image id="IMG_COSMOS_GEMINI_BUTTON_SIM4" src="Gemini\\Button_Sim4.png"/>
+        #endif /* 4sim */
+        #endif /* 3sim */
+        #endif /* 2sim */
+
+
+
+        <Color id="CLR_COSMOS_TEXT_EMPTY" value="#FF949494"/>
+        <Color id="CLR_COSMOS_TEXT_MAIN" value="#FFFFFFFF"/>
+        <Color id="CLR_COSMOS_TEXT_SUB" value="#FF949494"/>
+        <Color id="CLR_COSMOS_TEXT_LINK" value="#FFFE4800"/>
+        <Color id="CLR_COSMOS_TEXT_BAR" value="#FFFFFFFF"/>
+        <Color id="CLR_COSMOS_BG_MAIN" value="#FF000000"/>
+        <Color id="CLR_COSMOS_BG_SEARCH" value="#FFEB0001"/>
+
+#if defined(__MMI_MAINLCD_480X800__)
+        <!--  WVGA (480 x 800) -->
+        <FontStyle id="FNT_COSMOS_TEXT_EMPTY" size="VEC(30)" attribute="NORMAL" effect="NONE"/>
+#elif defined(__MMI_MAINLCD_320X480__)
+        <!--  HVGA (320 x 480) -->
+        <FontStyle id="FNT_COSMOS_TEXT_EMPTY" size="VEC(20)" attribute="NORMAL" effect="NONE"/>
+#elif defined(__MMI_MAINLCD_240X320__) || defined(__MMI_MAINLCD_240X400__)
+        <!--  QVGA (240 x 320) or WQVGA (240 x 400) -->
+        <FontStyle id="FNT_COSMOS_TEXT_EMPTY" size="VEC(16)" attribute="NORMAL" effect="NONE"/>
+#else
+        <FontStyle id="FNT_COSMOS_TEXT_EMPTY" size="VEC(18)" attribute="NORMAL" effect="NONE"/>
+#endif
+
+    </Component>
+#endif /* defined(__COSMOS_MMI__) */
+
+    <Component name="Button" imgPath="RES_THEME_ROOT">
+        <Image id="VCP_IMG_BUTTON_DEFAULT_01_N" src="Components\\Button\\Default01_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_DEFAULT_01_P" src="Components\\Button\\Default01_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_DEFAULT_01_D" src="Components\\Button\\Default01_D.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_DEFAULT_02_N" src="Components\\Button\\Default02_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_DEFAULT_02_P" src="Components\\Button\\Default02_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_DEFAULT_02_D" src="Components\\Button\\Default02_D.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM1_N" src="Components\\Button\\Sim1_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM1_P" src="Components\\Button\\Sim1_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM1_D" src="Components\\Button\\Sim1_D.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM2_N" src="Components\\Button\\Sim2_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM2_P" src="Components\\Button\\Sim2_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_SIM2_D" src="Components\\Button\\Sim2_D.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_CHILD_BKG_N" src="Components\\Button\\Child_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_CHILD_BKG_P" src="Components\\Button\\Child_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_CHILD_BKG_D" src="Components\\Button\\Child_D.9slice.png" />        
+
+        <Image id="VCP_IMG_BUTTON_RED_N" src="Components\\Button\\Button_Warning_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_RED_P" src="Components\\Button\\Button_Warning_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_RED_D" src="Components\\Button\\Button_Warning_D.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_GREY_N" src="Components\\Button\\Button_Cancel_N.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_GREY_P" src="Components\\Button\\Button_Cancel_P.9slice.png" />
+        <Image id="VCP_IMG_BUTTON_GREY_D" src="Components\\Button\\Button_Cancel_D.9slice.png" />
+
+        <Image id="VCP_IMG_BUTTON_ARROW_WHITE" src="Common\\Button_Arrow_Right.png" />
+        <Image id="VCP_IMG_BUTTON_PLUS" src="Common\\Plus.png" />
+        <Image id="VCP_IMG_BUTTON_DELETE" src="Common\\Delete.png" />
+        <Image id="VCP_IMG_BUTTON_GLOW_EFFECT" src="Common\\halo.png" />
+                
+        <Color id = "VCP_COL_BTN_TXT_DEFAULT_BRDR" value="#FF000000"/>        
+        <Color id = "VCP_COL_BTN_TXT_DEFAULT_NRML" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_DEFAULT_PRSD" value="#FFFFFFFF"/>  
+        <Color id = "VCP_COL_BTN_TXT_DEFAULT_DSBD" value="#FFFFFFFF"/>  
+        <Color id = "VCP_COL_BTN_TXT_DEFAULT_HLTD" value="#FFFFFFFF"/>  
+        <Color id = "VCP_COL_BTN_TXT_STYLE_DEFAULT_01" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_DEFAULT_02" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_RED" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_GREY" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_SIM1" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_SIM2" value="#FFFFFFFF"/>
+        <Color id = "VCP_COL_BTN_TXT_STYLE_NORMAL" value="#FFFFFFFF"/>        
+
+        <FontStyle id="VCP_FONT_BTN_STYLE_DEFAULT_01" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_DEFAULT_02" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_RED" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_GREY" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_SIM1" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_SIM2" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+        <FontStyle id="VCP_FONT_BTN_STYLE_NORMAL" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+
+    </Component>
+
+    <Component name="Title">
+        <Image id="VCP_IMG_TITLEBAR_BACKGROUND_NORMAL" src="RES_THEME_ROOT\\Components\\TitleBar\\TitleBar.9slice.png" />
+        <Image id="VCP_IMG_TITLEBAR_SHADOW" src="RES_THEME_ROOT\\Components\\TitleBar\\TitleBar_Shadow.9slice.png" />
+    </Component>
+
+    <Component name="Editor">
+        <Image id="VCP_IMG_TEXT_VIEW_NORMAL_BG" src="RES_THEME_ROOT\\Components\\TextEditor\\Editor_N.9slice.png" />
+        <Image id="VCP_IMG_TEXT_VIEW_HIGHLIGHT_BG" src="RES_THEME_ROOT\\Components\\TextEditor\\Editor_H.9slice.png" />
+        <Image id="VCP_IMG_TEXT_EDITOR_DEL_ICON" src="RES_THEME_ROOT\\Components\\TextEditor\\Delete.png" />
+        <Image id="VCP_IMG_TEXT_HLT_BG" src="RES_THEME_ROOT\\Components\\TextEditor\\Text_BG.9slice.png" />
+        <Image id="VCP_IMG_TEXT_MAGNIFIER_BG" src="RES_THEME_ROOT\\Components\\TextEditor\\Magnifier_BG.9slice.png" />
+        <Image id="VCP_IMG_TEXT_MAGNIFIER_MASK" src="RES_THEME_ROOT\\Components\\TextEditor\\Magnifier_Mask.png" />
+        <Image id="VCP_IMG_TEXT_MAGNIFIER_MARK_CURSOR" src="RES_THEME_ROOT\\Components\\TextEditor\\C_Cursor.9slice.png" />
+        
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_LEFT_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Left_P.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_LEFT_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Left_N.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_MIDDLE_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Middle_P.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_MIDDLE_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Middle_N.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_RIGHT_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Right_P.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_RIGHT_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Right_N.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_SINGLE_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Whole_P.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_SINGLE_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Whole_N.9slice.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_ARROW_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Arrow_P.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_ARROW_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Arrow_N.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_UP_ARROW_H" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Arrow_Top_P.png" />
+        <Image id="VCP_IMG_TEXT_CLIPBOARD_FM_UP_ARROW_N" src="RES_THEME_ROOT\\Components\\TextEditor\\Clipboard\\Arrow_Top_N.png" />
+
+        <Color id="VCP_COL_TEXT_VIEW_HINT_TEXT" value="#FF949494" />
+        <Color id="VCP_COL_TEXT_VIEW_HLT_TEXT" value="#FF0F0F0F" />
+        <Color id="VCP_COL_TEXT_VIEW_NRML_TEXT" value="#FF151515" />
+        <Color id="VCP_COL_TEXT_VIEW_HLT_BG" value="#FFA2D255" />
+        <Color id="VCP_COL_TEXT_VIEW_UNDERLINE" value="#FFFE4800" />
+        <Color id="VCP_COL_TEXT_VIEW_HYPELINK" value="#FFFE4800" />
+        <Color id="VCP_COL_TEXT_EDITOR_CURSOR" value="#FFEB0001" />
+
+    #if defined(__MMI_MAINLCD_320X480__)
+        <FontStyle id="VCP_FNT_TEXT_VIEW_TXT" size="VEC(18)" attribute="NORMAL" effect="NONE"/>
+    #elif defined(__MMI_MAINLCD_480X800__)
+        <FontStyle id="VCP_FNT_TEXT_VIEW_TXT" size="VEC(30)" attribute="NORMAL" effect="NONE"/>
+    #elif defined(__MMI_MAINLCD_240X320__) || defined(__MMI_MAINLCD_240X400__)
+        <FontStyle id="VCP_FNT_TEXT_VIEW_TXT" size="VEC(16)" attribute="NORMAL" effect="NONE"/>
+    #else
+        <FontStyle id="VCP_FNT_TEXT_VIEW_TXT" size="VEC(18)" attribute="NORMAL" effect="NONE"/>
+    #endif
+    </Component>
+
+    <Component name="Scrollable">
+         <Image id="VCP_IMG_SCROLLABLE_INDICATOR" src="RES_THEME_ROOT\\Components\\Scrollbar\\Scrollbar.9slice.png" />    
+         <Color id="VCP_CLR_SCROLLABLE_LIGHT" value="#FF03BFF9" />
+    </Component>
+
+    <Component name="ListMenu" imgPath="RES_THEME_ROOT">
+        <Image id="VCP_IMG_LIST_MENU_REORDER_THUMB" src="Components\\ListMenu\\SetIndicator.png" />
+        <Image id="VCP_IMG_LIST_MENU_REORDERING_ITEM_BACKGROUND" src="Components\\ListMenu\\List_Shadow.9slice.png" />
+        <Image id="VCP_IMG_LIST_MENU_HIGHLIGHT_ITEM_BACKGROUND" src="Components\\ListMenu\\List_P.9slice.png" />
+        <Image id="VCP_IMG_LIST_MENU_CHECK_BOX_ON" src="Components\\ListMenu\\CheckBox_On.png" />
+        <Image id="VCP_IMG_LIST_MENU_CHECK_BOX_OFF" src="Components\\ListMenu\\CheckBox_Off.png" />
+        <Image id="VCP_IMG_LIST_MENU_RADIO_BUTTON_ON" src="Components\\ListMenu\\Radio_On.png" />
+        <Image id="VCP_IMG_LIST_MENU_RADIO_BUTTON_OFF" src="Components\\ListMenu\\Radio_Off.png" />
+        <Image id="VCP_IMG_LIST_MENU_GROUP_HEADER_BG" src="Components\\ListMenu\\GroupSep.9slice.png" />
+        <Image id="VCP_IMG_LIST_MENU_CHECK_MARK" src="Components\\ListMenu\\CheckMark.png" />
+        <Image id="VCP_IMG_LIST_MENU_DEFAULT_DISCLOSURE" src="Common\\List_Arrow_N.png" />
+        <Image id="VCP_IMG_LIST_MENU_DEFAULT_HIGHLIGHT_DISCLOSURE" src="Common\\List_Arrow_P.png" />
+        <Image id="VCP_IMG_LIST_MENU_TOP_SHADOW_D" src="Common\\\\Shadow_D.9slice.png" />
+        <Image id="VCP_IMG_LIST_MENU_TOP_SHADOW_U" src="Common\\\\Shadow_U.9slice.png" />
+        <Image id="VCP_IMG_LIST_MENU_SEARCH" src="Common\\\\Search.png" />
+
+        <Color id="VCP_COL_LIST_MENU_BG" value="#FF000000" />
+        <Color id="VCP_COL_LIST_MENU_NORMAL_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_HIGHLIGHT_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_LOWLIGHT_TEXT" value="#FF949494" />
+        <Color id="VCP_COL_LIST_MENU_DISABLED_TEXT" value="#FF949494" />
+        <Color id="VCP_COL_LIST_MENU_FOCUS_NORMAL_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_FOCUS_HIGHLIGHT_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_FOCUS_LOWLIGHT_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_FOCUS_DISABLED_TEXT" value="#FFFFFFFF" />
+        <Color id="VCP_COL_LIST_MENU_DISABLE_FG" value="#FF4A4A4A" />
+        <Color id="VCP_COL_LIST_MENU_HEADER_TEXT" value="#FFEB00001" />
+    </Component>
+
+  <Component name="Form" imgPath="RES_THEME_ROOT">
+        <Image id="VCP_IMG_NEXT_ITEM_ICON_N" src="Common\\List_Arrow_N.png" />
+        <Image id="VCP_IMG_NEXT_ITEM_ICON_P" src="Common\\List_Arrow_P.png" />
+        <Image id="VCP_IMG_TOP_SHADOW" src="Common\\Shadow_D.9slice.png"/>        
+        <Image id="VCP_IMG_FORM_SEP_LINE" src="Common\\SeperatorLine.9slice.png" />
+        <Image id="VCP_IMG_FORM_CAPTION_BG" src="Components\\ListMenu\\GroupSep.9slice.png" />
+        <Image id="VCP_IMG_FORM_HIGHLIGHTED_CELL_BG" src="Components\\ListMenu\\List_P.9slice.png" />
+        
+        <Color id = "VCP_COL_FORM_BG" value = "#FF000000" />
+        <Color id = "VCP_COL_FORM_HIDDEN_BG" value = "#FFFFFFFF" />
+        <Color id = "VCP_COL_FORM_ITEM_BG" value = "#FF000000" />
+        <Color id = "VCP_COL_FORM_ITEM_CAPTION_BG" value = "#FF949494" />
+        <Color id = "VCP_COL_FORM_HIGHLIGHTED_FONT" value = "#FFFFFFFF" />
+        <Color id = "VCP_COL_FORM_MAIN_FONT" value = "#FFFFFFFF" />
+        <Color id = "VCP_COL_FORM_MAIN_FONT_DISABLED" value = "#FF151515" />
+        <Color id = "VCP_COL_FORM_HINT_TEXT" value = "#FF949494" />
+        <Color id = "VCP_COL_FORM_HINT_TEXT_DISABLED" value = "#FF949494" />
+        <Color id = "VCP_COL_FORM_DISABLED_OVERLAY" value = "#FF4A4A4A" />
+        <Color id = "VCP_COL_FORM_WARNING_TEXT" value = "#FFEB0001" />
+        <Color id = "VCP_COL_FORM_CAPTION_TEXT" value = "#FFEB0001" />
+  </Component>
+
+  <Component name="Slider" imgPath="RES_THEME_ROOT\\Components\\Slider">
+    <Image id="VCP_IMG_SLIDER_THUMB_CTRL" src="Control.png" />
+    <Image id="VCP_IMG_SLIDER_HRZT_BG" src="Horizontal_BG.9slice.png" />
+    <Image id="VCP_IMG_SLIDER_HRZT_H" src="Horizontal_H.9slice.png" />
+    <Image id="VCP_IMG_SLIDER_VERT_BG" src="Vertical_BG.9slice.png" />
+  </Component>
+
+#if defined(__COSMOS_MUSICPLY__) && defined(__MMI_VUI_WIDGET_MUSIC_PLAYER__) || defined(__MMI_VUI_WIDGET_MUSIC_PLAYER_SLIM__)
+  <Component name="Music Player Widget" imgPath="RES_THEME_ROOT\\Components\\Slider">
+    <Image id="IMG_ID_VAPP_WIDGET_MUSPLY_SLIDER_BG" src="Horizontal_BG.9slice.png" />
+    <Image id="IMG_ID_VAPP_WIDGET_MUSPLY_SLIDER_BAR" src="Horizontal_H.9slice.png" />
+  </Component>
+#endif
+
+#if defined(__MMI_VUI_WIDGET_3D_MUSIC_PLAYER__) && defined(__MMI_VUI_WIDGET_MUSIC_PLAYER__)
+  <Component name="Music Player 3D Widget" imgPath="RES_THEME_ROOT\\Components\\Slider">
+    <Image id="VAPP_WIDGET_3D_MUSIC_PLAYER_SLIDER_BG" src="Horizontal_BG.9slice.png" />
+    <Image id="VAPP_WIDGET_3D_MUSIC_PLAYER_SLIDER_BAR" src="Horizontal_H.9slice.png" />
+  </Component>
+#endif
+
+  <Component name="SegmentButton" imgPath="RES_THEME_ROOT\\Components\\Segment">
+    <Image id="VCP_IMG_SEGMENT_BUTTON_LEFT_N" src="Left_N.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_LEFT_P" src="Left_P.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_LEFT_H" src="Left_H.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_LEFT_D" src="Left_N.9slice.png"/>
+
+    <Image id="VCP_IMG_SEGMENT_BUTTON_RIGHT_N" src="Right_N.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_RIGHT_P" src="Right_P.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_RIGHT_H" src="Right_H.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_RIGHT_D" src="Right_N.9slice.png"/>
+
+    <Image id="VCP_IMG_SEGMENT_BUTTON_MIDDLE_N" src="Middle_N.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_MIDDLE_P" src="Middle_P.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_MIDDLE_H" src="Middle_H.9slice.png"/>
+    <Image id="VCP_IMG_SEGMENT_BUTTON_MIDDLE_D" src="Middle_N.9slice.png"/>
+    
+    <Color id="VCP_COL_SEG_BTN_NRML_TEXT" value="#FFFFFFFF"/>
+    <Color id="VCP_COL_SEG_BTN_PRSD_TEXT" value="#FFFFFFFF"/>
+
+    <FontStyle id="VCP_FONT_SEG_BTN_HLTD" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+    <FontStyle id="VCP_FONT_SEG_BTN_NRML" size="VEC(18)" attribute="NORMAL" effect="VFX_FE1_9"/>
+
+  </Component>
+
+  <Component name="TabBar" imgPath="RES_THEME_ROOT\\Components\\TabBar">
+    <Image id="VCP_IMG_TAB_BAR_ICON_BG" src="Icon_BG_H.png"/>
+
+   <Image id="VCP_IMG_TAB_BAR_TAB_HZ_N" src="Horizontal_Tab\\Tab_N.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_LEFT_TAB_HZ_N_P" src="Horizontal_Tab\\Tab_N_Left_P.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_MIDDLE_TAB_HZ_N_P" src="Horizontal_Tab\\Tab_N_Middle_P.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_RIGHT_TAB_HZ_N_P" src="Horizontal_Tab\\Tab_N_Right_P.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_TAB_HZ_H" src="Horizontal_Tab\\Tab_H.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_TAB_HZ_H_P" src="Horizontal_Tab\\Tab_H_P.9slice.png"/>
+
+    <Image id="VCP_IMG_TAB_BAR_HZ_LINE_N" src="Horizontal_Tab\\Tab_Line_H_N.9slice.png"/>
+    <Image id="VCP_IMG_TAB_BAR_HZ_LINE_P" src="Horizontal_Tab\\Tab_Line_H_P.9slice.png"/>
+
+    <Image id="VCP_IMG_TAB_BAR_HZ_TAB_SEP" src="Horizontal_Tab\\Tab_Separator.9slice.png"/>
+
+    <Color id="VCP_COL_TAB_BAR_TEXT" value="#FFFFFFFF"/>
+  </Component>
+
+  <Component name="TabTitleBar" imgPath="RES_THEME_ROOT\\Components">
+    <Image id="VCP_IMG_TAB_TITLE_BAR_BG" src="TabTitleBar\\TitleBar_BG.9slice.png"/>      
+    <Image id="VCP_IMG_TAB_TITLE_BAR_SHADOW" src="TitleBar\\TitleBar_Shadow.9slice.png" />
+  </Component>
+
+    <Component name="MenuPopup" imgPath="RES_THEME_ROOT">
+        <Image id="VCP_IMG_MENU_POPUP_TITLE_BG" src="Components\\Popup\\Pop_ContextMenu_BG01.9slice.png" />
+        <Image id="VCP_IMG_MENU_POPUP_BG" src="Components\\Popup\\Pop_ContextMenu_BG02.9slice.png" />        
+        <Image id="VCP_IMG_MENU_POPUP_HIGHLIGHT_ITEM_BACKGROUND" src="Components\\ListMenu\\List_P.9slice.png" />
+        <Image id="VCP_IMG_MENU_POPUP_SEP_LINE" src="Common\\SeperatorLine.9slice.png"/>
+        
+        <Color id="VCP_COL_MENU_POPUP_TITLE_TEXT" value="#FFFFFFFF"/>
+        <Color id="VCP_COL_MENU_POPUP_CELL_N_TEXT" value="#FFFFFFFF"/>
+        <Color id="VCP_COL_MENU_POPUP_CELL_H_TEXT" value="#FFFFFFFF"/>
+        <Color id="VCP_COL_MENU_POPUP_CELL_HINT_TEXT" value="#FF949494"/>
+    </Component>
+    
+    <Component name="Switch" imgPath="RES_THEME_ROOT\\Components\\Switch">
+        <Image id="VCP_IMG_SWITCH_BG_ON" src="OnOff_BG_Nor.png" />
+        <Image id="VCP_IMG_SWITCH_BG_OFF" src="OnOff_BG_Dis.png" />
+        <Image id="VCP_IMG_SWITCH_SLIDE_BALL_ON" src="OnOff_ROU_Nor.png" />
+        <Image id="VCP_IMG_SWITCH_SLIDE_BALL_OFF" src="OnOff_ROU_Dis.png" />
+        <Image id="VCP_IMG_SWITCH_ICON_ON" src="On.png" />
+        <Image id="VCP_IMG_SWITCH_ICON_OFF" src="Off.png" />
+    </Component>
+
+    <Component name="PhotoBorderFrame" imgPath="RES_THEME_ROOT\\Components\\Photo_Border_BG">
+        <Image id="VCP_IMG_PHOTO_BORDER_FRAME_BG" src="Default_02.9slice.png" />
+        <Image id="VCP_IMG_PHOTO_BORDER_FRAME_FG" src="Default_01.9slice.png" />
+        <Image id="VCP_IMG_PHOTO_BORDER_FRAME_FG_P" src="Default_01_P.9slice.png" />
+    </Component>
+
+    <Component name="Statusiconbar">
+        <Image id="WGUI_IMG_STATUS_BAR_BKG" src="RES_THEME_ROOT\\Components\\StatusBar\\StatusBar_BG.9slice.png" />
+        <Color id="WGUI_COL_STATUS_BAR_TEXT" value="#FF000000" />
+    </Component>
+
+    <Component name="BasePicker" imgPath="RES_THEME_ROOT\\Components\\Picker">
+	    <Image id="VCP_IMG_BASE_PICKER_BG" src="Picker_BG.9slice.png"/>
+	    <Image id="VCP_IMG_BASE_PICKER_LEFT_ARROW" src="Left.png"/>
+	    <Image id="VCP_IMG_BASE_PICKER_RIGHT_ARROW" src="Right.png"/>
+	    <Image id="VCP_IMG_BASE_PICKER_FIELD_BG" src="Front_White.9slice.png"/>
+	    <Image id="VCP_IMG_BASE_PICKER_SHADOW_DOWN" src="Shadow_Down.9slice.png"/>
+	    <Image id="VCP_IMG_BASE_PICKER_SHADOW_UP" src="Shadow_Up.9slice.png"/>
+	    <Color id="CLR_COSMOS_BASE_PICKER_TXT" value="#FFD8D8D8"/>
+	    <Color id="CLR_COSMOS_BASE_PICKER_FOCUS_TXT" value="#FFFFFFFF"/>
+	    <Color id="CLR_COSMOS_BASE_PICKER_UNIT_TXT" value="#FFB60102"/>
+    </Component>
+
+    <Component name="DatePicker" imgPath="RES_THEME_ROOT\\Components\\Picker">
+	    <Image id="VCP_IMG_DATE_PICKER_BG" src="Picker_BG.9slice.png"/>
+	    <Image id="VCP_IMG_DATE_PICKER_LEFT_ARROW" src="Left.png"/>
+	    <Image id="VCP_IMG_DATE_PICKER_RIGHT_ARROW" src="Right.png"/>
+	    <Image id="VCP_IMG_DATE_PICKER_FIELD_BG" src="Front_White.9slice.png"/>
+	    <Image id="VCP_IMG_DATE_PICKER_SHADOW_DOWN" src="Shadow_Down.9slice.png"/>
+	    <Image id="VCP_IMG_DATE_PICKER_SHADOW_UP" src="Shadow_Up.9slice.png"/>
+    </Component>
+
+    <Component name="TimePicker" imgPath="RES_THEME_ROOT\\Components\\Picker">
+	    <Image id="VCP_IMG_TIME_PICKER_BG" src="Picker_BG.9slice.png"/>
+	    <Image id="VCP_IMG_TIME_PICKER_LEFT_ARROW" src="Left.png"/>
+	    <Image id="VCP_IMG_TIME_PICKER_RIGHT_ARROW" src="Right.png"/>
+	    <Image id="VCP_IMG_TIME_PICKER_FIELD_BG" src="Front_White.9slice.png"/>
+	    <Image id="VCP_IMG_TIME_PICKER_SHADOW_DOWN" src="Shadow_Down.9slice.png"/>
+	    <Image id="VCP_IMG_TIME_PICKER_SHADOW_UP" src="Shadow_Up.9slice.png"/>
+    </Component>
+
+    <Component name="MenuSeekBar" imgPath="RES_THEME_ROOT\\Components\\SeekBar">
+        <Image id="VCP_IMG_MENU_SEEK_BAR_DOT" src="Seekbar_Dot.9slice.png" />
+        <Image id="VCP_IMG_MENU_SEEK_BAR_HINT" src="Seekbar_Hint.9slice.png" />
+        <Color id="VCP_CLR_MENU_SEEK_BAR_HINT_TXT" value="#FFFFFFFF"/>
+    </Component>
+
+  
+    <Component name="ToolBar">
+        <Image id="VCP_IMG_TOOL_BAR_BUTTON_VISUAL_NORMAL" src="RES_THEME_ROOT\\Components\\ToolBar\\Toolbar_BG_N.9slice.png" desc="Common ToolBar button background in Normal state"/>
+        <Image id="VCP_IMG_TOOL_BAR_BUTTON_VISUAL_PRESSED" src="RES_THEME_ROOT\\Components\\ToolBar\\Toolbar_BG_P.9slice.png" desc="Common ToolBar button background in Pressed state"/>
+        <Image id="VCP_IMG_TOOL_BAR_BUTTON_VISUAL_DISABLED" src="RES_THEME_ROOT\\Components\\ToolBar\\Toolbar_BG_D.9slice.png" desc="Common ToolBar button background in Disabled state"/>
+        <Image id="VCP_IMG_TOOL_BAR_SHADOW" src="RES_THEME_ROOT\\Components\\ToolBar\\Toolbar_Shadow.9slice.png" desc="ToolBar shadow image"/>
+    </Component>
+
+    <Component name="ProgressIndicator">
+        <Image id="VCP_IMG_PROGRESS_INDICATOR_BG" src="RES_THEME_ROOT\\Components\\Indicator\\Background.9slice.png" desc="Progress indicator - bounding box's image"/>
+        <Image id="VCP_IMG_PROGRESS_INDICATOR_FG" src="RES_THEME_ROOT\\Components\\Indicator\\Foreground.9slice.png" desc="Progress indicator - stripes' image"/>
+    </Component>
+        
+    <Component name="ActivityIndicator">
+        <Image id="VCP_IMG_ACTIVITY_INDICATOR_WAITING_BALL_LARGE" src="RES_THEME_ROOT\\Components\\WaitingIcon\\Waiting_Large.png" desc="Activity indicator - Ball's image in large size"/>
+        <Image id="VCP_IMG_ACTIVITY_INDICATOR_WAITING_BALL_MEDIUM" src="RES_THEME_ROOT\\Components\\WaitingIcon\\Waiting_Middle.png" desc="Activity indicator - Ball's image in medium size"/>    
+        <Image id="VCP_IMG_ACTIVITY_INDICATOR_WAITING_BALL_SMALL" src="RES_THEME_ROOT\\Components\\WaitingIcon\\Waiting_Small.png" desc="Activity indicator - Ball's image in small size"/>   
+    </Component>
+
+    <Component name="FunctionBar">
+        <Image id="VCP_IMG_FUNCTION_BAR_BG_IMAGE" src="RES_THEME_ROOT\\Components\\FunctionBar\\FB_BG.9slice.png" desc="Function bar's background"/>
+        <Color id="VCP_COL_FUNC_BAR_BTN_FONT_SPCL" value="#FFFFFFFF" />
+    </Component>
+
+    <Component name="Balloon" imgPath="RES_THEME_ROOT\\Components\\Balloon">
+	    <Image id="VCP_IMG_INFO_BALLOON_BG" src="Balloon_Down.9slice.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_BG_LEFT" src="Balloon_L.9slice.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_BG_CENTER" src="Balloon_M.9slice.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_BG_RIGHT" src="Balloon_R.9slice.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_BG_CENTER_LEFT" src="Balloon_ML.9slice.png"/>
+        <Image id="VCP_IMG_INFO_BALLOON_BG_CENTER_RIGHT" src="Balloon_MR.9slice.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_PROGRESS" src="APP_PRO.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_FAILURE" src="APP_ERR.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_INFO" src="APP_INF.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_WARNING" src="APP_WARN.png"/>
+	    <Image id="VCP_IMG_INFO_BALLOON_SUCCESS" src="APP_DONE.png"/>
+	    <Color id="CLR_COSMOS_INFO_BALLOON_TXT" value="#FFFFFFFF"/>
+    </Component>
+
+    <Component name="Popup" imgPath="RES_THEME_ROOT\\Components\\Popup">
+	    <Image id="VCP_IMG_POPUP_BACKGROUND" src="Pop_Comfirm_BG.9slice.png" desc="Common Popup background image"/>
+	    <Image id="VCP_IMG_POPUP_COMMAND_BACKGROUND" src="Pop_Command_BG.9slice.png" desc="Common Popup background image from the bottom"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_FAILURE_ALERT" src="APP_ERR.png" desc="Failure type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_INFO_ALERT" src="APP_INF.png" desc="Information type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_WARNING_ALERT" src="APP_WARN.png" desc="Warning type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_SUCCESS_ALERT" src="APP_DONE.png" desc="Task completed type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_PROGRESS_ALERT" src="APP_DONE.png" desc="Task progress type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_QUESTION_ALERT" src="APP_QMARK.png" desc="Question type Alert popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_FAILURE_CONFIRM" src="APP_ERR.png" desc="Error type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_INFO_CONFIRM" src="APP_INF.png" desc="Info type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_WARNING_CONFIRM" src="APP_WARN.png" desc="Warning type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_SUCCESS_CONFIRMT" src="APP_DONE.png" desc="Completed type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_PROGRESS_CONFIRM" src="APP_DONE.png" desc="Progress type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_TYPE_QUESTION_CONFIRM" src="APP_QMARK.png" desc="Question type Confirm popup icon"/>
+	    <Image id="VCP_IMG_POPUP_MORE_BACKGROUND_TOP" src="Pop_ContextMenu_BG01.9slice.png" desc="Top part of common popup background"/>
+	    <Image id="VCP_IMG_POPUP_MORE_BACKGROUND_BOTTOM" src="Pop_ContextMenu_BG02.9slice.png" desc="Bottom part of common popup background"/>
+
+	    <Color id="VCP_COL_POPUP_TITLE_FONT" value="#FFFFFFFF" />
+    </Component>
+
+    <Component name="PageGrid" imgPath="RES_THEME_ROOT">
+        <Image id="VCP_IMG_PAGE_GRID_INDICATOR_BG" src="Mainmenu\\Indicator\\Indicator_BG.9slice.png" />
+        <Image id="VCP_IMG_PAGE_GRID_INDICATOR_DOT_H" src="Common\\Indicator\\Indicator_g.png" />
+        <Image id="VCP_IMG_PAGE_GRID_INDICATOR_DOT_N" src="Common\\Indicator\\Indicator_w.png" />
+    </Component>
+
+    <Component name="IME" imgPath="RES_THEME_ROOT\\Components\\IME">
+        <Image id="VADP_IMG_IME_CAND_BG_SMALL" src="BG_normal_S.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_BG_MEDIUM" src="BG_normal_M.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_BG_LARGE" src="BG_normal_L.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_FOCUS_FRAME_SMALL" src="BG_highlight_S.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_FOCUS_FRAME_MEDIUM" src="BG_highlight_M.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_FOCUS_FRAME_LARGE" src="BG_highlight_L.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_SEP_SMALL" src="Line_S.png" />
+        <Image id="VADP_IMG_IME_CAND_SEP_MEDIUM" src="Line_M.png" />
+        <Image id="VADP_IMG_IME_CAND_SEP_LARGE" src="Line_L.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_NORMAL_SMALL" src="Arrow\\Arrow_left_normal_S.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_NORMAL_MEDIUM" src="Arrow\\Arrow_left_normal_M.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_NORMAL_LARGE" src="Arrow\\Arrow_left_normal_L.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DOWN_SMALL" src="Arrow\\Arrow_left_highlight_S.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DOWN_MEDIUM" src="Arrow\\Arrow_left_highlight_M.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DOWN_LARGE" src="Arrow\\Arrow_left_highlight_L.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DISABLE_SMALL" src="Arrow\\Arrow_left_disable_S.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DISABLE_MEDIUM" src="Arrow\\Arrow_left_disable_M.png" />
+        <Image id="VADP_IMG_IME_CAND_LEFT_ARROW_DISABLE_LARGE" src="Arrow\\Arrow_left_disable_L.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_NORMAL_SMALL" src="Arrow\\Arrow_right_normal_S.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_NORMAL_MEDIUM" src="Arrow\\Arrow_right_normal_M.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_NORMAL_LARGE" src="Arrow\\Arrow_right_normal_L.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DOWN_SMALL" src="Arrow\\Arrow_right_highlight_S.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DOWN_MEDIUM" src="Arrow\\Arrow_right_highlight_M.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DOWN_LARGE" src="Arrow\\Arrow_right_highlight_L.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DISABLE_SMALL" src="Arrow\\Arrow_right_disable_S.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DISABLE_MEDIUM" src="Arrow\\Arrow_right_disable_M.png" />
+        <Image id="VADP_IMG_IME_CAND_RIGHT_ARROW_DISABLE_LARGE" src="Arrow\\Arrow_right_disable_L.png" />
+        <Image id="VADP_IMG_IME_CAND_HIGHLIGHT_SMALL" src="TextFocusedHighlight\\Text_h_S.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_HIGHLIGHT_MEDIUM" src="TextFocusedHighlight\\Text_h_M.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_HIGHLIGHT_LARGE" src="TextFocusedHighlight\\Text_h_L.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_DULL_HIGHLIGHT_SMALL" src="TextUnfocusedHighlight\\Text_h_S.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_DULL_HIGHLIGHT_MEDIUM" src="TextUnfocusedHighlight\\Text_h_M.9slice.png" />
+        <Image id="VADP_IMG_IME_CAND_DULL_HIGHLIGHT_LARGE" src="TextUnfocusedHighlight\\Text_h_L.9slice.png" />
+        <Image id="VADP_IMG_IME_INPUT_BG_SMALL" src="InputBox\\InputBox_S.9slice.png" />
+        <Image id="VADP_IMG_IME_INPUT_BG_MEDIUM" src="InputBox\\InputBox_M.9slice.png" />
+        <Image id="VADP_IMG_IME_INPUT_BG_LARGE" src="InputBox\\InputBox_L.9slice.png" />
+        
+        <Color id="VADP_COL_IME_HAND_WRITING_STROKE" value="#FFFF0000" />
+    </Component>
+
+#ifdef __MMI_VIDEO_CLIPPER__
+  	<Component name="VAPP_VIDEOCLIPPER_SLIDER" imgPath="RES_THEME_ROOT\\Components\\Slider">
+    <Image id="IMG_ID_VAPPP_VDOCLIPPER_SLIDER_THUMB_PLAY" src="clipper_control.png"/>
+    <Image id="IMG_ID_VAPPP_VDOCLIPPER_SLIDER_HRZT_BG" src="Horizontal_BG.9slice.png"/>
+	<Image id="IMG_ID_VAPPP_VDOCLIPPER_SLIDER_PLAY_H" src="Horizontal_H.9slice.png"/>
+  	</Component>
+#endif /* __MMI_VIDEO_CLIPPER__ */
+
+	<Component name="VAPP_FMGR" imgPath="RES_THEME_ROOT\\FMGR">
+        <Image id="IMG_ID_VAPP_FMGR_BACK_N" src="Back_N.png" />
+	    <Image id="IMG_ID_VAPP_FMGR_BACK_P" src="Back_P.png" />
+#if !defined(__MMI_ULTRA_SLIM_FILE_MANAGER__)
+	    <Image id="IMG_ID_VAPP_FMGR_RENAME_ICON_N" src="Editor_N.png" />
+	    <Image id="IMG_ID_VAPP_FMGR_RENAME_ICON_P" src="Editor_P.png" />
+#endif
+	    <Image id="IMG_ID_VAPP_FMGR_PARENT_FOLDER_BG" src="Title_Bg.9slice.png" />
+
+	    <Color id="CLR_ID_VAPP_FMGR_TITLE_MAIN_TXT" value="#FFFFFFFF" />
+	    <Color id="CLR_ID_VAPP_FMGR_TITLE_SUB_TXT" value="#FFE1E1E1" />
+    </Component>
+#if defined(__COSMOS_MMI__) && defined(__MMI_MMS_2__)
+  <Component name="MMS_Message" imgPath="RES_THEME_ROOT\\Message">
+      <Image id="IMG_ID_VENUS_MMS_NEXT_SLIDE" src="Next.png" />
+      <Image id="IMG_ID_VENUS_MMS_PREVIOUS_SLIDE" src="Previous.png" />
+      <Image id="IMG_ID_VENUS_MMS_PLAY_SLIDE" src="Play.png" />
+   #ifdef __MMI_MV_SUPPORT_USE_DETAIL_HIGHLIGHT__         
+      <Image id="IMG_ID_VENUS_MMS_LAUNCH_EMAIL_D" src="SendEmail_D.png" />
+      <Image id="IMG_ID_VENUS_MMS_LAUNCH_EMAIL_N" src="SendEmail_N.png" />
+      <Image id="IMG_ID_VENUS_MMS_LAUNCH_EMAIL_P" src="SendEmail_P.png" />
+      <Image id="IMG_ID_VENUS_MMS_GO_TO_URL_P" src="URL_P.png" />
+      <Image id="IMG_ID_VENUS_MMS_GO_TO_URL_D" src="URL_D.png" />
+      <Image id="IMG_ID_VENUS_MMS_GO_TO_URL_N" src="URL_N.png" />
+  #endif    
+      <Image id="IMG_ID_VENUS_MMS_VIDEO_OVERLAY" src="Video_Default.png" />
+      <Image id="IMG_ID_VENUS_MMS_DOWNLOAD" src="Download.png" />
+      <Image id="IMG_ID_VENUS_MMS_DIALOG_RESEND" src="Resend.png" />
+      <Color id = "VAPP_MMS_LITEVIEW_TEXT_COLOR" value="#FFFFFFFF"/>
+      <Color id = "VAPP_MMS_LITEVIEW_SUB_TEXT_COLOR" value="#FF3B5500"/>
+      <Color id = "VAPP_MMS_VIEWER_TEXT_COLOR" value="#FFFFFFFF"/>
+	  <Color id = "VAPP_MMS_VIEWER_TEXT_BACKGROUND_COLOR" value="#FF282828"/>
+    </Component>
+    <Component name="MMS_Calllog" imgPath="RES_THEME_ROOT\\CallLog">
+      <Image id="IMG_ID_VENUS_MMS_SIM1_CALL_D" src="List_Sim1Call_D.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM1_CALL_N" src="List_Sim1Call_N.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM1_CALL_P" src="List_Sim1Call_P.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM2_CALL_D" src="List_Sim2Call_D.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM2_CALL_N" src="List_Sim2Call_N.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM2_CALL_P" src="List_Sim2Call_P.png" />
+  #ifdef __MMI_MV_SUPPORT_USE_DETAIL_HIGHLIGHT__    
+      <Image id="IMG_ID_VENUS_MMS_SIM_CALL_D" src="List_Call_D.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM_CALL_N" src="List_Call_N.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM_CALL_P" src="List_Call_P.png" />
+  #endif    
+    </Component>
+    <Component name="MMS_Common" imgPath="RES_THEME_ROOT\\Common">
+      <Image id="IMG_ID_VENUS_MMS_SIM1_ICON" src="Sim1.png" />
+      <Image id="IMG_ID_VENUS_MMS_SIM2_ICON" src="Sim2.png" />
+    </Component>
+    <Component name="MMS_Components" imgPath="RES_THEME_ROOT\\Components\\Button">
+      <Image id="IMG_ID_VENUS_MMS_BG_N" src="Default01_N.9slice.png" />
+      <Image id="IMG_ID_VENUS_MMS_BG_P" src="Default01_P.9slice.png" />
+      <Image id="IMG_ID_VENUS_MMS_BG_D" src="Default01_D.9slice.png" />
+    </Component>
+#endif /* defined(__COSMOS_MMI__ && __MMI_MMS_2__) */
+
+    <Component name="VAPP_MSG" imgPath="RES_THEME_ROOT">
+    	<Image id="IMG_ID_VAPP_MSG_DIALOG_BUBBLE_LEFT"              src="Message\\Receive_BG_N.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_BUBBLE_LEFT_DISABLED"     src="Message\\Receive_BG_D.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_BUBBLE_RIGHT"             src="Message\\Sent_BG_N.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_BUBBLE_RIGHT_DISABLED"    src="Message\\Sent_BG_D.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_BUBBLE_HIGHLIGHT"         src="Message\\BG_P.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_LEFT"               src="Message\\Receive_Arrow_N.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_LEFT_HIGHLIGHT"     src="Message\\Receive_Arrow_P.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_LEFT_DISABLED"      src="Message\\Receive_Arrow_D.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_RIGHT"              src="Message\\Send_Arrow_N.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_RIGHT_HIGHLIGHT"    src="Message\\Send_Arrow_P.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_ARROW_RIGHT_DISABLED"     src="Message\\Send_Arrow_D.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_EDITOR_BG"                src="Message\\Editor_BG.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_DIALOG_LIST_BG"                  src="Message\\MSG_BG.9slice.png"/>
+            <Color id="CLR_ID_VAPP_MSG_DIALOG_CELL_TIME_LEFT"           value="#FF7EAB16"/>
+            <Color id="CLR_ID_VAPP_MSG_DIALOG_CELL_TIME_RIGHT"          value="#FF00A5C8"/>	
+	    <Color id="CLR_ID_VAPP_MSG_DIALOG_CELL_TIME_SHADOW"         value="#00000000"/>
+	    <Color id="CLR_ID_VAPP_MSG_PHB_DIALOG_CB_NAME"	            value="#FFFFFFFF"/>
+	    <Color id="CLR_ID_VAPP_MSG_PHB_DIALOG_CB_NUMBER"            value="#FF949494"/>
+	    <Image id="IMG_ID_VAPP_MSG_CONTACT_DIALOG_BAR_BG"           src="Common\\Shadow_U.9slice.png"/>
+        <Image id="IMG_ID_VAPP_MSG_PHB_DIALOG_LIST_BG"				src="Contact\\Contact_BG.9slice.png"/>
+	    <Color id="CLR_ID_VAPP_MSG_UNREAD_MSG"                      value="#FFEB0001"/>
+    </Component>
+
+
+#if defined(__COSMOS_MMI_PACKAGE__) && (defined(__MMI_UNIFIED_COMPOSER__) || defined(__MMI_MMS_STANDALONE_COMPOSER__))
+    <Component name="UnifiedComposer">
+        <Image id="IMG_ID_VAPP_UC_CONTACT_ICON" src="RES_THEME_ROOT\\Message\\ContactSelector\\BTN_Contact.png" />
+        <Color id="CLR_ID_VAPP_UC_CONTACT_TEXT_FRAME" 	value="#FFFE4800"/>
+    </Component>
+#elif defined(__COSMOS_MMI_PACKAGE__) && defined(__MMI_SMS_COMPOSER__)   
+    <Component name="VCUI_SMS_COMPOSER">
+        <Image id="IMG_ID_VCUI_SMSC_CONTACT_ICON" src="RES_THEME_ROOT\\Message\\ContactSelector\\BTN_Contact.png" />
+        <Color id="CLR_ID_VCUI_SMSC_CONTACT_TEXT_FRAME" 	value="#FFFE4800"/>
+    </Component>
+#endif
+
+	<Component name="VAPP_BROWSER">
+		<Image id="IMG_ID_VAPP_BRW_FULLSCREEN" src="RES_THEME_ROOT\\Browser\\FullScreen.png" />
+    	<Image id="IMG_ID_VAPP_BRW_HOMEPAGE_ICON" src="RES_THEME_ROOT\\Browser\\Home.png" />
+    	<Image id="IMG_ID_VAPP_BRW_BUTTON_BG" src="RES_THEME_ROOT\\Components\\Button\\Default01_N.9slice.png" />
+		<Image id="IMG_ID_VAPP_BRW_WEBSITE_BG" src="RES_THEME_ROOT\\Browser\\Website_BG.9slice.png" />
+		<Image id="IMG_ID_VAPP_BRW_MINIMIZE_FULL_SCREEN" src="RES_THEME_ROOT\\Browser\\Minimize_N.png" />
+    </Component>
+
+#if defined(__MMI_NOTE_APP__)
+    <Component name="notes">
+        <Image id="IMG_ID_VAPP_NOTES_VIEW_PREVIOUS_ITEM_GLOBAL" src="RES_THEME_ROOT\\Common\\Arrow_Left.png" />
+        <Image id="IMG_ID_VAPP_NOTES_VIEW_NEXT_ITEM_GLOBAL" src="RES_THEME_ROOT\\Common\\Arrow_Right.png" />
+        <Image id="IMG_ID_VAPP_NOTES_VIEW_TITLE_BG" src="RES_THEME_ROOT\\Calendar\\Title_BG.9slice.png" />
+
+    </Component>
+#endif
+
+#ifdef __MMI_EMAIL__
+    <Component name="Email">
+        <Image id="IMG_EMAIL_FTO_UNFOLD_ID" src="RES_THEME_ROOT\\Email\\Down.png" />
+        <Image id="IMG_EMAIL_FTO_FOLD_ID" src="RES_THEME_ROOT\\Email\\Up.png" />
+        <Image id="IMG_EMAIL_FTO_UNREAD_ID" src="RES_THEME_ROOT\\Email\\Unread.png" />
+        <Image id="IMG_EMAIL_FTO_TITLEBAR_BG_ID" src="RES_THEME_ROOT\\Email\\Title_BG.9slice.png" />
+        <Image id="IMG_EMAIL_FTO_LEFT_ID" src="RES_THEME_ROOT\\Common\\Arrow_Left.png" />
+        <Image id="IMG_EMAIL_FTO_RIGHT_ID" src="RES_THEME_ROOT\\Common\\Arrow_Right.png" />
+        <Image id="IMG_EMAIL_FTO_CONTENT_BG_ID" src="RES_THEME_ROOT\\Common\\Editor_BG\\Editor_BG.9slice.png" /> 
+        <Color id = "CLR_EMAIL_FTO_MAIL_CONTENT_TEXT" value="#FF949494"/>
+        <Color id = "CLR_EMAIL_FTO_MAIL_CONTENT_UNDERLINE" value="#FF1D1D1D"/>
+    </Component>
+#endif /* __MMI_EMAIL__ */
+
+    <Component name="APP_VAPP_SMS" imgPath="RES_THEME_ROOT">
+	    <Image id="IMG_ID_VAPP_MSG_CONTACT_BAR_BG" src="Message\\Contactbar_BG.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_CONTACT_PORTRAIT_BG" src="Components\\Photo_Border_BG\\Default_02.9slice.png"/>    
+	    <Image id="IMG_ID_VAPP_MSG_CONTACT_PORTRAIT_FG" src="Components\\Photo_Border_BG\\Default_01.9slice.png"/> 
+	#if defined(__MMI_MAINLCD_480X800__)
+        <Integer id="VAPP_MSG_CONTACTBAR_SHADOW_HEIGHT" value="2"/>
+    #elif defined(__MMI_MAINLCD_320X480__)
+        <Integer id="VAPP_MSG_CONTACTBAR_SHADOW_HEIGHT" value="0"/>
+    #else /* __MMI_MAINLCD_240X320__ __MMI_MAINLCD_240X400__  */
+		<Integer id="VAPP_MSG_CONTACTBAR_SHADOW_HEIGHT" value="0"/>
+    #endif
+  
+    #ifdef __MMI_SMS_PORT_MSG__
+	    <Image id="IMG_ID_VAPP_SMS_VOBJECT_BUTTON_N" src="Components\\Button\\Default01_N.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_SMS_VOBJECT_BUTTON_P" src="Components\\Button\\Default01_P.9slice.png"/>
+	    <Image id="IMG_ID_VAPP_SMS_VOBJECT_BUTTON_D" src="Components\\Button\\Default01_D.9slice.png"/>
+    #endif /*__MMI_SMS_PORT_MSG__*/
+  
+  #ifdef __MMI_EMAIL__
+	    <Image id="IMG_ID_VAPP_MSG_SEND_EMAIL_N" src="Message\\SendEmail_N.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_SEND_EMAIL_P" src="Message\\SendEmail_P.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_SEND_EMAIL_D" src="Message\\SendEmail_D.png"/>
+	#endif
+	    <Image id="IMG_ID_VAPP_MSG_GO_TO_URL_N" src="Message\\URL_N.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_GO_TO_URL_P" src="Message\\URL_N.png"/>
+	    <Image id="IMG_ID_VAPP_MSG_GO_TO_URL_D" src="Message\\URL_N.png"/>
+
+		<Image id="IMG_ID_VAPP_DETAIL_CALL_N" src = "CallLog\\List_Call_N.png"/>
+		#if 0
+	    <Image id="IMG_ID_VAPP_DETAIL_CALL_P" src = "CallLog\\List_Call_P.png"/>
+	    <Image id="IMG_ID_VAPP_DETAIL_CALL_D" src = "CallLog\\List_Call_D.png"/>
+	    #endif /*slim for 6260, these images never be used*/
+
+    	<Image id="IMG_ID_VAPP_SMS_RESEND_BUTTON" src="Message\\Resend.png"/>
+
+	    <Color id = "VAPP_SMS_CLASS0_CONTACT_TEXT_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_SMS_CLASS0_CONTENT_TEXT_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_SMS_CLASS0_CONTENT_TIME_COLOR" value="#FF949494"/>
+	    <Color id = "VAPP_SMS_CLASS0_BUTTON1_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_SMS_CLASS0_BUTTON2_COLOR" value="#FFFFFFFF"/>
+
+	    <Color id = "VAPP_SMS_VIEWER_TEXT_COLOR" value="#FFFFFFFF"/>
+
+
+
+		<Color id = "VAPP_SMS_TEXT_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_SMS_VIEWER_TEXT_BACKGROUND_COLOR" value="#FF282828"/>
+    </Component>
+    
+#if defined(__MMI_PROV_MESSAGE_SUPPORT__) && defined(__MMI_PROV_IN_UM__)
+  <Component name="VAPP_PROV_MSG" imgPath="RES_THEME_ROOT">
+	    <Color id="CLR_ID_VAPP_PROV_MSG_CP_INSTALL_BTN_FONT_COLOR" value="#FFFFFFFF" />
+	    <Color id="CLR_ID_VAPP_PROV_MSG_PROV_TEXT_FONT_COLOR" value="#FFFFFFFF"/>
+        <Color id="CLR_ID_VAPP_PROV_MSG_PROV_SIZE_FONT_COLOR" value="#FF3B5500"/>
+        <Color id="CLR_ID_VAPP_PROV_MSG_BG_FONT_COLOR" value="#FF282828"/>
+        <Color id="CLR_ID_VAPP_PROV_MSG_VIEW_FONT_COLOR" value="#FFFFFFFF"/>
+  </Component>
+#endif
+
+	<Component name="VAPP_WAP_PUSH" imgPath="RES_THEME_ROOT">
+      <Color id="CLR_ID_PUSH_MSG_TEXT_FONT_COLOR" value="#FFFFFFFF"/>
+      <Color id="CLR_ID_PUSH_MSG_TEXT_BG_COLOR" value="#FF282828"/>
+      <Color id="CLR_ID_PUSH_MSG_TEXT_VIEW_COLOR" value="#FFFFFFFF"/>
+    </Component>
+	
+	<Component name="Inputpopup">
+    	 <Color id="CLR_COSMOS_INPUT_POPUP_TITLE_TXT" value="#FFFFFFFF"/>
+     	 <Color id="CLR_COSMOS_INPUT_POPUP_HINT_TXT" value="#FFFFFFFF"/>
+     	 <Color id="CLR_COSMOS_INPUT_POPUP_ERR_TXT" value="#FFA80000"/>
+   </Component>
+
+    <Component name="VAPP_GALLERY">
+        <Image id="IMG_ID_VAPP_GALLERY_PIC_BG_ALL_PIC" src="RES_THEME_ROOT\\Gallery\\bg_all_pic.9slice.png" />
+        <Image id="IMG_ID_VAPP_GALLERY_PIC_BG_FOLDER_LIST" src="RES_THEME_ROOT\\Gallery\\bg_folder.9slice.png" />
+        <Color id="COR_ID_VAPP_GALLERY_PIC_ALL_PIC_LABEL_FONT_BRIGHTNESS" value="#FFFFFFFF" />
+        <Color id="COR_ID_VAPP_GALLERY_PIC_ALL_PIC_DESC_FONT_BRIGHTNESS" value="#FF949494" />   		
+        <Color id="COR_ID_VAPP_GALLERY_PIC_FOLDER_LIST_DEFAULT_FONT_WHITENESS" value="#FFFFFFFF" />
+        <Color id="COR_ID_VAPP_GALLERY_PIC_FOLDER_LIST_DEFAULT_COUNT_WHITENESS" value="#FF949494" />    		
+    </Component>
+
+    <Component name="VAPP_CALLLOG" imgPath="RES_THEME_ROOT\\CallLog">
+	#if (MMI_MAX_SIM_NUM == 1)
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_N" src="List_Call_N.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_P" src="List_Call_P.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_D" src="List_Call_D.png" />
+	    //<Image id="IMG_ID_VAPP_CLOG_DETAIL_CALL_SIM1" src="Button_Call.png" />
+	#elif (MMI_MAX_SIM_NUM > 1)
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_N" src="List_Sim1Call_N.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_P" src="List_Sim1Call_P.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM1_D" src="List_Sim1Call_D.png" />
+	    //<Image id="IMG_ID_VAPP_CLOG_DETAIL_CALL_SIM1" src="Button_Call1.png" />
+	    
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM2_N" src="List_Sim2Call_N.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM2_P" src="List_Sim2Call_P.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_SIM2_D" src="List_Sim2Call_D.png" />
+	   // <Image id="IMG_ID_VAPP_CLOG_DETAIL_CALL_SIM2" src="Button_Call2.png" />
+	#endif /* MMI_MAX_SIM_NUM */
+	
+	#ifdef __MMI_VIDEO_TELEPHONY__
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_VIDEO_N" src="List_VideoCall_N.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_VIDEO_P" src="List_VideoCall_P.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_CALL_VIDEO_D" src="List_VideoCall_D.png" />    
+	    <Image id="IMG_ID_VAPP_CLOG_DETAIL_CALL_VIDEO" src="Button_Video.png" />
+	    
+	    <Image id="IMG_ID_VAPP_CLOG_VIDEO_BTN_N" src="Button_VideoCall_N.9slice.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_VIDEO_BTN_P" src="Button_VideoCall_P.9slice.png" />
+	    <Image id="IMG_ID_VAPP_CLOG_VIDEO_BTN_D" src="Button_VideoCall_D.9slice.png" />
+	#endif /* __MMI_VIDEO_TELEPHONY__ */
+	
+	    <Image id="IMG_ID_VAPP_CLOG_SAVE_CONTACT" src="Save.png" />
+    </Component>
+
+    <Component name="VAPP_UCM" imgPath="RES_THEME_ROOT">
+        <Image id="IMG_ID_VAPP_UCM_BTN_DIAL_D" src="Dialog\\Button\\Button_D.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_DIAL_N" src="Dialog\\Button\\Button_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_DIAL_P" src="Dialog\\Button\\Button_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_DELETE_D" src="Dialog\\Button\\DELETE_D.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_DELETE_N" src="Dialog\\Button\\DELETE_N.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_DELETE_P" src="Dialog\\Button\\DELETE_P.png"/>
+        <Image id="IMG_ID_VAPP_UCM_EDITOR" src="Dialog\\Editor.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_EDITOR_BG1" src="Dialog\\Rounded_BG01.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_EDITOR_BG2" src="Dialog\\Rounded_BG02.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_ICON_HOR_BAR_ENABLE" src="UCM\\Dial_H.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_ICON_HOR_BAR_DISABLE" src="UCM\\Dial_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_ACCEPT_N" src="UCM\\Button\\ACCEPT_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_ACCEPT_P" src="UCM\\Button\\ACCEPT_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_REJECT_N" src="Dialog\\Button\\Emergency_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_REJECT_P" src="Dialog\\Button\\Emergency_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFT_N" src="UCM\\Button\\LEFT_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFT_P" src="UCM\\Button\\LEFT_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFTDOWN_N" src="UCM\\Button\\LEFTDOWN_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFTDOWN_P" src="UCM\\Button\\LEFTDOWN_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFTUP_N" src="UCM\\Button\\LEFTUP_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_LEFTUP_P" src="UCM\\Button\\LEFTUP_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLE_N" src="UCM\\Button\\MIDDLE_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLE_P" src="UCM\\Button\\MIDDLE_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLEDOWN_N" src="UCM\\Button\\MIDDLEDOWN_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLEDOWN_P" src="UCM\\Button\\MIDDLEDOWN_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLEUP_N" src="UCM\\Button\\MIDDLEUP_N.9slice.png"/>        
+        <Image id="IMG_ID_VAPP_UCM_BTN_MIDDLEUP_P" src="UCM\\Button\\MIDDLEUP_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHT_N" src="UCM\\Button\\RIGHT_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHT_P" src="UCM\\Button\\RIGHT_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHTDOWN_N" src="UCM\\Button\\RIGHTDOWN_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHTDOWN_P" src="UCM\\Button\\RIGHTDOWN_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHTUP_N" src="UCM\\Button\\RIGHTUP_N.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_BTN_RIGHTUP_P" src="UCM\\Button\\RIGHTUP_P.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_TITLE_BG" src="Common\\Gemini\\SimTitle_BG.9slice.png"/>
+        <Image id="IMG_ID_VAPP_UCM_TIME_BG" src="UCM\\TIME_BG.9slice.png"/>
+#ifndef __MMI_UCM_SLIM__
+        <Image id="IMG_ID_VAPP_UCM_LOCK_ACCEPT_CALL" src="UCM\\AcceptCall.png"/>
+        <Image id="IMG_ID_VAPP_UCM_LOCK_REJECT_CALL" src="UCM\\RejectCall.png"/>
+#endif /* __MMI_UCM_SLIM__ */
+        <Image id="IMG_ID_VAPP_UCM_CONFERENCE_CALL" src="UCM\\Conference.png"/>
+    #ifdef __MMI_VIDEO_TELEPHONY__
+        <Image id="VAPP_UCM_VT_DIAL" src="UCM\\Video.png"/>
+        <Image id="VAPP_UCM_VT_VFRAME_DEFAULT_BORDER" src="Components\\Photo_Border_BG\\Default_01.9slice.png"/>
+    #endif /* __MMI_VIDEO_TELEPHONY__ */
+    </Component>
+
+	<Component name="Alarm" imgPath="RES_THEME_ROOT\\Alarm">
+	#ifndef __MMI_ALARM_SLIM__
+      	<Image id="IMG_ID_VAPP_ALARM_BG" src="Alarm_BG.9slice.png" />
+    #endif
+       	<Color id="VAPP_ALARM_SUB_COLOR" value="#FFFFFFFF"/>
+	</Component>
+
+    <Component name="VAPP_CBS" imgPath="RES_THEME_ROOT">
+        #if 0
+	    <Image id="IMG_ID_VAPP_CBS_VIEWER_TITLE_BG" src="Message\\Contactbar_BG.9slice.png"/>
+	    #endif /*slim for 6260, this image never be used*/
+	    <Image id="IMG_ID_VAPP_CBS_VIEWER_TITLE_BG_IMAGE" src="Components\\Photo_Border_BG\\Default_02.9slice.png"/>    
+	    <Image id="IMG_ID_VAPP_CBS_VIEWER_TITLE_BG_BORDER" src="Components\\Photo_Border_BG\\Default_01.9slice.png"/> 
+    </Component>
+		
+    <Component name="VAPP_CB_NEW_MSG" imgPath="RES_THEME_ROOT">
+	    <Color id = "VAPP_CBS_NEW_MSG_CHANNEL_TEXT_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_CBS_NEW_MSG_CONTENT_TEXT_COLOR" value="#FFFFFFFF"/>
+	    <Color id = "VAPP_CBS_NEW_MSG_CONTENT_TIME_COLOR" value="#FF949494"/>
+	    <Color id = "VAPP_CBS_NEW_MSG_BUTTON_COLOR" value="#FFFFFFFF"/>
+    </Component>
+	<Component name="Calendar">
+   		<Image id="IMG_ID_VAPP_CAL_DATE_BG" src="RES_THEME_ROOT\\Calendar\\Date_BG.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_DAY_BG" src="RES_THEME_ROOT\\Calendar\\Day_BG.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_DAY_SELECT" src="RES_THEME_ROOT\\Calendar\\Day_Select.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_TIPS" src="RES_THEME_ROOT\\Calendar\\Tips.png" />
+    		<Image id="IMG_ID_VAPP_CAL_TITLE_BG" src="RES_THEME_ROOT\\Calendar\\Title_BG.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_TITLE2_BG" src="RES_THEME_ROOT\\Calendar\\Title2_BG.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_TODAY" src="RES_THEME_ROOT\\Calendar\\Today.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_WEEK_BG" src="RES_THEME_ROOT\\Calendar\\Week_BG.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_REMINDER" src="RES_THEME_ROOT\\Calendar\\Reminder.png" />
+    		<Image id="IMG_ID_VAPP_CAL_REPEAT" src="RES_THEME_ROOT\\Calendar\\Repeat.png" />
+    		<Image id="IMG_ID_VAPP_CAL_PICKER_SEPERATOR" src="RES_THEME_ROOT\\Common\\SeperatorLine.9slice.png" />
+    		<Image id="IMG_ID_VAPP_CAL_LEFT_ARROW" src="RES_THEME_ROOT\\Common\\Arrow_Left.png" />
+    		<Image id="IMG_ID_VAPP_CAL_RIGHT_ARROW" src="RES_THEME_ROOT\\Common\\Arrow_Right.png" />
+
+    		
+    		<Color id="VCP_COL_VAPP_CAL_EVENT_COLOR" value="#FF4E6691"/>
+    		<Color id="VCP_COL_VAPP_CAL_WEEK_CELL_COLOR" value="#FF181818"/>
+	</Component>
+
+#ifdef __MMI_VUI_WIDGET_VIP_CONTACT__
+    <Component name="VAPP_WIDGET_VIP_CONTACT">
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_ADD_CONTACT" src="RES_THEME_ROOT\\Common\\Avatar_02.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM1_N" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim1Call_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM1_P" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim1Call_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM1_D" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim1Call_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM2_N" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim2Call_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM2_P" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim2Call_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM2_D" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim2Call_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM3_N" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim3Call_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM3_P" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim3Call_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM3_D" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim3Call_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM4_N" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim4Call_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM4_P" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim4Call_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM4_D" src="RES_THEME_ROOT\\Common\\Gemini\\List_Sim4Call_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM_N" src="RES_THEME_ROOT\\Common\\Gemini\\List_Call_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM_P" src="RES_THEME_ROOT\\Common\\Gemini\\List_Call_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CALL_SIM_D" src="RES_THEME_ROOT\\Common\\Gemini\\List_Call_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_EMAIL_N" src="RES_THEME_ROOT\\Message\\SendEmail_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_EMAIL_P" src="RES_THEME_ROOT\\Message\\SendEmail_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_EMAIL_D" src="RES_THEME_ROOT\\Message\\SendEmail_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_MSG_N" src="RES_THEME_ROOT\\Widget\\SendMSG_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_MSG_P" src="RES_THEME_ROOT\\Widget\\SendMSG_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_SEND_MSG_D" src="RES_THEME_ROOT\\Widget\\SendMSG_D.png" />
+
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CANCEL_N" src="RES_THEME_ROOT\\Widget\\Cancel_N.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CANCEL_P" src="RES_THEME_ROOT\\Widget\\Cancel_P.png" />
+        <Image id="IMG_ID_VAPP_WIDGET_VIP_CONTACT_CANCEL_D" src="RES_THEME_ROOT\\Widget\\Cancel_D.png" />
+    </Component>
+#endif /* __MMI_VUI_WIDGET_VIP_CONTACT__ */
+
+    <Component name="Contacts">
+        <Image id="VAPP_PHB_IMG_DEFAULT_CONTACT" src="RES_THEME_ROOT\\Common\\Avatar_02.png" />
+        <Image id="IMG_ID_VAPP_PHB_MORE_ACTION" src="RES_THEME_ROOT\\Contact\\MoreAction.png" />
+        <Image id="IMG_ID_VAPP_PHB_BLOCK_NUMBER" src="RES_THEME_ROOT\\Contact\\block.png" />
+#ifdef __MMI_MULTI_VCARD__
+        <Image id="VAPP_PHB_VCARD_LEFT_ARROW" src="RES_THEME_ROOT\\Common\\Arrow_Left.png" />
+        <Image id="VAPP_PHB_VCARD_RIGHT_ARROW" src="RES_THEME_ROOT\\Common\\Arrow_Right.png" />
+#endif
+       // <Image id="VAPP_PHB_VCARD_TITLE_BG" src="RES_THEME_ROOT\\Calendar\\Calendar_BG.9slice.png" />
+    </Component>
+
+    <Component name="Dialer">
+#if defined (__MMI_MAINLCD_240X320__) && defined (__MMI_DIALER_SLIM__)
+#else
+        <Image id="IMG_ID_DIALER_KEY1" src="RES_THEME_ROOT\\Dialog\\Keyboard\\1.png" />
+        <Image id="IMG_ID_DIALER_KEY2" src="RES_THEME_ROOT\\Dialog\\Keyboard\\2.png" />
+        <Image id="IMG_ID_DIALER_KEY3" src="RES_THEME_ROOT\\Dialog\\Keyboard\\3.png" />
+        <Image id="IMG_ID_DIALER_KEY4" src="RES_THEME_ROOT\\Dialog\\Keyboard\\4.png" />
+        <Image id="IMG_ID_DIALER_KEY5" src="RES_THEME_ROOT\\Dialog\\Keyboard\\5.png" />
+        <Image id="IMG_ID_DIALER_KEY6" src="RES_THEME_ROOT\\Dialog\\Keyboard\\6.png" />
+        <Image id="IMG_ID_DIALER_KEY7" src="RES_THEME_ROOT\\Dialog\\Keyboard\\7.png" />
+        <Image id="IMG_ID_DIALER_KEY8" src="RES_THEME_ROOT\\Dialog\\Keyboard\\8.png" />
+        <Image id="IMG_ID_DIALER_KEY9" src="RES_THEME_ROOT\\Dialog\\Keyboard\\9.png" />
+        <Image id="IMG_ID_DIALER_KEY0" src="RES_THEME_ROOT\\Dialog\\Keyboard\\0.png" />
+        <Image id="IMG_ID_DIALER_POUND" src="RES_THEME_ROOT\\Dialog\\Keyboard\\Sharp.png" />
+        <Image id="IMG_ID_DIALER_STAR" src="RES_THEME_ROOT\\Dialog\\Keyboard\\Star.png" />
+#endif
+        <Image id="IMG_ID_DIALER_ADD_CONTACT_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\Add_D.png" />
+        <Image id="IMG_ID_DIALER_ADD_CONTACT" src="RES_THEME_ROOT\\Dialog\\Button\\Add_N.png" />
+        <Image id="IMG_ID_DIALER_ADD_CONTACT_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\Add_P.png" />
+        <Image id="IMG_ID_DIALER_KEY_BUTTON_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\Button_D.9slice.png" />
+        <Image id="IMG_ID_DIALER_KEY_BUTTON" src="RES_THEME_ROOT\\Dialog\\Button\\Button_N.9slice.png" />
+        <Image id="IMG_ID_DIALER_KEY_BUTTON_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\Button_P.9slice.png" />
+#ifdef __MMI_VIDEO_TELEPHONY__
+        <Image id="IMG_ID_DIALER_VIDEO_CALL_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\Button_VideoCall_D.9slice.png" />
+        <Image id="IMG_ID_DIALER_VIDEO_CALL" src="RES_THEME_ROOT\\Dialog\\Button\\Button_VideoCall_N.9slice.png" />
+#endif
+        <Image id="IMG_ID_DIALER_VIDEO_CALL_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\Button_VideoCall_P.9slice.png" />
+        <Image id="IMG_ID_DIALER_BACKSPACE_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\Delete_D.png" />
+        <Image id="IMG_ID_DIALER_BACKSPACE" src="RES_THEME_ROOT\\Dialog\\Button\\Delete_N.png" />
+        <Image id="IMG_ID_DIALER_BACKSPACE_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\Delete_P.png" />
+        <Image id="IMG_ID_DIALER_EMERGENCY_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\Emergency_D.9slice.png" />
+        <Image id="IMG_ID_DIALER_EMERGENCY" src="RES_THEME_ROOT\\Dialog\\Button\\Emergency_N.9slice.png" />
+        <Image id="IMG_ID_DIALER_EMERGENCY_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\Emergency_P.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM1_CALL_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\SIM1_D.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM1_CALL" src="RES_THEME_ROOT\\Dialog\\Button\\SIM1_N.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM1_CALL_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\SIM1_P.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM2_CALL_DISABLE" src="RES_THEME_ROOT\\Dialog\\Button\\SIM2_D.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM2_CALL" src="RES_THEME_ROOT\\Dialog\\Button\\SIM2_N.9slice.png" />
+        //<Image id="IMG_ID_DIALER_SIM2_CALL_PRESS" src="RES_THEME_ROOT\\Dialog\\Button\\SIM2_P.9slice.png" />
+
+		<Image id="IMG_ID_DIALER_SPEED_DIAL_BALL" src="RES_THEME_ROOT\\Dialog\\Ball.png" />
+		//<Image id="IMG_ID_DIALER_EDITOR" src="RES_THEME_ROOT\\Dialog\\Editor.9slice.png" />
+		//<Image id="IMG_ID_DIALER_CALL_ICON" src="RES_THEME_ROOT\\Dialog\\phone.png" />
+		<Image id="IMG_ID_DIALER_EDITOR_BG" src="RES_THEME_ROOT\\Dialog\\Rounded_BG01.9slice.png" />
+		<Image id="IMG_ID_DIALER_KEYBOARD_BG" src="RES_THEME_ROOT\\Dialog\\Rounded_BG02.9slice.png" />
+		<Image id="IMG_ID_DIALER_TEXT_BG01" src="RES_THEME_ROOT\\Dialog\\Text_BG01.9slice.png" />
+		<Image id="IMG_ID_DIALER_TEXT_BG02" src="RES_THEME_ROOT\\Dialog\\Text_BG02.9slice.png" />
+#ifdef __MMI_PHB_SPEED_DIAL__ 
+		<Image id="IMG_ID_DIALER_SPEED_2" src="RES_THEME_ROOT\\Dialog\\2_9\\2.png" />
+		<Image id="IMG_ID_DIALER_SPEED_3" src="RES_THEME_ROOT\\Dialog\\2_9\\3.png" />
+		<Image id="IMG_ID_DIALER_SPEED_4" src="RES_THEME_ROOT\\Dialog\\2_9\\4.png" />
+		<Image id="IMG_ID_DIALER_SPEED_5" src="RES_THEME_ROOT\\Dialog\\2_9\\5.png" />
+		<Image id="IMG_ID_DIALER_SPEED_6" src="RES_THEME_ROOT\\Dialog\\2_9\\6.png" />
+		<Image id="IMG_ID_DIALER_SPEED_7" src="RES_THEME_ROOT\\Dialog\\2_9\\7.png" />
+		<Image id="IMG_ID_DIALER_SPEED_8" src="RES_THEME_ROOT\\Dialog\\2_9\\8.png" />
+		<Image id="IMG_ID_DIALER_SPEED_9" src="RES_THEME_ROOT\\Dialog\\2_9\\9.png" />
+#endif
+        <Color id="COL_ID_DIALER_HINT_BG" value = "#FFEB0001" />
+    </Component>
+
+		<Component name="Font_Effect">
+				<Integer id="FE1_1_1_SHADOW_DEGREE" value="135" desc="Font Effect Drop Shadow Effect1 Shadow Degree"/>
+				<Integer id="FE1_1_1_SHADOW_DISTANT" value="2" desc="Font Effect Drop Shadow Effect1 Shadow Distant"/>
+				<Integer id="FE1_1_1_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect1 Shadow Range"/>
+				<Integer id="FE1_1_1_SHADOW_TRANSPARENCY" value="60" desc="Font Effect Drop Shadow Effect1 Shadow Transparency"/>
+				<Color id = "FE1_1_1_SHADOW_COLOR" value="#FF000000" desc="Font Effect Drop Shadow Effect1 Shadow Color"/>
+				
+				<Integer id="FE1_1_2_SHADOW_DEGREE" value="135" desc="Font Effect Drop Shadow Effect2 Shadow Degree"/>
+				<Integer id="FE1_1_2_SHADOW_DISTANT" value="0" desc="Font Effect Drop Shadow Effect2 Shadow Distant"/>
+				<Integer id="FE1_1_2_SHADOW_RANGE" value="5" desc="Font Effect Drop Shadow Effect2 Shadow Range"/>
+				<Integer id="FE1_1_2_SHADOW_TRANSPARENCY" value="100" desc="Font Effect Drop Shadow Effect2 Shadow Transparency"/>
+				<Color id = "FE1_1_2_SHADOW_COLOR" value="#FFFFFFFF" desc="Font Effect Drop Shadow Effect2 Shadow Color"/>
+				
+				<Integer id="FE1_1_3_SHADOW_DEGREE" value="-45" desc="Font Effect Drop Shadow Effect3 Shadow Degree"/>
+				<Integer id="FE1_1_3_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect3 Shadow Distant"/>
+				<Integer id="FE1_1_3_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect3 Shadow Range"/>
+				<Integer id="FE1_1_3_SHADOW_TRANSPARENCY" value="30" desc="Font Effect Drop Shadow Effect3 Shadow Transparency"/>
+				<Color id = "FE1_1_3_SHADOW_COLOR" value="#FF000000" desc="Font Effect Drop Shadow Effect3 Shadow Color"/>
+				
+				<Integer id="FE1_1_4_SHADOW_DEGREE" value="-45" desc="Font Effect Drop Shadow Effect4 Shadow Degree"/>
+				<Integer id="FE1_1_4_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect4 Shadow Distant"/>
+				<Integer id="FE1_1_4_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect4 Shadow Range"/>
+				<Integer id="FE1_1_4_SHADOW_TRANSPARENCY" value="60" desc="Font Effect Drop Shadow Effect4 Shadow Transparency"/>
+				<Color id = "FE1_1_4_SHADOW_COLOR" value="#FFFFFFFF" desc="Font Effect Drop Shadow Effect4 Shadow Color"/>
+				
+				<Integer id="FE1_1_5_SHADOW_DEGREE" value="90" desc="Font Effect Drop Shadow Effect5 Shadow Degree"/>
+				<Integer id="FE1_1_5_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect5 Shadow Distant"/>
+				<Integer id="FE1_1_5_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect5 Shadow Range"/>
+				<Integer id="FE1_1_5_SHADOW_TRANSPARENCY" value="60" desc="Font Effect Drop Shadow Effect5 Shadow Transparency"/>
+				<Color id = "FE1_1_5_SHADOW_COLOR" value="#FF000000" desc="Font Effect Drop Shadow Effect5 Shadow Color"/>
+				
+				<Integer id="FE1_1_6_SHADOW_DEGREE" value="90" desc="Font Effect Drop Shadow Effect6 Shadow Degree"/>
+				<Integer id="FE1_1_6_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect6 Shadow Distant"/>
+				<Integer id="FE1_1_6_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect6 Shadow Range"/>
+				<Integer id="FE1_1_6_SHADOW_TRANSPARENCY" value="60" desc="Font Effect Drop Shadow Effect6 Shadow Transparency"/>
+				<Color id = "FE1_1_6_SHADOW_COLOR" value="#FFFFFFFF" desc="Font Effect Drop Shadow Effect6 Shadow Color"/>
+				
+				<Integer id="FE1_1_7_SHADOW_DEGREE" value="-90" desc="Font Effect Drop Shadow Effect7 Shadow Degree"/>
+				<Integer id="FE1_1_7_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect7 Shadow Distant"/>
+				<Integer id="FE1_1_7_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect7 Shadow Range"/>
+				<Integer id="FE1_1_7_SHADOW_TRANSPARENCY" value="15" desc="Font Effect Drop Shadow Effect7 Shadow Transparency"/>
+				<Color id = "FE1_1_7_SHADOW_COLOR" value="#FF000000" desc="Font Effect Drop Shadow Effect7 Shadow Color"/>
+				
+				<Integer id="FE1_1_8_SHADOW_DEGREE" value="-90" desc="Font Effect Drop Shadow Effect8 Shadow Degree"/>
+				<Integer id="FE1_1_8_SHADOW_DISTANT" value="1" desc="Font Effect Drop Shadow Effect8 Shadow Distant"/>
+				<Integer id="FE1_1_8_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect8 Shadow Range"/>
+				<Integer id="FE1_1_8_SHADOW_TRANSPARENCY" value="100" desc="Font Effect Drop Shadow Effect8 Shadow Transparency"/>
+				<Color id = "FE1_1_8_SHADOW_COLOR" value="#FFFFFFFF" desc="Font Effect Drop Shadow Effect8 Shadow Color"/>
+				
+				<Integer id="FE1_1_9_SHADOW_DEGREE" value="135" desc="Font Effect Drop Shadow Effect9 Shadow Degree"/>
+				<Integer id="FE1_1_9_SHADOW_DISTANT" value="2" desc="Font Effect Drop Shadow Effect9 Shadow Distant"/>
+				<Integer id="FE1_1_9_SHADOW_RANGE" value="1" desc="Font Effect Drop Shadow Effect9 Shadow Range"/>
+				<Integer id="FE1_1_9_SHADOW_TRANSPARENCY" value="36" desc="Font Effect Drop Shadow Effect9 Shadow Transparency"/>
+				<Color id = "FE1_1_9_SHADOW_COLOR" value="#FF000000" desc="Font Effect Drop Shadow Effect9 Shadow Color"/>
+				
+				<Integer id="FE2_2_1_OUTER_GLOW_RANGE" value="3" desc="Font Effect Outer Glow Effect Outer Glow Range"/>
+				<Integer id="FE2_2_2_OUTER_GLOW_TRANSPARENCY" value="100" desc="Font Effect Outer Glow Effect Outer Glow Transparency"/>
+				<Color id = "FE2_2_3_OUTER_GLOW_COLOR" value="#FF00DEFF" desc="Font Effect Outer Glow Effect Outer Glow Color"/>
+				
+				<Integer id="FE3_3_1_ENGRAVED_DEGREE" value="90" desc="Font Effect Enhanced Engraved Effect Engraved Degree"/>
+				<Integer id="FE3_3_2_ENGRAVED_TRANSPARENCY" value="100" desc="Font Effect Enhanced Engraved Effect Engraved Transparency"/>
+				<Color id = "FE3_3_3_UPPER_ENGRAVED_COLOR" value="#FF000000" desc="Font Effect Enhanced Engraved Effect Upper Engraved Color"/>
+				<Color id = "FE3_3_4_LOWER_ENGRAVED_COLOR" value="#FFFFFFFF" desc="Font Effect Enhanced Engraved Effect Lower Engraved Color"/>
+				
+				<Integer id="FE4_4_1_GRADIENT_DIRECTION" value="1" desc="Font Effect Gradient Effect Gradient Direction"/>
+				<Integer id="FE4_4_2_GRADIENT_TRANSPARENCY" value="100" desc="Font Effect Gradient Effect Gradient Transparency"/>
+				<Color id = "FE4_4_3_FIRST_GRADIENT_COLOR" value="#FF4F4C42" desc="Font Effect Gradient Effect First Gradient Color"/>
+				<Color id = "FE4_4_4_SECOND_GRADIENT_COLOR" value="#FF999588" desc="Font Effect Gradient Effect Second Gradient Color"/>
+				
+				<Integer id="FE5_5_1_BORDER_SIZE" value="2" desc="Font Effect Border Effect Border Size"/>
+				<Integer id="FE5_5_2_BORDER_TRANSPARENCY" value="50" desc="Font Effect Border Effect Border Transparency"/>
+				<Color id = "FE5_5_3_BORDER_COLOR" value="#FF000000" desc="Font Effect Border Effect Border Color"/>									
+		</Component>
+
+#ifdef __MMI_THEMES_APPLICATION__
+    <Component name="Theme" imgPath="RES_THEME_ROOT\\Common\\Indicator">
+        <Image id="IMG_ID_VAPP_THEME_PREVIEW_IND_NORMAL" src="Indicator_w.png" />
+        <Image id="IMG_ID_VAPP_THEME_PREVIEW_IND_HILITE" src="Indicator_g.png" />
+    </Component>
+#endif  /*__MMI_THEMES_APPLICATION__*/
+
+#ifdef __SOCIAL_NETWORK_SUPPORT__
+    <Component name="VAPP_SNS" imgPath="RES_THEME_ROOT">
+    <Color id = "CLR_ID_VAPP_SNS_MAIN_TEXT" value = "#FFFFFFFF"/>
+    <Color id = "CLR_ID_VAPP_SNS_MAIN_TEXT_DISABLED" value = "#FF151515"/>
+    <Color id = "CLR_ID_VAPP_SNS_HINT_TEXT" value = "#FF949494"/>
+    <Color id = "CLR_ID_VAPP_SNS_HINT_TEXT_DISABLED" value = "#FF949494"/>
+    <Color id = "CLR_ID_VAPP_SNS_MAIN_TEXT_HIGHLIGHT" value="#FFFE4800"/>
+    <Color id = "CLR_ID_VAPP_SNS_IMAGE_BG" value="#FFD7D7D7"/>
+    <Color id = "CLR_ID_VAPP_SNS_IMAGE_BORDER" value="#FFAAAAAA"/>
+    <Color id = "CLR_ID_VAPP_SNS_REQUEST_STATUS_BG" value="#FF393939"/>    
+    <Image id = "IMG_ID_VAPP_SNS_SEARCH" 		        src="Common\\Search_Button.png"/>
+    <Image id = "IMG_ID_VAPP_SNS_BTN_BACK" 		        src="Common\\SNSIcon_Back.png"/>
+#ifdef __MMI_SNS_MESSAGES__
+	<Image id = "IMG_ID_VAPP_SNS_MSG_EDITOR_BG" 		src="Components\\Toolbar\\Toolbar_BG_N.9slice.png"/>
+	<Image id = "IMG_ID_VAPP_SNS_MSG_NEW_MSG"			src="Common\\Plus.png"/>
+	<Image id = "IMG_ID_VAPP_SNS_NEW_MSG_BTN_BG_N"		src="Components\\Button\\Default02_N.9slice.png"/>
+	<Image id = "IMG_ID_VAPP_SNS_NEW_MSG_BTN_BG_P"		src="Components\\Button\\Default02_P.9slice.png"/>
+	<Image id = "IMG_ID_VAPP_SNS_NEW_MSG_BTN_BG_D"		src="Components\\Button\\Default02_D.9slice.png"/>
+#endif /* __MMI_SNS_MESSAGES__ */
+    </Component>
+#endif /*__SOCIAL_NETWORK_SUPPORT__*/
+
+    <Component name="SRV_GCALL" imgPath="RES_THEME_ROOT">
+        <Image id = "IMG_ID_GCALL_OUTGOING"             src = "Common\\Avatar_02.png"/>
+#ifdef __MMI_VIDEO_TELEPHONY__
+        <Image id = "IMG_ID_GCALL_VT_OUTGOING_CALL"     src = "Common\\Avatar_02.png"/>
+#endif
+    </Component>
+    #if defined(__COSMOS_MMI__)
+    <Component name="SRV_PHB" imgPath="RES_THEME_ROOT\\Common">
+    <Image id = "IMG_PHB_DEFAULT" src="Avatar_02.png" />
+    </Component>
+
+	<Component name="OOM_Screen">
+      	<Image id="IMG_ID_VAPP_OOMSCR_HINT_BG" src="RES_THEME_ROOT\\Components\\ToolBar\\Toolbar_BG_N.9slice.png" />
+	</Component>
+    #endif
+
+#ifdef __MMI_COSMOS_PHOTOEDITOR__
+    <Component name="VAPP_IMGEDT" imgPath="RES_THEME_ROOT">
+         <Image id="IMG_ID_IMGEDT_BUTTON_HALO" src="Common\\halo.png" />
+    </Component>
+#endif
+
+#ifdef __MMI_VUI_WIDGET_CALENDAR__ 
+	<Component name="Calendar widget">
+    	<Image id="IMG_CALENDAR_WIDGET_HL" src="RES_THEME_ROOT\\Calendar\\Today.9slice.png" />
+   		<Image id="IMG_CALENDAR_WIDGET_TIP" src="RES_THEME_ROOT\\Calendar\\Tips.png" />
+    	<Image id="IMG_CALENDAR_WIDGET_SEL" src="RES_THEME_ROOT\\Calendar\\Day_Select.9slice.png" />
+	</Component>
+#endif
+</Theme>
+
+

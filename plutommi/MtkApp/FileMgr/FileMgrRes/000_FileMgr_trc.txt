@@ -1,0 +1,73 @@
+[APP NAME] = File Manager
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#starttrace
+
+
+#FileMgrService.c
+TRC_MSG(TRC_MMI_FMGR_FREE_APPMEM_START, "[MMIFMGR]mmi_fmgri_msa_free_app_mem(), address: 0x%08x")
+TRC_MSG(TRC_MMI_FMGR_FREE_APPMEM_DONE, "[MMIFMGR]mmi_fmgri_msa_free_app_mem() done")
+TRC_MSG(TRC_MMI_FMGR_STOP_APPMEM_START, "[MMIFMGR]mmi_fmgri_msa_stop_callback(), instance: 0x%08x, i: %d, max: %d")
+TRC_MSG(TRC_MMI_FMGR_STOP_APPMEM_DONE, "[MMIFMGR]mmi_fmgri_msa_stop_callback(), done")
+TRC_MSG(TRC_MMI_FMGR_INIT_APPMEM_START, "[MMIFMGR]mmi_fmgri_msa_init_app_mem() start")
+TRC_MSG(TRC_MMI_FMGR_INIT_APPMEM_DONE, "[MMIFMGR]mmi_fmgri_msa_init_app_mem() done")
+TRC_MSG(TRC_MMI_FMGR_ASSIGN_APPMEM_SIZE_ARRAY, "[MMIFMGR]mmi_fmgri_msa_assign_buffer(), size_array: 0x%08x, len: %d")
+TRC_MSG(TRC_MMI_FMGR_ASSIGN_APPMEM_TIME_ARRAY, "[MMIFMGR]mmi_fmgri_msa_assign_buffer(), time_array: 0x%08x, len: %d")
+TRC_MSG(TRC_MMI_FMGR_ASSIGN_APPMEM_NAME_ARRAY, "[MMIFMGR]mmi_fmgri_msa_assign_buffer(), name_array: 0x%08x, len: %d")
+TRC_MSG(TRC_MMI_FMGR_ASSIGN_APPMEM_FLAG_ARRAY, "[MMIFMGR]mmi_fmgri_msa_assign_buffer(), flag_array: 0x%08x, len: %d")
+TRC_MSG(TRC_MMI_FMGR_ALLOC_APPMEM_DONE, "[MMIFMGR]Get appmem, address: 0x%08x, len: %d")
+TRC_MSG(TRC_MMI_FMGR_ALLOC_APPMEM_FAIL, "[MMIFMGR]Get appmem fail")
+#Cui & instance. General trace
+TRC_MSG(TRC_MMI_FMGR_COMMON_1,   "[MMIFMGR] > %d")
+TRC_MSG(TRC_MMI_FMGR_COMMON_2,   "[MMIFMGR] > %d > %d")
+TRC_MSG(TRC_MMI_FMGR_COMMON_3,   "[MMIFMGR] > %d > %d > %d")
+#FileMgrCommon.c
+TRC_MSG(TRC_MMI_FMGR_BA40D7FF80BF4B328CB635F4575E741F,   "[MMIFMGR] > Option > Callback menu=%d,%d,<0x%08X>")
+TRC_MSG(TRC_MMI_FMGR_24526FFA97F44DA2BA43579B48C21903,   "[MMIFMGR] > Option (%d) > Delete callback, m=%d")
+TRC_MSG(TRC_MMI_FMGR_611F665EF38B49A5B376B30E210C54F8,   "[MMIFMGR] > Option (%d) > Exit + Add history")
+TRC_MSG(TRC_MMI_FMGR_5E4CFAF095484BF1A27F5CB3CAF8D689,   "[MMIFMGR] > Option (%d) > Entry Screen")
+TRC_MSG(TRC_MMI_FMGR_1983F988A8664C5490CE96E43C3D07DD,   "[MMIFMGR] > Option (%d) > Show")
+TRC_MSG(TRC_MMI_FMGR_D01EC6090412425B8C31E401FE81A51F,   "[MMIFMGR] > Option > Close fail, screen not found")
+TRC_MSG(TRC_MMI_FMGR_DF6156FED1504AE98E43A196E7B0F207,   "[MMIFMGR] > Option (%d) > Closed")
+#FileMgrInstance.c
+TRC_MSG(TRC_MMI_FMGR_E01C58A093D94C22AAA53DE8B8272472,   "[MMIFMGR] > Instance > Create fail, no free slot!")
+TRC_MSG(TRC_MMI_FMGR_715EFB6379E54817B0A39935A997767C,   "[MMIFMGR] > Instance > Create ok, id=%d(%d), type=%d")
+TRC_MSG(TRC_MMI_FMGR_B0655D893877438081E6058B30DC76FC,   "[MMIFMGR] > Instance > Release ok, id=%d, type=%d")
+TRC_MSG(TRC_MMI_FMGR_FCC22F0274674271A80A65DA1140B08B,   "[MMIFMGR] > Instance > Leave folder > old_len=%d, new_len=%d, new_index=%d")
+TRC_MSG(TRC_MMI_FMGR_0FA1B539B9E34AACAE21B7004CC090AB,   "[MMIFMGR] > Instance > Enter folder > old_len=%d, new_len=%d, old_index=%d")
+TRC_MSG(TRC_MMI_FMGR_1FAF6A25FBF74982BACF2505BA889C76,   "[MMIFMGR] > Instance > mmi_fmgri_instance_general_set_search_filename > %d ow by %d")
+TRC_MSG(TRC_MMI_FMGR_5C377CEA4AAD41D793471C0965495ADC,   "[MMIFMGR] > General > Error > id=%d, err=%d")
+TRC_MSG(TRC_MMI_FMGR_1AD330868A114A5D8B608F66C9F7A6A3,   "[MMIFMGR] > General > Notify > id=%d, ev=0x%08X, data=%d")
+TRC_MSG(TRC_MMI_FMGR_BF071504A65643039188C76B4FF45EE8,   "[MMIFMGR] > General > Key > id=%d, ev=0x%08X")
+TRC_MSG(TRC_MMI_FMGR_F3C49440FE8D4257AA68EDAF99823BEC,   "[MMIFMGR] > General > Refresh > id=%d, new_idx=%d, path=<0x%08X>")
+TRC_MSG(TRC_MMI_FMGR_B8F1FE0C80D141FE9AAAF5F4771BCDEC,   "[MMIFMGR] > General > Explorer (%d) > Exit")
+TRC_MSG(TRC_MMI_FMGR_90DC41707E094229959ABFA55404ABB1,   "[MMIFMGR] > General > Explorer (%d) > Exit + Add history")
+TRC_MSG(TRC_MMI_FMGR_9840D8A9CCD24E5F8CE0AE0F24482CF7,   "[MMIFMGR] > General > Explorer (%d) > Entry path<0x%08X>")
+TRC_MSG(TRC_MMI_FMGR_DB003BC7CA7E4FB392E536175D1F39C2,   "[MMIFMGR] > Popup > id=%d at <0x%08X>:%d")
+TRC_MSG(TRC_MMI_FMGR_FFBE33F274F94417A385EDF4A33FE939,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_instance_load_data_async > id=%d, result=%d")
+TRC_MSG(TRC_MMI_FMGR_68480580CF0642B89C1BB65DAE89B492,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_instance_release_load > id=%d")
+TRC_MSG(TRC_MMI_FMGR_33247DD07BDB40CFABB799255EC13A3A,   "[MMIFMGR] > FSData > fmgr_fsdata_refresh_drive_list > count=%d")
+TRC_MSG(TRC_MMI_FMGR_18F7144F98DB40CFAC2E41376C2EBC60,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_instance_get_file_info > id=%d, idx=%d, result=%d")
+TRC_MSG(TRC_MMI_FMGR_778AEB8361E7457FBDCFCF6A8794E02B,   "[MMIFMGR] > GUI > Display List > id=%d, index=%d, total=%d")
+TRC_MSG(TRC_MMI_FMGR_C8D5F4FCBBC9468EB95548D23E3C53B5,   "[MMIFMGR] > GUI > Display Progress > id=%d")
+TRC_MSG(TRC_MMI_FMGR_81A40D71FD974ECF83D8480C81F4528B,   "[MMIFMGR] > Perf > id=%d, data=%d, time=%d")
+TRC_MSG(TRC_MMI_FMGR_845AE337816049CDA0ADEF684DC39E9A,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_convert_filename > result=%d")
+TRC_MSG(TRC_MMI_FMGR_F05906166DF2491F96D0EDFBEFE538A8,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_instance_export > id=%d, result=%d")
+TRC_MSG(TRC_MMI_FMGR_90538FE7C4C14D4F9362406A7F90BBA0,   "[MMIFMGR] > FSData > mmi_fmgri_fsdata_instance_import > id=%d, result=%d")
+# used in FMGR SRV
+TRC_MSG(TRC_MMI_FMGR_36B00D34D6154EE4BBD0101210DB64C1,   "[MMIFMGR] > FSData > mmi_fmgr_init_drive > count=%d")
+#FileMgrMain.c
+TRC_MSG(TRC_MMI_FMGR_0CA6574A36AB4828B36B3C84D0F28447,   "[MMIFMGR] > Main > fmgr_main_entry_processing > data=0x%08X, fmt_state=%d, fmt_abort=%d")
+TRC_MSG(TRC_MMI_FMGR_DAA62F1FF92B4DA2B08838DFAF79CF11,   "[MMIFMGR] > Main > fmgr_main_abort_processing > fmt_state=%d, fmt_abort=%d")
+TRC_MSG(TRC_MMI_FMGR_9BD3E70604584EB69C0BEEFB0D8B5F6A,   "[MMIFMGR] > Main > fmgr_main_get_processing_instance > id=%d, fmt_state=%d, fmt_abort=%d")
+TRC_MSG(TRC_MMI_FMGR_2825C90702534307AB7CF5C3B8D2A746,   "[MMIFMGR] > Main > mmi_fmgri_main_cancel_operation(%d) > current client_id=%d, client_copy_id=%d")
+TRC_MSG(TRC_MMI_FMGR_4783A0C3C8D44767A509BC48ABF4DEC5,   "[MMIFMGR] > Main > fmgr_main_entry_filename_editor > data==0x%08X")
+TRC_MSG(TRC_MMI_FMGR_B1EB397EE1E945A5AC9D0D686E552317,   "[MMIFMGR] > Main > fmgr_main_entry_copy > id=%d, action=%d")
+TRC_MSG(TRC_MMI_FMGR_47CF7AC87F7543EA9A37B5192D4EBA2C,   "[MMIFMGR] > Main > fmgr_main_delete_confirm > id=%d, action=%d")
+TRC_MSG(TRC_MMI_FMGR_16652FFB6915448AAF796E59D62BA3E6,   "[MMIFMGR] > Service > fmgr_da_get_option > result=%d, menu=%d, count=%d")
+
+TRC_MSG(TRC_MMI_FMGR_AA16CE834F334FC69FA9C5D4C4C68A3B,   "[MMIFMGR] > MS > mmi_fmgri_serv_multi_sel_find_non_mark > start=%d,total=%d,found=%d")
+TRC_MSG(TRC_MMI_FMGR_9730796B794143BFBB498AB3C0928242,   "[MMIFMGR] > MS > mmi_fmgri_msa_add > ins=%d,total=%d")
+
+TRC_MSG(TRC_MMI_FMGR_2C55A502774C461EAC5CF369B443E62B,   "[MMIFMGR] > Util > mmi_fmgr_get_forward_option > app_id=%d, is_send=%d, result=%d")

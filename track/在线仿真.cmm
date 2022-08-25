@@ -1,0 +1,21 @@
+
+SYStem.CPU ARM7EJS
+SYStem.JtagClock RTCK.
+
+
+
+D.LOAD.ELF .\build\GXQ60D_MOD_11B\GXQ60D_MOD_11B_PCB01_gprs_MT6260_S00.elf /RELPATH /PATH . /nocode
+
+
+
+;DATA.SAVE.BINARY track_timer_table.bin 0xf01D6BE8--0xf01D6F3B
+;DATA.SAVE.BINARY system_mem_pool.bin 0xf019DC00--0xf019E300
+
+
+
+
+;DATA.LOAD.BINARY track_timer_table.bin 0xf01D6BE8
+
+
+
+

@@ -1,0 +1,345 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE. 
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ * CbmAppMain.c
+ *
+ * Project:
+ * --------
+ *   MAUI
+ *
+ * Description:
+ * ------------
+ *   This file is intends for ¡K.
+ *
+ * Author:
+ * -------
+ * Leona Chou
+ *
+ *============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *------------------------------------------------------------------------------
+ * $Log$
+ *
+ * 12 18 2010 leona.chou
+ * [MAUI_02840379] [Gemini+] check in Gemini+ feature
+ * .
+ *
+ * 12 07 2010 leona.chou
+ * [MAUI_02840379] [Gemini+] check in Gemini+ feature
+ * .
+ *
+ * 11 20 2010 leona.chou
+ * [MAUI_02840379] [Gemini+] check in Gemini+ feature
+ * .
+ *
+ * 09 10 2010 leona.chou
+ * [MAUI_02608311] [Smart SIM] [NWK] check in ic usb feature
+ * .
+ *
+ * 09 09 2010 leona.chou
+ * [MAUI_02608311] [Smart SIM] [NWK] check in ic usb feature
+ * .
+ *
+ * 08 19 2010 leona.chou
+ * [MAUI_02608311] [Smart SIM] [NWK] check in ic usb feature
+ * .
+ * 
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *============================================================================
+ ****************************************************************************/
+
+ /**
+ * Copyright Notice
+ * ?2002 - 2003, Pixtel Communications, Inc., 1489 43rd Ave. W.,
+ * Vancouver, B.C. V6M 4K8 Canada. All Rights Reserved.
+ *  (It is illegal to remove this copyright notice from this software or any
+ *  portion of it)
+ */
+#ifdef __TCPIP__
+
+#include "MMI_features.h"
+
+#include "ProtocolEvents.h"
+#include "mmi_include.h"
+
+#include "Custom_events_notify.h"
+#include "CommonScreens.h"
+#include "mmi_frm_scenario_gprot.h"
+#include "menucuigprot.h"
+
+#include "mmi2abm_struct.h"
+#include "mmi_msg_struct.h"
+#include "gpioInc.h"                /* TurnOnBacklight */
+#include "nvram_struct.h"
+#include "mmi_rp_app_cbm_def.h"
+#include "CbmSrvGprot.h"
+
+
+#ifdef __USB_EEM_SUPPORT__
+static U8 mmi_cbm_eem_ip_conflict_ind_hdlr(void *info);
+static mmi_ret mmi_cbm_eem_ip_conflict_cnf_popup_cb(mmi_event_struct *evt);
+static void mmi_cbm_eem_ip_conflict_select_cnf_hdlr(MMI_BOOL use_wifi);
+#endif /* __USB_EEM_SUPPORT__ */
+static mmi_ret mmi_cbm_handle_cbm_bearer_info(mmi_event_struct *event);
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  mmi_cbm_app_init
+ * DESCRIPTION
+ *  
+ * PARAMETERS
+ *  void
+ * RETURNS
+ *  void
+ *****************************************************************************/
+void mmi_cbm_app_init(void)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+     
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    mmi_frm_cb_reg_event(
+            EVT_ID_SRV_CBM_BEARER_INFO,
+            mmi_cbm_handle_cbm_bearer_info,
+            NULL);
+
+#ifdef __USB_EEM_SUPPORT__
+    mmi_frm_set_protocol_event_handler(MSG_ID_MMI_ABM_EEM_IP_CONFLICT_IND, 
+        (PsIntFuncPtr)mmi_cbm_eem_ip_conflict_ind_hdlr, MMI_FALSE);
+#endif /* __USB_EEM_SUPPORT__ */
+}
+
+/*****************************************************************************
+ * FUNCTION
+ *  mmi_cbm_handle_cbm_bearer_info
+ * DESCRIPTION
+ *  This function handles the CBM bearer info to display CSD icon. (Obsolete)
+ *  This feature should be handled by data account application in the future.
+ * PARAMETERS
+ *  event           : [IN]      Event
+ * RETURNS
+ *  mmi_ret
+ *****************************************************************************/
+static mmi_ret mmi_cbm_handle_cbm_bearer_info(mmi_event_struct *event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+    srv_cbm_bearer_info_struct *evt = (srv_cbm_bearer_info_struct *)event;
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    MMI_ASSERT(evt);
+
+    if ((evt->type & SRV_CBM_BEARER_CSD) && evt->state == SRV_CBM_ACTIVATED)
+    {
+    #if !defined(__MMI_DUAL_SIM_MASTER__)
+        MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 1, evt->state);
+        wgui_status_icon_bar_show_icon(STATUS_ICON_CSD);
+    #else
+        /* Dual SIM project shall use different icons for different SIM. */
+        if (cbm_get_sim_id(evt->account_id) == CBM_SIM_ID_SIM1)
+        {
+            MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 1, evt->state);
+            wgui_status_icon_bar_show_icon(STATUS_ICON_CSD);
+        }
+        else
+        {
+            MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 2, evt->state);
+            wgui_status_icon_bar_show_icon(STATUS_ICON_SLAVE_CSD);
+        }
+    #endif /* !defined(__MMI_DUAL_SIM_MASTER__) */
+    }
+    else if ((evt->type & SRV_CBM_BEARER_CSD) && evt->state == SRV_CBM_DEACTIVATED)
+    {
+    #if !defined(__MMI_DUAL_SIM_MASTER__)
+        MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 1, evt->state);
+        wgui_status_icon_bar_hide_icon(STATUS_ICON_CSD);
+    #else
+        /* Dual SIM project shall use different icons for different SIM. */
+        if (cbm_get_sim_id(evt->account_id) == CBM_SIM_ID_SIM1)
+        {
+            MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 1, evt->state);
+            wgui_status_icon_bar_hide_icon(STATUS_ICON_CSD);
+        }
+        else
+        {
+            MMI_TRACE(MMI_CONN_TRC_INFO, MMI_CBM_DISPLAY_CSD_ICON, 2, evt->state);
+            wgui_status_icon_bar_hide_icon(STATUS_ICON_SLAVE_CSD);
+        }
+    #endif /* !defined(__MMI_DUAL_SIM_MASTER__) */
+    }
+
+    return MMI_RET_OK;
+}
+
+#ifdef __USB_EEM_SUPPORT__
+
+/*****************************************************************************
+ * FUNCTION
+ *  srv_cbm_bearer_info_ind_hdlr
+ * DESCRIPTION
+ *  
+ * PARAMETERS
+ *  mes_info
+ * RETURNS
+ *  void
+ *****************************************************************************/
+static U8 mmi_cbm_eem_ip_conflict_ind_hdlr(void *info)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+    mmi_confirm_property_struct arg;
+    U8* prefix = NULL;
+    U8 *suffix = NULL;
+    U8* message = NULL;
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    
+    /* display alert notification for user */
+    mmi_confirm_property_init(&arg, CNFM_TYPE_USER_DEFINE); 
+    arg.softkey[0].str = (WCHAR *)((UI_string_type)GetString(STR_GLOBAL_YES));	
+    arg.softkey[1].img = GetImage(IMG_GLOBAL_COMMON_CSK);	
+    arg.softkey[2].str = (WCHAR *)((UI_string_type)GetString(STR_GLOBAL_NO));
+    
+    arg.f_enter_history = MMI_TRUE;
+    arg.parent_id = GRP_ID_ROOT;
+    arg.callback = (mmi_proc_func)mmi_cbm_eem_ip_conflict_cnf_popup_cb;
+    /* prepare string */
+    prefix = (U8*)GetString(STR_ID_MMI_CBM_EEM_IP_CONFLICT);    
+    suffix = (U8*)GetString(STR_ID_MMI_CBM_EEM_IP_SELECT); 
+    message = OslMalloc((mmi_ucs2strlen((S8*)prefix) + mmi_ucs2strlen((S8*)suffix) + 2) * ENCODING_LENGTH);
+    mmi_ucs2cpy((S8*)message, (S8*)prefix);
+    mmi_ucs2cat((S8*)message, (S8*) L"\n");
+    mmi_ucs2cat((S8*)message, (S8*)suffix);
+    
+    mmi_confirm_display((WCHAR *)message, MMI_EVENT_QUERY, &arg);
+    
+    OslMfree(message);   
+}
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  mmi_cbm_eem_ip_conflict_cnf_popup_cb
+ * DESCRIPTION
+ *  
+ * PARAMETERS
+ *  mes_info
+ * RETURNS
+ *  void
+ *****************************************************************************/
+static mmi_ret mmi_cbm_eem_ip_conflict_cnf_popup_cb(mmi_event_struct *evt)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    switch (evt->evt_id)
+    {
+        case EVT_ID_ALERT_QUIT:
+        {
+            mmi_alert_result_evt_struct *alert = 
+                    (mmi_alert_result_evt_struct*)evt;
+            switch (alert->result)
+            {
+                case MMI_ALERT_CNFM_YES:
+                    mmi_cbm_eem_ip_conflict_select_cnf_hdlr(MMI_TRUE);
+                    break;
+                    
+                case MMI_ALERT_CNFM_NO:
+                    mmi_cbm_eem_ip_conflict_select_cnf_hdlr(MMI_FALSE);
+                    break;
+            }
+        }
+        break;
+    }
+    
+    return MMI_RET_OK;
+}
+
+
+static void mmi_cbm_eem_ip_conflict_select_cnf_hdlr(MMI_BOOL use_wifi)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+    MYQUEUE Message;
+    mmi_abm_eem_ip_conflict_rsp_struct *rsp = NULL;
+    
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    rsp = (mmi_abm_eem_ip_conflict_rsp_struct*) OslConstructDataPtr(sizeof(mmi_abm_eem_ip_conflict_rsp_struct));
+    
+    if (use_wifi)
+    {
+        rsp->bearer = CBM_WIFI;
+    }
+    else
+    {
+        rsp->bearer = CBM_IC_USB;
+    }
+
+    Message.oslSrcId = MOD_MMI;
+    Message.oslDestId = MOD_ABM;
+    Message.oslMsgId = MSG_ID_MMI_ABM_EEM_IP_CONFLICT_RSP;
+    Message.oslDataPtr = (oslParaType*)rsp;
+    Message.oslPeerBuffPtr = NULL;
+    OslMsgSendExtQueue(&Message);
+}
+
+#endif /* __USB_EEM_SUPPORT__ */
+
+
+#endif /* #ifdef __TCPIP__ */
+

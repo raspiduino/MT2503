@@ -1,0 +1,135 @@
+[APP NAME] = CallLogApp
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+#/* CallLogAction.c */
+TRC_MSG(TRC_MMI_CLOG_ACT_DESTROY_INST, "[CLogApp]mmi_clog_act_destroy_inst(parent_gid=%d,self_gid=%d,sel_lt_id=%d,op_mid=0x%x,flags=0%x,handle=0x%x,log_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_ACT_PROC, "[CLogApp]mmi_clog_act_proc(parent_gid=%d,self_gid=%d,sel_lt_id=%d,op_mid=0x%x,flags=0%x,handle=0x%x,log_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_ACT_DLR_EVT_DIALER_BEFORE_CALL_HDLR, "[CLogApp]mmi_clog_act_dlr_evt_dialer_before_call_hdlr(cid is changed! sender_gid=%d,log_id=%d,ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_ACT_EMIT_START_APPLY_EVENT, "[CLogApp]mmi_clog_act_emit_start_apply_event(parent_gid=%d,self_gid=%d,sub_gid=%d,op_mid=%d,log_id=%d,sel_lt_id=%d,flags=0x%x)")
+
+#/* CallLogAdpCmn.c*/
+TRC_MSG(TRC_MMI_CLOG_HS_GET_DATA_CREATE, "[CLogApp]mmi_clog_hs_get_data_create(max_size=%d,req_num=%d,skip_read=%d,need_cid=%d)")
+
+#/* CallLogLayout.c */
+TRC_MSG(TRC_MMI_CLOG_LT_DESTROY_INST, "[CLogApp]mmi_clog_lt_destroy_inst(self_gid=%d,flags=0x%x,lt_type=%d,sel_lt_id=%d,cur_log_idx=%d,cur_log_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_LT_CREATE, "[CLogApp]mmi_clog_lt_create(parent_gid=%d,self_gid=%d,lt_type=%d,flags=0x%x,ext_handle=0x%x,int_handle=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_LT_SET_SEL_LT_ID, "[CLogApp]mmi_clog_lt_set_sel_lt_id(lt_gid=%d,lt_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_LT_UPDATE_READ_STATUS, "[CLogApp]mmi_clog_lt_update_read_status(self_gid=%d,sel_lt_id=%d,cur_log_idx=%d,cur_log_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_LT_REFRESH_SEL_INDEX, "[CLogApp]mmi_clog_lt_refresh_sel_index(old_log_id=%d,new_log_id=%d,old_log_idx=%d,new_log_idx=%d,idx_changed=%d)")
+TRC_MSG(TRC_MMI_CLOG_LT_INST_SRV_EVT_ADD_LOG_HDLR, "[CLogApp]mmi_clog_lt_inst_srv_evt_add_log_hdlr(add_result=%d,sel_lt_id=%d,old_idx=%d, log_id=%d:%d)")
+
+#/* CallLogMain.c */
+TRC_MSG(TRC_MMI_CLOG_INIT, "[CLogApp]mmi_clog_init(%d)------------")
+TRC_MSG(TRC_MMI_CLOG_CLEAR_ALL_NEW_EVENTS, "[CLogApp]mmi_clog_clear_all_new_events(flags=0x%x, has_evt=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_SRV_INIT_SET_SRV_STYLE, "[CLogApp]mmi_clog_srv_init(set_style: type=0x%x,style=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_LAWMO_WIPE_DATA_HDLR, "[CLogApp]mmi_clog_lawmo_wipe_data_hdlr(app_id=%d, cmd=%d,ready=%d)")
+TRC_MSG(TRC_MMI_CLOG_LAWMO_WIPE_ALL_LOGS, "[CLogApp]mmi_clog_lawmo_wipe_all_logs(del_ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_CB_LAWMO_WIPE_RESULT, "[CLogApp]mmi_clog_cmb_lawmo_wipe_result(handle=0x%x,pid=%d,ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_CLEAR_ALL_READ_STATUS, "[CLogApp]mmi_clog_clear_all_ready_status(ret=%d")
+TRC_MSG(TRC_MMI_CLOG_CLEAR_ALL_READ_STATUS_RESULT, "[CLogApp]mmi_clog_clear_all_read_status_result(ret=%d,total=%d,updated=%d")
+TRC_MSG(TRC_MMI_CLOG_SRV_EVET_HDLR, "[CLogApp]mmi_clog_srv_evt_hdlr(evt_id=%d,[%d:ready,%d:add,%d:update,%d:up_all,%d:del,%d:del_all])")
+TRC_MSG(TRC_MMI_CLOG_SRV_READY_EVT_HDLR_RECVED, "[CLogApp]mmi_clog_srv_ready_evt_hdlr(enter)")
+TRC_MSG(TRC_MMI_CLOG_SRV_READY_EVT_HDLR_LAWMO, "[CLogApp]mmi_clog_srv_ready_evt_hdlr(LOWMO Wipe data)")
+TRC_MSG(TRC_MMI_CLOG_SRV_READY_EVT_HDLR_CLEAR, "[CLogApp]mmi_clog_srv_ready_evt_hdlr(clear all unread)")
+TRC_MSG(TRC_MMI_CLOG_CHECK_NEW_EVENT, "[CLogApp]mmi_clog_check_new_event(evt_id=%d,old_idf=0x%x:0x%x:0x%x:0x%x,new_idf=0x%x:0x%x:0x%x:0x%x)")
+TRC_MSG(TRC_MMI_CLOG_NMGR_ENTER, "[CLogApp]mmi_clog_nmgr_enter(enter OP11 softnote)")
+
+#/* CallLogMaimenu.c */
+TRC_MSG(TRC_MMI_CLOG_LAUNCH_EX, "[CLogApp]mmi_clog_launch_ex(parent_gid=%d,lt_type=%d,lt_id=%d,err=%d,self_gid=%d,handle=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_DELETE_LOG_LIST, "[CLogApp]mmi_clog_delete_log_list(err: menu_id=%d,handle=0x%x,pid=%d)")
+TRC_MSG(TRC_MMI_CLOG_DELETE_ALL_LOGS_RESULT, "[CLogApp]mmi_clog_delete_all_logs_result(handle=0x%x,pid=%d,ret=%d)")
+#/* CallLogViewer.c */
+TRC_MSG(TRC_MMI_CLOG_OP_DESTROY_INST, "[CLogApp]mmi_clog_op_destroy_inst(parent_gid=%d,self_pid=%d,mc_gid=%d,type=%d,lt_id=%d,handle=0x%x,log_id=%d,flags=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_OP_ENTER, "[CLogApp]mmi_clog_op_enter(parent_gid=%d,self_pid=%d,mc_gid=%d,type=%d,lt_id=%d,handle=0x%x,log_id=%d,flags=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_OP_EVT_MM_SELECT_HDLR, "[CLogApp]mmi_clog_op_evt_mm_select_hdlr(parent_gid=%d,self_gid=%d,lt_id=%d,mid=0x%x,handle=0x%x,log_id=%d)")
+TRC_MSG(TRC_MMI_CLOG_OP_HIDE_L1_MENU, "[CLogApp]mmi_clog_op_hide_l1_menu(enb_mid=0x%x,type=%d,lt_id=%d,ret=%d,total_logs=%d)")
+TRC_MSG(TRC_MMI_CLOG_VR_DESTROY_INST, "[CLogApp]mmi_clog_vr_create(self_gid=%d,mode=%d,style=%d,sel_lt_id=%d,lt_type=%d,handle=0x%x,log_id=%d,flags=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_VR_CREATE, "[CLogApp]mmi_clog_vr_create(parent_gid=%d,self_gid=%d,mode=%d,style=%d,sel_lt_id=%d,lt_type=%d,handle=0x%x,log_id=%d,flags=0x%x)")
+
+#/* CallLogCallCost.c */
+TRC_MSG(TRC_MMI_CLOG_CCOST_ENTRER_CCOST, "[CLogApp]mmi_clog_entry_ccost (parent_gid=%d,sim_id=%d)------------")
+TRC_MSG(TRC_MMI_CLOG_CCOST_GET_DATA_CB, "[CLogApp]mmi_clog_ccost_get_data_cb(sim=%d,field=0x%x,more=%d,ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_CCOST_SHOW_MENU_CUI, "[CLogApp]mmi_clog_entry_ccost_counter_int(cost_grp=%d,curr_active_grp=%d)")
+
+#/* CallLogGprsCount.c */
+TRC_MSG(TRC_MMI_CLOG_ENTRY_GPRS_COUNTER, "[CLogApp]mmi_clog_entry_gprs_counter (parent_gid=%d,sim_id=%d)------------")
+TRC_MSG(TRC_MMI_CLOG_GPRS_GET_DATA_CB, "[CLogApp]mmi_clog_gprs_get_data_cb(sim_id=%d,last_r=%d,last_s=%d,total_r=%d,total_s=%d)")
+TRC_MSG(TRC_MMI_CLOG_GPRS_ENTER_CUI, "[CLogApp]mmi_clog_entry_gprs_counter_int(gprs_grp=%d,curr_active_grp=%d)")
+
+#/* CallLogPbapc.c */
+
+#/* CallLogAdpPbapc.c */
+TRC_MSG(TRC_MMI_CLOG_PBAPC_DEINIT, "[CLogPbapc]mmi_clog_pbapc_deinit")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_FREE_OP_HANDLE, "[CLogPbapc]mmi_clog_pbapc_free_op_handle(g_mmi_clog_pbapc_cntx.phapc_op_handle=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_FREE_OP_VCARD_HANDLE, "[CLogPbapc]mmi_clog_pbapc_free_op_handle(g_mmi_clog_pbapc_cntx.p_handle=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_VCARD_OBJECT_TO_CLOG_ENTER, "[CLogPbapc]mmi_clog_pbapc_vcard_object_to_clog(vcard_object=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_VCARD_OBJECT_TO_CLOG_STOP, "[CLogPbapc]mmi_clog_pbapc_vcard_object_to_clog(mmi_clog_pbap_current_num=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_VCARD_OBJECT_TO_CLOG_CALL_TYPE, "[CLogPbapc]mmi_clog_pbapc_vcard_object_to_clog(vcard_object->x.call_type = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_VCARD_OBJECT_TO_CLOG_CID, "[CLogPbapc]mmi_clog_pbapc_vcard_object_to_clog(clog_info->cid = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_OP_DONE, "[CLogPbapc]mmi_clog_pbapc_op_done(error_code = %d, g_mmi_clog_pbapc_cntx.is_canceled=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_PARSE_FILE_CB_ENTER, "[CLogPbapc]mmi_clog_pbapc_parse_file_cb(ret=%d, percentage=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_PARSE_FILE_CB, "[CLogPbapc]mmi_clog_pbapc_parse_file_cb(ret=%d, percentage=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_PARSE_FILE, "[CLogPbapc]mmi_clog_pbapc_parse_file(path=%s)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_PARSE_FILE_1, "[CLogPbapc]mmi_clog_pbapc_parse_file(error_code=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_PARSE_FILE_2, "[CLogPbapc]mmi_clog_pbapc_parse_file:do not support multi vcard(error_code=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER_CB, "[CLogPbapc]mmi_clog_pbapc_read_folder_cb(ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER_CB_PARSE_RET, "[CLogPbapc]mmi_clog_pbapc_read_folder_cb:parse file reslult(ret=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER, "[CLogPbapc]mmi_clog_pbapc_read_folder(ret=%d,path=%d,g_mmi_clog_pbapc_cntx.phapc_op_handle=0x%x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER_1, "[CLogPbapc]mmi_clog_pbapc_read_folder:read folder reslult(ret=%d)")
+
+#/* FOR BT DIALER callloglayout.c*/
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_IS_IN_BACKWARD,"[CLogPbapc]mmi_clog_prepare_data():g_only_update_data = %d, is_back_ward = %d,index = %d, flag = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_NO_CONN_SHOW_LIST,"[CLoglayout]mmi_clog_bt_link_no_conn_show_list")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_IS_NEED_SEND_REQ,"[CLogPbapc]mmi_clog_pbapc_lt_show_list(): index = %d, is_parse = %d ")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_READ_CB_IS_CONNECT,"[CLogPbapc]mmi_clog_pbapc_read_cb(): bt_is_connect = %d ")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_SHOW_CATEGORY,"[CLogPbapc]mmi_clog_pbapc_show_category(): error_code = %d, gui_buffer = %x, number = %d ")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_ONLY_AGREE,"[CLoglayout]mmi_clog_bt_link_conn_profile(): no_conn  = %d")
+TRC_MSG(TRC_MMI_CLOG_ENTER_TAB_PAGE, "[CLogApp]mmi_clog_bt_link_lt_enter_tab_page(grp_data->scrn_id=%d,inst->self_gid=%d)")
+#TRC_MSG(TRC_MMI_CLOG_PBAPC, "[CLogPbapc]mmi_clog_pbapc_select_hdlr(lt_storage=%d)")
+TRC_MSG(TRC_MMI_CLOG_LSK_HDLR,"[CLogPbapc]mmi_clog_pbapc_lt_lsk_hdlr(g_mmi_clog_lt_inst.self_gid=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_OP_ENTER, "[CLogPbapc]mmi_clog_pbapc_op_enter(BT_IS_Call_support=%d, BT_IS_CALL_ACCESS_PROFILE_SUPPORT=%d)")
+#TRC_MSG(TRC_MMI_CLOG_PARSE_FILE_PATH,"[CLogPbapc]mmi_clog_pbapc_lt_lsk_hdlr(g_mmi_clog_lt_inst.self_gid=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_PAGE_IS_CONNECT, "[CLogPbapc]mmi_clog_bt_link_lt_enter_tab_page(bt_is_connect=%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_PAGE_MENU, "[CLogLayout]mmi_clog_bt_link_lt_exist_tab_page(menu_id=%d, highlight = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_HIGH_LIGHT, "[CLogLayout]mmi_clog_bt_link_lt_enter_tab(highlight_index = %d)")
+TRC_MSG(TRC_MMI_CLOG_PATH_IS_EXIST,"[CLogLayout]mmi_clog_bt_link_lt_enter_tab_page(path_is_exist = %d, menu_id = %d )")
+TRC_MSG(TRC_MMI_CLOG_UPDATE_BY_END_CALL,"[CLogPbapc]mmi_clog_update_log_by_end_call(index = %d ,active_id = %d, addr = 0x%x)")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_EVT_HDLR,"[CLogMain]mmi_clog_bt_dialer_evt_hdlr(evt->evt_id = %d, type = %d, count = %d)")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_NEED_CREATE_FOLDER,"[ClogAdpPbapc]mmi_clog_pbapc_read_folder_cb():g_folder_exist =%d, bt_is_connect = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_PATH_EXIST,"[ClogAdpPbapc]mmi_clog_pbapc_read_folder_cb():des_path =%d, folder_path = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_SELECT_HDLR,"[ClogPbap]mmi_clog_pbapc_select_hdlr(): path =%d, lt_storage = %d, index = %d, update = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_FILE_EXIST,"[ClogPbap]mmi_clog_pbapc_read_folder_cb():des_file = %d, g_only_update_data = %d, index = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_SHOW_LIST,"[CLogPbapc]mmi_clog_pbapc_lt_get_title_by_storageID():g_mmi_clog_pbapc_lt_inst.sel_lt_storage = %d , STR_ID = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_SHOW_LIST1,"[CLogPbapc]mmi_clog_pbapc_lt_show_list(): g_only_update_data = %d, Group_is_present = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_CONN_CB,"[CLoglayout]mmi_clog_bt_link_conn_profile_cb(): result = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_CONN_LSK_HDLR,"[CLoglayout]mmi_clog_bt_link_conn_profile_lsk_hdlr(): active_id = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_CONN_IS_BACKWARD,"[CLogPbapc]mmi_clog_pbapc_lt_show_list(): is_backward = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_CONN_SAVE_TIME_STAMP,"[CLogPbapc]mmi_clog_pbapc_lt_show_list(): save_hour = %d, save_min = %d, save_sec = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_CONN_TIME_STAMP,"[CLogPbapc]mmi_clog_pbapc_lt_show_list(): hour = %d, min = %d, sec = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_COPY_DONE,"[CLogPbapc]mmi_clog_copy_done(): reult = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_RSP_END_CALL,"[CLogPbapc]mmi_clog_pbapc_read_folder_cb(): g_only_update_data = %d")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_RSP_END_CALL_CP,"[CLogPbapc]mmi_clog_pbapc_read_folder_cb(): end call's rsp")
+TRC_MSG(TRC_MMI_CLOG_BT_DIALER_RSP_NORMAL_CP,"[CLogPbapc]mmi_clog_pbapc_read_folder_cb(): notmal rsp cp")
+
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_CB_ACTVIE,"[CLogPbapc]mmi_clog_pbapc_read_cb(read = %d, flag =%d, para = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_INIT,"[CLogPbapc]mmi_clog_pbapc_init(handle = %x, p_handle = %x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_DISCONN,"[CLogPbapc]mmi_clog_bt_dialer_bt_disconn_hdlr(bt_nmgr_handle = %d,evt_id = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_DISCONN_V3,"[CLogPbapc]mmi_clog_bt_dialer_bt_disconn_hdlr(evt_id = %d, type = %d, index = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_CURR_ACTIVE,"[CLogPbapc]mmi_clog_pbapc_op_done(active_id = %d, exist =%d, para = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_IS_ACTIVE,"[CLogPbapc]mmi_clog_pbapc_is_btsc_active(scr_id = %d, exist_flag = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER_CB0,"[CLogPbapc]mmi_clog_pbapc_read_folder_cb(cb_index = %d , index = %d)")
+
+TRC_MSG(TRC_MMI_CLOG_PBAPC_READ_FOLDER_0,"[CLogPbapc]mmi_clog_pbapc_read_folder(flag = %d , index = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_0,"[CLogPbapc]mmi_clog_bt_link_lt_enter_tab(index = %d, addr =0x%x)")
+
+TRC_MSG(TRC_MMI_CLOG_PBAPC_SET_STATUS_0,"[CLogPbapc]mmi_clog_set_bt_status(flag = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_DIALER_SHOW_V30,"[CLogPbapc]mmi_clog_bt_dialer_show(index = %d, addr =0x%x)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_DIALER_SHOW_V31,"[CLogPbapc]mmi_clog_bt_dialer_show(flag = %d, only_for_update = %d, only_update =%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_GET_LAST,"[CLogPbapc]mmi_clog_bt_get_last_log(index = %d, ret = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_MISSED_CALL,"[CLogPbapc]mmi_clog_bt_dialer_missed_call_hdlr(total_number = %d, ret = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_GET_ITEM,"[CLogPbapc]mmi_clog_pbapc_lt_get_log_item(stprage = %d, item_index = %d, call_type = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_LOAD_ABORT,"[CLogPbapc]mmi_clog_pbapc_processing_abort(update = %d, parent_id =%d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_BT_BY_STAMP,"[CLogPbapc]mmi_clog_bt_compare_log_by_timestamp(local = %d, cid =%d)")TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_V31,"[CLogPbapc]mmi_clog_bt_link_lt_enter_tab(bt_index = %d, bt1 = %d, bt2 =%d, flag = %d)")
+TRC_MSG(TRC_MMI_CLOG_PBAPC_ENTER_TAB_V32,"[CLogPbapc]mmi_clog_bt_link_lt_enter_tab(highlight = %d)")

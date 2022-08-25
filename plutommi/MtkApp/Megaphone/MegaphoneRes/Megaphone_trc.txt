@@ -1,0 +1,18 @@
+[APP NAME] = Megaphone
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+#start trace
+
+TRC_MSG(MMI_MEGAPHONE_LAUNCH,"[MEGAPHONE] trace=[%d]")
+TRC_MSG(MMI_MEGAPHONE_PROC,"[MEGAPHONE] mmi_megaphone_proc, evt_id=[%d]")
+
+TRC_MSG(MMI_MEGAPHONE_IS_ACTIVE,"[MEGAPHONE] active=[%d]")
+TRC_MSG(MMI_MEGAPHONE_RESUME,"[MEGAPHONE] mmi_megaphone_resume_callback, result =[%d]")
+TRC_MSG(MMI_MEGAPHONE_INTERRUPT,"[MEGAPHONE] mmi_megaphone_interrupt_callback, result =[%d]")
+TRC_MSG(MMI_MEGAPHONE_SWITCH,"[MEGAPHONE] mmi_megaphone_switch, on =[%d]")
+TRC_MSG(MMI_MEGAPHONE_LAUNCH_APP,"[MEGAPHONE] mmi_megaphone_launch, event =[%d]")
+TRC_MSG(MMI_MEGAPHONE_SWITCH_APP,"[MEGAPHONE] mmi_megaphone_switch_app_hdlr, event =[%d]")
+TRC_MSG(MMI_MEGAPHONE_TRC_NOTIFY_CALLBACK,"[FMRDO] mmi_megaphone_notify_callback_hdlr, result=[%d], state =[%d]")
+
+#end trace

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skb_template key_xmargin="0.625%p" key_ymargin="1.4286%p"
+	kb_width="100%p" kb_height="43.75%p" skb_bg="@drawable/BG_panel">
+	
+	<!-- Normal Key for number-->
+	<key_type id="0" bg="@drawable/BG_normal_number" hlbg="@drawable/BG_highlight_number" need_balloon="false" />
+	
+	<!-- Normal Key for call button-->
+	<key_type id="1" bg="@drawable/BG_normal_call" hlbg="@drawable/BG_highlight_call" need_balloon="false" />	
+	
+	<!-- Normal Key for hide button-->
+	<key_type id="2" bg="@drawable/BG_normal_hide" hlbg="@drawable/BG_highlight_hide" need_balloon="false" />	
+	
+	<!-- Normal Key for emergency button-->
+	<key_type id="3" bg="@drawable/BG_normal_emergency_call" hlbg="@drawable/BG_highlight_emergency_call" need_balloon="false" />	
+</skb_template>

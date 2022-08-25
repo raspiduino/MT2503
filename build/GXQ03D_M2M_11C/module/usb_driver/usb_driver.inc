@@ -1,0 +1,11 @@
+drv\include
+hal\connectivity\usb_driver\inc
+usb\include
+inc
+hal\drv_def
+interface\hal
+interface\hal\connectivity\usb_driver
+interface\hal\system
+hal\system\regbase\inc
+hal\system\dma\inc
+hal\peripheral\inc

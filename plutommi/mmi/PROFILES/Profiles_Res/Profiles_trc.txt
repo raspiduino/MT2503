@@ -1,0 +1,22 @@
+[APP NAME] = ProfilsApp
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+/* --------------------------------------------------------------- */
+/* ----------------------- User Profiles ------------------------- */
+/* --------------------------------------------------------------- */
+/*Common*/
+TRC_MSG(MMI_PROF_TRC_ENTRY_PROFILE,"[User Prof] enter prof main screen")
+TRC_MSG(MMI_PROF_TRC_SRV_EVENT,"[User Prof] srv event: %d")
+TRC_MSG(MMI_PROF_TRC_SRV_EVENT_OUTPUT,"[User Prof] srv event output: %d")
+TRC_MSG(MMI_PROF_TRC_ACTIVATE_PROFILE,"[User Prof] activate profile: %d")
+TRC_MSG(MMI_PROF_TRC_PROGRESSBAR_CHANGE,"[User Prof] progress bar item: %d, val: %d")
+TRC_MSG(MMI_PROF_TRC_GET_ALERT_TYPE,"[User Prof] get alert type: %d")
+TRC_MSG(MMI_PROF_TRC_PLAY_CALLBACK,"[User Prof] preview_tone_callback: %d")
+TRC_MSG(MMI_PROF_TRC_PREVIEW_PLAY_TONE,"[User Prof] mmi_prof_preview_play_tone volume:%d")
+TRC_MSG(MMI_PROF_TRC_PREVIEW_KEY_TONE,"[User Prof] preview_keypad_tone volume:%d")
+TRC_MSG(MMI_PROF_TRC_PREVIEW_STOP_TONE,"[User Prof] mmi_prof_preview_stop_tone")
+TRC_MSG(MMI_PROF_TRC_MENU_ITEM_SELECTED,"[User Prof] menu_item_select: %d")
+
+TRC_MSG(MMI_PROF_TRC_INLINE_CSK_EVT,"[User Prof] INLINE_CSK_PRESS")
+TRC_MSG(MMI_PROF_TRC_INLINE_SUBMIT,"[User Prof] INLINE_SUBMIT")

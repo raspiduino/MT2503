@@ -1,0 +1,15 @@
+[APP NAME] = Ctm
+[SCOPE] = PLUTO 
+[MODULE] = MOD_MMI_COMMON_APP
+#don't change any value above
+
+#start trace
+#----------------- Ctm.c ------------------------------------------------------
+TRC_MSG(FUNC_MMI_CTM_ENTRY_TALKING,"MMI_CTM_ENTRY_TALKING")
+TRC_MSG(FUNC_MMI_CTM_RSP_CONNECT,"MMI_CTM_RSP_CONNECT")
+TRC_MSG(TRC_MMI_CTM_CONNECT_GO_BACK,"mmi_ctm_connect: Already connected, go back to CTM talking screen")
+TRC_MSG(FUNC_MMI_CTM_SEND_TEXT_REQ,"MMI_CTM_SEND_TEXT_REQ")
+TRC_MSG(FUNC_MMI_CTM_RSP_SEND_TEXT,"MMI_CTM_RSP_SEND_TEXT")
+TRC_MSG(FUNC_MMI_CTM_ENTER_TALKING_FAIL,"mmi_ctm_entry_talking: Fail to enter SCR_ID_CTM_TALKING")
+TRC_MSG(FUNC_MMI_CTM_CONNECT_STATE_IS_CONNECTED,"mmi_ctm_connect: And state is MMI_CTM_STATE_CONNECTED")
+TRC_MSG(TRC_MMI_CTM_IND_HDLR,"MMI_CTM_IND, evt=%d")

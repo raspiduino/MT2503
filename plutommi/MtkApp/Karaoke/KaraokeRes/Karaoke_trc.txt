@@ -1,0 +1,37 @@
+[APP NAME] = Karaoke
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+#start trace
+
+TRC_MSG(MMI_KARAOKE_LAUNCH,"[KARAOKE] mmi_karaoke_launch, trace=[%d]")
+TRC_MSG(MMI_KARAOKE_PROC,"[KARAOKE] mmi_karaoke_proc, user=[%d], evt_id=[%d]")
+TRC_MSG(MMI_KARAOKE_GENERATE_TRACE,"[KARAOKE] generating, trace=[%d]")
+TRC_MSG(MMI_KARAOKE_SEARCH,"[KARAOKE] mmi_karaoke_list_generate_search, total_num=[%d]")
+TRC_MSG(MMI_KARAOKE_SEARCH_FINISH,"[KARAOKE] generate finish/cancle/error, trace=[%d]")
+TRC_MSG(MMI_KARAOKE_GENERATE_INTERNAL,"[KARAOKE] mmi_karaoke_list_generate_internal, phase=[%d]")
+TRC_MSG(MMI_KARAOKE_INC_AUD_VOL,"[KARAOKE] mmi_karaoke_inc_aud_vol, audio =[%d]")
+TRC_MSG(MMI_KARAOKE_DEC_AUD_VOL,"[KARAOKE] mmi_karaoke_dec_aud_vol, audio =[%d]")
+TRC_MSG(MMI_KARAOKE_SET_AUD_VOL,"[KARAOKE] mmi_karaoke_set_aud_vol, audio =[%d]")
+TRC_MSG(MMI_KARAOKE_INC_MIC_VOL,"[KARAOKE] mmi_karaoke_inc_mic_vol, mic =[%d]")
+TRC_MSG(MMI_KARAOKE_DEC_MIC_VOL,"[KARAOKE] mmi_karaoke_dec_mic_vol, mic =[%d]")
+TRC_MSG(MMI_KARAOKE_SET_MIC_VOL,"[KARAOKE] mmi_karaoke_set_mic_vol, mic =[%d]")
+TRC_MSG(MMI_KARAOKE_INC_REMIX_AUD_VOL,"[KARAOKE] mmi_karaoke_inc_remix_aud_vol, remix_audio =[%d]")
+TRC_MSG(MMI_KARAOKE_DEC_REMIX_AUD_VOL,"[KARAOKE] mmi_karaoke_dec_remix_aud_vol, remix_audio =[%d]")
+TRC_MSG(MMI_KARAOKE_SET_REMIX_AUD_VOL,"[KARAOKE] mmi_karaoke_set_remix_aud_vol, remix_audio =[%d]")
+TRC_MSG(MMI_KARAOKE_INC_REMIX_MIC_VOL,"[KARAOKE] mmi_karaoke_inc_remix_mic_vol, renix_mic =[%d]")
+TRC_MSG(MMI_KARAOKE_DEC_REMIX_MIC_VOL,"[KARAOKE] mmi_karaoke_dec_remix_mic_vol, remix_mic =[%d]")
+TRC_MSG(MMI_KARAOKE_SET_REMIX_MIC_VOL,"[KARAOKE] mmi_karaoke_set_remix_mic_vol, remix_mic =[%d]")
+TRC_MSG(MMI_KARAOKE_INC_VOL,"[KARAOKE] mmi_karaoke_inc_remix_aud_vol, is_sing =[%d], focus_aud =[%d]")
+TRC_MSG(MMI_KARAOKE_DEC_VOL,"[KARAOKE] mmi_karaoke_dec_remix_aud_vol, is_sing =[%d], focus_aud =[%d]")
+TRC_MSG(MMI_KARAOKE_UPDATE_SPK_ICON,"[KARAOKE] mmi_karaoke_update_spk_icon, is_sing =[%d], aud_mute =[%d], mic_mute =[%d]")
+TRC_MSG(MMI_KARAOKE_UPDATE_MIC_ICON,"[KARAOKE] mmi_karaoke_update_mic_icon, is_sing =[%d], aud_mute =[%d], mic_mute =[%d]")
+TRC_MSG(MMI_KARAOKE_UPDATE_AUD_BAR,"[KARAOKE] mmi_karaoke_update_audio_bar, index =[%d]")
+TRC_MSG(MMI_KARAOKE_UPDATE_MIC_BAR,"[KARAOKE] mmi_karaoke_update_voice_bar, index =[%d]")
+TRC_MSG(MMI_KARAOKE_UPDATE_FOCUS,"[KARAOKE] mmi_karaoke_update_select, focus_aud =[%d]")
+TRC_MSG(MMI_KARAOKE_VOL_ENTRY,"[KARAOKE] mmi_karaoke_entry_volume_adjust_screen")
+TRC_MSG(MMI_KARAOKE_VOL_EXIT,"[KARAOKE] mmi_karaoke_exit_volume_adjust_screen, scr_id =[%d], is_sing =[%d], is_play_rec =[%d]")
+TRC_MSG(MMI_KARAOKE_VOL_TIME_HDLR,"[KARAOKE] mmi_karaoke_volume_timer_hdlr")
+TRC_MSG(MMI_KARAOKE_VOL_PROC,"[KARAOKE] mmi_karaoke_volume_proc, evt_id =[%d]")
+
+#end trace

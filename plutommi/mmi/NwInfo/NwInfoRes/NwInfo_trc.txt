@@ -1,0 +1,9 @@
+[APP NAME] = NwInfo
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_MMI_NW_INFO_DN_STATUS_ICON,     "[NwInfo] DN status icon: sim = %Mmmi_sim_enum, Act(2)/Att(1)/None(0) = %d, icon_id = %d")
+TRC_MSG(TRC_MMI_NW_INFO_ON_STATUS_CHANGED,  "[NwInfo] Status changed: sim = %Mmmi_sim_enum, srv = %d, prot = %d, capa = %d, dn = %d, loc = %d")
+TRC_MSG(TRC_MMI_NW_INFO_SIGNAL_ICON_CHANGED,  "[NwInfo] Signal icon changed: sim = %Mmmi_sim_enum, percentage = %d")
+TRC_MSG(TRC_MMI_NW_INFO_DN_STATUS,  "[NwInfo] dn_status: %d")

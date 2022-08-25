@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" width="10%p" height="24.4445%p"
+	needshift_flag="true" key_type="0" >
+
+	<row start_pos_x="0%p" start_pos_y="1.1112%p">
+		<keys splitter="|" labels="1|2|3|4|5|6|7|8|9|0" codes="49|50|51|52|53|54|55|56|57|48" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key label="@" code="64" />
+		<key label="#" code="35" />
+		<key label="$" code="36" />
+		<key label="%" code="37" />
+		<key label="&amp;" code="38" />
+		<key label="*" code="42" />
+		<key label="-" code="45" />
+		<key label="_" code="95" />
+		<key label="(" code="40" />
+		<key label=")" code="41" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" label="\xa47b" code="-40" key_type="2" />
+		<key label="!" code="33" />
+		<key label="&quot;" code="34" />
+		<key label="&apos;" code="39" />
+		<key label=":" code="58" />
+		<key label=";" code="59" />
+		<key label="/" code="47" />
+		<key label="\?" code="63" />
+		<key width="15%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" code="-3" label="\xa451" key_type="11" />
+		<key width="10%p" label="‰" code="8240"	/>
+		<key width="10%p" label="," code="44" key_type="0" />
+		<key width="30%p" code="32" label="\xa46b" key_type="2"/>
+		<key width="10%p" label="." code="46" key_type="0" />
+		<key width="10%p" label="\xa47a" code="-36" key_type="4"/>
+		<key width="15%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+
+</keyboard>
+
+

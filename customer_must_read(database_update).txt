@@ -1,0 +1,15 @@
+﻿[Chinese Version]
+因最近部分 patch 如果没有同步最新的 database，会遇到 build error 或者 log 的 message 会乱掉。
+我们正在修正 script，在需要 release 时可以正确拉到 database 给客户，但还需要一些时间来 check，我们会尽快解决。
+为弥补这段空白期，我们先暂定每次 patch 都会一起 release 最新的 database，以避免 build error 或者 log 的 message 会乱掉的 case 持续发生。
+请更新一起 release 的 database (tst 目錄下)，并执行 make project_name gprs codegen 以生成正确的 database。
+
+给您带来的困扰表示抱歉！我们会尽快修正 script。
+
+
+[English Version]
+Dear Customer,
+
+     For patch release, please merge the latest database (under tst folder in patch package) as well (execute command "make $project_name $modem_type codegen"), 
+
+to avoid module build error or confused log message during merge patch package.

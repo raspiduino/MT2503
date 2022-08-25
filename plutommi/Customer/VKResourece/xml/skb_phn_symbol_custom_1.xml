@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_phn_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" height="24.2858%p"
+	width="22.1%p" key_type="6">
+
+	<row start_pos_x="1.25%p" start_pos_y="1.4286%p">
+		<key width="15.625%p" label="#" code="35" key_type="0" />
+		<key label="1" label_aux="?" code="49" code_longpress="63" />
+		<key label="2" label_aux="$" code="50" code_longpress="36" />
+		<key label="3" label_aux="%" code="51" code_longpress="37" />
+		<key width="15.625%p" label="_" code="95" key_type="0" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" label="=" code="61" key_type="0" />
+		<key label="4" label_aux="+" code="52" code_longpress="43" />
+		<key label="5" label_aux="&amp;" code="53" code_longpress="38" />
+		<key label="6" label_aux="*" code="54" code_longpress="42" />
+		<key width="15.625%p" label="-" code="45" key_type="0" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" code="-32" label="\xa47b" key_type="2" />
+		<key label="7" label_aux="/" code="55" code_longpress="47" />
+		<key label="8" label_aux="\\" code="56" code_longpress="92"/>
+		<key label="9" label_aux="~" code="57" code_longpress="126" />
+		<key width="15.625%p" code="8" label="\xa454" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" code="-3" label="\xa451" key_type="3" />
+		<key label=":" label_aux=";" code="58" code_longpress="59" />
+		<key label="0" label_aux="!" code="48" code_longpress="33" />
+		<key key_type="4" code="-1" label="\xa47a" />
+		<key width="15.625%p" code="13" key_type="2" label="\xa456">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" code="13" label="\xa45e" />
+		</key>
+	</row>
+</keyboard>
+
+

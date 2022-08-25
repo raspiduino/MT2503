@@ -1,0 +1,1040 @@
+ModuleName,LibraryName,Attribute,Category,FeatureOption
+viva.obj,system.lib,RO,Boot-up used,
+alice.obj,sys_sec.lib,RO,Boot-up used,
+alice_internal.obj,sys_sec.lib,RO,Boot-up used,
+init.obj,system.lib,RO,Boot-up used,
+init_comm.obj,system.lib,RO,Boot-up used,
+cache.obj,system.lib,RO,Boot-up used,
+custom_scatstruct.obj,custom.lib,RO,Boot-up used,
+regioninit_ads.obj,system.lib,RO,Boot-up used,
+arm_unaligned.obj,system.lib,RO,Boot-up used,
+custom_flash.obj,custom.lib,RO,Boot-up used,
+uart.obj,peripheral.lib,RO,Boot-up used,
+dcl_gpio.obj,peripheral.lib,RO,Boot-up used,
+gpio.obj,peripheral.lib,RO,Boot-up used,
+DclH_kbd.obj,peripheral.lib,RO,Boot-up used,
+dcl_pw.obj,peripheral.lib,RO,Boot-up used,
+keypad_def.obj,custom.lib,RO,Boot-up used,
+uart_def.obj,custom.lib,RO,Boot-up used,
+SSS_secure_shared_common.obj,sss_rvct_sv5.lib,RO,Boot-up used,
+excep_hdlr.obj,system.lib,RO,Boot-up used,
+tst_assert.obj,tst.lib,RO,Boot-up used,
+Dcl_SeriPortDrv.obj,peripheral.lib,RO,Boot-up used,
+uart_handler.obj,peripheral.lib,RO,Boot-up used,
+uart_vfifo.obj,peripheral.lib,RO,Boot-up used,
+dma.obj,system.lib,RO,Boot-up used,
+dcm.obj,system.lib,RO,Boot-up used,
+tst_reader_trace_utility.obj,tst.lib,RO,Boot-up used,
+init_trc.obj,system.lib,RO,Boot-up used,
+custom_util.obj,custom.lib,RO,Boot-up used,
+*sys_lib_a.lib,sys_lib_a.lib,RO,Boot-up used,
+sw_keypad.obj,peripheral.lib,RO,Boot-up used,PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+combo_lcm*.obj,custom.lib,RO,Post processing,
+*l1audio32.lib,l1audio32.lib,RO,ARM libraries
+*fota.lib,fota.lib,RO,ARM libraries
+*dp_engine.lib,dp_engine.lib,RO,ARM libraries
+*opengl.lib,opengl.lib,RO,ARM libraries
+*rompatch.lib,rompatch.lib,RO,ARM libraries
+*postproc_sec.lib,postproc_sec.lib,RO,ARM libraries
+*media_sec32.lib,media_sec32.lib,RO,ARM libraries
+*gfx_core32.lib,gfx_core32.lib,RO,ARM libraries
+*vrt.lib,vrt.lib,RO,ARM libraries
+*gdi_arm.lib,gdi_arm.lib,RO,ARM libraries
+*l1_classb_g2.lib,l1_classb_g2.lib,RO,L1 libraries
+*l1_ext.lib,l1_ext.lib,RO,L1 libraries
+*l1_g2.lib,l1_g2.lib,RO,L1 libraries
+acs_common_ctrl_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+csn_common.obj,rr_classb2.lib,RO,L1 libraries
+gprs_rlcmac_common_rest.obj,rr_classb2.lib,RO,L1 libraries
+gprs_rlcmac_dl_rest.obj,rr_classb2.lib,RO,L1 libraries
+mac_common_ctrl_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+mac_data_blk_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+mac_dl_ctrl_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+mac_main.obj,rr_classb2.lib,RO,L1 libraries
+mac_sendmsgs.obj,rr_classb2.lib,RO,L1 libraries
+mac_utils.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gprs_common_func.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gprs_dl_func.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gprs_dl_msg_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+mpal_main.obj,rr_classb2.lib,RO,L1 libraries
+nstd_mobile_alloc_peer_pun.obj,rr_classb2.lib,RO,L1 libraries
+rlc_dl_ctrl_msg_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+rlc_util.obj,rr_classb2.lib,RO,L1 libraries
+rmc_gprs_timer_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+rmc_peer_dl_rest.obj,rr_classb2.lib,RO,L1 libraries
+rmp_timerhdlr.obj,rr_classb2.lib,RO,L1 libraries
+rmp_pktacc.obj,rr_classb2.lib,RO,L1 libraries
+rr_data_ind.obj,rr_classb2.lib,RO,L1 libraries
+rr_gprs_utils.obj,rr_classb2.lib,RO,L1 libraries
+rr_utils.obj,rr_classb2.lib,RO,L1 libraries
+csrr_recv_lapdm_mesgs.obj,rr_classb2.lib,RO,L1 libraries
+csrr_send_int_msg.obj,rr_classb2.lib,RO,L1 libraries
+lapdm_frame_funcs.obj,rr_classb2.lib,RO,L1 libraries
+lapdm_recv_mpal_msgs.obj,rr_classb2.lib,RO,L1 libraries
+lapdm_recv_rr_msgs.obj,rr_classb2.lib,RO,L1 libraries
+meas_funcs.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gsm_common_func.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gsm_dl_func.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gsm_dl_msg_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+mpal_gsm_ul_msg_hdlr.obj,rr_classb2.lib,RO,L1 libraries
+psi.obj,rr_classb2.lib,RO,L1 libraries
+rr_dual_sim_process.obj,rr_classb2.lib,RO,L1 libraries
+rmc_gprs_meas_funcs.obj,rr_classb2.lib,RO,L1 libraries
+rr_gprs_meas_decode.obj,rr_classb2.lib,RO,L1 libraries
+rr_spare_bit.obj,rr_classb2.lib,RO,L1 libraries
+rr_create.obj,rr_classb2.lib,RO,L1 libraries
+rrm_main.obj,rr_classb2.lib,RO,L1 libraries
+rrm_send_msgs.obj,rr_classb2.lib,RO,L1 libraries
+si_msg_decode.obj,rr_classb2.lib,RO,L1 libraries
+si_update_funcs.obj,rr_classb2.lib,RO,L1 libraries
+csrr_utils.obj,rr_classb2.lib,RO,L1 libraries
+rmc_common_access.obj,rr_classb2.lib,RO,L1 libraries
+rmpc_common_func.obj,rr_classb2.lib,RO,L1 libraries
+as_access_sem_funcs.obj ,as_semaphore_utility.lib,RO,L1 libraries
+rsva_create.obj,rsva.lib,RO,L1 libraries
+rsvas_utils.obj,rsva.lib,RO,L1 libraries
+rsvas_fsm.obj,rsva.lib,RO,L1 libraries
+sm_statemachine_lite.obj,rsva.lib,RO,L1 libraries
+*sst.lib,sst.lib,RO,Debugging related
+*sst_sec.lib,sst_sec.lib,RO,Debugging related
+usbacm_adap.obj,usb.lib,RO,Debugging related
+*nucleus.lib,nucleus.lib,RO,Nucleus libraries
+*nucleus_int.lib,nucleus_int.lib,RO,Nucleus libraries
+*nucleus_debug.lib,nucleus_debug.lib,RO,Nucleus libraries
+*nucleus_v2.lib,nucleus_v2.lib,RO,Nucleus libraries
+*nucleus_v2_int.lib,nucleus_v2_int.lib,RO,Nucleus libraries
+*nucleus_v2_debug.lib,nucleus_v2_debug.lib,RO,Nucleus libraries
+*nucleus_v2_ctrl_code.lib,nucleus_v2_ctrl_code.lib,RO,Nucleus libraries
+csc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries
+tcc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries
+tms.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries
+evc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries
+quc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries
+pmc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries,
+smc.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries,
+tct.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries,
+stack_timer.obj,kal.lib,RO,Nucleus libraries,
+data_buff_pool.obj,kal.lib,RO,Nucleus libraries,
+kal_nucleus_timer.obj,kal.lib,RO,Nucleus libraries,
+tmt.obj,nucleus_ctrl_code.lib,RO,Nucleus libraries,PLATFORM = MT6250 || PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+CustImgGroupDataRes_0.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_1.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_2.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_3.obj,mmiresource.lib,RO,Already compressed,
+FontData.obj,mmiresource.lib,RO,Already compressed,
+CustStrResComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+CustStrMapComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+rtfcore.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_tasks.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_trace.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+uscounter.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_assert.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_file_trans_export.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_func.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_utility.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_active_module.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_querysimid.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_itc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ostd.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ADIE_intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+drv_comm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtc_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+isrentry.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+drv_hisr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+stack_ltlcom.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_log.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+stack_buff_pool.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_debug_buff_mngr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_debug_nucleus_non_exported.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtfiles.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtfbuf.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_kal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtfex.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_memory_card.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+msdc.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_mem_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_pmu.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_debug_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_gpt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_gpt_hw.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_lib_funcs.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_internal_api.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_interface.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+stack_config.obj,config.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_io.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_drval_fat.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_util.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_multi_folder.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_task.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+app_buff_alloc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rtfbs.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_chr_det.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ADIE_Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+eint_def.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_bmt.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+bmt_utility.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+bmt_task_main.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+adcsche.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+adcmeasure.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+event_shed.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_evshed_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+mlib_dll.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_l1def.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_public_api.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_nvram_int_config.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_nvram_sec.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_sec.obj,nvram_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_func_adv.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fs_internal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+adc_msg_handle.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_usb_drv.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pdn.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lpwr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_drv_init.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_usb_hcd.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+audio_service.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+afe.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+afe_common.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+afe_6250.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+l1audio_trace.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+mm_power_ctrl.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+mm_power_ctrl_mt6250.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+verno.obj,verno.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_viti_usb_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_sp_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_mod_func.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_create.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gv.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_ext.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_hal_wrapper_layer.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idma.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_util.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_lcd.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_layer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_mutex.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdc_main.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_primitive.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gd_primitive24.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image_jpeg.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+AppMemMgrCore.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+app_mem.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+mmi_frm_remutex.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_adm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+history.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+Scenario.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+readres.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+mmi_rp_app_data.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+sublcdhistory.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+med_utility.obj,media.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_encode_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_encode_int_sw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fsal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+swje_fragment_processor.obj,gfx_core16.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_encode_int.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+drv_gfx_dynamic_switch.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+simple_memory_manager.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_imgdec.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_task_ops.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ext_drv_assert_hdlr_if.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_nucleus_flmm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+init_memory_stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wingui.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rgb_rotator_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+rgb_rotator_int_hw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+g2d_common_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+g2d_drv_common_6250_series.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+drv_gfx_hisr_ctrl.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+kal_hisr_initialize.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_lfs.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+display_io.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd_power_mgr.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfd_lcd_common.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd_if_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfcapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfdapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfd_hwdevice_6250.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfd_lcd_6250.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd_tear_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd_tear_6250.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gd_primitive16.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+flatten_api.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image_mav.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image_hwjpg_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image_alpha_bmp.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_image_alpha_bmp_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_animate.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_2d_engine.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ucs2.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+app_str.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lcd_exception_api_6250.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_uem.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+uem_gpio.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_pwm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pixcomfontengine.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_font.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gdi_font_show_char.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6250
+g2d_font_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+combo_flash_nor.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+flc2_debug_functions.obj,flc2.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+visualhisr.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+media.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wav_thumb.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+audio_idma.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+vm.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+am.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+sp_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+sbc_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+apm_comp.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pcmRouteService.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+sp_enhance.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ddload.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pcm.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+amr.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dsp_ptch_6250_GSM.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6250
+MCU_RM.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MD_RM.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+NAND_MTD.obj,mtd.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gcu.obj,cipher.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_pmu6250.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pmic_drv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pmu_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_pmu6250_init.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfd_lcd_adapter.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+flatten_api_6250.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+pwmdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gpio_drv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+gpio_setting.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+alerterdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+visual_comm.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_core.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_engines_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_resz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_resz_crz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_imgdma_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_imgdma_rotdma0_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_hisr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+upll_ctrl.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_aux.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+accdet.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+spi.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_sim.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_sim_driver.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_sim_common_mtk.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl2_mt6306.obj,mt6306.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MT6306_I2C.obj,mt6306.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MT6306_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MT6306_HW_I2C.obj,mt6306.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_i2c.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+i2c.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl2.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MT6302_SPI.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MT6302_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchcontrol1_aw6314_dummy.obj,aw6314.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tone2.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+MedAdapt.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+AudComUtil.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+audioPP.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+fsal_buffer.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+i2s_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+btif.obj,btdrv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+owfnativestream.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+armlibc_rt.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wfc_autonomous.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+L1Trc.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+tst_file_log_write.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dsp_init.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_pmu_common.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_debug_tool.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbacm_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_mode.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbacm_ft.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbimage_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_task.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_ltable.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbvideo_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbms_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbms_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usb_resource.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+usbvideo_state.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+cal_main.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+cal_scenario_ctrl.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+cal_webcam.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_encode_wrapper.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+owfimage.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+sensor_frame_rate_lut.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+cal_feature_ctrl.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+cal_camera_nvram.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+Renderer.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dpmgr.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+AudioMixer.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+PcmSink.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ft_fnc_util.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+meta_customize.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ft_fnc.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ft_main.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+touch_panel.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ts_drv.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dcl_hts.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_comm_component_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_encoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_decoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_comm_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_dbg_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_codec_utility_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_fluency_utility.obj,fluency.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_buffer_management_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_fluency_control.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+SCD_eng.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+video_codec_buffer_mgr_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+bmt_hw.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+isp_webcam.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+isp_feature.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+isp_control.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+isp_isr.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nli_arb.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_scen_cp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_scen_vr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+melody_common.obj,audio_comp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl1_mt6306.obj,mt6306.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+dbgprint.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl0_mt6306.obj,mt6306.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl_mtk_0.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl0.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl1.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+icc_switchControl_mtk_1.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+nvram_pseudo_merge.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+wndrv_configure.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_drv_enc_6250_series.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_drv_init_6250_series.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+jpeg_encode_int_hw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+drv_gfx_dct_control.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+screenrotation.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+ui_buffer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+lzma_dispatcher.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+hwlzma.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+hif_v2.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+va2_comp_video_renderer.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+va2_util_buffer_header_queue.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+va2_util_misc.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+custom_vrender.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+va2_video_renderer_vp_mt6252.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_scen_vp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+idp_scen_common_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6250
+audio_service.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dsp_ptch_6260_GSM.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_public_api.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_interface.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_util.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_io.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_drval_fat.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_pseudo_merge.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_multi_folder.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+custom_nvram_int_config.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+custom_nvram_sec.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_sec.obj,nvram_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+afe.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+afe_common.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+afe_6260.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+l1audio_trace.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+AppMemMgrCore.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+mmi_frm_remutex.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+Scenario.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+app_mem.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+history.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+readres.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+mmi_rp_app_data.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sublcdhistory.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+med_utility.obj,media.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+swje_fragment_processor.obj,gfx_core16.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wingui.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_2d_engine.obj,gdi_g2d.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ucs2.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+app_str.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pixcomfontengine.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bfc_decode_raster.obj,gfx_core16.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+flc2_debug_functions.obj,flc2.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+audlp2_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tone_loopback_rec.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tone_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+media.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wav_thumb.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sp_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+audcoeff.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sp_enhance.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+am.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+i2s_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+apm_comp.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bt_sco_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+media_avsync.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+PcmSink.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+AudComUtil.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+audio_idma.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pcm.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+spe_custom_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+amr.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_sim.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+custom_sim_driver.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+icc_sim_common_mtk.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+icc_switchcontrol1_aw6314_dummy.obj,aw6314.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pcmRouteService.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+MedAdapt.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+audioPP.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dtmf_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bt_sco_app.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pcm4way.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dtmf_gen.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_debug_tool.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usbacm_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_mode.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usbacm_ft.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_resource.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_task.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nvram_ltable.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+melody_common.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+AudioDrain.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ft_fnc_util.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+meta_customize.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ft_fnc.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ft_main.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+icc_switchControl_mtk_0.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+icc_switchControl_mtk_1.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_trace.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_func.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtfiles.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtfex.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_kal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_tasks.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtfcore.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtfbuf.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_itc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+uscounter.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_utility.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_internal_api.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+drv_comm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+drv_hisr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+isrentry.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ADIE_intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_active_module.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+stack_ltlcom.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_log.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+stack_buff_pool.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_debug_buff_mngr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_debug_nucleus_non_exported.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_hal_wrapper_layer.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+verno.obj,verno.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_lib_funcs.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_mod_func.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_viti_usb_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_create.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+mm_power_ctrl.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+mm_power_ctrl_mt6250.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_sp_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gv.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_ext.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+app_buff_alloc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+custom_drv_init.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_usb_hcd.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rtfbs.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_task.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_task_ops.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ext_drv_assert_hdlr_if.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_flmm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+init_memory_stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+drv_gfx_hisr_ctrl.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_hisr_initialize.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_mem_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_gpt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ddload.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ostd.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+code_decompression.obj,init.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+code_decompression_hal.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+simple_memory_manager.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+hwlzma.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lzma_dispatcher.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+NAND_MTD.obj,mtd.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lpwr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+nli_arb.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gpio_drv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gpio_setting.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+alerterdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_gpt_hw.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+adcsche.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+adcmeasure.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+event_shed.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_bmt.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bmt_utility.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bmt_task_main.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_nucleus_evshed_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+mlib_dll.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pdn.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_pwm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_pmu.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_pmu6260.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pmu_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_pmu6260_init.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_pmu_common.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_aux.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_chr_det.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ADIE_Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+eint_def.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+spi.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+L1Trc.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dsp_init.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sleep_drv_internal.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+i2c.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bmt_hw.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_debug_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+stack_config.obj,config.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_func_adv.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_internal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+adc_msg_handle.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_usb_drv.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_mutex.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdc_main.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_image.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_layer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_image_jpeg.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+kal_adm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_primitive.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+jpeg_encode_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+jpeg_encode_int_sw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fsal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+jpeg_encode_int.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+drv_gfx_dynamic_switch.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_imgdec.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gd_primitive24.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_util.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_lcd.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rgb_rotator_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_lfs.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+display_io.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd_power_mgr.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfd_lcd_common.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd_if_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfcapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfdapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfd_hwdevice_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfd_lcd_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd_tear_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd_tear_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ui_buffer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gd_primitive16.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+flatten_api.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_image_hwjpg_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_image_alpha_bmp.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_image_alpha_bmp_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_animate.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+uem_gpio.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+lcd_exception_api_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bfc_decode_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bfc_decode_feature_switch.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+combo_flash_nor.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fs_sst.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+task_config.obj,config.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bootup_logo.obj,init.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+flatten_api_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+g2d_common_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+g2d_drv_common_6260_series.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+g2d_mutex.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfc_autonomous.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+owfnativestream.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+owfimage.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wfd_lcd_adapter.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+pwmdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+visual_comm.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+visualhisr.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_core.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_engines_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_resz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_resz_crz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_imgdma_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_imgdma_rotdma0_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_hisr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+upll_ctrl.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+accdet.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcmgr.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+btif.obj,btdrv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+fsal_buffer.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usb_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_memory_card.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+msdc.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+format.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+tst_querysimid.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcxo_div.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gcu.obj,cipher.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+bitstream.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sleep_drv_public.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+touch_panel.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+ts_drv.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+dcl_hts.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_scen_vr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_scen_cp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+idp_scen_vp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+l4c_em.obj,l4_classb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_comm_component_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+smslib_decode.obj,smslib.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+wgui_title.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usbms_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+usbms_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_comm_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_dbg_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_codec_utility_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_fluency_utility.obj,fluency.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+isp_isr.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+isp_feature.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+isp_control.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+va2_comp_video_renderer.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+va2_util_buffer_header_queue.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_buffer_management_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+va2_util_misc.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+custom_vrender.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+va2_video_renderer_vp_mt6252.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+smsal_msg_proc.obj,l4_classb.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+rgb_rotator_int_hw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+gdi_font.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+screenrotation.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+sbc_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+vapp_dual_sim_setting.obj,cosmos_app.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+vfx_frame.obj,venusmmi.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_decoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_fluency_control.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+SCD_eng.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_codec_buffer_mgr_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+video_encoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6260
+audio_service.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dsp_ptch_6261_GSM.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_public_api.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_interface.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_util.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_io.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_drval_fat.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_pseudo_merge.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_multi_folder.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+custom_nvram_int_config.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+custom_nvram_sec.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_sec.obj,nvram_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+afe.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+afe_common.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+afe_6261.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+l1audio_trace.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+AppMemMgrCore.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+mmi_frm_remutex.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+Scenario.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+app_mem.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+history.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+readres.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+mmi_rp_app_data.obj,mmiresource.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sublcdhistory.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+med_utility.obj,media.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+swje_fragment_processor.obj,gfx_core16.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wingui.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_2d_engine.obj,gdi_g2d.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ucs2.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+app_str.obj,applib.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pixcomfontengine.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bfc_decode_raster.obj,gfx_core16.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+flc2_debug_functions.obj,flc2.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+audlp2_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tone_loopback_rec.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tone_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+media.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wav_thumb.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sp_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+audcoeff.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sp_enhance.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+am.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+i2s_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+apm_comp.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bt_sco_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+media_avsync.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+PcmSink.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+AudComUtil.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+audio_idma.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pcm.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+spe_custom_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+amr.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_sim.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+custom_sim_driver.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+icc_sim_common_mtk.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+icc_switchcontrol1_aw6314_dummy.obj,aw6314.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pcmRouteService.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+MedAdapt.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+audioPP.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dtmf_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bt_sco_app.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pcm4way.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dtmf_gen.obj,Unknown,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_debug_tool.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usbacm_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_mode.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usbacm_ft.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_resource.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_task.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nvram_ltable.obj,nvram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+melody_common.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+AudioDrain.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ft_fnc_util.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+meta_customize.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ft_fnc.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ft_main.obj,ft.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+icc_switchControl_mtk_0.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+icc_switchControl_mtk_1.obj,sim_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_trace.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_func.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtfiles.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtfex.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_kal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_tasks.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtfcore.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtfbuf.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_itc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+uscounter.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_utility.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_internal_api.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+f32k_clk.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+drv_comm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+drv_hisr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+isrentry.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ADIE_intrCtrl.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_active_module.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+stack_ltlcom.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_log.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+stack_buff_pool.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_debug_buff_mngr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_debug_nucleus_non_exported.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_hal_wrapper_layer.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+verno.obj,verno.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_lib_funcs.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_mod_func.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_viti_usb_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_create.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+mm_power_ctrl.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+mm_power_ctrl_mt6250.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_sp_logging.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gv.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_ext.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+app_buff_alloc.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+custom_drv_init.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_usb_hcd.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rtfbs.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_task.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_task_ops.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ext_drv_assert_hdlr_if.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_flmm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+init_memory_stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+drv_gfx_hisr_ctrl.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_hisr_initialize.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_mem_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_gpt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ddload.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ostd.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+code_decompression.obj,init.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+code_decompression_hal.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+simple_memory_manager.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+hwlzma.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lzma_dispatcher.obj,sys_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+NAND_MTD.obj,mtd.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lpwr.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+nli_arb.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gpio_drv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gpio_setting.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+alerterdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_gpt_hw.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+adcsche.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+adcmeasure.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+event_shed.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_bmt.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bmt_utility.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bmt_task_main.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_nucleus_evshed_buff_mgr.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+mlib_dll.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+adc.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pdn.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_pwm.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_pmu.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_pmu6261.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pmu_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_pmu6261_init.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_pmu_common.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_aux.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_chr_det.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ADIE_Eint.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+eint_def.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_wdt.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+spi.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+L1Trc.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dsp_init.obj,dsp_ram.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sleep_drv_internal.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+i2c.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bmt_hw.obj,bmt.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_debug_error_handling.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+stack_config.obj,config.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_func_adv.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_internal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+adc_msg_handle.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_usb_drv.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_mutex.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdc_main.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_image.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_layer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_image_jpeg.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+kal_adm.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_primitive.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+jpeg_encode_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+jpeg_encode_int_sw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fsal.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+jpeg_encode_int.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+drv_gfx_dynamic_switch.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_imgdec.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gd_primitive24.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_util.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_lcd.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rgb_rotator_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_lfs.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+display_io.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd_power_mgr.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfd_lcd_common.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd_if_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfcapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfdapi.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfd_hwdevice_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfd_lcd_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd_tear_manager.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd_tear_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ui_buffer.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gd_primitive16.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+flatten_api.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_image_hwjpg_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_image_alpha_bmp.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_image_alpha_bmp_v2.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_animate.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+uem_gpio.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+lcd_exception_api_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bfc_decode_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bfc_decode_feature_switch.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+combo_flash_nor.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fs_sst.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+task_config.obj,config.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bootup_logo.obj,init.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+flatten_api_6260.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+g2d_common_api.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+g2d_drv_common_6260_series.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+g2d_mutex.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfc_autonomous.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+owfnativestream.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+owfimage.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wfd_lcd_adapter.obj,drv_display.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+pwmdrv.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+visual_comm.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+visualhisr.obj,mm_comm.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_core.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_engines_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_resz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_resz_crz_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_imgdma_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_imgdma_rotdma0_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_hisr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+upll_ctrl.obj,usb_driver.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+accdet.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcmgr.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+stack.obj,system.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+btif.obj,btdrv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+fsal_buffer.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usb_custom.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_memory_card.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+msdc.obj,mc.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+format.obj,fs.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+tst_querysimid.obj,tst.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcxo_div.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gcu.obj,cipher.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+bitstream.obj,kal.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sleep_drv_public.obj,sleep_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+touch_panel.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+ts_drv.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+dcl_hts.obj,peripheral.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_scen_vr_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_scen_cp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+idp_scen_vp_mt6252.obj,drv_idp.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+l4c_em.obj,l4_classb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_comm_component_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+smslib_decode.obj,smslib.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+wgui_title.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usbms_drv.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+usbms_adap.obj,usb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_comm_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_dbg_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_codec_utility_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_fluency_utility.obj,fluency.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+isp_isr.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+isp_feature.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+isp_control.obj,camera.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+va2_comp_video_renderer.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+va2_util_buffer_header_queue.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_buffer_management_v2.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+va2_util_misc.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+custom_vrender.obj,custom.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+va2_video_renderer_vp_mt6252.obj,video.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+smsal_msg_proc.obj,l4_classb.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+rgb_rotator_int_hw.obj,gfx_drv.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+gdi_font.obj,gdi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+screenrotation.obj,mmi_framework.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+sbc_drv.obj,audio.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+vapp_dual_sim_setting.obj,cosmos_app.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+vfx_frame.obj,venusmmi.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_decoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_fluency_control.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+SCD_eng.obj,fluency_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_codec_buffer_mgr_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+video_encoder_component_v2.obj,video_sec.lib,RO,Interrupt Disabled,PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502

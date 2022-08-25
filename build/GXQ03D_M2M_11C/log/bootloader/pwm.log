@@ -1,0 +1,20 @@
+Compiling hal\peripheral\src\pwm.c ... 
+"custom/codegen/GXQ03D_M2M_11C_BB/pwm_drv.h", line 35: Warning:  #47-D: incompatible redefinition of macro "DCL_NONE" (declared at line 32)
+  #define DCL_NONE   DCL_PWM4
+          ^
+"hal\peripheral\src\pwm.c", line 737: Warning:  #177-D: variable "i" was declared but never referenced
+  	kal_uint8 i;
+  	          ^
+"hal\peripheral\src\pwm.c", line 999: Warning:  #550-D: variable "clock" was set but never used
+     kal_uint32 clock = 0;
+                ^
+"hal\peripheral\src\pwm.c", line 1050: Warning:  #550-D: variable "clock" was set but never used
+     kal_uint32 clock = 0;
+                ^
+"hal\peripheral\src\pwm.c", line 566: Warning: C3017W: tmp_channel may be used before being set
+	   volatile  kal_uint16 tmp_channel;
+                         ^
+"hal\peripheral\src\pwm.c", line 642: Warning: C3017W: reg_channel may be used before being set
+   kal_uint16 reg_channel;
+              ^
+hal\peripheral\src\pwm.c: 6 warnings, 0 errors

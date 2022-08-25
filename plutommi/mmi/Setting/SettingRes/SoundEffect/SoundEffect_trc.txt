@@ -1,0 +1,9 @@
+[APP NAME] = Sound Effect
+[SCOPE] = PLUTO, COSMOS
+[MODULE] = MOD_MMI_MEDIA_APP
+
+#starttrace
+TRC_MSG(MMI_SND_EFFECT_TURN_OFF,"[Sound Effct] mmi_settings_turn_off_audio_effect, effect=%d")
+TRC_MSG(MMI_SND_EFFECT_EQ_APPLY,"[Sound Effct] mmi_settings_audio_eq_apply, index=%d, result=%d")
+TRC_MSG(MMI_SND_EFFECT_REVERB_APPLY,"[Sound Effct] mmi_settings_audio_reverb_apply, index=%d, result=%d")
+TRC_MSG(MMI_SND_EFFECT_SURROUND_APPLY,"[Sound Effct] mmi_settings_audio_surround_apply, index=%d, result=%d")

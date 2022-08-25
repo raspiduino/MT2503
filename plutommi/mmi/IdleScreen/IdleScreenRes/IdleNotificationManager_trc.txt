@@ -1,0 +1,20 @@
+[APP NAME] = IdleNotificationManager
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_MMI_NMGR_NOTIFY, "[NMGR] mmi_nmgr_notify, type: 0x%x, flag: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_IS_PROCESSED, "[NMGR] mmi_nmgr_notify, [%d] processed: %d")
+TRC_MSG(TRC_MMI_NMGR_QUERY, "[NMGR] app->query_func(), app_id: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_ANSWER, "[NMGR] mmi_nmgr_answer(type: 0x%x, result: %d)")
+TRC_MSG(TRC_MMI_NMGR_ANSWER_INFO, "[NMGR] mmi_nmgr_update_cntx, info->total_num: %d, icon: %d, tone: %d, hdlr: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_TIMEOUT, "[NMGR] mmi_nmgr_timeout, g_nmgr_cntx.state: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_CANCEL, "[NMGR] mmi_nmgr_cancel(type: 0x%x)")
+TRC_MSG(TRC_MMI_NMGR_QUEUE, "[NMGR] mmi_nmgr_queue_ Ins/Del: %c, (type: 0x%x, flag: 0x%x), |Q|=> %d")
+TRC_MSG(TRC_MMI_NMGR_DEFAULT_IDLE, "[NMGR] mmi_nmgr_entry_default_idle")
+TRC_MSG(TRC_MMI_NMGR_DEFAULT_POPUP, "[NMGR] mmi_nmgr_entry_default_popup")
+TRC_MSG(TRC_MMI_NMGR_GET_INTGR_APP_CNTX, "[NMGR] mmi_nmgr_get_intgr_app_cntx, app_id: 0x%x, valid: %d, total_num: %d, hdlr: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_ENTRY_EVENT_LIST_ADP, "[NMGR] mmi_nmgr_entry_event_list_adp, is_idle: %d, already_notified: %d")
+TRC_MSG(TRC_MMI_NMGR_ENTRY_EVENT_LIST, "[NMGR] mmi_nmgr_entry_event_list, new_event_flags: 0x%x, #items: %d, highlighted_app: 0x%x")
+TRC_MSG(TRC_MMI_NMGR_FUNC, "[NMGR] Func: %d - %d, %d, %d")
+TRC_MSG(TRC_MMI_NMGR_FUNC_HEX, "[NMGR] Func: %d - 0x%x, 0x%x, 0x%x")

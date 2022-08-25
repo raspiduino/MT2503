@@ -1,0 +1,131 @@
+#==============================================================================
+# CR list from MediaTek voluntary
+# --------------------------
+# The release maybe include
+#   1. Critical patch
+#   2. Build environment related enhancement
+#   3. The dependency patch of item 1 and item 2
+#==============================================================================
+Patch Type:  MTK Voluntary
+CR ID:       N/A
+Severity:    N/A
+eService ID: N/A
+Description: N/A
+Associated Files: 
+  lcmmi\Customer\CustResource\GXQ03D_M2M_11C_MMI\MMI_features_switchGXQ03D_M2M_11C.h
+  make\GXQ03D_M2M_11C_GPRS.mak
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03571880
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03574944
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03574946
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03542802
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03558314
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+  mtk_lib\MT6261\S00\gprs\mm_classb2.lib
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03574954
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+  custom\common\ps\custom_gas_config.c
+  custom\common\ps\custom_gprs_pdp_config.c
+  custom\common\ps\custom_gprs_pdp_config.h
+  custom\common\ps\custom_mm_config.c
+  custom\common\ps\custom_mm_config.h
+  mtk_lib\MT6261\S00\gprs\rr_classb2.lib
+  mtk_lib\MT6261\S00\gprs\sm.lib
+  mtk_lib\MT6261\S00\gprs\mm_classb2.lib
+  mtk_lib\MT6261\S00\gprs\ratcm.lib
+  mtk_lib\MT6261\S00\gprs\scsi.lib
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03574956
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+  custom\common\ps\custom_gas_config.c
+  custom\common\ps\custom_gprs_pdp_config.c
+  custom\common\ps\custom_gprs_pdp_config.h
+  custom\common\ps\custom_mm_config.c
+  custom\common\ps\custom_mm_config.h
+  mtk_lib\MT6261\S00\gprs\rr_classb2.lib
+  mtk_lib\MT6261\S00\gprs\sm.lib
+  mtk_lib\MT6261\S00\gprs\mm_classb2.lib
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03576124
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+  mtk_lib\MT6261\S00\gprs\abm.lib
+  mtk_lib\MT6261\S00\gprs\abm_custom.lib
+
+
+Patch Type:  MTK Voluntary
+CR ID:       MAUI_03578586
+Severity:    N/A
+eService ID: N/A
+Description: 
+  N/A
+Associated Files: 
+  FILE_DEP_CR_LIST.txt
+  mtk_lib\MT6261\S00\gprs\mm_classb2.lib
+
+
+

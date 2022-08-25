@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- version 0.1 by fox-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/mtk_ime_setting" android:key="mtk_ime_setting">
+
+	<PreferenceScreen android:title="@string/input_method_type">
+		<intent android:action="com.mediatek.ime.INPUT_METHOD_SELECTION" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/general_settings">
+		<intent android:action="com.mediatek.ime.INPUT_GENERAL_SETTING" />
+	</PreferenceScreen>
+
+	<PreferenceCategory android:title="@string/details_settings"
+		android:key="details_settings">
+		<PreferenceScreen android:title="@string/english_setting"
+			android:key="english_setting">
+			<intent android:action="com.mediatek.ime.ENGLISH_SETTING" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="@string/pinyin_setting"
+			android:key="pinyin_setting">
+			<intent android:action="com.mediatek.ime.PINYIN_SETTING" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="@string/handwriting_setting"
+			android:key="handwriting_setting">
+			<intent android:action="com.mediatek.ime.HANDWRITING_SETTING" />
+ 	 </PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/dictionary_management"
+		android:key="dictionary_management">
+		 <PreferenceScreen android:title="@string/custom_dic"
+			android:key="custom_dic">
+			<intent android:action="com.mediatek.ime.COSTUM_DICTIONARY" />
+		</PreferenceScreen> 
+	
+		<PreferenceScreen android:title="@string/custom_dic_import"
+			android:key="import_custom_dictionary"></PreferenceScreen>
+		<PreferenceScreen android:title="@string/custom_dic_export"
+			android:key="export_custom_dictionary"></PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

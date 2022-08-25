@@ -1,0 +1,8 @@
+gps\src\gps_auth.c
+gps\src\gps_init.c
+gps\src\gps_inject_msg.c
+gps\src\gps_main.c
+gps\src\gps_modem.c
+gps\src\gps_sm.c
+gps\src\gps_time_sync.c
+gps\src\gps_uart.c

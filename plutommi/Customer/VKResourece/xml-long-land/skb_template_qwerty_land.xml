@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skb_template kb_width="100%p" kb_height="58.3334%p"
+	key_xmargin="0.2084%p" key_ymargin="1.4286%p" balloon_bg="@drawable/balloon_bkg"
+	balloon_ratio_width="1.5f" balloon_ratio_height="1.5f" skb_bg="@drawable/keyboard_background">
+
+	<!-- Normal key -->
+	<key_type id="0" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_normalkey"
+		hltext_size1="@dimen/qwerty_land_normalkey" bltext_size1="@dimen/qwerty_land_normalkey_balloon"
+		need_balloon="true" />
+
+	<!-- Normal key support popup keyboard -->
+	<key_type id="1" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_land_normalkey" hltext_size1="@dimen/qwerty_land_normalkey"
+		bltext_size1="@dimen/qwerty_land_normalkey_balloon" need_balloon="true" />
+
+	<!-- Function key -->
+	<key_type id="2" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_functionkey"
+		hltext_size1="@dimen/qwerty_land_functionkey" bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		need_balloon="true" />
+
+	<!-- Function key support popup keyboard -->
+	<key_type id="3" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_function"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_land_functionkey" hltext_size1="@dimen/qwerty_land_functionkey"
+		bltext_size1="@dimen/qwerty_land_functionkey_balloon" need_balloon="true" />
+
+	<!-- Highlight Function key -->
+	<key_type id="4" bg="@drawable/highlight_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg" 
+		text_color1="@color/color_highlight" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_functionkey"
+		hltext_size1="@dimen/qwerty_land_functionkey" bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		need_balloon="true" />
+
+	<!-- Popup keyboard Normal key (symbol) -->
+	<key_type id="5" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_popupkey1"
+		hltext_size1="@dimen/qwerty_land_popupkey1" bltext_size1="@dimen/qwerty_land_popupkey1"
+		need_balloon="false" />
+
+	<!-- Popup keyboard Normal key (web)-->
+	<key_type id="6" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_popupkey2"
+		hltext_size1="@dimen/qwerty_land_popupkey2" bltext_size1="@dimen/qwerty_land_popupkey2"
+		need_balloon="false" />
+
+	<!-- .com key support popup keyboard -->
+	<key_type id="7" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_land_normalkey" hltext_size1="@dimen/qwerty_land_normalkey"
+		bltext_size1="@dimen/qwerty_land_normalkey_balloon" need_balloon="true" />
+
+	<!-- smiley key -->
+	<key_type id="8" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_smileykey"
+		hltext_size1="@dimen/qwerty_land_smileykey" bltext_size1="@dimen/qwerty_land_smileykey_balloon"
+		need_balloon="true" />
+		
+	<!-- smiley key (large smiley symbol), no use now-->
+	<key_type id="9" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_smileykey"
+		hltext_size1="@dimen/qwerty_land_smileykey" bltext_size1="@dimen/qwerty_land_smileykey_balloon"
+		need_balloon="true" />
+
+	<!-- Zhuyin normal key , no use now-->
+	<key_type id="10" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_smileykey"
+		hltext_size1="@dimen/qwerty_land_smileykey" bltext_size1="@dimen/qwerty_land_smileykey_balloon"
+		need_balloon="true" />
+
+	<!-- Function key - fullscreen handwriting & hide key -->
+	<key_type id="11" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_land_functionkey"
+		hltext_size1="@dimen/qwerty_land_functionkey" bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		need_balloon="true" />
+
+	<!-- Function key - fullscreen handwriting support popup keyboard -->
+	<key_type id="12" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_function"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_land_functionkey" hltext_size1="@dimen/qwerty_land_functionkey"
+		bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		need_balloon="true" />
+		
+		<!-- smart key with two type word, non-smart state -->
+	<key_type id="13" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  balloon_bg="@drawable/balloon_bkg" balloon_bg_longpress="@drawable/balloon_bkg"
+	  text_color1="@color/color_function" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/qwerty_land_functionkey" text_size2="@dimen/qwerty_land_functionkey" 
+		hltext_size1="@dimen/qwerty_land_functionkey" hltext_size2="@dimen/qwerty_land_functionkey" 
+		bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		main_regx="-8%p" main_regy="0%p" aux_regx="13%p" aux_regy="5%p"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+		
+	<!-- smart key with two type word, smart state -->
+	<key_type id="14" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  balloon_bg="@drawable/balloon_bkg" balloon_bg_longpress="@drawable/balloon_bkg"
+	  text_color1="@color/color_highlight_smart_key" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/qwerty_land_functionkey" text_size2="@dimen/qwerty_land_functionkey" 
+		hltext_size1="@dimen/qwerty_land_functionkey" hltext_size2="@dimen/qwerty_land_functionkey" 
+		bltext_size1="@dimen/qwerty_land_functionkey_balloon"
+		main_regx="-8%p" main_regy="0%p" aux_regx="13%p" aux_regy="5%p"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+
+</skb_template>

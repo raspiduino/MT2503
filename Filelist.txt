@@ -1,0 +1,76 @@
+
+[modify]
+ custom\common\hal\nvram\nvram_gen_trc.h
+ custom\common\hal\nvram\nvram_lid_statistics.h
+ custom\common\ps\custom_gas_config.c
+ custom\common\ps\custom_gprs_pdp_config.c
+ custom\common\ps\custom_mm_config.c
+ custom\common\ps\custom_mm_config.h
+ custom\system\GXQ03D_M2M_11C_BB\combo_flash_config.h
+ custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h
+ custom\system\GXQ03D_M2M_11C_BB\custom_flash.h
+ custom\system\GXQ03D_M2M_11C_BB\custom_flash_norfdm5.h
+ custom\system\GXQ03D_M2M_11C_BB\custom_img_config.h
+ custom\system\GXQ03D_M2M_11C_BB\scatGXQ03D_M2M_11C.txt
+ custom\system\GXQ03D_M2M_11C_BB\scatGXQ03D_M2M_11C_flashtool.txt
+ custom\system\GXQ03D_M2M_11C_BB\scat_config\FeatureBased\ObjListGen\object.list.backup
+ make\Custom.bld
+ make\GXQ03D_M2M_11C_GPRS.mak
+ make\Verno_GXQ03D_M2M_11C.bld
+ mtk_lib\MT6261\S00\gprs\abm.lib
+ mtk_lib\MT6261\S00\gprs\abm_custom.lib
+ mtk_lib\MT6261\S00\gprs\gfx_core16.lib
+ mtk_lib\MT6261\S00\gprs\mm_classb2.lib
+ mtk_lib\MT6261\S00\gprs\mt5931.lib
+ mtk_lib\MT6261\S00\gprs\ratcm.lib
+ mtk_lib\MT6261\S00\gprs\rr_classb2.lib
+ mtk_lib\MT6261\S00\gprs\scsi.lib
+ mtk_lib\MT6261\S00\gprs\sm.lib
+ mtk_lib\MT6261\S00\gprs\tools\copy_mmi_include_h.bat
+ tools\GLBOptionSwtichRef\GXQ03D_M2M_11C_GPRS.mak
+ tools\NVRAMStatistic\debug\nvram_auto_gen.map
+ tools\traversedir.pl
+ tst\database_classb\MT6261\S00\gprs\MCDDLL.dll
+ tst\database_classb\MT6261\S00\gprs\MTK_databaseinfo.csv
+
+[add]
+ MAUI.11C.W14.18.IOT.MP.V4.F6.txt
+ custom\common\ps\custom_gprs_pdp_config.h
+ custom\system\GXQ03D_M2M_11C_BB\custom_FeatureConfig.h.beforeAutoAdj1513842129.246
+ custom\system\GXQ03D_M2M_11C_BB\custom_FeatureConfig.h.beforeAutoAdj1513843424.46
+ custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h.beforeAutoAdj1513843424.245
+ hal\audio\lib\MTKRVCT31\SLIM\mp3_dec.a
+ hal\audio\lib\MTKRVCT31\amr_codec.a
+ hal\audio\lib\MTKRVCT31\mp3_dec.a
+ hal\audio\lib\mtkinc\amr_codec_exp.h
+ hal\audio\lib\mtkinc\awb_codec_exp.h
+ hal\audio\src\common\inc\amr_codec.h
+ hal\audio\src\common\src\AmrParser.c
+ hal\audio\src\common\src\DafDecoder.c
+ hal\audio\src\common\src\DafParser.c
+ hal\audio\src\v1\amr.c
+ hal\audio\src\v1\amr_table.c
+ hal\audio\src\v1\cmpdrv\amr_comp_drv.c
+ hal\audio\src\v1\cmpdrv\daf_comp_drv.c
+ hal\audio\src\v1\comp\PBMG\AmrDspDecoder.c
+ hal\audio\src\v1\comp\amr_seek.c
+ hal\audio\src\v1\comp\daf_seek.c
+ hal\audio\src\v1\comp\jamr.c
+ hal\audio\src\v1\inc\amr_drv.h
+ hal\audio\src\v1\inc\amr_table.h
+ hal\audio\src\v1\vm.c
+ hal\audio\src\v1\vm_drv.c
+ tst\database_classb\MT6261\S00\gprs\BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4_F6
+ tst\database_classb\MT6261\S00\gprs\_BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4_F6.check
+ tst\database_classb\_BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4_F6.check
+
+[remove]
+ Flavor_release_for_Customer.txt
+ MAUI.11C.W14.18.IOT.MP.V4.txt
+ PatchList.txt
+ custom\system\GXQ03D_M2M_11C_BB\custom_FeatureConfig.h.beforeAutoAdj1492657628.853
+ custom\system\GXQ03D_M2M_11C_BB\custom_FeatureConfig.h.beforeAutoAdj1492658883.861
+ custom\system\GXQ03D_M2M_11C_BB\custom_MemoryDevice.h.beforeAutoAdj1492658883.316
+ tst\database_classb\MT6261\S00\gprs\BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4
+ tst\database_classb\MT6261\S00\gprs\_BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4.check
+ tst\database_classb\_BPLGUInfoCustomApp_MT6261_S00_MAUI_11C_W14_18_IOT_MP_V4.check

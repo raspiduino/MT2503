@@ -1,0 +1,32 @@
+[APP NAME] = ScrSaver
+[MODULE] = MOD_MMI_COMMON_APP
+[SCOPE] = PLUTO
+
+#start trace
+TRC_MSG(TRC_MMI_SSV_EMIT_ENTER,                         "[SSV] mmi_ssv_emit_enter, trace: %d")
+TRC_MSG(TRC_MMI_SSV_EMIT_EXIT,                          "[SSV] mmi_ssv_emit_exit, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_BOOTUP_NORMAL_INIT,          "[SSV] mmi_ssv_handle_bootup_normal_init, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_SHUTDOWN_DEINIT,             "[SSV] mmi_ssv_handle_shutdown_deinit, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_IDLE_GROUP_EXIT,             "[SSV] mmi_ssv_handle_idle_group_exit, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_IDLE_ENTER,                  "[SSV] mmi_ssv_handle_idle_enter, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_PRE_KEY_ROUTING,             "[SSV] mmi_ssv_handle_pre_key_routing, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_PRE_TOUCH_ROUTING,           "[SSV] mmi_ssv_handle_pre_touch_routing, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_SCR_LOCKER_LOCKED,           "[SSV] mmi_ssv_handle_scr_locker_locked, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_GPIO_LCD_SLEEP_IN,           "[SSV] mmi_ssv_handle_gpio_lcd_sleep_in, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_GPIO_LCD_SLEEP_OUT,          "[SSV] mmi_ssv_handle_gpio_lcd_sleep_out, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_GPIO_BACKLIGHT_DIMMING,      "[SSV] mmi_ssv_handle_gpio_lcd_backlight_dimming, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_GPIO_CLAM_OPEN,              "[SSV] mmi_ssv_handle_gpio_clam_open, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_GPIO_CLAM_CLOSE,             "[SSV] mmi_ssv_handle_gpio_clam_close, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_SSV_OBJ_CLOSE_REQ,           "[SSV] mmi_ssv_handle_ssv_obj_close_req, trace: %d")
+TRC_MSG(TRC_MMI_SSV_HANDLE_SSV_OBJ_CLOSED_IND,          "[SSV] mmi_ssv_handle_ssv_obj_closed_ind, trace: %d")
+TRC_MSG(TRC_MMI_SSV_AUTO_LAUNCH_GET_TIME,               "[SSV] mmi_ssv_auto_launch_get_time, trace: %d, time: %d")
+TRC_MSG(TRC_MMI_SSV_AUTO_LAUNCH_TIMEOUT_HDLR,           "[SSV] mmi_ssv_auto_launch_timeout_hdlr, trace: %d")
+TRC_MSG(TRC_MMI_SSV_START_TIMER,                        "[SSV] mmi_scr_saver_start_timer, trace: %d")
+TRC_MSG(TRC_MMI_SSV_RESTART_TIMER,                      "[SSV] mmi_scr_saver_restart_timer, trace: %d")
+TRC_MSG(TRC_MMI_SSV_STOP_TIMER,                         "[SSV] mmi_scr_saver_stop_timer, trace: %d")
+TRC_MSG(TRC_MMI_SSV_IS_ACTIVE,                          "[SSV] mmi_scr_saver_is_active, trace: %d, ret: %d")
+TRC_MSG(TRC_MMI_SSV_LAUNCH,                             "[SSV] mmi_scr_saver_launch, trace: %d")
+TRC_MSG(TRC_MMI_SSV_LAUNCH_EX,                          "[SSV] mmi_scr_saver_launch_ex, trace: %d, type: %d")
+TRC_MSG(TRC_MMI_SSV_CLOSE,                              "[SSV] mmi_scr_saver_close, trace: %d")
+TRC_MSG(TRC_MMI_SSV_DATE_TIME_IND_HDLR,                 "[SSV] mmi_scr_saver_date_time_ind_hdlr, trace: %d")
+TRC_MSG(TRC_MMI_SSV_VIDEO_PLAY_CALL_BACK_HDLR,          "[SSV] mmi_ssv_media_play_video_callback, result: %d")   

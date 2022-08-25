@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land" skb_bg="@drawable/popup_keyboard_background"
+	xml_cache_flag="false" bitmap_cache_flag="false" kb_width="61.5%p"
+	kb_height="19.1667%p" width="13.8212%p" height="100%p" key_xmargin="0.8131%p"
+	key_ymargin="13.0435%p" key_type="5">
+
+	<row start_pos_x="1.6261%p">
+		<keys splitter="|" labels="c|b|a" codes="99|98|97" />
+		<key label="2" code="50" />
+		<keys splitter="|" labels="A|B|C" codes="65|66|67" />
+	</row>
+</keyboard>

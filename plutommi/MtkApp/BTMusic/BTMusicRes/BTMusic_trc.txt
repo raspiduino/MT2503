@@ -1,0 +1,5 @@
+[APP NAME] = AudioPlayer 
+[SCOPE] = PLUTO 
+[MODULE] = MOD_MMI_MEDIA_APP 
+
+#start trace

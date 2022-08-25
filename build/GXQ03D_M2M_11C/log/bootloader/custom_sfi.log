@@ -1,0 +1,5 @@
+Compiling custom\common\hal\custom_sfi.c ... 
+"custom\common\hal\custom_sfi.c", line 1190: Warning:  #550-D: variable "sfi" was set but never used
+       const CMEMEntrySFI_DCM *sfi;
+                               ^
+custom\common\hal\custom_sfi.c: 1 warning, 0 errors

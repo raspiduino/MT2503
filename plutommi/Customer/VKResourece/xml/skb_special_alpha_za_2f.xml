@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	skb_cache_flag="false" skb_bg="@drawable/popup_keyboard_background"
+	kb_width="55%p" kb_height="25.625%p" width="18.19%p" height="41.47%p"
+	key_xmargin="0.76%p" key_ymargin="2.44%p" key_type="18">
+	<row start_pos_x="4.55%p" start_pos_y="4.88%p">
+		<keys splitter="|" labels="\x1030|\x1033|\x1034|\x103d|\x104a" codes="-1000|-1000|-1000|-1000|-1000" />
+	</row>
+
+	<row start_pos_x="4.55%p">
+		<keys splitter="|" labels="\x104b|\x1087|\x1088|\x1089|\x102f" codes="-1000|-1000|-1000|-1000|-1000" />
+	</row>
+</keyboard>  

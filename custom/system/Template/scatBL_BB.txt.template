@@ -1,0 +1,144 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   [AUTOGEN_QueryFileName_BL]
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   defines the memory map for the validation board
+; *
+; * Author:
+; * -------
+; *   RaymondWT Chen (mtk05332)     [AUTOGEN_GenVersion]
+; *
+; * Auto Generated Date:
+; * -------
+; *   [AUTOGEN_GenDate]
+; *
+; * Revision History:
+; * -------
+; * $Log: $
+; * 
+; ****************************************************************************/
+;
+;=========================================================================
+; This scatter file is auto-generated and please DO NOT change the content at will
+;=========================================================================
+;
+
+READ_ONLY [AUTOGEN_GetREAD_ONLYBaseAndSize]
+{
+[AUTOGEN_GenBL_GFH_SECTION_OnlySV5]
+    READ_ONLY +0x0 
+    {
+         bl_bootarm.obj (VECTOR_TBL, +First)
+         * (BL_RESV_REGION)
+    }
+    READ_ONLY_HEAD +0x0 
+    {
+         bl_bootarm.obj (C$$code, +First)
+         *.obj (HEAD_BL)
+         * (INIT_CODE)
+    }
+[AUTOGEN_GenBL_SecInfo_OnlySV3]
+    READ_ONLY_TAIL +0x0 
+    {
+         * (+RO)
+    }
+    READ_WRITE [AUTOGEN_GetREAD_WRITEBase] 
+    {
+         * (+RW, +ZI)
+    }
+    READ_ONLY_INT [AUTOGEN_GetREAD_ONLY_INTBase]
+    {
+         sha1_engine.obj                  (+RO)
+         md5_engine.obj                   (+RO)
+         br_crypto_asm.obj                (+RO)
+         br_crypto_drv*.obj               (+RO)
+         br_sha256_sw.obj                 (+RO)
+         br_sha256_hw.obj                 (+RO)
+         br_sha1_sw.obj                   (+RO)
+         br_sha1_hw.obj                   (+RO)
+         br_rsa_sw.obj                    (+RO)
+         br_M1_rsa.obj                    (+RO)
+         br_crypto_platform.obj           (+RO)
+         *                                (INTERNCODE)
+    }
+    READ_WRITE_INT [AUTOGEN_GetREAD_WRITE_INTBase]
+    {
+         sha1_engine.obj                  (+RW, +ZI)
+         md5_engine.obj                   (+RW, +ZI)
+         br_crypto_asm.obj                (+RW, +ZI)
+         br_crypto_drv*.obj               (+RW, +ZI)
+         br_sha256_sw.obj                 (+RW, +ZI)
+         br_sha256_hw.obj                 (+RW, +ZI)
+         br_sha1_sw.obj                   (+RW, +ZI)
+         br_sha1_hw.obj                   (+RW, +ZI)
+         br_rsa_sw.obj                    (+RW, +ZI)
+         br_M1_RSA.obj                    (+RW, +ZI)
+         br_crypto_platform.obj           (+RW, +ZI)
+         *                            (INTERNDATA)
+    }
+[AUTOGEN_GenEMIINIT_CODEInfo]
+    STACK_AREA [AUTOGEN_GetSTACK_AREABase] 0x1000
+    {
+         bl_bootarm.obj               (STACK_POOL_INTSRAM)
+         br_time_stamp.obj            (UN_INIT_RW, UN_INIT_ZI)
+    }
+    EXT_UN_INIT [AUTOGEN_GetEXT_UN_INITBase]
+    {
+         *                            (EXT_UN_INIT_RW, EXT_UN_INIT_ZI)
+         bl_cache.obj                 (BL_PAGETABLE)
+    }
+    SHARE_BUF [AUTOGEN_GetSHARE_BUFBaseAndSize]
+    {
+         *                          (MINI_EXT_DA_SHARE)
+    }
+[AUTOGEN_GenREAD_WRITE_SYS_RAMInfo]    
+    DUMMY_END [AUTOGEN_GetDUMMY_ENDBase] 0x04
+    {
+         bl_bootarm.obj (DUMMY_POOL)
+    }
+[AUTOGEN_GenBL_SIGNATURE_SECTION_OnlySV5]
+}
+[AUTOGEN_Gen__HIDDEN_BL_SECURE_MAC_OnlySV3]

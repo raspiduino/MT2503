@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE SKIN_XML SYSTEM ".\Skinlayouter.dtd">-->
+<SKIN_XML>
+	<!--output_dll="FMRadioOutput.dll"-->
+	<XMLINFO toolname="FM Radio" date="22012006" version="1.0" output_dll=""/>
+	<DEFINES value="__MMI_FM_RADIO_RECORD__" skin_size="320x480"/>
+	<DEFINES value="__MMI_TOUCH_SCREEN__" skin_size="320x480"/>
+	<DEFINES value="__MMI_FM_RADIO_ANIMATION__" skin_size="320x480"/>
+	<DEFINE_CHOICE>
+		<CHOICE_TYPE name="skin_comp_type">
+			<CHOICE_ELEMENT value="IMAGE"/>
+			<CHOICE_ELEMENT value="TEXT"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_arrow_key">
+			<!--<CHOICE_ELEMENT value="FMRDO_BUTTON_NONE"/>-->
+			<CHOICE_ELEMENT value="FMRDO_BUTTON_POWER"/>
+			<CHOICE_ELEMENT value="FMRDO_BUTTON_SEARCH"/>
+			<CHOICE_ELEMENT value="FMRDO_BUTTON_STEP_DOWN"/>
+			<CHOICE_ELEMENT value="FMRDO_BUTTON_STEP_UP"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_color">
+			<CHOICE_ELEMENT value="TEXT"/>
+			<CHOICE_ELEMENT value="TEXT ON"/>
+			<CHOICE_ELEMENT value="TEXT OFF"/>
+			<CHOICE_ELEMENT value="BORDER"/>
+			<CHOICE_ELEMENT value="BACKGROUND"/>
+		</CHOICE_TYPE>
+	</DEFINE_CHOICE>
+	<SKIN_SIZE value="320x480"/>
+	<SKIN_NAME name="Skin_1"/>
+	<SKIN_COMPONENTS>
+		<COMPONENT name="LSK" control_id="-1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="RSK" control_id="-2" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="1" default_pos_y="1" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="CHANNEL_NAME" control_id="IDC_STATIC_TEXT_CONTROL1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="177" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="FREQUENCY" control_id="IDC_STATIC_TEXT_CONTROL2" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="230" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_BAR" control_id="IDC_STATIC_IMAGE_CONTROL1" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="458" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="TUNER_SCALE" control_id="IDC_STATIC_IMAGE_CONTROL3" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="98" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="1" coordinate_seq="8"/>
+		<COMPONENT name="TUNER_SCALE_INDICATOR" control_id="IDC_STATIC_IMAGE_CONTROL2" choice_type="skin_comp_type" choice_value="IMAGE" asso_comp_name="TUNER_SCALE" default_pos_x="357" default_pos_y="125" arrow_key_choice="FMRDO_BUTTON_NONE" generate_coordinate="0"/>
+		<COMPONENT name="STEP_DOWN_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL4" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="587" default_pos_y="273" arrow_key_choice="FMRDO_BUTTON_STEP_DOWN" generate_coordinate="1" coordinate_seq="3"/>
+		<COMPONENT name="STEP_UP_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL5" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="483" default_pos_y="273" arrow_key_choice="FMRDO_BUTTON_STEP_UP" generate_coordinate="1" coordinate_seq="4"/>
+		<COMPONENT name="SEARCH_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL6" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="483" default_pos_y="347" arrow_key_choice="FMRDO_BUTTON_SEARCH" generate_coordinate="1" coordinate_seq="6"/>
+		<COMPONENT name="POWER_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL7" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="273" arrow_key_choice="FMRDO_BUTTON_POWER" generate_coordinate="1" coordinate_seq="5"/>
+		<COMPONENT name="ANIMATION" control_id="IDC_STATIC_IMAGE_CONTROL8" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="273" arrow_key_choice="FMRDO_BUTTON_NONE" define_value="__MMI_FM_RADIO_ANIMATION__" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_INCREASE" control_id="IDC_STATIC_IMAGE_CONTROL9" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="483" default_pos_y="458" arrow_key_choice="FMRDO_BUTTON_NONE" define_value="__MMI_TOUCH_SCREEN__" generate_coordinate="1" coordinate_seq="1"/>
+		<COMPONENT name="VOLUME_DECREASE" control_id="IDC_STATIC_IMAGE_CONTROL10" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="587" default_pos_y="458" arrow_key_choice="FMRDO_BUTTON_NONE" define_value="__MMI_TOUCH_SCREEN__" generate_coordinate="1" coordinate_seq="2"/>
+		<COMPONENT name="SETTINGS_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL11" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="587" default_pos_y="347" arrow_key_choice="FMRDO_BUTTON_NONE" define_value="__MMI_TOUCH_SCREEN__" generate_coordinate="1" coordinate_seq="7"/>
+		<COMPONENT name="RECORD_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL12" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="347" arrow_key_choice="FMRDO_BUTTON_REC" define_value="__MMI_FM_RADIO_RECORD__" generate_coordinate="0"/>
+		<COMPONENT name="RECORD_DURATION" control_id="IDC_STATIC_IMAGE_CONTROL13" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="380" arrow_key_choice="FMRDO_BUTTON_NONE" define_value="__MMI_FM_RADIO_RECORD__" generate_coordinate="0"/>
+	</SKIN_COMPONENTS>
+	<SKIN_LAYOUT name="default_skin" ref_image_name="FMR_transparent_background.png">
+		<COMP_IMAGE name="STEP_DOWN_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="FMR_left_up.png" id="STEP_DOWN_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="FMR_left_down.png" id="STEP_DOWN_BUTTON_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="STEP_UP_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="FMR_right_up.png" id="STEP_UP_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="FMR_right_down.png" id="STEP_UP_BUTTON_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="POWER_BUTTON" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON UP" name="FMR_power_on_up.png" id="POWER_BUTTON_ON_UP"/>
+			<IMAGE tag="ON DOWN" name="FMR_power_on_down.png" id="POWER_BUTTON_ON_DOWN"/>
+			<IMAGE tag="OFF UP" name="FMR_power_off_up.png" id="POWER_BUTTON_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="FMR_power_off_down.png" id="POWER_BUTTON_OFF_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="ANIMATION" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="Animation" name="FMR_animation\0.png" id="ANIMATION"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="RECORD_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON" name="FMR_rec.png" id="REC"/>
+			<IMAGE tag="PAUSE" name="FMR_rec_pause.png" id="REC_PAUSE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="RECORD_DURATION" count="11" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag=" NUM 0" name="FMR_num_0.png" id="NUM_0"/>
+			<IMAGE tag=" NUM 1" name="FMR_num_1.png" id=""/>
+			<IMAGE tag=" NUM 2" name="FMR_num_2.png" id=""/>
+			<IMAGE tag=" NUM 3" name="FMR_num_3.png" id=""/>
+			<IMAGE tag=" NUM 4" name="FMR_num_4.png" id=""/>
+			<IMAGE tag=" NUM 5" name="FMR_num_5.png" id=""/>
+			<IMAGE tag=" NUM 6" name="FMR_num_6.png" id=""/>
+			<IMAGE tag=" NUM 7" name="FMR_num_7.png" id=""/>
+			<IMAGE tag=" NUM 8" name="FMR_num_8.png" id=""/>
+			<IMAGE tag=" NUM 9" name="FMR_num_9.png" id=""/>
+			<IMAGE tag=" NUM COL" name="FMR_num_col.png" id="NUM_COL"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SEARCH_BUTTON" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON UP" name="FMR_search_on_up.png" id="SEARCH_BUTTON_ON_UP"/>
+			<IMAGE tag="ON DOWN" name="FMR_search_on_down.png" id="SEARCH_BUTTON_ON_DOWN"/>
+			<IMAGE tag="OFF UP" name="FMR_search_off_up.png" id="SEARCH_BUTTON_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="FMR_search_off_down.png" id="SEARCH_BUTTON_OFF_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SETTINGS_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="FMR_setting_up.png" id="SETTING_UP"/>
+			<IMAGE tag="DOWN" name="FMR_setting_down.png" id="SETTING_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="TUNER_SCALE" count="1" layout="0" default_pos_flag="1" arrow_key="0" start_gap="2" end_gap="3">
+			<IMAGE tag="TUNER SCALE" name="FMR_tuner_scale.png" id="TUNER_SCALE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="TUNER_SCALE_INDICATOR" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="TUNER SCALE INDICATOR" name="FMR_tuner_scale_indicator.png" id="TUNER_SCALE_INDICATOR"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_BAR" count="1" layout="0" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="VOLUME BAR" name="FMR_volume.png" id="VOLUME"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_INCREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="FMR_volume_inc_up.png" id="VOLUME_INC_UP"/>
+			<IMAGE tag="DOWN" name="FMR_volume_inc_down.png" id="VOLUME_INC_DOWN"/>
+			<IMAGE tag="DIS" name="FMR_volume_inc_dis.png" id="VOLUME_INC_DIS"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_DECREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="FMR_volume_dec_up.png" id="VOLUME_DEC_UP"/>
+			<IMAGE tag="DOWN" name="FMR_volume_dec_down.png" id="VOLUME_DEC_DOWN"/>
+			<IMAGE tag="DIS" name="FMR_volume_dec_dis.png" id="VOLUME_DEC_DIS"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_TEXT name="CHANNEL_NAME" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="FREQUENCY" default_pos_flag="1">
+			<COLOR tag="Text On" choice_color="TEXT ON" value="255,255,0,100"/>
+			<COLOR tag="Text Off" choice_color="TEXT OFF" value="0,0,100,100"/>
+			<DIMENSION left="-1" right="57" top="-1" bottom="11"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LSK" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100"/>
+			<DIMENSION left="0" right="0" top="0" bottom="0"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="RSK" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100"/>
+			<DIMENSION left="1" right="1" top="1" bottom="1"/>
+		</COMP_TEXT>
+	</SKIN_LAYOUT>
+	<OUTPUT_FORMAT>
+		<STRINGS filename="resource_fmradio_skins.c" image_id="IMG_ID_FMRDO" coordinate_struct="fmrdo_point_struct" skin_struct="mmi_fmrdo_skin_struct" skin_struct_name="g_fmrdo_skins" project="MAUI" description="FM Radio main screen skin settings" tool_define="__MMI_FM_RADIO__" background="BACKGROUND"/>
+		<FORMAT background_image="RSK" common_color="0"/>
+		<ADDITIONAL_INFO name="VOLUME_BAR" info="7,0" description="indicator start gap, end gap" dimension="1"/>
+		<ADDITIONAL_INFO name="TUNER_SCALE" dimension="1"/>
+		<ADDITIONAL_INFO name="TUNER_SCALE_INDICATOR" dimension="1"/>
+		<ADDITIONAL_INFO name="STEP_DOWN_BUTTON" dimension="1"/>
+		<ADDITIONAL_INFO name="STEP_UP_BUTTON" dimension="1"/>
+		<ADDITIONAL_INFO name="SEARCH_BUTTON" dimension="1"/>
+		<ADDITIONAL_INFO name="POWER_BUTTON" dimension="1"/>
+		<ADDITIONAL_INFO name="RECORD_BUTTON" dimension="1"/>
+		<ADDITIONAL_INFO name="RECORD_DURATION" dimension="1"/>
+		<FILE_HEADERS file_name="gdi_lcd_config.h"/>
+		<FILE_HEADERS file_name="PixtelDataTypes.h"/>
+		<FILE_HEADERS file_name="gui_data_types.h"/>
+		<FILE_HEADERS file_name="nvram_user_defs.h"/>
+		<FILE_HEADERS file_name="FMRadioDef.h"/>
+		<FILE_HEADERS file_name="FMRadioType.h"/>
+	</OUTPUT_FORMAT>
+</SKIN_XML>

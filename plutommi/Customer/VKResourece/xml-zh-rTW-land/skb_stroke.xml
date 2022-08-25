@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_phn_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" height="24.4445%p"
+	width="20.625%p" key_type="0">
+
+	<row start_pos_x="1.0417%p" start_pos_y="1.1112%p">
+		<key width="18.125%p" label="\xa476" code="65292" code_longpress="-100" key_type="2" >
+		  <toggle_state state_id="12" key_type="4" />
+		</key>
+		<key code="19968" label="一" />
+		<key code="20008" label="丨" />
+		<key code="20031" label="丿" />
+		<key width="18.125%p" code="-12" label="\xa45b" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label="\xa458" code="12290"
+			key_type="2" />
+		<key code="20022" label="丶" />
+		<key code="20057" label="乙" />
+		<key label="\xa473" code="63" />
+		<key width="18.125%p" code="-13"  label="\xa465" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" code="65307" label="\xa466" key_type="2" />
+		<key label="？" code="65311" />
+		<key label="！" code="65281" />
+		<key label="、" code="12289" />
+		<key width="18.125%p" code="8" label="\xa454" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label="\xa45a" code="-3" key_type="3" />
+		<key width="41.25%p" code="32" label="\xa46b" key_type="10" />
+		<key code="-1" label="\xa46e" key_type="3" />
+		<key width="18.125%p" code="13" label="\xa456" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard> 

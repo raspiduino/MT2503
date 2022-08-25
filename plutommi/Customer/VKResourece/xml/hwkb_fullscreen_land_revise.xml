@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port" skb_bg="@drawable/hwpanel_land_background"
+	xml_cache_flag="true" bitmap_cache_flag="false" kb_width="50%p"
+	kb_height="12.5%p" width="15.97%p" height="84.62%p" key_xmargin="0%p"
+	key_ymargin="0%p">
+	<row start_pos_x="2.53%p" start_pos_y="11.539%p">
+		<key key_type="19">
+			<toggle_state state_id="20" key_type="22" />
+		</key>
+		<key key_type="20">
+			<toggle_state state_id="20" key_type="23" />
+		</key>
+		<key key_type="20">
+			<toggle_state state_id="20" key_type="23" />
+		</key>
+		<key key_type="20">
+			<toggle_state state_id="20" key_type="23" />
+		</key>
+		<key key_type="20">
+			<toggle_state state_id="20" key_type="23" />
+		</key>
+		<key key_type="21">
+			<toggle_state state_id="20" key_type="24" />
+		</key>
+	</row>
+</keyboard>

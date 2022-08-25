@@ -1,0 +1,112 @@
+[APP NAME] = DTCNT
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_CONN_APP
+
+#start trace
+TRC_MSG(TRC_DATA_CONNECTION_SIM_GET_SIM_PREFERENCE, "[Data connection SIM] srv_dtcnt_get_sim_preference, sim_type = %d, ret = %d")
+TRC_MSG(TRC_DATA_CONNECTION_SIM_SET_SIM_PREFERENCE, "[Data connection SIM] srv_dtcnt_set_sim_preference, sim_type = %d, ret = %d")
+TRC_MSG(TRC_DTCNT_IS_ACCOUNT_IN_USE, "[DTCNT API] mmi_dtcnt_is_account_in_use, decoded_pure_id = %d, account_id = %d")
+TRC_MSG(TRC_DTCNT_GET_MNC_LEN_IN_EF_AD, "[DTCNT APP] srv_sim_ctrl_get_mnc_len_in_ef_ad, digits_of_mnc = %d, sim = %d")
+TRC_MSG(TRC_DTCNT_GET_IMSI, "[DTCNT APP] srv_sim_ctrl_get_imsi, imsi[4] = %c, imsi[5] = %c, digits_of_mnc = %d")
+TRC_MSG(TRC_DTCNT_GET_DEFAULT_ACCOUNT, "[DTCNT APP] srv_dtcnt_get_default_account, sim_type = %d, default_account = %d, ret = %d")
+TRC_MSG(TRC_DTCNT_SET_DEFAULT_ACCOUNT, "[DTCNT APP] mmi_dtcnt_set_account_default_app_type, sim_type = %d, default_account = %d, result = %d")
+/* Data Account */
+TRC_MSG(MMI_DTCNT_APP_SELECT_OK, "[DATA ACCOUNT] App Select Account Result = [%d]")   
+TRC_MSG(MMI_DTCNT_PS_LIST_IND, "[DATA ACCOUNT] Wap Account List Ind app_id = [%d], bearer_scrope = [%d], Num_id = [%d]")    
+TRC_MSG(MMI_DTCNT_PS_LIST_SHOW_BEARER, "[DATA ACCOUNT] Wap Account List bearer type bearer = [%d]")    
+TRC_MSG(MMI_DTCNT_ACCOUNT_NAME_GET_FROM_L4C_ERROR, "[DATA ACCOUNT] Length of account name gotten from L4C is error. length = [%d]")    
+
+TRC_MSG(MMI_DTCNT_DELETION_REGISTRATION_REQ, "[DDATA ACCOUNT] Data account deletion notification registration req: app_id = [%d], desire_acct_id = [%d], registration flag = [%d]")    
+TRC_MSG(MMI_DTCNT_DELETION_REGISTRATION_CNF, "[DDATA ACCOUNT] Data account deletion notification registration cnf: app_id = [%d], desire_acct_id = [%d], registration flag = [%d], result = [%d]")    
+TRC_MSG(MMI_DTCNT_DELETION_NOTIFICATION_IND, "[DDATA ACCOUNT] Data account deletion notification: app_id = [%d], desired_acct_id = [%d], bearer_type = [%d], mod_id = [%d]")    
+TRC_MSG(MMI_DTCNT_ADD_ACCOUNT, "[DDATA ACCOUNT] Data account add: current CSD number = [%d], ori_acct_id = [%d], display_index = [%d]") 
+TRC_MSG(MMI_DTCNT_ADD_GPRS_ACCOUNT, "[DDATA ACCOUNT] Data account GPRS add: current GPRS number = [%d], ori_acct_id = [%d], display_index = [%d]")
+TRC_MSG(MMI_DTCNT_EDIT_ACCOUNT, "[DDATA ACCOUNT] Data account edit: current CSD number = [%d], ori_acct_id = [%d], display_index = [%d]") 
+TRC_MSG(MMI_DTCNT_EDIT_GPRS_ACCOUNT, "[DDATA ACCOUNT] Data account GPRS edit: current GPRS number = [%d], ori_acct_id = [%d], display_index = [%d]")
+
+/* Data Account Provisioning */
+TRC_MSG(MMI_DTCNT_OTA_INTALL_ABORT, "[DATA ACCOUNT OTA] OTA Install ABORT!")
+TRC_MSG(MMI_DTCNT_OTA_INTALL_ABORT_STEP, "[DATA ACCOUNT OTA] OTA Install ABORT step = %d")
+TRC_MSG(MMI_DTCNT_PROV_IND_HDLR, "[DATA ACCOUNT OTA] prov_ind_hdlr cca_gid = %d, prov_ind = %d!")
+TRC_MSG(MMI_DTCNT_PROV_ENTRY_INSTALL_CSD_GPRS, "[DATA ACCOUNT OTA] prov_entry_install_csd_gprs()")
+TRC_MSG(MMI_DTCNT_PROV_PREPARE_PROF_INFO, "[DATA ACCOUNT OTA] prov_prepare_prof_info()")
+TRC_MSG(MMI_DTCNT_PROV_ENTRY_INSTALL_CSD_GPRS_TYPE, "[DATA ACCOUNT OTA] prov_entry_install_csd_gprs() type = %d")
+
+TRC_MSG(MMI_DTCNT_ON_SIM_DETECTED, "[DTCNT APP] mmi_dtcnt_on_sim_detected, detection_type = %d, sim = %d")
+TRC_MSG(MMI_DTCNT_ON_SIM_DETECTED_DELETED, "[DTCNT APP] mmi_dtcnt_on_sim_detected, deleted profile id = %d")
+TRC_MSG(MMI_DTCNT_ON_SIM_DETECTED_UNDELETED, "[DTCNT APP] mmi_dtcnt_on_sim_detected, left profile id = %d, left_num = %d")
+TRC_MSG(MMI_DTCNT_ON_BEARER_INFO, "[DTCNT APP] mmi_dtcnt_on_cbm_bearer_info, pure_id = %d, left_profile_num = %d")
+
+/* DataAccountApp.c */
+TRC_MSG(MMI_DAPP_ON_HOME_PLMN_CHANGED, "[DTCNT APP] mmi_dtcnt_on_home_plmn_changed, gemini value = %d, process = %d, val = %d")
+TRC_MSG(MMI_DAPP_DELETE_ANY_SIM_PROFILE, "[DTCNT APP] mmi_dtcnt_delete_any_sim_profile, sim type = %d")
+TRC_MSG(MMI_DAPP_IS_CONF_FILE_EXIST, "[DTCNT APP] mmi_dtcnt_is_conf_file_exit, result = %d")
+TRC_MSG(MMI_DAPP_XML_PARSE_SIM, "[DTCNT APP] mmi_dtcnt_xml_parse, sim enum = %d")
+
+TRC_MSG(MMI_DAPP_INIT, "[DTCNT APP] dtcnt_app_init() id = %d, result = %d")
+TRC_MSG(MMI_DAPP_GET_CSD_PROF, "[DTCNT APP] get_csd_profile() profile = %d proxy address : %d.%d.%d.%d - port = %d")
+TRC_MSG(MMI_DAPP_GET_GPRS_PROF, "[DTCNT APP] get_gprs_profile() profile = %d proxy address : %d.%d.%d.%d - port = %d")
+
+TRC_MSG(MMI_DAPP_SET_CSD_ACCNT, "[DTCNT APP] set_csd_account() profile = %d")
+TRC_MSG(MMI_DAPP_SET_CSD_PROF, "[DTCNT APP] set_csd_profile() proxy address : %d.%d.%d.%d - port = %d")
+TRC_MSG(MMI_DAPP_SET_GPRS_ACCNT, "[DTCNT APP] set_gprs_account() profile = %d")
+TRC_MSG(MMI_DAPP_SET_GPRS_PROF, "[DTCNT APP] set_gprs_profile() proxy address : %d.%d.%d.%d - port = %d")
+TRC_MSG(MMI_DAPP_SIM_PROC, "[DTCNT APP] dtcnt_sim_proc() evt_id = %d")
+TRC_MSG(MMI_DAPP_PROCESS_SIM_CHANGE, "[DTCNT APP] process_sim_change() id = %d")
+TRC_MSG(MMI_DAPP_SIM_CARD_CHANGED, "[DTCNT APP] is_sim_card_changed() id = %d, result = %d")
+TRC_MSG(MMI_DAPP_PRE_INSTALL_PARSE, "[DTCNT APP] pre_install_parse() id = %d")
+TRC_MSG(MMI_DAPP_ADD_SIM_PROF, "[DTCNT APP] add_sim_prof() prof_id = %d, result = %d")
+TRC_MSG(MMI_DAPP_ADD_CONFIG_ACCOUNT, "[DTCNT APP] add_config_account() id = %d, sim_match = %d")
+TRC_MSG(MMI_DAPP_ACCT_IS_VALID, "[DTCNT APP] mmi_dtcnt_acct_is_valid, encode_acct_id = %d")
+TRC_MSG(MMI_DAPP_ACCT_IS_VALID_APPINFO, "[DTCNT APP] mmi_dtcnt_acct_is_valid, app_str_id = %d, app_icon_id = %d")
+TRC_MSG(MMI_DAPP_SUBSCRIBE_ACCOUNT, "[DTCNT APP] mmi_dtcnt_subscribe_account, acct_old = %d, acct_new = %d, app_str_id = %d, app_icon_id = %d")
+
+TRC_MSG(MMI_PROV_INSTALL_ONE_DONE, "[DTCNT PROV] prov_install_one_done() result = %d, prov_ind = %")
+TRC_MSG(MMI_PROV_INSTALL_ONE_DONE_REPLACE, "[DTCNT PROV] prov_install_one_done replace = %d")
+TRC_MSG(MMI_PROV_INSTALL_RSP, "[DTCNT PROV] prov_install_rsp() callback = %x")
+TRC_MSG(MMI_PROV_SELECT_REPLACE, "[DTCNT PROV] prov_select_replace() callback = %x")
+TRC_MSG(MMI_PROV_ENTRY_SELECT_PROFILE, "[DTCNT PROV] prov_entry_select_profile() step = %x")
+TRC_MSG(MMI_PROV_OTA_CCA_RSP_HANDLER, "[DTCNT PROV] ota_cca_rsp_handler() callback = %x")
+TRC_MSG(MMI_PROV_SELECT_BACK, "[DTCNT PROV] mmi_dtcnt_prov_select_back()")
+
+TRC_MSG(MMI_DXML_NODE_VERSION, "[DTCNT XML] dtcnt_node_version() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_SIM, "[DTCNT XML] dtcnt_node_sim() sim_match = %d")
+TRC_MSG(MMI_DXML_NODE_ITEM, "[DTCNT XML] dtcnt_node_item() bearer = %d")
+TRC_MSG(MMI_DXML_NODE_APPTYPE, "[DTCNT XML] dtcnt_node_apptype() data_len = %d, app_type = %d")
+TRC_MSG(MMI_DXML_NODE_TITLE, "[DTCNT XML] dtcnt_node_title() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_NUMBER, "[DTCNT XML] dtcnt_node_number() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_LINETYPE, "[DTCNT XML] dtcnt_node_linetype() data_len = %d, dial_type = %d")
+TRC_MSG(MMI_DXML_NODE_SPEED, "[DTCNT XML] dtcnt_node_speed() data_len = %d, speed_rate = %d")
+TRC_MSG(MMI_DXML_NODE_HOMEPAGE, "[DTCNT XML] dtcnt_node_homepage() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_PROXY, "[DTCNT XML] dtcnt_node_proxy() use_proxy = %d")
+TRC_MSG(MMI_DXML_NODE_USERNAME, "[DTCNT XML] dtcnt_node_username() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_PASSWORD, "[DTCNT XML] dtcnt_node_password() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_PRIMARYDNS, "[DTCNT XML] dtcnt_node_primarydns() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_SECONDDNS, "[DTCNT XML] dtcnt_node_seconddns() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_APN, "[DTCNT XML] dtcnt_node_apn() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_AUTH, "[DTCNT XML] dtcnt_node_authentication() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_IPADDRESS, "[DTCNT XML] dtcnt_node_ipaddress() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_SUBNET, "[DTCNT XML] dtcnt_node_subnet() data_len = %d")
+TRC_MSG(MMI_DXML_NODE_CONNTYPE, "[DTCNT XML] dtcnt_node_conntype() data_len = %d")
+TRC_MSG(MMI_DXML_ELEM_START_HDLR, "[DTCNT XML] mmi_dtcnt_elem_start_hdlr() error = %d")
+TRC_MSG(MMI_DXML_ELEM_END_HDLR, "[DTCNT XML] mmi_dtcnt_elem_end_hdlr() error = %d")
+TRC_MSG(MMI_DXML_DATA_HDLR, "[DTCNT XML] mmi_dtcnt_data_hdlr() error = %d")
+TRC_MSG(MMI_DXML_RESUME_PARSE_HDLR, "[DTCNT XML] mmi_dtcnt_resume_parse_hdlr()")
+TRC_MSG(MMI_DXML_XML_PARSE, "[DTCNT XML] mmi_dtcnt_xml_parse()")
+TRC_MSG(MMI_DXML_ACCOUNT_PARSE_END, "[DTCNT XML] mmi_dtcnt_account_parse_end() ret = %d")
+TRC_MSG(MMI_DXML_ACCOUNT_PARSE_END_DUAL_SIM_DUAL_FILE, "[DTCNT XML]mmi_dtcnt_account_parse_end, dual sim, dual file")
+TRC_MSG(MMI_DXML_ACCOUNT_PARSE_END_DUAL_SIM_SINGLE_FILE, "[DTCNT XML]mmi_dtcnt_account_parse_end, dual sim, single file")
+TRC_MSG(MMI_DXML_ACCOUNT_PARSE_END_SINGLE_SIM_SINGLE_FILE, "[DTCNT XML]mmi_dtcnt_account_parse_end, single sim, single file")
+
+/* DataAccountCui.c */
+TRC_MSG(CUI_DTCNT_SELECTION_CREATE_ERROR, "[DTCNT CUI] selection cui create error")
+TRC_MSG(CUI_DTCNT_SELECTION_CREATE_INFO, "[DTCNT CUI] selection cui create info, parent_id = %d, allocate_index = %d")
+TRC_MSG(CUI_DTCNT_SELECTION_INIT_INFO, "[DTCNT CUI] selection cui set parameter info, cui_id = %d, index = %d")
+
+TRC_MSG(CUI_DTCNT_SELECTION_INIT_DETAIL, "[DTCNT CUI] selection cui set parameter detail bearer = %d, app_id = %d, acct_id = %d, option = %d, sim_info = %d")
+TRC_MSG(CUI_DTCNT_SELECTION_RUN_INFO, "[DTCNT CUI] selection cui run info cui_id = %d, index = %d")
+TRC_MSG(CUI_DTCNT_SELECTION_RUN_ERROR, "[DTCNT CUI] selection cui run info cui_id = %d, index = %d")
+
+TRC_MSG(CUI_DTCNT_SELECTION_CLOSE_INFO, "[DTCNT CUI] selection cui close cui_id = %d, index = %d")
+TRC_MSG(CUI_DTCNT_SELECTION_CUI_CONTEXT_INFO, "[DTCNT CUI] selection cui context info, index = %d, valid = %d, acct_id = %d")
+/* DATA_ACCT_END */

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	key_xmargin="0.4%p" width="8.75%p" height="25.1163%p" key_type="0">
+
+  <row start_pos_x="1.6667%p" start_pos_y="1.8605%p">
+    <key label="\x10d0" code="-1000"/>
+    <key label="\x10d1" code="-1000"/>
+    <key label="\x10d2" code="-1000"/>
+    <key label="\x10d3" code="-1000"/>
+    <key label="\x10d4" code="-1000"/>
+    <key label="\x10d5" code="-1000"/>
+    <key label="\x10d6" code="-1000"/>
+    <key label="\x10d7" code="-1000"/>
+    <key label="\x10d8" code="-1000"/>
+    <key label="\x10d9" code="-1000"/>
+    <key label="\x10da" code="-1000"/>
+  </row>
+
+  <row start_pos_x="1.6667%p">
+    <key label="\x10db" code="-1000"/>
+    <key label="\x10dc" code="-1000"/>
+    <key label="\x10dd" code="-1000"/>
+    <key label="\x10de" code="-1000"/>
+    <key label="\x10df" code="-1000"/>
+    <key label="\x10e0" code="-1000"/>
+    <key label="\x10e1" code="-1000"/>
+    <key label="\x10e2" code="-1000"/>
+    <key label="\x10e3" code="-1000"/>
+    <key label="\x10e4" code="-1000"/>
+    <key label="\x10e5" code="-1000"/>
+  </row>
+
+  <row start_pos_x="1.6667%p">
+    <key label="\x10e6" code="-1000"/>
+    <key label="\x10e7" code="-1000"/>
+    <key label="\x10e8" code="-1000"/>
+    <key label="\x10e9" code="-1000"/>
+    <key label="\x10ea" code="-1000"/>
+    <key label="\x10eb" code="-1000"/>
+    <key label="\x10ec" code="-1000"/>
+    <key label="\x10ed" code="-1000"/>
+    <key label="\x10ee" code="-1000"/>
+    <key label="\x10ef" code="-1000"/>
+    <key label="\xa454" code="8" key_type="2" />
+  </row>
+
+	<row start_pos_x="1.6667%p" >
+		<key width="13.125%p" code="-3" label="\xa451" key_type="11" />
+		<key width="13.125%p" code="-5" label="\xa45a" key_type="3" />
+    <key label="\x10f0" code="-1000"/>
+		<key width="26.25%p" code="32" label="\xa46b" key_type="2" />
+    <key code="46" label="." key_type="1" popup_skb="@xml/skb_popup_qwerty_fullstop" />
+		<key width="13.125%p" label="\xa46f" code="-1" key_type="3" popup_skb="@xml/skb_popup_symbol" />
+		<key width="13.125%p" code="13" label="\xa456" key_type="2">
+			<toggle_state state_id="2" code="13" label="\xa459" key_type="2" />
+			<toggle_state state_id="5" code="13" label="\xa45e" key_type="2" />
+		</key>
+	</row>
+
+</keyboard>

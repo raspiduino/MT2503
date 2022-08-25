@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	kb_height="50.84%p" key_xmargin="0.4%p" key_ymargin="0.8197%p" width="8.75%p" height="19.6722%p" key_type="0">
+
+	<row start_pos_x="1.6667%p" start_pos_y="1.6394%p">
+    <key label="\xa40" code="-1000" />
+    <key label="\xa70" code="-1000" />
+    <key label="\xa01" code="-1000" />
+    <key label="\xa41" code="-1000" />
+    <key label="\xa51" code="-1000" />
+    <key label="\xa71" code="-1000" />
+    <key label="\xa02" code="-1000" />
+    <key label="\xa42" code="-1000" />
+    <key label="\xa03" code="-1000" />
+    <key label="\xa75" code="-1000" />
+    <key label="\xa47" code="-1000" />
+	</row>
+
+	<row start_pos_x="1.6667%p" >
+    <key label="\xa48" code="-1000" />
+    <key label="\xa4b" code="-1000" />
+    <key label="\xa3c" code="-1000" />
+    <key label="\xa4c" code="-1000" />
+    <key label="\xa4d" code="-1000" />
+    <key label="\xa3e" code="-1000" />
+    <key label="\xa3f" code="-1000" />
+    <key label="\xa10" code="-1000" />
+    <key label="\xa20" code="-1000" />
+    <key label="\xa30" code="-1000" />
+    <key label="\xa21" code="-1000" />
+	</row>
+
+	<row start_pos_x="1.6667%p" >
+    <key label="\xa22" code="-1000" />
+    <key label="\xa32" code="-1000" />
+    <key label="\xa72" code="-1000" />
+    <key label="\xa13" code="-1000" />
+    <key label="\xa23" code="-1000" />
+    <key label="\xa33" code="-1000" />
+    <key label="\xa73" code="-1000" />
+    <key label="\xa14" code="-1000" />
+    <key label="\xa24" code="-1000" />
+    <key label="\xa74" code="-1000" />
+    <key label="\xa05" code="-1000" />
+	</row>
+	
+	<row start_pos_x="1.6667%p" >
+    <key width="13.125%p" label="\xa467" code="-102" key_type="2" />
+    <key label="\xa15" code="-1000" />
+    <key label="\xa25" code="-1000" />
+    <key label="\xa35" code="-1000" />
+    <key label="\xa06" code="-1000" />
+    <key label="\xa16" code="-1000" />
+    <key label="\xa26" code="-1000" />
+    <key label="\xa36" code="-1000" />
+    <key label="\xa07" code="-1000" />
+    <key width="13.125%p" label="\xa454" code="8" key_type="2" />
+  </row>
+
+	<row start_pos_x="1.6667%p" >
+    <key width="13.125%p" code="-3" label="\xa451" key_type="11" />
+    <key width="13.125%p" code="-5" label="\xa45a" key_type="2" />
+    <key key_type="0" label="\xa453" code="44" >
+      <toggle_state state_id="12" key_type="14" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		  <toggle_state state_id="13" key_type="13" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		</key>
+    <key width="26.25%p" code="32" label="\xa46b" key_type="2" />
+    <key width="10%p" code="46" label="." key_type="1"
+    popup_skb="@xml/skb_popup_qwerty_fullstop" />
+    <key width="13.125%p" label="\xa46f" code="-1" key_type="3"
+        popup_skb="@xml/skb_popup_symbol" />
+    <key width="13.125%p" code="13" label="\xa456" key_type="2">
+        <toggle_state state_id="2" code="13" label="\xa459" key_type="2" />
+        <toggle_state state_id="5" code="13" label="\xa45e" key_type="2" />
+    </key>
+	</row>
+	
+</keyboard>

@@ -1,0 +1,134 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+/********************************************************************************
+* Filename:
+* ---------
+*	resource_world_clock_city.c
+*
+* Project:
+* --------
+*	MAUI
+*
+* Description:
+* ------------
+*	This file is intends for WorldClock resource database
+*
+* Version:
+* ------------
+*	MAUI VERSION
+*
+*******************************************************************************/
+/******************************************************************************
+ *==============================================================================
+ * 				HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *------------------------------------------------------------------------------
+ * $Revision$ 
+ * $Modtime$
+ * $Log$
+ *
+ * 09 04 2010 guoyi.qu
+ * [MAUI_02121786] [plan to do 10A]Cancel should not close the Editor
+ * .
+ *
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *============================================================================== 
+*******************************************************************************/
+#include "custom_mmi_default_value.h"
+
+#include "worldclock.h"
+
+
+#if defined(__MMI_WORLD_CLOCK__)
+
+const TimeZoneStruct TimeZoneData[]= 
+{
+	{0,	STR_WCLOCK_CITY_NONE,	STR_WCLOCK_CITY_ABBRE_NONE,	0,	0,	0},
+	{2,	STR_WCLOCK_CITY4,	STR_WCLOCK_CITY_ABBRE3,	85,	70,	3},
+	{12,	STR_WCLOCK_CITY5,	STR_WCLOCK_CITY_ABBRE4,	243,	49,	1},
+	{7,	STR_WCLOCK_CITY7,	STR_WCLOCK_CITY_ABBRE5,	67,	26,	1},
+	{8,	STR_WCLOCK_CITY8,	STR_WCLOCK_CITY_ABBRE6,	216,	78,	1},
+	{1,	STR_WCLOCK_CITY9,	STR_WCLOCK_CITY_ABBRE7,	241,	38,	1},
+	{-5,	STR_WCLOCK_CITY10,	STR_WCLOCK_CITY_ABBRE8,	212,	39,	1},
+	{1,	STR_WCLOCK_CITY77,	STR_WCLOCK_CITY_ABBRE57,	181,	107,	1}
+};
+
+#elif !defined(__MMI_HIDE_HOMECITY__)
+
+const TimeZoneStruct TimeZoneData[]= 
+{
+	{0,	STR_WCLOCK_CITY_NONE},
+	{2,	STR_WCLOCK_CITY4},
+	{12,	STR_WCLOCK_CITY5},
+	{7,	STR_WCLOCK_CITY7},
+	{8,	STR_WCLOCK_CITY8},
+	{1,	STR_WCLOCK_CITY9},
+	{-5,	STR_WCLOCK_CITY10},
+	{1,	STR_WCLOCK_CITY77}
+};
+
+#else
+
+const TimeZoneStruct TimeZoneData[]= 
+{
+	{0,	STR_WCLOCK_CITY_NONE,	STR_WCLOCK_CITY_ABBRE_NONE,	0,	0,	0},
+	{2,	STR_WCLOCK_CITY4,	STR_WCLOCK_CITY_ABBRE3,	85,	70,	3},
+	{12,	STR_WCLOCK_CITY5,	STR_WCLOCK_CITY_ABBRE4,	243,	49,	1},
+	{7,	STR_WCLOCK_CITY7,	STR_WCLOCK_CITY_ABBRE5,	67,	26,	1},
+	{8,	STR_WCLOCK_CITY8,	STR_WCLOCK_CITY_ABBRE6,	216,	78,	1},
+	{1,	STR_WCLOCK_CITY9,	STR_WCLOCK_CITY_ABBRE7,	241,	38,	1},
+	{-5,	STR_WCLOCK_CITY10,	STR_WCLOCK_CITY_ABBRE8,	212,	39,	1},
+	{1,	STR_WCLOCK_CITY77,	STR_WCLOCK_CITY_ABBRE57,	181,	107,	1}
+};
+
+#endif	/* __MMI_WORLD_CLOCK__ */
+
+
+const DefaultCityStruct DefaultCityData[] = 
+{
+	{8,	4},
+	{0,	0}
+};
+
+U8 mmi_wc_get_size(void)
+{
+	return sizeof(TimeZoneData)/sizeof(TimeZoneStruct);
+}
+
+U8 mmi_wc_get_default_city_size(void)
+{
+	return sizeof(DefaultCityData)/sizeof(DefaultCityStruct) - 1;
+}

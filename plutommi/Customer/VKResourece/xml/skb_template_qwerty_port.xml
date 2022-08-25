@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skb_template kb_width="100%p" kb_height="44.8%p"
+	key_xmargin="0.3125%p" key_ymargin="2.3256%p" balloon_bg="@drawable/balloon_bkg"
+	balloon_ratio_width="1.9f" balloon_ratio_height="1.5f" skb_bg="@drawable/keyboard_background" >
+
+	<!-- Normal key -->
+	<key_type id="0" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_normalkey"
+		hltext_size1="@dimen/qwerty_port_normalkey" bltext_size1="@dimen/qwerty_port_normalkey_balloon"
+		need_balloon="true" />
+
+	<!-- Normal key  support popup keyboard-->
+	<key_type id="1" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_port_normalkey" hltext_size1="@dimen/qwerty_port_normalkey"
+		bltext_size1="@dimen/qwerty_port_normalkey_balloon" need_balloon="true" />
+
+	<!-- Function key -->
+	<key_type id="2" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_functionkey"
+		hltext_size1="@dimen/qwerty_port_functionkey" bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+
+	<!-- Function key support popup keyboard-->
+	<key_type id="3" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_function"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_port_functionkey" hltext_size1="@dimen/qwerty_port_functionkey"
+		bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+
+	<!-- Highlight Function key -->
+	<key_type id="4" bg="@drawable/highlight_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_highlight" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_functionkey"
+		hltext_size1="@dimen/qwerty_port_functionkey" bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+
+	<!-- Popup keyboard Normal key or space key without balloon-->
+	<key_type id="5" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_popupkey1"
+		hltext_size1="@dimen/qwerty_port_popupkey1" bltext_size1="@dimen/qwerty_port_popupkey1"
+		need_balloon="false" />
+
+	<!-- Popup keyboard Normal key (web eg: .com)-->
+	<key_type id="6" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_popupkey2"
+		hltext_size1="@dimen/qwerty_port_popupkey2" bltext_size1="@dimen/qwerty_port_popupkey2"
+		need_balloon="false" />
+
+	<!-- .com key support popup keyboard -->
+	<key_type id="7" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_port_normalkey" hltext_size1="@dimen/qwerty_port_normalkey"
+		bltext_size1="@dimen/qwerty_port_normalkey_balloon" need_balloon="true" />
+
+	<!-- smiley key (normal smiley symbol) -->
+	<key_type id="8" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_smileykey"
+		hltext_size1="@dimen/qwerty_port_smileykey" bltext_size1="@dimen/qwerty_port_smileykey_balloon"
+		need_balloon="true" />
+
+	<!-- smiley key (large smiley symbol) -->
+	<key_type id="9" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_smileykey2"
+		hltext_size1="@dimen/qwerty_port_smileykey2" bltext_size1="@dimen/qwerty_port_smileykey2_balloon"
+		need_balloon="true" />
+
+	<!-- Zhuyin normal key -->
+	<key_type id="10" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_zhuyinkey"
+		hltext_size1="@dimen/qwerty_port_zhuyinkey" bltext_size1="@dimen/qwerty_port_zhuyinkey_balloon"
+		need_balloon="true" />
+
+	<!-- Function key - halfscreen handwriting & hide key-->
+	<key_type id="11" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_functionkey"
+		hltext_size1="@dimen/qwerty_port_functionkey" bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		need_balloon="true" />
+
+	<!-- Function key - halfscreen handwriting support popup keyboard-->
+	<key_type id="12" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		balloon_bg="@drawable/balloon_bkg" text_color1="@color/color_function"
+		hltext_color1="@color/color_highlight" bltext_color1="@color/color_balloon"
+		text_size1="@dimen/qwerty_port_functionkey" hltext_size1="@dimen/qwerty_port_functionkey"
+		bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		need_balloon="true" />
+		
+	<!-- smart key with two type word, non-smart state -->
+	<key_type id="13" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  balloon_bg="@drawable/balloon_bkg" balloon_bg_longpress="@drawable/balloon_bkg"
+	  text_color1="@color/color_function" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/qwerty_port_functionkey" text_size2="@dimen/qwerty_port_functionkey" 
+		hltext_size1="@dimen/qwerty_port_functionkey" hltext_size2="@dimen/qwerty_port_functionkey" 
+		bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		main_regx="0%p" main_regy="-10%p" aux_regx="0%p" aux_regy="10%p"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+		
+	<!-- smart key with two type word, smart state -->
+	<key_type id="14" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  balloon_bg="@drawable/balloon_bkg" balloon_bg_longpress="@drawable/balloon_bkg"
+	  text_color1="@color/color_highlight_smart_key" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/qwerty_port_functionkey" text_size2="@dimen/qwerty_port_functionkey" 
+		hltext_size1="@dimen/qwerty_port_functionkey" hltext_size2="@dimen/qwerty_port_functionkey" 
+		bltext_size1="@dimen/qwerty_port_functionkey_balloon"
+		main_regx="0%p" main_regy="-10%p" aux_regx="0%p" aux_regy="10%p"
+		balloon_ratio_width="1.4f" balloon_ratio_height="1.3f" need_balloon="true" />
+	
+  <!-- Normal key mini for tamil-->
+  <key_type id="15" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_normalminikey"
+		hltext_size1="@dimen/qwerty_port_normalminikey" bltext_size1="@dimen/qwerty_port_normalminikey_balloon"
+		need_balloon="true" />
+
+  <!-- Normal key small for tamil-->
+  <key_type id="16" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_normalsmallkey"
+		hltext_size1="@dimen/qwerty_port_normalsmallkey" bltext_size1="@dimen/qwerty_port_normalsmallkey_balloon"
+		need_balloon="true" />
+
+  <!-- Normal key for ultra small tamil -->
+  <key_type id="17" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/qwerty_port_normalultrasmallkey"
+		hltext_size1="@dimen/qwerty_port_normalultrasmallkey" bltext_size1="@dimen/qwerty_port_normalultrasmallkey_balloon"
+		need_balloon="true" />
+		
+  <!-- Big popup keyboard key for Zawgyi -->
+  <key_type id="18" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/popup_balloon_ypos"
+		hltext_size1="@dimen/qwerty_port_popupbigkey" bltext_size1="@dimen/qwerty_port_popupbigkey_balloon"
+		need_balloon="true" />
+		
+  <!-- Big normal key for zawgyi -->
+  <key_type id="19" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg" balloon_bg="@drawable/balloon_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		bltext_color1="@color/color_balloon" text_size1="@dimen/popup_balloon_ypos"
+		hltext_size1="@dimen/qwerty_port_normalbigkey" bltext_size1="@dimen/qwerty_port_normalbigkey_balloon"
+		need_balloon="true" />
+  
+	
+</skb_template>

@@ -1,0 +1,30 @@
+
+
+;Add by MagicNing for RAW_DISK  & FOTA
+TRACK_RO 0x103A0038
+{
+	TRACK_RO +0x0
+	{
+		*           ( TRACK_F_CODE, +First )
+		*track.lib  ( +RO, +TEXT )
+	}
+	TRACK_RO1 +0x0
+	{
+		*fota.a  ( +RO,+text )
+	}
+}  
+TRACK_RW  0x103F0038
+{
+	TRACK_RW 0x00200000  0x00100000
+	{
+		*track.lib  ( +RW, +ZI, +DATA, +BSS )	
+		*fota.a  ( +RW, +ZI, +DATA, +BSS ) 
+	}
+}  
+TRACK_NVRAM 0x103F5038
+{
+	TRACK_NVRAM +0x0
+	{
+		*track_nvram.lib      (TRACK_NVRAM_RODATA)
+	}
+}

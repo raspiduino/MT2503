@@ -1,0 +1,9 @@
+hal\storage\sim\src\MT6302_SPI.c
+hal\storage\sim\src\dcl_sim.c
+hal\storage\sim\src\icc_sim_common_mtk.c
+hal\storage\sim\src\icc_switchControl0.c
+hal\storage\sim\src\icc_switchControl1.c
+hal\storage\sim\src\icc_switchControl2.c
+hal\storage\sim\src\icc_switchControl_al.c
+hal\storage\sim\src\icc_switchControl_mtk_0.c
+hal\storage\sim\src\icc_switchControl_mtk_1.c

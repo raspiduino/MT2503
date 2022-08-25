@@ -1,0 +1,64 @@
+# resgen file list.txt
+# <destination file> = <source file>
+
+# ResGen
+plutommi\Customer\CustResource\CustAdoDataHW.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustAdoDataHWExt.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustAdoMap.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustAdoMapExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustAdoRes.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustAdoResExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustBinaryDataHW.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustBinaryMap.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustBinaryRes.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustBLImgData.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustENFBImgMap.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustFontDataHW.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustFontMapExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustFontResExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustFOTAImgData.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustGameDataHW.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgDataHW.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgDataHWExt.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgMap.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgMapExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgRes.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustImgResExt.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustMenuRes.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustNFBProgressImg.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustNFBProgressImg.h = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustStrMap.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustStrRes.c = plutommi\MMI\Resource\WriteRes.c
+plutommi\Customer\CustResource\CustWebcamImgData.h = plutommi\MMI\Resource\WriteRes.c
+
+# ResGen XML
+plutommi\Customer\CustResource\mmi_rp_img_misc_data.c = plutommi\Customer\ResGenerator\ResgenXML\ResgenSrc\mmi_rp_image.c
+plutommi\Customer\CustResource\mmi_rp_menu_misc_data.c = plutommi\Customer\ResGenerator\ResgenXML\ResgenSrc\mmi_rp_menu.c
+plutommi\Customer\CustResource\mmi_rp_menu_shortcut_data.c = plutommi\Customer\ResGenerator\ResgenXML\ResgenSrc\mmi_rp_menu.c
+plutommi\Customer\CustResource\mmi_rp_native_app_package_data.c = plutommi\Customer\ResGenerator\ResgenXML\ResgenSrc\mmi_rp_xml.c
+
+# Menu Handler
+plutommi\Framework\EventHandling\EventsInc\mmi_menu_handlers.h = plutommi\Customer\ResGenerator\mtk_resgenerator.cpp
+
+# MTE
+plutommi\Customer\CustResource\mte_img_resource.h = plutommi\Customer\ResGenerator\mte_excel_gen.pl
+
+# MSLT
+plutommi\Framework\MSLT\MSLTInc\mslt_modis.h = plutommi\Customer\ResGenerator\mslt_parse_info.pl
+plutommi\Framework\MSLT\MSLTInc\mslt_table.h = plutommi\Customer\ResGenerator\mslt_parse_info.pl
+
+# Font
+plutommi\Customer\CustResource\fontres.c = vendor\font\MTK\official\project\plutommi\content\src\MainLcd128X128\res_gen_font.cpp
+
+# Venus Theme
+plutommi\Customer\CustResource\CustVenusThemeData.h = plutommi\Customer\ResGenerator\venus_theme_generator.pl
+plutommi\Customer\CustResource\CustVenusThemeId.h = plutommi\Customer\ResGenerator\venus_theme_generator.pl
+
+# Trace
+plutommi\MMI\Inc\mmi_common_app_trc.h = plutommi\Customer\ResGenerator\res_parse_screen_id.pl
+plutommi\MMI\Inc\mmi_media_app_trc.h = plutommi\Customer\ResGenerator\res_parse_screen_id.pl
+plutommi\MMI\Inc\mmi_conn_app_trc.h = plutommi\Customer\ResGenerator\res_parse_screen_id.pl
+plutommi\MMI\Inc\mmi_inet_app_trc.h = plutommi\Customer\ResGenerator\res_parse_screen_id.pl
+#VK
+plutommi\Service\vk3Srv\Res\VK3.res = plutommi\Customer\ResGenerator\ResgenVk3\vkv3_resgen_main.py
+plutommi\Customer\CustomerInc\mmi_rp_srv_vk3_def.h = plutommi\Customer\ResGenerator\ResgenVk3\vkv3_resgen_main.py

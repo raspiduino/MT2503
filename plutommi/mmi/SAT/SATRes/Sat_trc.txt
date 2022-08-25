@@ -1,0 +1,37 @@
+[APP NAME] = SAT
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(MMI_SAT_ENTER_APP_GROUP, "[MMI_SAT] mmi_sat_enter_app_group")
+TRC_MSG(MMI_SAT_GENERIC_EXIT, "[MMI_SAT] mmi_sat_scrn_generic_exit")
+TRC_MSG(MMI_SAT_TIMER_EXPIRY, "[MMI_SAT] mmi_sat_timer_expiry_hdlr")
+TRC_MSG(MMI_SAT_PLEASE_WAIT_PRE, "[MMI_SAT] mmi_sat_please_wait_scrn_pre_entry")
+TRC_MSG(MMI_SAT_PLEASE_WAIT_SCRN, "[MMI_SAT] mmi_sat_please_wait_scrn_entry")
+
+TRC_MSG(MMI_SAT_APP_GROUP_PROC_DEINIT, "[MMI_SAT] mmi_sat_app_group_proc, deinit event received")
+TRC_MSG(MMI_SAT_GENERIC_LEAVE_PROC, "[MMI_SAT] mmi_sat_scrn_generic_leave_proc, press endkey to goback or delete")
+
+TRC_MSG(MMI_SAT_ENTER_GROUP_STATE, "[MMI_SAT] mmi_sat_enter_app_group, parent group id: %d, group id: %d, state: %d")
+TRC_MSG(MMI_SAT_APP_LAUNCH, "[MMI_SAT] mmi_sat_app_launch, sim id: %d, parent group id: %d")
+
+TRC_MSG(MMI_SAT_GROUP_DATA_ALLOC, "[MMI_SAT] mmi_sat_init_group_data, group data pointer: 0x%x")
+TRC_MSG(MMI_SAT_GROUP_DATA_DEALLOC, "[MMI_SAT] mmi_sat_group_data_free, group data pointer: 0x%x")
+
+TRC_MSG(MMI_SAT_PROACTIVE_SIM_EVENT, "[MMI_SAT] mmi_sat_recv_ind, EVT_ID_SRV_SAT_PROACTIVE_SIM is: %d")
+TRC_MSG(MMI_SAT_RECV_IND, "[MMI_SAT] mmi_sat_recv_ind, event type: %d")
+TRC_MSG(MMI_SAT_CMD_SESSION_END, "[MMI_SAT] mmi_sat_recv_ind, last command type: %d, close group id: %d")
+
+TRC_MSG(MMI_SAT_OUT_GOING_CALL_IND, "[MMI_SAT] mmi_sat_recv_ucm_ind, command type: %d, close group id: %d")
+TRC_MSG(MMI_SAT_SEND_CALL_ABORT_REQ, "[MMI_SAT] mmi_sat_recv_ucm_ind, srv_sat_setup_call_abort_req")
+
+TRC_MSG(MMI_SAT_SIM_ID, "[MMI_SAT] using sim id: %d")
+TRC_MSG(MMI_SAT_DO_NOT_INFORM_USER, "[MMI_SAT] do not inform user state: %d")
+TRC_MSG(MMI_SAT_CMD_PROCESSING, "[MMI_SAT] processing command type: %d")
+TRC_MSG(MMI_SAT_CMD_NMGR_REJECT, "[MMI_SAT] command rejected by nmgr")
+
+TRC_MSG(MMI_SAT_PRE_ENTER_SCREEN, "[MMI_SAT] mmi_sat_scrn_pre_entry, enter screen cmd type: %d")
+TRC_MSG(MMI_SAT_ME_RESPONSE, "[MMI_SAT] mmi_sat_me_response_to_cmd, sim id: %d, cmd type: %d, res type: %d")
+
+TRC_MSG(MMI_SAT_CLOSE_GROUP_ID, "[MMI_SAT] close group id: %d")
+TRC_MSG(MMI_SAT_DELETE_APP, "[MMI_SAT] MMI_SAT_CMD_SESSION_END, delete sat app")

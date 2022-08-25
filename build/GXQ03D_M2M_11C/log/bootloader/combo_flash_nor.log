@@ -1,0 +1,50 @@
+Compiling custom\common\hal\combo_flash_nor.c ... 
+"custom/system/GXQ03D_M2M_11C_BB/combo_flash_config.h", line 84: Error:  #20: identifier "NVRAM_BACKUP_PARTITION_SIZE" is undefined
+              DISK0_REGION_INFO_LAYOUT,
+              ^
+"custom\common\hal\combo_flash_nor.c", line 945: Warning:  #177-D: variable "i" was declared but never referenced
+      kal_uint32 index, i=0;
+                        ^
+"custom\common\hal\combo_flash_nor.c", line 1896: Warning:  #177-D: variable "temp" was declared but never referenced
+     kal_int32 result, temp;
+                       ^
+"custom\common\hal\combo_flash_nor.c", line 1897: Warning:  #177-D: variable "i" was declared but never referenced
+     kal_uint8 i = 0;
+               ^
+"custom\common\hal\combo_flash_nor.c", line 353: Warning:  #177-D: variable "BlockLayout_CS1" was declared but never referenced
+  static const FlashBlockLayout *BlockLayout_CS1;          // SF2 BlockLayout read from MCP list
+                                 ^
+"custom\common\hal\combo_flash_nor.c", line 364: Warning:  #177-D: variable "MSEntryTable" was declared but never referenced
+  static MS_ENTRY MSEntryTable[MS_TABLE_ENTRY_NUM];
+                  ^
+"custom\common\hal\combo_flash_nor.c", line 381: Warning:  #177-D: variable "LogPageID" was declared but never referenced
+  static kal_uint32 LogPageID[MS_TABLE_ENTRY_NUM];
+                    ^
+"custom\common\hal\combo_flash_nor.c", line 382: Warning:  #177-D: variable "NewEntryID" was declared but never referenced
+  static WORD NewEntryID[MS_TABLE_ENTRY_NUM];
+              ^
+"custom\common\hal\combo_flash_nor.c", line 383: Warning:  #177-D: variable "OldEntryID" was declared but never referenced
+  static WORD OldEntryID[MS_TABLE_ENTRY_NUM];
+              ^
+"custom\common\hal\combo_flash_nor.c", line 391: Warning:  #177-D: variable "NOR_LBM" was declared but never referenced
+  static kal_uint16  NOR_LBM[NOR_TOTAL_BLOCKS];
+                     ^
+"custom\common\hal\combo_flash_nor.c", line 392: Warning:  #177-D: variable "NOR_LSMG" was declared but never referenced
+  static LSMGEntry   NOR_LSMG[NOR_TOTAL_LSMT]; // need to check in the program
+                     ^
+"custom\common\hal\combo_flash_nor.c", line 393: Warning:  #177-D: variable "NOR_AvailInBlk" was declared but never referenced
+  static kal_uint16  NOR_AvailInBlk[NOR_TOTAL_BLOCKS];
+                     ^
+"custom\common\hal\combo_flash_nor.c", line 394: Warning:  #177-D: variable "NOR_InvaildInBlk" was declared but never referenced
+  static kal_uint16  NOR_InvaildInBlk[NOR_TOTAL_BLOCKS];
+                     ^
+"custom\common\hal\combo_flash_nor.c", line 395: Warning:  #177-D: variable "NOR_InvalidEntryInTblBlk" was declared but never referenced
+  static kal_uint32  NOR_InvalidEntryInTblBlk[NOR_TOTAL_TABLE_BLOCKS];
+                     ^
+"custom\common\hal\combo_flash_nor.c", line 396: Warning:  #177-D: variable "FDMBuffer" was declared but never referenced
+  static kal_uint8 FDMBuffer[NOR_PAGE_SIZE];
+                   ^
+"custom\common\hal\combo_flash_nor.c", line 397: Warning:  #177-D: variable "CopyBuffer" was declared but never referenced
+  static kal_uint8 CopyBuffer[NOR_PAGE_SIZE];
+                   ^
+custom\common\hal\combo_flash_nor.c: 15 warnings, 1 error

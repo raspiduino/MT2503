@@ -1,0 +1,10 @@
+Module bootloader is in DEFALUT mode
+make\comp.mak:1332: warning: overriding commands for target `bl_GFH_body.obj'
+make\comp.mak:1332: warning: ignoring old commands for target `bl_GFH_body.obj'
+make\comp.mak:1332: warning: overriding commands for target `bl_GFH_body.det'
+make\comp.mak:1332: warning: ignoring old commands for target `bl_GFH_body.det'
+make\comp.mak:1332: warning: overriding commands for target `bl_ImageLoader_v5.obj'
+make\comp.mak:1332: warning: ignoring old commands for target `bl_ImageLoader_v5.obj'
+make\comp.mak:1332: warning: overriding commands for target `bl_ImageLoader_v5.det'
+make\comp.mak:1332: warning: ignoring old commands for target `bl_ImageLoader_v5.det'
+Generating bootloader information is done.

@@ -1,0 +1,5 @@
+Compiling hal\peripheral\src\dcl_f32k_clk.c ... 
+"hal\peripheral\src\dcl_f32k_clk.c", line 131: Warning:  #223-D: function "F32K_OSC32_Init" declared implicitly
+      F32K_OSC32_Init();
+      ^
+hal\peripheral\src\dcl_f32k_clk.c: 1 warning, 0 errors

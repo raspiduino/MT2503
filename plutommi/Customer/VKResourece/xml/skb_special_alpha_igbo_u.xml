@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	skb_cache_flag="false" skb_bg="@drawable/popup_keyboard_background"
+	kb_width="26%p" kb_height="15%p" width="45%p" height="70.84%p"
+	key_xmargin="6%p" key_ymargin="4.17%p" key_type="5">
+	<row start_pos_x="3.85%p" start_pos_y="8.34%p">
+		<keys splitter="|" labels="\x55|\x1ee4" codes="-1000|-1000" />
+	</row>
+</keyboard>  

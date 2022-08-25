@@ -1,0 +1,93 @@
+[APP NAME] = EngineerMode
+[SCOPE] = PLUTO, COSMOS 
+[MODULE] = MOD_MMI_COMMON_APP
+#don't change any value above
+
+#please add trace as the template as below and follow the order of EM  Menu
+
+
+#----------------- Section Template --------------------------------------------
+
+
+##----------------- Network setting --------------------------------------------
+
+##----------------- Network Setting | Network Info -----------------------------
+#TRC_MSG(TRC_MMI_EM_NW_XXX, "...")
+##----------------- EM Item End ------------------------------------------------
+
+
+
+##----------------- Device -----------------------------------------------------
+
+##----------------- Device | LCD -----------------------------------------------
+#TRC_MSG(TRC_MMI_EM_DEVICE_XXX, "...")
+##----------------- EM Item End ------------------------------------------------
+
+
+
+
+##----------------- Misc -------------------------------------------------------
+
+##----------------- MISC | Touch screen | Accuracy test ------------------------
+#TRC_MSG(TRC_MMI_EM_MISC_XXX, "...")
+##----------------- EM Item End ------------------------------------------------
+
+
+
+
+#----------------- Section Template End ----------------------------------------
+
+
+
+
+#start trace
+#Can't add trace above
+
+
+#----------------- Network setting ---------------------------------------------
+
+#----------------- Network Setting | Network Info ------------------------------
+#TRC_MSG(TRC_MMI_EM_NW_NWINFO_ENTRY, "entry")
+#----------------- EM Item End -------------------------------------------------
+
+
+#----------------- Device ------------------------------------------------------
+
+#----------------- Device | NFC-------------------------------------------------
+TRC_MSG(TRC_MMI_EM_DEVICE_NFC_PARAMS,"[EM_NFC]trace num = %d, p1 = 0X%X, p2 = 0X%X, p3 = 0X%X, p4 = 0X%X, p5 = 0X%X")
+#----------------- Iperf -------------------------------------------------------
+TRC_MSG(MMI_EM_IPERF_PRE_ENTRY_IPERF,"[EM][IPERF] PreEntry_Iperf")
+TRC_MSG(MMI_EM_IPERF_PRE_ENTRY_IPERF_TCP,"[EM][IPERF] PreEntry_Iperf_TCP")
+TRC_MSG(MMI_EM_IPERF_PRE_ENTRY_IPERF_UDP,"[EM][IPERF] PreEntry_Iperf_UDP")
+TRC_MSG(MMI_EM_IPERF_ENTRY_IPERF,"[EM][IPERF] Entry_Iperf")
+TRC_MSG(MMI_EM_IPERF_ENTRY_IPERF_REPORT,"[EM][IPERF] Entry_Iperf_Report")
+TRC_MSG(MMI_EM_IPERF_ENTRY_IPERF_SETTING,"[EM][IPERF] Entry_Iperf_Setting")
+TRC_MSG(MMI_EM_IPERF_ENTRY_PROGRESSING_SCREEN,"[EM][IPERF] Entry_Progressing_Screen")
+TRC_MSG(MMI_EM_IPERF_EXIT_IPERF,"[EM][IPERF] Exit_Iperf")
+TRC_MSG(MMI_EM_IPERF_EXIT_IPERF_TCP,"[EM][IPERF] Exit_Iperf_TCP")
+TRC_MSG(MMI_EM_IPERF_EXIT_IPERF_UDP,"[EM][IPERF] Exit_Iperf_TCP")
+TRC_MSG(MMI_EM_IPERF_DEL_CB,"[EM][IPERF] Iperf_Del_CB")
+TRC_MSG(MMI_EM_IPERF_SETTING_FILL_INLINE,"[EM][IPERF] Iperf_Setting_Fill_Inline")
+TRC_MSG(MMI_EM_IPERF_DT_CB,"[EM][IPERF] Iperf_DT_CB")
+TRC_MSG(MMI_EM_IPERF_NOT_RUN,"[EM][IPERF] Iperf_NOT_RUN")
+TRC_MSG(MMI_EM_IPERF_CHECK_SETTINGS,"[EM][IPERF] Iperf_Check_Settings")
+TRC_MSG(MMI_EM_IPERF_PROGRESS_ABORT,"[EM][IPERF] Iperf_Progres_Abort")
+TRC_MSG(MMI_EM_IPERF_REPORT_BACK,"[EM][IPERF] Iperf_Report_Back")
+TRC_MSG(MMI_EM_IPERF_SAVE,"[EM][IPERF] Iperf_Save_Settings")
+TRC_MSG(MMI_EM_IPERF_SAVE_OPEN_FAILED,"[EM][IPERF] Iperf_Save_Settings_Open_Failed")
+TRC_MSG(MMI_EM_IPERF_SAVE_SEEK_FAILED,"[EM][IPERF] Iperf_Save_Settings_Seek_Failed")
+TRC_MSG(MMI_EM_IPERF_WRITE_UDP_FAILED,"[EM][IPERF] Iperf_Save_Settings_Write_UDP_Failed")
+TRC_MSG(MMI_EM_IPERF_WRITE_TCP_FAILED,"[EM][IPERF] Iperf_Save_Settings_Write_TCP_Failed")
+TRC_MSG(MMI_EM_IPERF_READ,"[EM][IPERF] Iperf_Read_Settings")
+TRC_MSG(MMI_EM_IPERF_READ_OPEN_FAILED,"[EM][IPERF] Iperf_Read_Settings_Open_Failed")
+TRC_MSG(MMI_EM_IPERF_READ_UDP_FAILED,"[EM][IPERF] Iperf_Read_Settings_Read_UDP_Failed")
+TRC_MSG(MMI_EM_IPERF_READ_TCP_FAILED,"[EM][IPERF] Iperf_Read_Settings_Read_TCP_Failed")
+TRC_MSG(MMI_EM_IPERF_LOAD_DEFAULT,"[EM][IPERF] Iperf_Load_Default_Settings")
+TRC_MSG(MMI_EM_IPERF_SEND_REQ,"[EM][IPERF] Iperf_Send_Req Function")
+TRC_MSG(MMI_EM_IPERF_SEND_REQ_ILM,"[EM][IPERF] Iperf_Send_Req ILM")
+TRC_MSG(MMI_EM_IPERF_SEND_REQ_TOS,"[EM][IPERF] Iperf_Send_Req_ToS_Default(should never happens)")
+TRC_MSG(MMI_EM_IPERF_RUN_CNF_HF,"[EM][IPERF] Iperf_Run_Cnf_Hf")
+TRC_MSG(MMI_EM_IPERF_RUN_CNF_HF_FALSE,"[EM][IPERF] Iperf_Run_Cnf_Hf_False")
+TRC_MSG(MMI_EM_IPERF_REPORT_IND_HF,"[EM][IPERF] Iperf_Report_Ind_Hf")
+TRC_MSG(MMI_EM_IPERF_REPORT_IND_HF_FALSE,"[EM][IPERF] Iperf_Report_Ind_Hf_False")
+TRC_MSG(MMI_EM_IPERF_ENTRY_REPORT_SCREEN,"[EM][IPERF] Entry_Iperf_Report_Screen")

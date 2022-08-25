@@ -1,0 +1,8 @@
+hal\mm_comm\src\mm_intmem_mt6253.c
+hal\mm_comm\src\mm_power_ctrl.c
+hal\mm_comm\src\mm_power_ctrl_mt6250.c
+hal\mm_comm\src\mm_power_ctrl_mt6253.c
+hal\mm_comm\src\mm_pq_path_mt6260.c
+hal\mm_comm\src\mmsys_pwrmgr.c
+hal\mm_comm\src\visual_comm.c
+hal\mm_comm\src\visualhisr.c

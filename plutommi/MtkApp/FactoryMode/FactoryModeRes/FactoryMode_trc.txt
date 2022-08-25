@@ -1,0 +1,39 @@
+[APP NAME] = FactoryMode
+[SCOPE] = PLUTO, COSMOS
+[MODULE] = MOD_MMI_COMMON_APP
+#don't change any value above
+
+#Please add trace as the template as below and follow the order of FM L1 Menu
+#  The trace style should be:
+#       TRC_MSG(TRC_MMI_FM_[L1 menu]_xxx, "[FM][L1 menu] xxx xxx xxx")
+#      
+#  ex.
+#      TRC_MSG(TRC_MMI_FM_NFC_PARAMS, "[FM][NFC] trace num = %d, p1 = 0X%X, p2 = 0X%X, p3 = 0X%X")     
+
+
+
+
+#----------------- Section Template --------------------------------------------
+
+##----------------- VERSION ----------------------------------------------------
+#TRC_MSG(TRC_MMI_FM_VERSION_XXX, "[FM][Version]xxx")
+
+
+##------------------ADC---------------------------------------------------------
+#TRC_MSG(TRC_MMI_FM_ADC_XXX, "[FM][ADC]xxx")
+
+
+#----------------- Section Template End ----------------------------------------
+
+
+
+
+#start trace
+#Can't add trace above
+
+
+#----------------- Version -----------------------------------------------------
+
+
+#----------------- NFC ---------------------------------------------------------
+TRC_MSG(TRC_MMI_FM_NFC_PARAMS, "[FM][NFC] trace num = %d, p1 = 0X%X, p2 = 0X%X, p3 = 0X%X")

@@ -1,0 +1,13 @@
+[APP NAME] = APP_SS
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#starttrace
+#Ss app
+
+#SsUi.c
+TRC_MSG(TRC_MMI_SS_OP_START_ACTION_IGNORE,"mmi_ss_op_start_action, ignored")
+
+#SsStructMgmt.c
+TRC_MSG(TRC_MMI_SS_CNTX_SET_SCR_PROCEED,"mmi_ss_cntx_set_scr_proceed, proceeding=%d, from_grp=%d, id=%d")
+TRC_MSG(TRC_MMI_SS_CNTX_SET_SCR_DEFER,"mmi_ss_cntx_set_scr_defer, deferring=%d, defer_entry_func=%d, defer_user_data=%d")

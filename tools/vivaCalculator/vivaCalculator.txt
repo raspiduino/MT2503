@@ -1,0 +1,26 @@
+[Dummy LIS File]
+T:\build\COBRAS60A_DEMO\VIVA_DEBUG\COBRAS60A_DEMO_PCB01_gprs_MT6260_S00.lis.dummy
+
+[Binary Folder]
+T:\build\COBRAS60A_DEMO\COBRAS60A_DEMO_PCB01_gprs_MT6260_S00.MAUI_11B_W13_08.bin
+
+[Custom Folder]
+T:\custom\system\COBRAS60A_DEMO_BB
+
+[Makefile]
+T:\make\COBRAS60A_DEMO_gprs.mak
+
+[Free ROM Size]
+22968
+
+[New Feature RO-CODE Size]
+0
+
+[New Feature RO-DATA Size]
+0
+
+[New Feature RW Size]
+0
+
+[New Feature ZI Size]
+0

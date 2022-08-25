@@ -1,0 +1,137 @@
+ModuleName,LibraryName,Attribute,Category,FeatureOption
+LzmaDec.obj,gfx_core32.lib,RO,Neptune-related obj,
+l1_interface.obj,interface_classb.lib,RO,Neptune-related obj,
+*bmt.lib,bmt.lib,RO,default not in zimage,
+*config.lib,config.lib,RO,default not in zimage,
+*drv.lib,*drv.lib,RO,default not in zimage,
+*mc.lib,mc.lib,RO,default not in zimage,
+*usb_driver.lib,usb_driver.lib,RO,default not in zimage,
+*mm_comm.lib,mm_comm.lib,RO,default not in zimage,
+*mtd.lib,mtd.lib,RO,default not in zimage,
+*peripheral.lib,peripheral.lib,RO,default not in zimage,
+*drv_display.lib,drv_display.lib,RO,default not in zimage,
+*gfx_drv.lib,gfx_drv.lib,RO,default not in zimage,
+*cipher.lib,cipher.lib,RO,default not in zimage,
+*drv_idp.lib,drv_idp.lib,RO,default not in zimage,
+*fdm.lib,fdm.lib,RO,default not in zimage,
+*init.lib,init.lib,RO,default not in zimage,
+*system.lib,system.lib,RO,default not in zimage,
+*kal.lib,kal.lib,RO,default not in zimage,
+*l1_ext.lib,l1_ext.lib,RO,default not in zimage,
+*sst.lib,sst.lib,RO,default not in zimage,
+*sst_sec.lib,sst_sec.lib,RO,default not in zimage,
+*sss.lib,sss.lib,RO,default not in zimage,
+*sss_rvct*.lib,sss_rvct*.lib,RO,default not in zimage,
+*tst.lib,tst.lib,RO,default not in zimage,
+*gdi.lib,gdi.lib,RO,default not in zimage,
+*verno.lib,verno.lib,RO,default not in zimage,
+*j2me_hi.lib,j2me_hi.lib,RO,default not in zimage,
+*j2me_hi_rvct.lib,j2me_hi_rvct.lib,RO,default not in zimage,
+*gdi_arm.lib,gdi_arm.lib,RO,default not in zimage,!(PLATFORM = MT6250 || PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502)
+*dsp_ram.lib,dsp_ram.lib,RO,default not in zimage,
+*ssf.lib,ssf.lib,RO,default not in zimage,FOTA_ENABLE = FOTA_DM
+custom_emi.obj,custom.lib,RO,default not in zimage,
+custom_config.obj,custom.lib,RO,default not in zimage,
+custom_flash.obj,custom.lib,RO,default not in zimage,
+custom_scatstruct.obj,custom.lib,RO,default not in zimage,
+custom_jump_tbl.obj,custom.lib,RO,default not in zimage,MULTIPLE_BINARY_FILES = FALSE
+custom_util.obj,custom.lib,RO,default not in zimage,
+custom_fota.obj,custom.lib,RO,default not in zimage,FOTA_ENABLE = FOTA_DM
+custom_img_config.obj,custom.lib,RO,default not in zimage,FOTA_ENABLE = FOTA_DM
+combo_flash_nor.obj,custom.lib,RO-CODE RO-DATA,default not in zimage,
+combo_flash_init.obj,custom.lib,RO-CODE RO-DATA,default not in zimage,
+custom_sfi.obj,custom.lib,RO-CODE RO-DATA,default not in zimage,
+gpio_setting.obj,custom.lib,RO,default not in zimage,
+adc_channel.obj,Unknown,RO,default not in zimage,
+alerter_tone.obj,Unknown,RO,default not in zimage,
+alerterdrv.obj,custom.lib,RO,default not in zimage,
+chr_parameter.obj,custom.lib,RO,default not in zimage,
+custom_drv_init.obj,custom.lib,RO,default not in zimage
+custom_equipment.obj,custom.lib,RO,default not in zimage
+custom_hw_default.obj,custom.lib,RO,default not in zimage
+eint_def.obj,custom.lib,RO,default not in zimage
+exif_custom.obj,Unknown,RO,default not in zimage
+gpio_drv.obj,custom.lib,RO,default not in zimage
+irda_custom.obj,Unknown,RO,default not in zimage
+kbdmain_joystick.obj,Unknown,RO,default not in zimage
+keypad_def.obj,custom.lib,RO,default not in zimage
+msdc_custom.obj,custom.lib,RO,default not in zimage
+pmic_custom.obj,Unknown,RO,default not in zimage
+pwmdrv.obj,custom.lib,RO,default not in zimage
+touch_panel_custom.obj,custom.lib,RO,default not in zimage
+touch_panel_spi.obj,Unknown,RO,default not in zimage
+touchpad.obj,Unknown,RO,default not in zimage
+touchpad_keydef.obj,Unknown,RO,default not in zimage
+tv_custom.obj,Unknown,RO,default not in zimage
+uart_def.obj,custom.lib,RO,default not in zimage
+uem_gpio.obj,custom.lib,RO,default not in zimage
+usb_custom.obj,custom.lib,RO,default not in zimage
+usb_host_ms_custom.obj,Unknown,RO,default not in zimage
+pmu_custom.obj,custom.lib,RO,default not in zimage
+adc_var.obj,custom.lib,RO,default not in zimage
+eint_var.obj,custom.lib,RO,default not in zimage
+gpio_var.obj,custom.lib,RO,default not in zimage
+uem_drv.obj,custom.lib,RO,default not in zimage
+pmic_drv.obj,Unknown,RO,default not in zimage
+lcd.obj,custom.lib,RO,default not in zimage
+Ext_Charger_*.obj,Unknown,RO,default not in zimage
+Ext_Cable_*.obj,Unknown,RO,default not in zimage
+cs_fac_det*.obj,Unknown,RO,default not in zimage
+custNFBProgressImg.obj,Unknown,RO,default not in zimage
+mdi_tv.obj,Unknown,RO,default not in zimage
+MiscUtils.obj,Unknown,RO,default not in zimage
+ul1sm.obj,Unknown,RO,default not in zimage
+bl_SC624.obj,Unknown,RO,default not in zimage
+mmi_create.obj,mmi.lib,RO,default not in zimage
+mmi_main.obj,mmi.lib,RO,default not in zimage
+ws_fs_api.obj,Unknown,RO,default not in zimage
+ext_drv_assert_hdlr_if.obj,custom.lib,RO,default not in zimage
+rc4_engine.obj,che.lib,RO,default not in zimage
+bn_lib.obj,ossl_crypto.lib,RO,default not in zimage
+X509.obj,Unknown,RO,default not in zimage
+*drv_sec.lib,drv_sec.lib,RO,default not in zimage
+usbms_state.obj,usb.lib,RO-DATA,default not in zimage
+dcmgr_pl_logic.obj,sys_int.lib,RO,default not in zimage
+md5_engine.obj,che.lib,RO,default not in zimage
+*sys_sec.lib,sys_sec.lib,RO,default not in zimage
+dcmgr_pl_logic.obj,sys_int.lib,RO,default not in zimage,!(DCM_MULTITRUNK = NONE)
+*sys_lib_a.lib,sys_lib_a.lib,RO,default not in zimage,
+audio_service.obj,audio.lib,RO,default not in zimage,
+gdi_2d_engine.obj,gdi_g2d.lib,RO,default not in zimage,
+*nucleus.lib,nucleus.lib,RO,rtos-related lib,
+*nucleus_int.lib,nucleus_int.lib,RO,rtos-related lib,
+*nucleus_debug.lib,nucleus_debug.lib,RO,rtos-related lib,
+*nucleus_v2.lib,nucleus_v2.lib,RO,rtos-related lib,
+*nucleus_v2_int.lib,nucleus_v2_int.lib,RO,rtos-related lib,
+*nucleus_v2_debug.lib,nucleus_v2_debug.lib,RO,rtos-related lib,
+*nucleus_v2_ctrl_code.lib,nucleus_v2_ctrl_code.lib,RO,rtos-related lib,
+csc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+tcc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+tms.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+evc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+quc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+pmc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+smc.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+tct.obj,nucleus_ctrl_code.lib,RO,rtos-related lib,
+sw_keypad.obj,peripheral.lib,RO,Boot-up used,PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+m11007.obj,l1_classb_g2.lib,RO-CODE RO-DATA,L1_temp,
+m12171.obj,l1_classb_g2.lib,RO-CODE RO-DATA,L1_temp,
+m12100.obj ,l1_classb_g2.lib,RO-CODE RO-DATA,L1_temp,!(PLATFORM = MT6250 || PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502)
+l1sm.obj ,l1_classb_g2.lib,RO-CODE RO-DATA,L1_temp,!(PLATFORM = MT6250 || PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502)
+l1csm.obj,l1_classb_g2.lib,RO-CODE RO-DATA,L1_temp,!(PLATFORM = MT6250 || PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502)
+*gdi_2.lib,gdi_2.lib,RO,img_med_fs_temp,
+*fs.lib,fs.lib,RO,img_med_fs_temp,
+gui_wrapper.obj,mmiresource.lib,RO,gui_wrapper_temp,
+combo_lcm*.obj,custom.lib,RO,Post processing,
+*hanwang.lib,hanwang.lib,RO-DATA,Poor compression ratio,
+*mre_custom.lib,mre_custom.lib,RO-DATA,Poor compression ratio,
+kmxime_latin.o,kmxime_arm7_rvct.a,RO-DATA,Poor compression ratio,
+CustImgGroupDataRes_0.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_1.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_2.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_3.obj,mmiresource.lib,RO,Already compressed,
+FontData.obj,mmiresource.lib,RO,Already compressed,
+CustStrResComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+CustStrMapComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+afe_common.obj,audio.lib,RO,default not in zimage,
+audcoeff.obj,custom.lib,RO,default not in zimage,

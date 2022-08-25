@@ -1,0 +1,427 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE. 
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*******************************************************************************/
+
+ /*******************************************************************************
+ * Filename:
+ * ---------
+ *  touch_panel_shortcut_custom.c
+ *
+ * Project:
+ * --------
+ *  Maui_Software
+ *
+ * Description:
+ * ------------
+ *  This file is defined for touch panel shortcut.
+ *
+ * Author:
+ * -------
+ *  Kun Liu   (mbj06075)
+ *
+ *
+ *==============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!! 
+ *------------------------------------------------------------------------------
+ * $Log$
+ *
+ * 05 03 2012 hua.tian
+ * [MAUI_03178119] Fix Build error
+ * .
+ *
+ * 11 07 2011 yan.liang
+ * [MAUI_02974121] [MMI FRM] Fix build error
+ * .
+ *
+ * 11 04 2011 yan.liang
+ * [MAUI_02974121] [MMI FRM] Fix build error
+ * .
+ *
+ * 11 04 2011 yan.liang
+ * [MAUI_02974121] [MMI FRM] Fix build error
+ * .
+ *
+ * May 14 2009 mtk80019
+ * [MAUI_01832575] [FRM][Touch] Add short cut files to custom\common folder
+ * Codegen process will copy shortcut files to custom\app\project\ folder if __MMI_TOUCH_PANEL_SHORTCUT__ is defined.
+ *
+ * Apr 22 2008 mbj06075
+ * [MAUI_00062765] Touching the symobls shown below the LCD screen not working in NO SIM conditions.
+ * 
+ *
+ * Apr 22 2008 mbj06075
+ * [MAUI_00062765] Touching the symobls shown below the LCD screen not working in NO SIM conditions.
+ * 
+ *
+ * Apr 11 2008 mbj06075
+ * [MAUI_00653492] Revise Code & Fix build warning
+ * 
+ *
+ * Aug 26 2007 MBJ06075
+ * [MAUI_00461178] Fix Build Error
+ * 
+ *
+ * Jul 20 2007 MBJ06075
+ * [MAUI_00445202] Add touch panel shortcut support
+ * 
+ *
+ * Jul 20 2007 MBJ06075
+ * [MAUI_00445202] Add touch panel shortcut support
+ * 
+ *
+ * Jul 9 2007 MBJ06075
+ * [MAUI_00445202] Add touch panel shortcut support
+ * Create
+ *
+ * 
+ *
+ * 
+ *
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *============================================================================
+ ****************************************************************************/
+
+#ifdef PLUTO_MMI
+#include "MMI_features.h"
+#ifdef __MMI_TOUCH_PANEL_SHORTCUT__
+#include "touch_panel_shortcut_custom.h"
+#include "BootupSrvGprot.h"
+
+
+MMI_BOOL custom_tp_shorcut_1_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+MMI_BOOL custom_tp_shorcut_2_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+MMI_BOOL custom_tp_shorcut_3_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+MMI_BOOL custom_tp_shorcut_4_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+MMI_BOOL custom_tp_shorcut_5_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+
+extern MMI_BOOL mmi_idle_is_active(void);
+extern pBOOL mmi_bootup_is_sim_valid(void);
+//extern S16 GetScreenCountInHistory(void);
+
+
+extern void EntryScrSettingMenu(void);
+
+#ifdef __MMI_AUDIO_PLAYER__
+extern void mmi_audply_entry_main(void);
+#endif /* __MMI_AUDIO_PLAYER__ */
+
+#ifdef __MMI_MESSAGES_CHAT__
+extern void EntryChatApp(void);
+#endif /* __MMI_MESSAGES_CHAT__ */
+
+extern void mmi_fng_entry_screen(void);
+
+#ifdef __MMI_MESSAGES_MULTI_APP__
+extern void EntrySMSMainMenuList(void);
+#endif /* __MMI_MESSAGES_MULTI_APP__ */ 
+
+/*
+ * 
+ * |--- WIDTH ----|
+ * |              |-SPACE
+ * |              | |
+ * v              v v                                                 H
+ * +--------------+--------------+--------------+--------------+ <--- E
+ * | +----------+ | +----------+ | +----------+ | +----------+ |      I
+ * | | Shortcut | | | Shortcut | | | Shortcut | | | Shortcut | |      G
+ * | +----------+ | +----------+ | +----------+ | +----------+ |      H
+ * +--------------+--------------+--------------+--------------+ <--- T 
+*/
+/* Defines the each touch panel shorcut vertexs coordinate */
+#define TP_SHORTCUT_SPACE       0
+#define TP_SHORTCUT_UNIT_WIDTH  (LCD_WIDTH/TP_SHORTCUT_NUMBER)
+#define TP_SHORTCUT_UNIT_HEIGHT TP_SHORTCUT_HEIGHT
+
+#define TP_SHORTCUT_1_X_START   TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_SPACE
+#define TP_SHORTCUT_1_Y_START   TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_1_X_END     TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH  - TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_1_Y_END     TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_UNIT_HEIGHT - TP_SHORTCUT_SPACE
+
+#define TP_SHORTCUT_2_X_START   TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH   + TP_SHORTCUT_SPACE
+#define TP_SHORTCUT_2_Y_START   TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_2_X_END     TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*2 - TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_2_Y_END     TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_UNIT_HEIGHT  - TP_SHORTCUT_SPACE
+
+#define TP_SHORTCUT_3_X_START   TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*2 + TP_SHORTCUT_SPACE
+#define TP_SHORTCUT_3_Y_START   TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_3_X_END     TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*3 - TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_3_Y_END     TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_UNIT_HEIGHT  - TP_SHORTCUT_SPACE
+
+#define TP_SHORTCUT_4_X_START   TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*3 + TP_SHORTCUT_SPACE
+#define TP_SHORTCUT_4_Y_START   TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_4_X_END     TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*4 - TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_4_Y_END     TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_UNIT_HEIGHT  - TP_SHORTCUT_SPACE
+
+#define TP_SHORTCUT_5_X_START   TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*4 + TP_SHORTCUT_SPACE
+#define TP_SHORTCUT_5_Y_START   TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_5_X_END     TP_SHORTCUT_COORD_X_START + TP_SHORTCUT_UNIT_WIDTH*5 - TP_SHORTCUT_SPACE 
+#define TP_SHORTCUT_5_Y_END     TP_SHORTCUT_COORD_Y_START + TP_SHORTCUT_UNIT_HEIGHT  - TP_SHORTCUT_SPACE
+
+#define MAKE_POLYGON(region) {region, sizeof(region)/sizeof(mmi_pen_point_struct)}
+#define ADD_SHORTCUT(region, hdlr)  {MAKE_POLYGON(region), hdlr}
+
+/* Defines the touch panel total region. */
+mmi_pen_point_struct g_tp_shortcut_total_region[] =
+{
+	{TP_SHORTCUT_COORD_X_START , TP_SHORTCUT_COORD_Y_START}, 
+	{TP_SHORTCUT_COORD_X_END,	 TP_SHORTCUT_COORD_Y_START}, 
+	{TP_SHORTCUT_COORD_X_END,    TP_SHORTCUT_COORD_Y_END  }, 
+	{TP_SHORTCUT_COORD_X_START,  TP_SHORTCUT_COORD_Y_END  } 
+};
+const mmi_pen_polygon_area_struct g_tp_shortcut_total_polygon = MAKE_POLYGON(g_tp_shortcut_total_region);
+
+/* Defines the each touch panel shorcut region. The form of the shorcut can be any polygon. */
+mmi_pen_point_struct g_tp_shortcut_1_region[] = 
+{
+	{TP_SHORTCUT_1_X_START, TP_SHORTCUT_1_Y_START}, 
+	{TP_SHORTCUT_1_X_END,   TP_SHORTCUT_1_Y_START},
+	{TP_SHORTCUT_1_X_END,   TP_SHORTCUT_1_Y_END  }, 
+	{TP_SHORTCUT_1_X_START, TP_SHORTCUT_1_Y_END  } 
+};
+
+mmi_pen_point_struct g_tp_shortcut_2_region[] = 
+{
+	{TP_SHORTCUT_2_X_START, TP_SHORTCUT_2_Y_START}, 
+	{TP_SHORTCUT_2_X_END,   TP_SHORTCUT_2_Y_START},
+	{TP_SHORTCUT_2_X_END,   TP_SHORTCUT_2_Y_END  }, 
+	{TP_SHORTCUT_2_X_START, TP_SHORTCUT_2_Y_END  } 
+};
+
+mmi_pen_point_struct g_tp_shortcut_3_region[] = 
+{
+	{TP_SHORTCUT_3_X_START, TP_SHORTCUT_3_Y_START}, 
+	{TP_SHORTCUT_3_X_END,   TP_SHORTCUT_3_Y_START},
+	{TP_SHORTCUT_3_X_END,   TP_SHORTCUT_3_Y_END  }, 
+	{TP_SHORTCUT_3_X_START, TP_SHORTCUT_3_Y_END  } 
+};
+
+mmi_pen_point_struct g_tp_shortcut_4_region[] = 
+{
+	{TP_SHORTCUT_4_X_START, TP_SHORTCUT_4_Y_START}, 
+	{TP_SHORTCUT_4_X_END,   TP_SHORTCUT_4_Y_START},
+	{TP_SHORTCUT_4_X_END,   TP_SHORTCUT_4_Y_END  }, 
+	{TP_SHORTCUT_4_X_START, TP_SHORTCUT_4_Y_END  } 
+};
+
+mmi_pen_point_struct g_tp_shortcut_5_region[] = 
+{
+	{TP_SHORTCUT_5_X_START, TP_SHORTCUT_5_Y_START}, 
+	{TP_SHORTCUT_5_X_END,   TP_SHORTCUT_5_Y_START},
+	{TP_SHORTCUT_5_X_END,   TP_SHORTCUT_5_Y_END  }, 
+	{TP_SHORTCUT_5_X_START, TP_SHORTCUT_5_Y_END  } 
+};
+
+
+/* Defines the each shorcut handle related region.*/
+const tp_shortcut_area_struct  g_tp_shortcut_area_tbl[TP_SHORTCUT_NUMBER] = 
+{
+	ADD_SHORTCUT(g_tp_shortcut_1_region, custom_tp_shorcut_1_hdlr),
+	ADD_SHORTCUT(g_tp_shortcut_2_region, custom_tp_shorcut_2_hdlr),
+	ADD_SHORTCUT(g_tp_shortcut_3_region, custom_tp_shorcut_3_hdlr),
+	ADD_SHORTCUT(g_tp_shortcut_4_region, custom_tp_shorcut_4_hdlr),
+	ADD_SHORTCUT(g_tp_shortcut_5_region, custom_tp_shorcut_5_hdlr)
+};
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  custom_tp_shorcut_1_hdlr
+ * DESCRIPTION
+ *  The example touch panel shorcut handler.
+ * PARAMETERS
+ *  pos         [IN]        The pen event's location.
+ *  event       [IN]        The type of pen event.
+ * RETURNS
+ *  returns MMI_TURE if processed the pen event, otherwise returns MMI_FALSE. 
+ *****************************************************************************/
+MMI_BOOL custom_tp_shorcut_1_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/    
+#ifdef __MMI_MESSAGES_MULTI_APP__
+    if (MMI_PEN_EVENT_DOWN == event)
+    {	
+        if (mmi_idle_is_active() && mmi_bootup_is_sim_valid())
+        {
+            EntrySMSMainMenuList();
+            return MMI_TRUE;
+        }        
+    }
+#endif /* __MMI_MESSAGES_MULTI_APP__ */    
+    return MMI_FALSE;
+}
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  custom_tp_shorcut_2_hdlr
+ * DESCRIPTION
+ *  The example touch panel shorcut handler.
+ * PARAMETERS
+ *  pos         [IN]        The pen event's location.
+ *  event       [IN]        The type of pen event.
+ * RETURNS
+ *  returns MMI_TURE if processed the pen event, otherwise returns MMI_FALSE. 
+ *****************************************************************************/
+MMI_BOOL custom_tp_shorcut_2_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+#ifdef __MMI_AUDIO_PLAYER__    
+    if (MMI_PEN_EVENT_DOWN == event)
+    {	
+        if (srv_bootup_is_completed() && mmi_idle_is_active())
+        {
+            mmi_audply_entry_main();
+            return MMI_TRUE;
+        }     
+    }
+#endif /* __MMI_AUDIO_PLAYER__ */
+    return MMI_FALSE;
+}
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  custom_tp_shorcut_3_hdlr
+ * DESCRIPTION
+ *  The example touch panel shorcut handler.
+ * PARAMETERS
+ *  pos         [IN]        The pen event's location.
+ *  event       [IN]        The type of pen event.
+ * RETURNS
+ *  returns MMI_TURE if processed the pen event, otherwise returns MMI_FALSE. 
+ *****************************************************************************/
+MMI_BOOL custom_tp_shorcut_3_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    if (MMI_PEN_EVENT_DOWN == event)
+    {   
+        if (srv_bootup_is_completed() && mmi_idle_is_active())
+        {
+            mmi_fng_entry_screen();
+            return MMI_TRUE;
+        }              
+    }
+    return MMI_FALSE;
+}
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  custom_tp_shorcut_4_hdlr
+ * DESCRIPTION
+ *  The example touch panel shorcut handler.
+ * PARAMETERS
+ *  pos         [IN]        The pen event's location.
+ *  event       [IN]        The type of pen event.
+ * RETURNS
+ *  returns MMI_TURE if processed the pen event, otherwise returns MMI_FALSE. 
+ *****************************************************************************/
+MMI_BOOL custom_tp_shorcut_4_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+#ifdef __MMI_MESSAGES_CHAT__    
+    if (MMI_PEN_EVENT_DOWN == event)
+    {   
+        if (mmi_idle_is_active() && mmi_bootup_is_sim_valid())
+        {
+             EntryChatApp();
+             return MMI_TRUE;     
+        }                
+    }
+#endif /* __MMI_MESSAGES_CHAT__ */
+    return MMI_FALSE;
+}
+
+
+/*****************************************************************************
+ * FUNCTION
+ *  custom_tp_shorcut_5_hdlr
+ * DESCRIPTION
+ *  The example touch panel shorcut handler.
+ * PARAMETERS
+ *  pos         [IN]        The pen event's location.
+ *  event       [IN]        The type of pen event.
+ * RETURNS
+ *  returns MMI_TURE if processed the pen event, otherwise returns MMI_FALSE. 
+ *****************************************************************************/
+MMI_BOOL custom_tp_shorcut_5_hdlr(mmi_pen_point_struct pos, mmi_pen_event_type_enum event)
+{
+    /*----------------------------------------------------------------*/
+    /* Local Variables                                                */
+    /*----------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------*/
+    /* Code Body                                                      */
+    /*----------------------------------------------------------------*/
+    if (MMI_PEN_EVENT_DOWN == event)
+    {   
+        if (srv_bootup_is_completed() && mmi_idle_is_active())
+        {
+            EntryScrSettingMenu();
+            return MMI_TRUE;          
+        }           
+    }
+    return MMI_FALSE;
+}
+
+#endif /* __MMI_TOUCH_PANEL_SHORTCUT__ */ 
+
+#endif /* PLUTO_MMI */
+

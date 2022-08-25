@@ -1,0 +1,7 @@
+[APP NAME] = APP_APPLIST
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_APPLIST_LAUNCH,	"[APPL]launch()")
+TRC_MSG(TRC_APPLIST_ON_WANT_TO_RUN, "[APPL]mmi_idle_applist_on_want_to_run:%d")

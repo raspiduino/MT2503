@@ -1,0 +1,6 @@
+hal\video\mpl\src\mpl_parser.c
+hal\video\mpl\src\mpl_session.c
+hal\video\mpl\src\mpl_utility.c
+hal\video\mpl\src\mpl_video_clipper.c
+hal\video\mpl\src\mpl_video_recorder.c
+hal\video\mpl\src\mpl_vt.c

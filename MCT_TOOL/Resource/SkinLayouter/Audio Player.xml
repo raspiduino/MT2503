@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE SKIN_XML SYSTEM ".\Skinlayouter.dtd">-->
+<SKIN_XML>
+	<!--output_dll="AudioPlayerOutput.dll"-->
+	<XMLINFO toolname="Audio Player" date="22012006" version="1.0" output_dll=""/>
+	<DEFINES value="__MMI_AUDIO_PLAYER_ANIMATION__" skin_size="176x220|240x320|320x240|240x400"/>
+	<DEFINES value="__MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE__" skin_size="128x160|176x220|240x320|320x240|240x400"/>
+	<DEFINES value="__MMI_AUDIO_SPECTRUM_DISPLAY__" skin_size="176x220|240x320|320x240|240x400"/>
+	<DEFINES value="__MMI_AUDIO_PLAYER_LYRIC_DISPLAY__" skin_size="176x220|240x320|320x240|240x400"/>
+	<DEFINES value="__MMI_TOUCH_SCREEN__" skin_size="128x160|176x220|240x320|320x240|240x400"/>
+	<DEFINES value="__MMI_SLIM_AUDIO_PLAYER__"/>
+	<DEFINE_CHOICE>
+		<CHOICE_TYPE name="skin_comp_type">
+			<CHOICE_ELEMENT value="IMAGE"/>
+			<CHOICE_ELEMENT value="TEXT"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_arrow_key">
+			<!--<CHOICE_ELEMENT value="AUDPLY_MAIN_DISABLED"/>-->
+			<CHOICE_ELEMENT value="AUDPLY_MAIN_PLAY"/>
+			<CHOICE_ELEMENT value="AUDPLY_MAIN_STOP"/>
+			<CHOICE_ELEMENT value="AUDPLY_MAIN_PREV"/>
+			<CHOICE_ELEMENT value="AUDPLY_MAIN_NEXT"/>
+			<!--<CHOICE_ELEMENT value="AUDPLY_MAIN_PAUSE"/>-->
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_color">
+			<CHOICE_ELEMENT value="TEXT"/>
+			<CHOICE_ELEMENT value="TEXT ON"/>
+			<CHOICE_ELEMENT value="TEXT OFF"/>
+			<CHOICE_ELEMENT value="BORDER"/>
+			<CHOICE_ELEMENT value="BACKGROUND"/>
+		</CHOICE_TYPE>
+	</DEFINE_CHOICE>
+	<SKIN_SIZE value="128x128"/>
+	<SKIN_SIZE value="128x160"/>
+	<SKIN_SIZE value="176x220"/>
+	<SKIN_SIZE value="240x320"/>
+	<SKIN_SIZE value="320x240"/>
+	<SKIN_SIZE value="240x400"/>
+	<SKIN_NAME name="Skin1"/>
+	<SKIN_NAME name="Skin2"/>
+	<SKIN_NAME name="Skin3"/>
+	<SKIN_COMPONENTS>
+		<COMPONENT name="LSK" control_id="-1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="RSK" control_id="-2" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="1" default_pos_y="1" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="CAPTION" control_id="-3" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="COMMON_COLOR" control_id="-4" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SONG_TITLE" control_id="IDC_STATIC_TEXT_CONTROL1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="170" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TIME" control_id="IDC_STATIC_TEXT_CONTROL2" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="225" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SONG_INDEX" control_id="IDC_STATIC_TEXT_CONTROL3" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="90" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="PLAYLIST_ICON" control_id="IDC_STATIC_IMAGE_CONTROL1" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="360" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+	        <COMPONENT name="VOLUME_BAR" control_id="IDC_STATIC_IMAGE_CONTROL2" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="457" default_pos_y="360" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SEEK" control_id="IDC_STATIC_IMAGE_CONTROL3" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="200" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="1"/>
+		<COMPONENT name="PREVIOUS_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL4" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="457" default_pos_y="420" arrow_key_choice="AUDPLY_MAIN_PREV" generate_coordinate="1" coordinate_seq="4"/>
+		<COMPONENT name="NEXT_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL5" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="547" default_pos_y="420" arrow_key_choice="AUDPLY_MAIN_NEXT" generate_coordinate="1" coordinate_seq="5"/>
+		<COMPONENT name="PLAY_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL6" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="420" arrow_key_choice="AUDPLY_MAIN_PLAY" generate_coordinate="1" coordinate_seq="6"/>
+		<COMPONENT name="STOP_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL7" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="480" arrow_key_choice="AUDPLY_MAIN_STOP" generate_coordinate="1" coordinate_seq="7"/>
+		<COMPONENT name="ANIMATION" control_id="IDC_STATIC_IMAGE_CONTROL8" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="377" default_pos_y="270" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_AUDIO_PLAYER_ANIMATION__" generate_coordinate="0"/>
+		<COMPONENT name="SPECTRUM" control_id="IDC_STATIC_TEXT_CONTROL4" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="377" default_pos_y="135" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_AUDIO_SPECTRUM_DISPLAY__" generate_coordinate="0" exclusive_comp_name="LYRICS"/>
+		<COMPONENT name="LYRICS" control_id="IDC_STATIC_TEXT_CONTROL5" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="547" default_pos_y="135" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_AUDIO_PLAYER_LYRIC_DISPLAY__" generate_coordinate="0" exclusive_comp_name="SPECTRUM"/>
+		<COMPONENT name="REPEAT_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL9" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="625" default_pos_y="480" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE__ | __MMI_TOUCH_SCREEN__ " generate_coordinate="1" coordinate_seq="9"/>
+		<COMPONENT name="SHUFFLE_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL10" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="627" default_pos_y="360" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_AUDIO_PLAYER_SKIN_SHOW_REPEAT_SHUFFLE__| __MMI_TOUCH_SCREEN__ " generate_coordinate="1" coordinate_seq="10"/>
+		<COMPONENT name="VOLUME_INCREASE" control_id="IDC_STATIC_IMAGE_CONTROL11" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="547" default_pos_y="480" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="2"/>
+		<COMPONENT name="VOLUME_DECREASE" control_id="IDC_STATIC_IMAGE_CONTROL12" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="477" default_pos_y="480" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="3"/>
+		<COMPONENT name="SETTINGS_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL13" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="547" default_pos_y="360" arrow_key_choice="AUDPLY_MAIN_DISABLED" define_value="__MMI_TOUCH_SCREEN__" generate_coordinate="1" coordinate_seq="8"/>
+	</SKIN_COMPONENTS>
+	<SKIN_LAYOUT name="default_skin" ref_image_name="AP_MAIN.gif">
+		<COMP_IMAGE name="PLAYLIST_ICON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PHONE" name="AP_MAIN_PLAYLIST_PHONE.pbm" id="PLAYLIST_PHONE_ICON"/>
+			<IMAGE tag="CARD" name="AP_MAIN_PLAYLIST_CARD.pbm" id="PLAYLIST_CARD_ICON"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_BAR" count="1" layout="0" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="VOLUME BAR" name="AP_MAIN_VOLUME_IND.pbm" id="VOLUME_INDICATOR"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SEEK" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SEEK" name="AP_MAIN_PROGRESS_FILL.pbm" id="PROGRESSBAR"/>
+			<IMAGE tag="SEEK_FAIL" name="AP_MAIN_PROGRESS_FAIL.pbm" id="PROGRESSBAR_FAIL"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PREVIOUS_BUTTON" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="AP_MAIN_PREV_OFF.pbm" id="PREV_OFF"/>
+			<IMAGE tag="DISABLED" name="AP_MAIN_PREV_DISABLED.pbm" id="PREV_DISABLED"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_PREV_DOWN.pbm" id="PREV_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="NEXT_BUTTON" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="AP_MAIN_NEXT_OFF.pbm" id="NEXT_OFF"/>
+			<IMAGE tag="DISABLED" name="AP_MAIN_NEXT_DISABLED.pbm" id="NEXT_DISABLED"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_NEXT_DOWN.pbm" id="NEXT_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PLAY_BUTTON" count="5" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="AP_MAIN_PLAY_OFF.pbm" id="PLAY_OFF"/>
+			<IMAGE tag="DISABLED" name="AP_MAIN_PLAY_DISABLED.pbm" id="PLAY_DISABLED"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_PLAY_DOWN.pbm" id="PLAY_DOWN"/>
+			<IMAGE tag="PAUSE OFF" name="AP_MAIN_PAUSE_OFF.pbm" id="PAUSE_OFF"/>
+			<IMAGE tag="PAUSE DOWN" name="AP_MAIN_PAUSE_DOWN.pbm" id="PAUSE_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="STOP_BUTTON" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="AP_MAIN_STOP_OFF.pbm" id="STOP_OFF"/>
+			<IMAGE tag="DISABLED" name="AP_MAIN_STOP_DISABLED.pbm" id="STOP_DISABLED"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_STOP_DOWN.pbm" id="STOP_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="ANIMATION" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ANIMATION" name="AP_MAIN_ANIMATION.gif" id="ANIMATION"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="REPEAT_BUTTON" count="6" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF UP" name="AP_MAIN_REPEAT_OFF.pbm" id="REPEAT_OFF_UP"/>
+			<IMAGE tag="ALL UP" name="AP_MAIN_REPEAT_ALL.pbm" id="REPEAT_ALL_UP"/>
+			<IMAGE tag="ONE UP" name="AP_MAIN_REPEAT_ONE.pbm" id="REPEAT_ONE_UP"/>
+			<IMAGE tag="OFF DOWN" name="AP_MAIN_REPEAT_OFF_DOWN.pbm" id="REPEAT_OFF_DOWN"/>
+			<IMAGE tag="ALL DOWN" name="AP_MAIN_REPEAT_ALL_DOWN.pbm" id="REPEAT_ALL_DOWN"/>
+			<IMAGE tag="ONE DOWN" name="AP_MAIN_REPEAT_ONE_DOWN.pbm" id="REPEAT_ONE_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SHUFFLE_BUTTON" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF UP" name="AP_MAIN_SHUFFLE_OFF.pbm" id="SHUFFLE_OFF_UP"/>
+			<IMAGE tag="ON UP" name="AP_MAIN_SHUFFLE_ON.pbm" id="SHUFFLE_ON_UP"/>
+			<IMAGE tag="OFF DOWN" name="AP_MAIN_SHUFFLE_OFF_DOWN.pbm" id="SHUFFLE_OFF_DOWN"/>
+			<IMAGE tag="ON DOWN" name="AP_MAIN_SHUFFLE_ON_DOWN.pbm" id="SHUFFLE_ON_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_INCREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AP_MAIN_VOLUME_INC_UP.pbm" id="VOLUME_INC_UP"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_VOLUME_INC_DOWN.pbm" id="VOLUME_INC_DOWN"/>
+			<IMAGE tag="DISABLE" name="AP_MAIN_VOLUME_INC_DISABLED.pbm" id="VOLUME_INC_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_DECREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AP_MAIN_VOLUME_DEC_UP.pbm" id="VOLUME_DEC_UP"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_VOLUME_DEC_DOWN.pbm" id="VOLUME_DEC_DOWN"/>
+			<IMAGE tag="DISABLE" name="AP_MAIN_VOLUME_DEC_DISABLED.pbm" id="VOLUME_DEC_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SETTINGS_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AP_MAIN_SETTING_UP.pbm" id="SETTING_UP"/>
+			<IMAGE tag="DOWN" name="AP_MAIN_SETTING_DOWN.pbm" id="SETTING_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_TEXT name="COMMON_COLOR" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100"/>
+			<COLOR tag="Text" choice_color="TEXT" value="255,255,255,100"/>
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="0,0,0,100"/>
+			<DIMENSION left="0" right="0" top="0" bottom="0"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LSK" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100" common_choice_color="BORDER"/>
+			<DIMENSION left="0" right="0" top="0" bottom="0"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="RSK" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100" common_choice_color="BORDER"/>
+			<DIMENSION left="1" right="1" top="1" bottom="1"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="CAPTION" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100" common_choice_color="BORDER"/>
+			<DIMENSION left="2" right="2" top="2" bottom="2"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SONG_TITLE" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,0,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="TIME" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,0,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SONG_INDEX" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,0,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SPECTRUM" default_pos_flag="1" exclusive_flag="0">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,0,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LYRICS" default_pos_flag="1" exclusive_flag="0">
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,100,100"/>
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,0,100"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+	</SKIN_LAYOUT>
+	<OUTPUT_FORMAT>
+		<STRINGS filename="resource_audply_skins.c" image_id="IMG_ID_AUDPLY_MAIN" coordinate_struct="audply_point_struct" skin_struct="audply_skin_struct" skin_struct_name="g_audply_skins" project="MAUI" description="Audio player main screen skin settings" tool_define="__MMI_AUDIO_PLAYER__" background="BG"/>
+		<FORMAT background_image="" common_color="1"/>
+		<ADDITIONAL_INFO name="VOLUME_BAR" info="0" description="indicator left"/>
+		<ADDITIONAL_INFO name="PLAYLIST_ICON" braces_required="1"/>
+		<FILE_HEADERS file_name="gdi_lcd_config.h"/>
+		<FILE_HEADERS file_name="FrameworkStruct.h"/>
+		<FILE_HEADERS file_name="GlobalConstants.h"/>
+		<FILE_HEADERS file_name="FileMgr.h"/>
+		<FILE_HEADERS file_name="AudioPlayerDef.h"/>
+	</OUTPUT_FORMAT>
+</SKIN_XML>

@@ -1,0 +1,134 @@
+#undef	CFG_MMI_LANG_ALBANIAN	
+#define	CFG_MMI_LANG_ALBANIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_ARMENIAN	
+#define	CFG_MMI_LANG_ARMENIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_ASSAMESE	
+#define	CFG_MMI_LANG_ASSAMESE	  (__OFF__)
+
+#undef	CFG_MMI_LANG_AZERBAIJANI	
+#define	CFG_MMI_LANG_AZERBAIJANI	  (__OFF__)
+
+#undef	CFG_MMI_LANG_BULGARIAN	
+#define	CFG_MMI_LANG_BULGARIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_CA_FRENCH	
+#define	CFG_MMI_LANG_CA_FRENCH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_CATALAN	
+#define	CFG_MMI_LANG_CATALAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_CROATIAN	
+#define	CFG_MMI_LANG_CROATIAN	  (__OFF__)
+
+
+#undef	CFG_MMI_LANG_DANISH	
+#define	CFG_MMI_LANG_DANISH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_ESTONIAN	
+#define	CFG_MMI_LANG_ESTONIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_FINNISH	
+#define	CFG_MMI_LANG_FINNISH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_GEORGIAN	
+#define	CFG_MMI_LANG_GEORGIAN	  (__OFF__)
+
+
+#undef	CFG_MMI_LANG_GUJARATI	
+#define	CFG_MMI_LANG_GUJARATI	  (__OFF__)
+
+
+#undef	CFG_MMI_LANG_HAUSA	
+#define	CFG_MMI_LANG_HAUSA	  (__OFF__)
+#undef	CFG_MMI_LANG_GALICIAN	
+#define	CFG_MMI_LANG_GALICIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_BASQUE	
+#define	CFG_MMI_LANG_BASQUE	  (__OFF__)
+
+#undef	CFG_MMI_LANG_IGBO	
+#define	CFG_MMI_LANG_IGBO	  (__OFF__)
+
+#undef	CFG_MMI_LANG_FILIPINO	
+#define	CFG_MMI_LANG_FILIPINO	  (__OFF__)
+
+#undef	CFG_MMI_LANG_IRISH	
+#define	CFG_MMI_LANG_IRISH	  (__OFF__)
+
+
+#undef	CFG_MMI_LANG_HEBREW	
+#define	CFG_MMI_LANG_HEBREW	  (__OFF__)
+
+#undef	CFG_MMI_LANG_KANNADA	
+#define	CFG_MMI_LANG_KANNADA	  (__OFF__)
+
+#undef	CFG_MMI_LANG_HK_CHINESE	
+#define	CFG_MMI_LANG_HK_CHINESE	  (__OFF__)
+
+#undef	CFG_MMI_LANG_KAZAKH	
+#define	CFG_MMI_LANG_KAZAKH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_LATVIAN	
+#define	CFG_MMI_LANG_LATVIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_LITHUANIAN	
+#define	CFG_MMI_LANG_LITHUANIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_UK_ENGLISH	
+#define	CFG_MMI_LANG_UK_ENGLISH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_MACEDONIAN	
+#define	CFG_MMI_LANG_MACEDONIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_LAO	
+#define	CFG_MMI_LANG_LAO	  (__OFF__)
+
+#undef	CFG_MMI_LANG_KHMER	
+#define	CFG_MMI_LANG_KHMER	  (__OFF__)
+
+#undef	CFG_MMI_LANG_MYANMAR	
+#define	CFG_MMI_LANG_MYANMAR	  (__OFF__)
+
+#undef	CFG_MMI_LANG_MOLDOVAN	
+#define	CFG_MMI_LANG_MOLDOVAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_NORWEGIAN	
+#define	CFG_MMI_LANG_NORWEGIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_ORIYA	
+#define	CFG_MMI_LANG_ORIYA	  (__OFF__)
+
+#undef	CFG_MMI_LANG_POLISH	
+#define	CFG_MMI_LANG_POLISH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_ICELANDIC	
+#define	CFG_MMI_LANG_ICELANDIC	  (__OFF__)
+
+#undef	CFG_MMI_LANG_SESOTHO	
+#define	CFG_MMI_LANG_SESOTHO	  (__OFF__)
+
+#undef	CFG_MMI_LANG_SLOVAK	
+#define	CFG_MMI_LANG_SLOVAK	  (__OFF__)
+
+#undef	CFG_MMI_LANG_SLOVENIAN	
+#define	CFG_MMI_LANG_SLOVENIAN	  (__OFF__)
+
+
+#undef	CFG_MMI_LANG_SWEDISH	
+#define	CFG_MMI_LANG_SWEDISH	  (__OFF__)
+
+#undef	CFG_MMI_LANG_SERBIAN	
+#define	CFG_MMI_LANG_SERBIAN	  (__OFF__)
+
+#undef	CFG_MMI_LANG_TAGALOG	
+#define	CFG_MMI_LANG_TAGALOG	  (__OFF__)
+
+#undef	CFG_MMI_LANG_XHOSA	
+#define	CFG_MMI_LANG_XHOSA	  (__OFF__)
+
+#undef	CFG_MMI_LANG_YORUBA	
+#define	CFG_MMI_LANG_YORUBA	  (__OFF__)
+
+

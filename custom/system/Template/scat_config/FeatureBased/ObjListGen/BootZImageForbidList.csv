@@ -1,0 +1,67 @@
+ModuleName,LibraryName,Attribute,Category,FeatureOption
+viva.obj,system.lib,RO,Boot-up used,
+alice.obj,sys_sec.lib,RO,Boot-up used,
+alice_internal.obj,sys_sec.lib,RO,Boot-up used,
+init.obj,system.lib,RO,Boot-up used,
+init_comm.obj,system.lib,RO,Boot-up used,
+cache.obj,system.lib,RO,Boot-up used,
+custom_scatstruct.obj,custom.lib,RO,Boot-up used,
+regioninit_ads.obj,system.lib,RO,Boot-up used,
+arm_unaligned.obj,system.lib,RO,Boot-up used,
+custom_flash.obj,custom.lib,RO,Boot-up used,
+dcl_gpio.obj,peripheral.lib,RO,Boot-up used,
+kal_mem_mgr.obj,kal.lib,RO,Boot-up used,
+simple_memory_manager.obj,gfx_drv.lib,RO,Boot-up used,
+hwlzma.obj,sys_sec.lib,RO,Boot-up used,
+lzma_dispatcher.obj,sys_sec.lib,RO,Boot-up used,
+LzmaDec.obj,gfx_core32.lib,RO,Boot-up used
+init_memory_stack.obj,system.lib,RO,Boot-up used
+isrentry.obj,system.lib,RO,Boot-up used
+intrCtrl.obj,system.lib,RO,Boot-up used
+adie_intrctrl.obj,system.lib,RO,Boot-up used
+drv_hisr.obj,peripheral.lib,RO,Boot-up used
+tst_trace.obj,tst.lib,RO,Boot-up used
+uart.obj,peripheral.lib,RO,Boot-up used
+custom_util.obj,custom.lib,RO,Boot-up used
+*sst.lib,sst.lib,RO,Boot-up used
+gpio_var.obj,custom.lib,RO,Boot-up used
+gpio.obj,peripheral.lib,RO,Boot-up used
+DclH_kbd.obj,peripheral.lib,RO,Boot-up used
+dcl_pw.obj,peripheral.lib,RO,Boot-up used
+code_decompression_hal.obj,system.lib,RO,Boot-up used
+keypad_def.obj,custom.lib,RO,Boot-up used
+uart_def.obj,custom.lib,RO,Boot-up used
+SSS_secure_shared_common.obj,sss_rvct_sv5.lib,RO,Boot-up used
+excep_hdlr.obj,system.lib,RO,Boot-up used
+tst_assert.obj,tst.lib,RO,Boot-up used
+Dcl_SeriPortDrv.obj,peripheral.lib,RO,Boot-up used
+uart_handler.obj,peripheral.lib,RO,Boot-up used
+uart_vfifo.obj,peripheral.lib,RO,Boot-up used
+dma.obj,system.lib,RO,Boot-up used
+dcm.obj,system.lib,RO,Boot-up used
+tst_reader_trace_utility.obj,tst.lib,RO,Boot-up used
+init_trc.obj,system.lib,RO,Boot-up used
+custom_util.obj,custom.lib,RO,Boot-up used
+*sst_sec.lib,sst_sec.lib,RO,Boot-up used
+*sys_lib_a.lib,sys_lib_a.lib,RO,Boot-up used
+tst_hal_wrapper_layer.obj,tst.lib,RO,Boot-up used
+tst_ext.obj,tst.lib,RO,Boot-up used
+sw_keypad.obj,peripheral.lib,RO,Boot-up used,PLATFORM = MT6260 || PLATFORM = MT6261 || PLATFORM = MT2501 || PLATFORM = MT2502
+*hanwang.lib,hanwang.lib,RO-DATA,Poor compression ratio,
+*mre_custom.lib,mre_custom.lib,RO-DATA,Poor compression ratio,
+kmxime_latin.o,kmxime_arm7_rvct.a,RO-DATA,Poor compression ratio,
+combo_lcm*.obj,custom.lib,RO,Post processing,
+*dsp_ram.lib,dsp_ram.lib,RO,DSP related,
+CustImgGroupDataRes_0.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_1.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_2.obj,mmiresource.lib,RO,Already compressed,
+CustImgGroupDataRes_3.obj,mmiresource.lib,RO,Already compressed,
+FontData.obj,mmiresource.lib,RO,Already compressed,
+CustStrResComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+CustStrMapComp.obj,mmiresource.lib,RO,Already compressed,(MULTIPLE_BINARY_FILES = FALSE) || (MULTIPLE_BINARY_FILES = TRUE && MBA_DEFAULT_BINARY = CUST_ONLY)
+*system.lib,system.lib,RO,Workaround,
+*peripheral.lib,peripheral.lib,RO,Workaround,
+*kal.lib,kal.lib,RO,Workaround,
+*sys_sec.lib,sys_sec.lib,RO,Workaround
+*gfx_drv.lib,gfx_drv.lib,RO,Workaround
+*tst.lib,tst.lib,RO,Workaround

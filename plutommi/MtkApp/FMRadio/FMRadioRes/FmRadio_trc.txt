@@ -1,0 +1,82 @@
+[APP NAME] = Fm Radio
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+#start trace
+#Main Screen
+TRC_MSG(MMI_FMRDO_TRC_REDRAW_MAIN_TEXT_ENTRY,"[FMRDO] mmi_fmrdo_rds_redraw_main_text : entry")	
+TRC_MSG(MMI_FMRDO_TRC_REDRAW_MAIN_TEXT_BOTH_STRINGS_SAME,"[FMRDO] mmi_fmrdo_rds_redraw_main_text : both strings are same")	
+TRC_MSG(MMI_FMRDO_TRC_RDS_REDRAW_MAIN_IND_IND_RECEIVED,"[FMRDO] mmi_fmrdo_rds_redraw_main_ind : ind= [%d]")	
+
+#Msghdlr
+#RDS
+TRC_MSG(MMI_FMRDO_TRC_RDS_CHECK_CHIP_SUPPORT_TRUE,"[FMRDO] mmi_fmrdo_rds_check_chip_support : returns TRUE")	
+TRC_MSG(MMI_FMRDO_TRC_RDS_CHECK_CHIP_SUPPORT_FALSE,"[FMRDO] mmi_fmrdo_rds_redraw_main_text : returns FALSE")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_ENABLE,"[FMRDO] mmi_fmrdo_rds_enable : af_status= [%d], tp_status= [%d] ")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_DISABLE,"[FMRDO] mmi_fmrdo_rds_disable")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_IS_ON_TRUE,"[FMRDO] mmi_fmrdo_rds_is_on : returns TRUE")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_IS_ON_FALSE,"[FMRDO] mmi_fmrdo_rds_is_on : returns FALSE")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_SET_TP_AF_SETTING,"[FMRDO] mmi_fmrdo_rds_set_tp_and_af_setting : af_status= [%d], tp_status= [%d] ")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_ENTRY,"[FMRDO] mmi_fmrdo_rds_callback : entry")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_TP_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : TP Received")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_RDO_TXT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : Radiotext Received")
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_PRG_NAME_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : Programme Name Received")
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_FULL_RDO_TXT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : Full Radiotext Received")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_AF_EVENT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : AF Event Received")	
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_TA_ON_EVENT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : TA ON Event Received")			
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_TA_OFF_EVENT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : TA OFF Event Received")				
+TRC_MSG(MMI_FMRDO_TRC_FMRDO_RDS_CALLBACK_FLAG_NO_EVENT_RECEIVED,"[FMRDO] mmi_fmrdo_rds_callback : NO Event Received")
+
+#A2DP
+TRC_MSG(MMI_FMRDO_TRC_BT_OPEN_CALLBACK_ENTRY,"[FMRDO] A2DP_entry_callback_IN :result = [%d], state= [%d], connected= [%d]")
+TRC_MSG(MMI_FMRDO_TRC_BT_CALLBACK_OK,"[FMRDO] A2DP_entry_callback_OK : fmrdo_power_on = [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_BT_OPEN_CALLBACK_OUT,"[FMRDO] A2DP_entry_callback_OUT :result = [%d], state= [%d], inquiry = [%d], connected= [%d]")
+TRC_MSG(MMI_FMRDO_TRC_SWITCH_BT_OUTPUT_IN,"[FMRDO] A2DP_switch_output_IN : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_SWITCH_BT_OUTPUT_OUT,"[FMRDO] A2DP_switch_output_OUT : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_TURN_OFF_BT_OUTPUT_IN,"[FMRDO] A2DP_TURN_OFF_BT_IN : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_TURN_OFF_BT_OUTPUT_OUT,"[FMRDO] A2DP_TURN_OFF_BT_OUT : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_SYNC_BT_OUTPUT_IN,"[FMRDO] A2DP_sync_BT_output_IN : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_SYNC_BT_OUTPUT_OUT,"[FMRDO] A2DP_sync_BT_output_OUT : state= [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_BT_STOP_IN,"[FMRDO] A2DP_BT_STOP_IN : state= [%d],notify = [%d], connected= [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_BT_STOP_OUT,"[FMRDO] A2DP_BT_STOP_OUT : state= [%d],notify = [%d], connected= [%d] ")
+
+#A2DP Animation
+TRC_MSG(MMI_FMRDO_TRC_BT_STOP_OSD_ANI_IN,"[FMRDO] Stop_BT_Connecting_ANI_IN : img_handle = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_BT_STOP_OSD_ANI_OUT,"[FMRDO] Stop_BT_Connecting_ANI_OUT : img_handle = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_BT_START_OSD_ANI_IN,"[FMRDO] START_BT_Connection_ANI_IN ")
+TRC_MSG(MMI_FMRDO_TRC_BT_START_OSD_ANI_OUT,"[FMRDO] START_BT_Connection_ANI_OUT ")
+
+#AVRCP
+TRC_MSG(MMI_TRC_FMRDO_AVRCP_CANCELED,"[FMRDO] AVRCP_CANCELED : selected_button= [%d],is_down = [%d] ")
+TRC_MSG(MMI_TRC_FMRDO_BT_AVRCP_CMD,"[FMRDO] AVRCP_CMD : state= [%d],command = [%d],key_events =[%d] ")
+TRC_MSG(MMI_TRC_FMRDO_AVRCP_RETURN,"[FMRDO] AVRCP_CMD : result= [%d] ")
+
+#FM_CORE
+TRC_MSG(MMI_FMRDO_TRC_POWER_ON_CHECK_ENTRY,"[FMRDO] POWER_ON_CHECK_ENTRY : turn_on= [%d],state = [%d],output_to_bt =[%d] ")
+TRC_MSG(MMI_FMRDO_TRC_POWER_ON_CHECK_EXIT,"[FMRDO] POWER_ON_CHECK_EXIT : turn_on= [%d],state = [%d],output_to_bt =[%d] ")
+TRC_MSG(MMI_FMRDO_TRC_POWER_ON_ENTRY,"[FMRDO] POWER_ON_ENTRY : turn_on= [%d],state = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_POWER_ON_EXIT,"[FMRDO] POWER_ON_EXIT : turn_on= [%d],state = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_IS_FM_POWER_ON,"[FMRDO] IS_FM_POWER_ON : is_power_on = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_SET_FREQUENCY_ENTRY,"[FMRDO] SET_FREQUENCY_IN : freq = [%d], a2dp_connected = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_SET_FREQUENCY_EXIT,"[FMRDO] SET_FREQUENCY_OUT : freq = [%d], a2dp_connected = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_GOTO_CHANNEL_ENTRY,"[FMRDO] GOTO_CHANNEL_IN : freq = [%d], a2dp_connected = [%d] ")
+TRC_MSG(MMI_FMRDO_TRC_GOTO_CHANNEL_EXIT,"[FMRDO] GOTO_CHANNEL_OUT : freq = [%d], a2dp_connected = [%d] ")
+
+TRC_MSG(MMI_FMRDO_TRC_STATE,"[FMRDO] mmi_fmradio_is_active, state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SET_FREQ,"[FMRDO] mmi_fmradio_set_frequency, freq =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SEARCH_BEFORE,"[FMRDO] mmi_fmradio_search_before, state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SEARCH_AFTER,"[FMRDO] mmi_fmradio_search_after, state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_HW_SEARCH_END,"[FMRDO] mmi_fmradio_hw_search_frequency, stop_freq =[%d], signal_level =[%d], is_valid =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_HW_SEARCH_START,"[FMRDO] mmi_fmradio_hw_search_frequency_start, start_freq =[%d], is_step_up =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SEARCH_END,"[FMRDO] mmi_fmradio_search_frequency, stop_freq =[%d], is_valid =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SEARCH_START,"[FMRDO] mmi_fmradio_search_frequency_start, start_freq =[%d], is_step_up =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SEARCH_STOP,"[FMRDO] mmi_fmradio_search_frequency_stop, state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_CONTINUE,"[FMRDO] mmi_fmradio_continued, result =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_PREEMPTED,"[FMRDO] mmi_fmradio_preempted, result =[%d], state =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_LAUNCH_APP,"[FMRDO] mmi_fmradio_launch, event =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_SWITCH_APP,"[FMRDO] mmi_fmradio_switch_app_hdlr, event =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_PROC,"[FMRDO] mmi_fmradio_proc, event =[%d]")
+TRC_MSG(MMI_FMRDO_TRC_LAUNCH,"[FMRDO] trace=[%d]")
+TRC_MSG(MMI_FMRDO_TRC_NOTIFY_CALLBACK,"[FMRDO] mmi_fmradio_notify_callback_hdlr, result=[%d], state =[%d]")
+
+#TRC_MSG(MMI_FMRDO_TRC_FMRDO_HW_SCAN,"[FMRDO] hw_scan_finish : counter= [%d], signal= [%d]")										

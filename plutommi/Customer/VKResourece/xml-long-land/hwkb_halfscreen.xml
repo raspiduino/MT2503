@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template_phn_land"
+	xml_cache_flag="true" bitmap_cache_flag="false"  width="19%p"
+	height="31%p" kb_width="100%p" kb_height="50%p" key_xmargin="0.5%p"
+	key_ymargin="0.5%p" key_type="2">
+
+  <row start_pos_x="1.25%p" start_pos_y="1.25%p">
+		<key label="\xa46e" code="-1" key_type="3" popup_skb="@xml/skb_popup_symbol" />
+		<key start_pos_x="80%p" label="\xa454" code="8" />	
+	</row>
+	
+  <row row_id="1" start_pos_x="1.25%p">
+    <key code="-5" label="\xa45a" key_type="3" />
+		<key start_pos_x="80%p" label="\xa46b" code="32" />
+	</row>
+	
+  <row row_id="2" start_pos_x="1.25%p">
+    <key label="," code="44" key_type="3" >
+      <toggle_state state_id="14" label="，" code="65292" />
+    </key>
+		<key start_pos_x="80%p" label="\xa46b" code="32" />
+	</row>
+	
+	<row start_pos_x="1.25%p">
+		<key code="-3" label="\xa451" />
+		<key start_pos_x="80%p" label="\xa456" code="13">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>
+

@@ -1,0 +1,15 @@
+[APP NAME] = CNMGR
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_CONN_APP
+
+#starttrace
+TRC_MSG(MMI_CNMGR_UPDATE_BEARER_LIST, "[MMI CNMGR] update_bearer_list: active bearer num %d")
+TRC_MSG(MMI_CNMGR_SHOW_BEARER_LIST, "[MMI CNMGR] show_bearer_list: active bearer num %d")
+TRC_MSG(MMI_CNMGR_IS_BEARER_ACTIVE, "[MMI CNMGR] is_bearer_active: select idx %d, account id %d, connect type %d")
+TRC_MSG(MMI_CNMGR_ENTRY_BEARER_DETAIL_INFO, "[MMI CNMGR] entry_bearer_detail_info")
+TRC_MSG(MMI_CNMGR_SHOW_BEARER_DETAIL_INFO, "[MMI CNMGR] show_bearer_detail_info")
+TRC_MSG(MMI_CNMGR_CHANGE_SELECT_BEARER, "[MMI CNMGR] change select bearer: select idx (%d, %d), account id %d, connect type %d, dialup type %d")
+TRC_MSG(MMI_CNMGR_APP_ENTRY_BEARER_DETAIL_INFO, "[MMI CNMGR] app_entry_bearer_detail_info: type %d, account %d, icon %d")
+TRC_MSG(MMI_CNMGR_REDRAW_BEARER_LIST, "[MMI CNMGR] redraw_bearer_list: old bearer num %d, current bearer num %d")
+TRC_MSG(MMI_CNMGR_BEARER_DATA_UPDATE_NOTIFY_CALLBACK, "[MMI CNMGR] bearer_data_update_notify_callback")
+TRC_MSG(MMI_CNMGR_APP_SHOW_BEARER_DETAIL_INFO, "[MMI CNMGR] app_show_bearer_detail_info: acct_id %d, real_acct_id %d")

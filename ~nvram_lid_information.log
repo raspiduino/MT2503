@@ -1,0 +1,70 @@
+----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
+ LID                                      LID(String)      Filename         Verno                                 Description    Category   Attribute
+----------------------------------------------------------------------------------------------------------------------------------------------
+   0                                 NVRAM_EF_SYS_LID          MT00           000                                      (null)      0x0001      0x0006
+   9                       NVRAM_EF_CAT_TIMESTAMP_LID          CA00           000                                      (null)      0x0001      0x0002
+  15                      NVRAM_EF_L1_AGCPATHLOSS_LID          MT05           002                                      (null)      0x1400      0x0000
+  16                 NVRAM_EF_L1_RAMPTABLE_GSM850_LID          MT06           002                                      (null)      0x1400      0x0000
+  17                 NVRAM_EF_L1_RAMPTABLE_GSM900_LID          MT07           002                                      (null)      0x1400      0x0000
+  18                NVRAM_EF_L1_RAMPTABLE_DCS1800_LID          MT08           002                                      (null)      0x1400      0x0000
+  19                NVRAM_EF_L1_RAMPTABLE_PCS1900_LID          MT09           002                                      (null)      0x1400      0x0000
+  28                          NVRAM_EF_L1_AFCDATA_LID          MT0I           002                                      (null)      0x1400      0x0000
+  29                             NVRAM_EF_L1_TXIQ_LID          MT0J           004                                      (null)      0x1400      0x0002
+  30                    NVRAM_EF_L1_RFSPECIALCOEF_LID          MT0K           005                                      (null)      0x1400      0x0002
+  31            NVRAM_EF_L1_INTERSLOT_RAMP_GSM850_LID          MT0L           002                                      (null)      0x1400      0x0000
+  32            NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID          MT0M           002                                      (null)      0x1400      0x0000
+  33           NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID          MT0N           002                                      (null)      0x1400      0x0000
+  34           NVRAM_EF_L1_INTERSLOT_RAMP_PCS1900_LID          MT0O           002                                      (null)      0x1400      0x0000
+  35                  NVRAM_EF_L1_CRYSTAL_AFCDATA_LID          MT0P           003                                      (null)      0x1400      0x0000
+  36                  NVRAM_EF_L1_CRYSTAL_CAPDATA_LID          MT0Q           002                                      (null)      0x1400      0x0000
+  37     NVRAM_EF_L1_GMSK_TX_POWER_ROLLBACK_TABLE_LID          MT0R           000                                      (null)      0x1400      0x0000
+  43                NVRAM_EF_L1_CLOAD_FREQ_OFFSET_LID          MT1V           000                                      (null)      0x1400      0x0000
+  98                         NVRAM_EF_BARCODE_NUM_LID          MP09           001                                      (null)      0x1000      0x0008
+  99                            NVRAM_EF_CAL_FLAG_LID          MPA2           000                                      (null)      0x1000      0x0000
+ 100                      NVRAM_EF_CAL_DATA_CHECK_LID          MPA8           000                                      (null)      0x1000      0x0000
+ 161                         NVRAM_EF_IMEI_IMEISV_LID          MP0B           001                                      (null)      0x2000      0x000a
+ 162                                 NVRAM_EF_SML_LID          MP33           004                                      (null)      0x2200      0x000c
+  79                 NVRAM_EF_BTRADIO_MTK_BT_CHIP_LID          MT6Y           000                                      (null)      0x1000      0x0000
+ 183                             NVRAM_EF_BT_INFO_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 184                         NVRAM_EF_BT_DEV_LIST_LID          MP26           001                                      (null)      0x0000      0x0000
+ 185                   NVRAM_EF_BT_DEV_LIST_INDEX_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 186                         NVRAM_EF_BT_SYS_INFO_LID          PACK           LID                                      (null)      0x0000      0x0280
+   6                       NVRAM_EF_SYS_EXCEPTION_LID          MT03           000                                      (null)      0x0000      0x0000
+   7                      NVRAM_EF_SYS_STATISTICS_LID          MT04           000                                      (null)      0x0000      0x0000
+ 121                           NVRAM_EF_BAND_INFO_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 122                          NVRAM_EF_TST_FILTER_LID          MT0Y           002                                      (null)      0x0000      0x0000
+ 123                        NVRAM_EF_PORT_SETTING_LID          PACK           LID                                      (null)      0x0000      0x2200
+ 154                           NVRAM_EF_SMSAL_SMS_LID          MT40           001                                      (null)      0x0000      0x0010
+ 155                  NVRAM_EF_SMSAL_MAILBOX_ADDR_LID          PACK           LID                                      (null)      0x0100      0x0200
+ 156                  NVRAM_EF_SMSAL_COMMON_PARAM_LID          PACK           LID                                      (null)      0x0100      0x0280
+ 157                          NVRAM_EF_SMSAL_SMSP_LID          PACK           LID                                      (null)      0x0000      0x0210
+ 158                          NVRAM_EF_SMSAL_MWIS_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 159                       NVRAM_EF_CB_DEFAULT_CH_LID          PACK           LID                                      (null)      0x0100      0x0280
+ 160                          NVRAM_EF_CB_CH_INFO_LID          PACK           LID                                      (null)      0x0000      0x0280
+ 147                     NVRAM_EF_TCM_PDP_PROFILE_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 148                            NVRAM_EF_CFU_FLAG_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 149                  NVRAM_EF_MM_EQPLMN_LOCIGPRS_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 151                         NVRAM_EF_ALS_LINE_ID_LID          PACK           LID                                      (null)      0x0100      0x0200
+ 152                               NVRAM_EF_MSCAP_LID          PACK           LID                                      (null)      0x0100      0x0202
+ 125                     NVRAM_EF_CLASSMARK_RACAP_LID          PACK           LID                                      (null)      0x0000      0x0202
+ 126                          NVRAM_EF_SIM_ASSERT_LID          PACK           LID                                      (null)      0x0000      0x0300
+ 127                            NVRAM_EF_RTC_DATA_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 128                             NVRAM_EF_NET_PAR_LID          MT1A           007                                      (null)      0x0000      0x0000
+ 171                            NVRAM_EF_CSM_ESSP_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 138                   NVRAM_EF_CUST_HW_LEVEL_TBL_LID          PACK           LID                                      (null)      0x0000      0x1240
+ 139                NVRAM_EF_UEM_MANUFACTURE_DATA_LID          PACK           LID                                      (null)      0x0000      0x1200
+ 140                        NVRAM_EF_UEM_RMI_DATA_LID          PACK           LID                                      (null)      0x0000      0x1200
+ 141                    NVRAM_EF_GPS_SETTING_DATA_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 164                         NVRAM_EF_MS_SECURITY_LID          PACK           LID                                      (null)      0x0100      0x0208
+ 166                        NVRAM_EF_PHB_LN_ENTRY_LID          MT6H           003                                      (null)      0x0000      0x0000
+ 167                     NVRAM_EF_PHB_LN_TYPE_SEQ_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 173                     NVRAM_EF_SYS_CACHE_OCTET_LID          PACK           LID                                      (null)      0x0000      0x2201
+ 177                      NVRAM_EF_RAC_PREFERENCE_LID          PACK           LID                                      (null)      0x0100      0x0280
+ 168             NVRAM_EF_PS_CONFORMANCE_TESTMODE_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 180                          NVRAM_EF_TST_CONFIG_LID          PACK           LID                                      (null)      0x0000      0x2200
+ 187                          NVRAM_EF_AT_PROFILE_LID          PACK           LID                                      (null)      0x0000      0x0200
+ 188                         NVRAM_EF_USR_PWR_CLS_LID          PACK           LID                                      (null)      0x0000      0x0200
+2560                                 NVRAM_EF_ADC_LID          MT1F           000                                      (null)      0x1000      0x0000
+2816                     NVRAM_EF_TOUCHPANEL_PARA_LID          PACK           LID                                      (null)      0x0000      0x2200
+--------------------------------------------------------------------------------------------

@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE SKIN_XML SYSTEM ".\Skinlayouter.dtd">-->
+<SKIN_XML>
+	<!--output_dll="MediaPlayerOutput.dll"-->
+	<XMLINFO toolname="Media Player" date="22012006" version="1.0" output_dll=""/>
+	<DEFINE_CHOICE>
+		<CHOICE_TYPE name="skin_comp_type">
+			<CHOICE_ELEMENT value="IMAGE"/>
+			<CHOICE_ELEMENT value="TEXT"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_arrow_key">
+			<CHOICE_ELEMENT value="MAIN_PLAY"/>
+			<CHOICE_ELEMENT value="MAIN_STOP"/>
+			<CHOICE_ELEMENT value="MAIN_REWIND"/>
+			<CHOICE_ELEMENT value="MAIN_FORWARD"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_color">
+			<CHOICE_ELEMENT value="TEXT"/>
+			<CHOICE_ELEMENT value="TEXT ON"/>
+			<CHOICE_ELEMENT value="TEXT OFF"/>
+			<CHOICE_ELEMENT value="BORDER"/>
+			<CHOICE_ELEMENT value="BACKGROUND"/>
+		</CHOICE_TYPE>
+	</DEFINE_CHOICE>
+	<SKIN_SIZE value="240x320"/>
+	<SKIN_SIZE value="320x240"/>
+	<SKIN_SIZE value="240x400"/>
+	<SKIN_SIZE value="320x480"/>
+	<SKIN_NAME name=""/>
+	<SKIN_COMPONENTS>
+		<COMPONENT name="TEXT_COLOR" control_id="-4" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TITLE_RGN" control_id="IDC_STATIC_TEXT_CONTROL1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="350" default_pos_y="140" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="VIEW_RGN" control_id="IDC_STATIC_TEXT_CONTROL2" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="350" default_pos_y="167" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="CTRL_RGN" control_id="IDC_STATIC_TEXT_CONTROL3" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="350" default_pos_y="360" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="LKEY_RGN" control_id="IDC_STATIC_TEXT_CONTROL4" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="352" default_pos_y="510" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="RKEY_RGN" control_id="IDC_STATIC_TEXT_CONTROL5" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="518" default_pos_y="510" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TITLE_TXT" control_id="IDC_STATIC_TEXT_CONTROL6" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="359" default_pos_y="141" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="META_RGN" control_id="IDC_STATIC_TEXT_CONTROL7" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="360" default_pos_y="285" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SPECTRUM_RGN" control_id="IDC_STATIC_TEXT_CONTROL8" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="355" default_pos_y="180" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="LYRICS_RGN" control_id="IDC_STATIC_TEXT_CONTROL9" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="355" default_pos_y="180" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="META_IMG" control_id="IDC_STATIC_IMAGE_CONTROL1" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="351" default_pos_y="188" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="WAIT_ANI" control_id="IDC_STATIC_IMAGE_CONTROL2" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="399" default_pos_y="240" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="PECENTAGE_BG" control_id="IDC_STATIC_IMAGE_CONTROL3" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="399" default_pos_y="240" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="PECENTAGE_FG" control_id="IDC_STATIC_IMAGE_CONTROL4" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="410" default_pos_y="260" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="RATE_IMG" control_id="IDC_STATIC_IMAGE_CONTROL5" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="352" default_pos_y="268" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TIME" control_id="IDC_STATIC_IMAGE_CONTROL6" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="355" default_pos_y="372" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="DURATION_BAR" control_id="IDC_STATIC_IMAGE_CONTROL7" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="356" default_pos_y="386" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="PLAY" control_id="IDC_STATIC_IMAGE_CONTROL8" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="459" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="PREV" control_id="IDC_STATIC_IMAGE_CONTROL9" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="359" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="NEXT" control_id="IDC_STATIC_IMAGE_CONTROL10" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="531" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="STOP" control_id="IDC_STATIC_IMAGE_CONTROL11" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="459" default_pos_y="420" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="ZOOM" control_id="IDC_STATIC_IMAGE_CONTROL12" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="350" default_pos_y="428" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SHUFFLE" control_id="IDC_STATIC_IMAGE_CONTROL13" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="391" default_pos_y="408" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="REPEAT" control_id="IDC_STATIC_IMAGE_CONTROL14" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="508" default_pos_y="408" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SNAP_SHOT" control_id="IDC_STATIC_IMAGE_CONTROL15" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="549" default_pos_y="408" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_BAR" control_id="IDC_STATIC_IMAGE_CONTROL16" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="512" default_pos_y="371" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_INCREASE" control_id="IDC_STATIC_IMAGE_CONTROL18" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="390" default_pos_y="370" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="1"/>
+		<COMPONENT name="VOLUME_DECREASE" control_id="IDC_STATIC_IMAGE_CONTROL17" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="565" default_pos_y="370" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="2"/>
+		<COMPONENT name="VOLUME_SPK" control_id="IDC_STATIC_IMAGE_CONTROL19" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="471" default_pos_y="370" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="1"/>
+	</SKIN_COMPONENTS>
+	<SKIN_LAYOUT name="default_skin" ref_image_name="MPLAYER_transparent_backgro.png">
+		<COMP_IMAGE name="META_IMG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="META_IMG" name="MPLAYER_meta_def_cover.png" id="MEDPLY_META_DEFAULT_COVER"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="WAIT_ANI" count="5" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="WAIT_OPEN" name="MPLAYER_ani_video_open.gif" id="MEDPLY_OSD_OPENING"/>
+			<IMAGE tag="WAIT_BT" name="MPLAYER_ani_bt_connect.gif" id="MEDPLY_OSD_BT_CONNECTING"/>
+			<IMAGE tag="WAIT_RTP" name="MPLAYER_ani_rtp_connect.gif" id="MEDPLY_OSD_RTP_CONNECTING"/>
+			<IMAGE tag="WAIT_SNAP_SHOT" name="MPLAYER_ani_snapshoting.gif" id="MEDPLY_OSD_SNAPSHOTING"/>
+			<IMAGE tag="WAIT_ONLY" name="MPLAYER_ani_snapshoting.gif" id="MEDPLY_AUD_ONLY_ANIM"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PECENTAGE_BG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PECENTAGE_BG" name="MPLAYER_loading_bg.gif" id="MEDPLY_OSD_LOADING_BG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PECENTAGE_FG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PECENTAGE_fG" name="MPLAYER_loading_fg.pbm" id="MEDPLY_OSD_LOADING_FG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="RATE_IMG" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="START_BG" name="MPLAYER_user_rate_bg.png" id="MEDPLY_STARS_BG"/>
+			<IMAGE tag="START_FG" name="MPLAYER_user_rate_fg.png" id="MEDPLY_STARS_FG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="TIME" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="BASE" name="MPLAYER_num_0.png" id="MEDPLY_BASIC_NUM"/>
+			<IMAGE tag="COLON" name="MPLAYER_num_col.png" id="MEDPLY_COLON"/>
+			<IMAGE tag="BIAS" name="MPLAYER_num_diagonal.png" id="MEDPLY_BIAS"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="DURATION_BAR" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PROGRESS BG" name="MPLAYER_progress_bg.png" id="MEDPLY_DURATION_PROGRESS_BAR_BG"/>
+			<IMAGE tag="PROGRESS FG" name="MPLAYER_progress_fg.png" id="MEDPLY_DURATION_PROGRESS_BAR_FG"/>
+			<IMAGE tag="PROGRESS MD" name="MPLAYER_progress_md.png" id="MEDPLY_DURATION_PROGRESS_BAR_MD"/>
+			<IMAGE tag="PROGRESS DISABLE" name="MPLAYER_progress_bg_disable.png" id="MEDPLY_DURATION_PROGRESS_BAR_BG_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PLAY" count="6" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PLAY ON" name="MPLAYER_play_up.png" id="MEDPLY_PLAY_BUTTON_UP"/>
+			<IMAGE tag="PLAY DOWN" name="MPLAYER_play_down.png" id="MEDPLY_PLAY_BUTTON_DOWN"/>
+			<IMAGE tag="PLAY DISABLE" name="MPLAYER_play_disable.png" id="MEDPLY_PLAY_BUTTON_DISABLE"/>
+			<IMAGE tag="PAUSE ON" name="MPLAYER_pause_up.png" id="MEDPLY_PAUSE_BUTTON_UP"/>
+			<IMAGE tag="PAUSE DOWN" name="MPLAYER_pause_down.png" id="MEDPLY_PAUSE_BUTTON_DOWN"/>
+			<IMAGE tag="PAUSE DOWN" name="MPLAYER_pause_disable.png" id="MEDPLY_PAUSE_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PREV" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_prev_up.png" id="MEDPLY_PREV_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_prev_down.png" id="MEDPLY_PREV_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_prev_disable.png" id="MEDPLY_PREV_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="NEXT" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_next_up.png" id="MEDPLY_NEXT_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_next_down.png" id="MEDPLY_NEXT_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_next_disable.png" id="MEDPLY_NEXT_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="STOP" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_stop_up.png" id="MEDPLY_STOP_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_stop_down.png" id="MEDPLY_STOP_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_stop_disable.png" id="MEDPLY_STOP_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="ZOOM" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_zoom_up.png" id="MEDPLY_ZOOM_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_zoom_down.png" id="MEDPLY_ZOOM_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_zoom_disable.png" id="MEDPLY_ZOOM_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SHUFFLE" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON UP" name="MPLAYER_shuffle_on_up.png" id="MEDPLY_SHUFFLE_BUTTON_ON_UP"/>
+			<IMAGE tag="ON DOWN" name="MPLAYER_shuffle_on_down.png" id="MEDPLY_SHUFFLE_BUTTON_ON_DOWN"/>
+			<IMAGE tag="OFF UP" name="MPLAYER_shuffle_off_up.png" id="MEDPLY_SHUFFLE_BUTTON_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="MPLAYER_shuffle_off_down.png" id="MEDPLY_SHUFFLE_BUTTON_OFF_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="REPEAT" count="6" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF UP" name="MPLAYER_repeat_off_up.png" id="MEDPLY_REPEAT_BUTTON_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="MPLAYER_repeat_off_down.png" id="MEDPLY_REPEAT_BUTTON_OFF_DOWN"/>
+			<IMAGE tag="ONE UP" name="MPLAYER_repeat_one_up.png" id="MEDPLY_REPEAT_BUTTON_ONE_UP"/>
+			<IMAGE tag="ONE DOWN" name="MPLAYER_repeat_one_down.png" id="MEDPLY_REPEAT_BUTTON_ONE_DOWN"/>
+			<IMAGE tag="ALL UP" name="MPLAYER_repeat_all_up.png" id="MEDPLY_REPEAT_BUTTON_ALL_UP"/>
+			<IMAGE tag="ALL DOWN" name="MPLAYER_repeat_all_down.png" id="MEDPLY_REPEAT_BUTTON_ALL_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SNAP_SHOT" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_snapshot_up.png" id="MEDPLY_SNAP_SHOT_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_snapshot_down.png" id="MEDPLY_SNAP_SHOT_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_snapshot_disable.png" id="MEDPLY_SNAP_SHOT_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_BAR" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="VOLUME BAR BG" name="MPLAYER_volume_bg.png" id="VOLUME_BAR_BG"/>
+			<IMAGE tag="VOLUME BAR" name="MPLAYER_volume_fg.png" id="VOLUME_BAR"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_INCREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_volume_inc_up.png" id="MEDPLY_VOLUME_INC_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_volume_inc_down.png" id="MEDPLY_VOLUME_INC_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_volume_inc_disable.png" id="MEDPLY_VOLUME_INC_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_DECREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_volume_dec_up.png" id="MEDPLY_VOLUME_DEC_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_volume_dec_down.png" id="MEDPLY_VOLUME_DEC_BUTTON_DOWN"/>
+			<IMAGE tag="DISABLE" name="MPLAYER_volume_dec_disable.png" id="MEDPLY_VOLUME_DEC_BUTTON_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_SPK" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MPLAYER_speaker_on_up.png" id="MEDPLY_VOLUME_SPEAK_BUTTON_UP"/>
+			<IMAGE tag="DOWN" name="MPLAYER_speaker_on_down.png" id="MEDPLY_VOLUME_SPEAK_BUTTON_DOWN"/>
+			<IMAGE tag="MUTE UP" name="MPLAYER_speaker_off_up.png" id="MEDPLY_VOLUME_SPEAK_MUTE_BUTTON_UP"/>
+			<IMAGE tag="MUTE DOWN" name="MPLAYER_speaker_off_down.png" id="MEDPLY_VOLUME_SPEAK_MUTE_BUTTON_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_TEXT name="TEXT_COLOR" default_pos_flag="1">
+			<COLOR tag="Hide BG" choice_color="BORDER" value="0,0,0,100"/>
+			<COLOR tag="FG" choice_color="BACKGROUND" value="255,255,255,100"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="TITLE_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="27"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="VIEW_RGN" default_pos_flag="1" >
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="192"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="CTRL_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="100"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LKEY_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="79" top="-1" bottom="29"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="RKEY_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="79" top="-1" bottom="29"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="TITLE_TXT" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="221" top="-1" bottom="23"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="META_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="219" top="-1" bottom="69"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SPECTRUM_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="229" top="-1" bottom="179"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LYRICS_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,254,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="229" top="-1" bottom="179"/>
+		</COMP_TEXT>
+	</SKIN_LAYOUT>
+	<OUTPUT_FORMAT>
+		<STRINGS filename="resource_mediaplayer_skins.c" image_id="IMG_ID" coordinate_struct="media_point_struct" skin_struct="medply_skin_struct" skin_struct_name="g_medply_skin" project="MAUI" description="Media player main screen skin settings" tool_define="__MMI_MEDIA_PLAYER__" background="MEDPLY_BACK_GROUND"/>
+		<FORMAT background_image="" common_color="1"/>
+		<ADDITIONAL_INFO name="VOLUME_BAR" info="1"/>
+		<FILE_HEADERS file_name="PixtelDataTypes.h"/>
+		<FILE_HEADERS file_name="resource_mediaplayer_skins.h"/>
+		<FILE_HEADERS file_name="MediaPlayerResDef.h"/>
+	</OUTPUT_FORMAT>
+</SKIN_XML>

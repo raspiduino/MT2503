@@ -1,0 +1,11 @@
+hal\storage\mc\src\dcl_memory_card.c
+hal\storage\mc\src\msdc.c
+hal\storage\mc\src\msdc2.c
+hal\storage\mc\src\msdc_fake_kal.c
+hal\storage\mc\src\sd.c
+hal\storage\mc\src\sd2.c
+hal\storage\mc\src\sd_adap.c
+hal\storage\mc\src\sd_drv.c
+hal\storage\mc\src\sd_drv2.c
+hal\storage\mc\src\sdio_drv.c
+hal\storage\mc\src\usbms_msdc.c

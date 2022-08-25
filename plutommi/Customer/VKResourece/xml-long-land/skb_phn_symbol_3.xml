@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_phn_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" height="24.2858%p"
+	width="20.625%p" key_type="9">
+
+	<row start_pos_x="1.0417%p" start_pos_y="1.4286%p">
+		<key width="18.125%p" label=":)" code="0" />
+		<key label=":(" code="0" />
+		<key label=";)" code="0" />
+		<key label=":D" code="0" />
+		<key width="18.125%p" label=":P" code="0" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label=":$" code="0" />
+		<key label=":S" code="0" />
+		<key label="^_^" code="0" />
+		<key label=":&lt;" code="0" />
+		<key width="18.125%p" label=":&gt;" code="0" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label="\xa462" code="-6" key_type="2" />
+		<key label="&gt;&lt;" code="0" />
+		<key label="~~" code="0" />
+		<key label="Orz" code="0" />
+		<key width="18.125%p" code="8" key_type="2" label="\xa454" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" code="-3" label="\xa451" key_type="3" />
+		<key code="-7" key_type="2" label="\xa450" >
+			<toggle_state state_id="9" label="o_O" code="0" key_type="9"/>	
+		</key>
+		<key key_type="0" code="32" label="\xa46b" />
+		<key key_type="4" code="-1" label="\xa46e" />
+		<key width="18.125%p" code="13" key_type="2" label="\xa456" >
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+
+</keyboard>
+
+

@@ -1,0 +1,16 @@
+[APP NAME] = APP_BTREMOTECAPTURE 
+[SCOPE] = PLUTO, COSMOS
+[MODULE] = MOD_MMI_CONN_APP
+TRC_MSG(TRC_MMI_BT_RMTCAP_LAUNCH_REQ,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_launch_req()")
+TRC_MSG(TRC_MMI_BT_RMTCAP_WRITE_DEFAULT_PIC_REQ_0,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_write_default_pic().0")
+TRC_MSG(TRC_MMI_BT_RMTCAP_WRITE_DEFAULT_PIC_REQ_1,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_write_default_pic().1, result: %d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_SHOW_LOADING,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_loading_show()")
+TRC_MSG(TRC_MMI_BT_RMTCAP_CAPTURE,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_main_capture(), cmdlen:%d cmdResult:%d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_EXIT_CAPTURE,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_main_exit_capture(), cmdlen:%d cmdResult:%d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_MAIN_SHOW,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_main_show(), rmtLaunched:%d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_LAUNCED_RSP,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_launch_rsp(), ret_is_num: %d, ret_code:%d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_CAPTURE_RSP,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_capture_rsp(), ret_is_num: %d, ret_code:%d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_EVENT_HDLR,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_event_hdlr(), curr_state: %d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_EVENT_HDLR2,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_event_hdlr()2, curr_state: %d")
+TRC_MSG(TRC_MMI_BT_RMTCAP_BOOTUP_INIT,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_bootup_init()")
+TRC_MSG(TRC_MMI_BT_RMTCAP_PIC_SHOW,	            "[MMI][BTRMTCAP]mmi_bt_rmtcap_pic_show()")

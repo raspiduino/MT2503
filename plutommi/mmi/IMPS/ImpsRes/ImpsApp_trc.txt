@@ -1,0 +1,19 @@
+[APP NAME] = IMPS App
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_INET_APP
+
+#start trace
+TRC_MSG(TRC_MMI_IMPS_LOGIN_READY_IND, "[MMI IMPS] : mmi_imps_login_ready_ind()")
+TRC_MSG(TRC_MMI_IMPS_SERVER_DISCONNECT_IND, "[MMI IMPS] : mmi_imps_event_server_disconn_ind()")
+TRC_MSG(TRC_MMI_IMPS_BEARER_STATUS_PROC, "[MMI IMPS] : mmi_imps_bearer_status_proc(), state: %d, error: %d")
+TRC_MSG(TRC_MMI_IMPS_CBM_DEACTIVE, "[MMI IMPS] : mmi_imps_cbm_bearer_status_notiy:CBM deactive")
+TRC_MSG(TRC_MMI_IMPS_CBM_USER_DISCONN, "[MMI IMPS] : mmi_imps_force_disc()")
+TRC_MSG(TRC_MMI_IMPS_AUTO_RECONN, "[MMI IMPS] : mmi_imps_auto_reconn(), is_in_imps = %d, reconn_count = %d")
+TRC_MSG(TRC_MMI_IMPS_ENTRY_AUTO_RECONN, "[MMI IMPS] : mmi_imps_entry_auto_reconn()")
+TRC_MSG(TRC_MMI_IMPS_AUTO_LOGIN, "[MMI IMPS] : mmi_imps_auto_login(), is_login= %d, auto_login_called  = %d")
+TRC_MSG(TRC_MMI_IMPS_RETRY_BACKGROUND, "[MMI IMPS] : mmi_imps_retry_backgroud()")
+TRC_MSG(TRC_MMI_IMPS_NETWORK_IND, "[MMI IMPS] : mmi_imps_network_ind()")
+TRC_MSG(TRC_MMI_IMPS_ROAMING_STOP_APP, "[MMI IMPS] : mmi_imps_stop_app()")
+TRC_MSG(TRC_MMI_IMPS_CONT_INFO_UPDATE_DONE, "[MMI IMPS] : mmi_imps_cont_info_update_done_ind()")
+TRC_MSG(TRC_MMI_IMPS_ENTER_MAIN_GROUP, "[MMI IMPS] : entr imps main group, parent gid = %d")
+TRC_MSG(TRC_MMI_IMPS_EVENT_HANDLER, "[MMI IMPS] : mmi_imps_app_event_hdlr, event_id = %d")

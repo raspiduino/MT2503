@@ -1,0 +1,2 @@
+联发科：MTK6252(RVCT3.1)中英文简体标准正式版(与Winguo绑定）
+Adding the new Libray that contains Winguo Check

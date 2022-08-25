@@ -1,0 +1,10 @@
+mmi\include
+inet_ps\mthl\include
+interface\inet_ps
+track\drv\drv_inc
+track\at\at_inc
+ELL\ell-common
+track\fun\fun_inc
+gps\mnl\include
+track\os\os_inc
+hal\peripheral\inc

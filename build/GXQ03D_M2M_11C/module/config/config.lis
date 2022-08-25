@@ -1,0 +1,4 @@
+config\src\hal\ctrl_buff_pool.c
+config\src\hal\stack_config.c
+config\src\hal\syscomp_config.c
+config\src\hal\task_config.c

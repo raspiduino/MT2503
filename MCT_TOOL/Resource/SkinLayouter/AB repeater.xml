@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE SKIN_XML SYSTEM ".\Skinlayouter.dtd">-->
+<SKIN_XML>
+	<!--output_dll="AudioPlayerOutput.dll"-->
+	<XMLINFO toolname="AB repeater" date="22012006" version="1.0" output_dll=""/>
+	<DEFINE_CHOICE>
+		<CHOICE_TYPE name="skin_comp_type">
+			<CHOICE_ELEMENT value="IMAGE"/>
+			<CHOICE_ELEMENT value="TEXT"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_arrow_key">
+			<CHOICE_ELEMENT value="ABREPEAT_MAIN_PLAY"/>
+			<CHOICE_ELEMENT value="ABREPEAT_MAIN_STOP"/>
+			<CHOICE_ELEMENT value="ABREPEAT_MAIN_REWIND"/>
+			<CHOICE_ELEMENT value="ABREPEAT_MAIN_FORWARD"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_color">
+			<CHOICE_ELEMENT value="TEXT"/>
+			<CHOICE_ELEMENT value="TEXT ON"/>
+			<CHOICE_ELEMENT value="TEXT OFF"/>
+			<CHOICE_ELEMENT value="BORDER"/>
+			<CHOICE_ELEMENT value="BACKGROUND"/>
+		</CHOICE_TYPE>
+	</DEFINE_CHOICE>
+	<SKIN_SIZE value="128x128"/>
+	<SKIN_SIZE value="128x160"/>
+	<SKIN_SIZE value="176x220"/>
+	<SKIN_SIZE value="240x320"/>
+	<SKIN_SIZE value="320x240"/>
+	<SKIN_SIZE value="240x400"/>
+	<SKIN_SIZE value="320x480"/>
+	<SKIN_NAME name=""/>
+	<SKIN_COMPONENTS>
+		<COMPONENT name="COMMON_COLOR" control_id="-4" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="AUDIO_FILE" control_id="-3" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="0" default_pos_y="0" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SONG_TITLE" control_id="IDC_STATIC_TEXT_CONTROL1" choice_type="skin_comp_type" choice_value="TEXT" default_pos_x="370" default_pos_y="200" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_BAR" control_id="IDC_STATIC_IMAGE_CONTROL1" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="420" default_pos_y="250" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="VOLUME_DECREASE" control_id="IDC_STATIC_IMAGE_CONTROL3" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="370" default_pos_y="250" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="2"/>
+		<COMPONENT name="VOLUME_INCREASE" control_id="IDC_STATIC_IMAGE_CONTROL2" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="590" default_pos_y="250" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="1" coordinate_seq="1"/>
+		<COMPONENT name="REWIND_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL4" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="370" default_pos_y="320" arrow_key_choice="ABREPEAT_MAIN_REWIND" generate_coordinate="1" coordinate_seq="3"/>
+		<COMPONENT name="FORWARD_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL5" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="470" default_pos_y="320" arrow_key_choice="ABREPEAT_MAIN_FORWARD" generate_coordinate="1" coordinate_seq="4"/>
+		<COMPONENT name="PLAY_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL6" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="570" default_pos_y="320" arrow_key_choice="ABREPEAT_MAIN_PLAY" generate_coordinate="1" coordinate_seq="5"/>
+		<COMPONENT name="STOP_BUTTON" control_id="IDC_STATIC_IMAGE_CONTROL7" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="570" default_pos_y="370" arrow_key_choice="ABREPEAT_MAIN_STOP" generate_coordinate="1" coordinate_seq="6"/>
+		<COMPONENT name="ONCE_AWAY" control_id="IDC_STATIC_IMAGE_CONTROL8" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="370" default_pos_y="370" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="7"/>
+		<COMPONENT name="MODE_SET" control_id="IDC_STATIC_IMAGE_CONTROL9" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="470" default_pos_y="370" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="8"/>
+		<COMPONENT name="PROGRESS_BAR" control_id="IDC_STATIC_IMAGE_CONTROL10" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="370" default_pos_y="420" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="9"/>
+		<COMPONENT name="PROGRESS_RECT" control_id="IDC_STATIC_IMAGE_CONTROL11" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="370" default_pos_y="450" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="11"/>
+		<COMPONENT name="SECTION_BUTTON0" control_id="IDC_STATIC_IMAGE_CONTROL12" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="400" default_pos_y="110" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="12" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON1" control_id="IDC_STATIC_IMAGE_CONTROL13" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="430" default_pos_y="110" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="13" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON2" control_id="IDC_STATIC_IMAGE_CONTROL14" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="460" default_pos_y="110" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="14" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON3" control_id="IDC_STATIC_IMAGE_CONTROL15" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="490" default_pos_y="110" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="15" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON4" control_id="IDC_STATIC_IMAGE_CONTROL16" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="520" default_pos_y="110" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="16" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON5" control_id="IDC_STATIC_IMAGE_CONTROL17" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="400" default_pos_y="150" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="17" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON6" control_id="IDC_STATIC_IMAGE_CONTROL18" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="430" default_pos_y="150" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="18" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON7" control_id="IDC_STATIC_IMAGE_CONTROL19" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="460" default_pos_y="150" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="19" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON8" control_id="IDC_STATIC_IMAGE_CONTROL20" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="490" default_pos_y="150" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="20" contains="IMAGE_CONTAINS"/>
+		<COMPONENT name="SECTION_BUTTON9" control_id="IDC_STATIC_IMAGE_CONTROL21" choice_type="skin_comp_type" choice_value="IMAGE" default_pos_x="520" default_pos_y="150" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0" coordinate_seq="21" contains="IMAGE_CONTAINS"/>
+	</SKIN_COMPONENTS>
+	<SKIN_LAYOUT name="default_skin" ref_image_name="AB_main_bg.gif">
+		<COMP_IMAGE name="REWIND_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_REW_UP.pbm" id="REW_UP"/>
+			<IMAGE tag="DOWN" name="AB_REW_DOWN.pbm" id="REW_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FORWARD_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_FWD_UP.pbm" id="FWD_UP"/>
+			<IMAGE tag="DOWN" name="AB_FWD_DOWN.pbm" id="FWD_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_BAR" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="VOLUME BAR" name="AB_VOLUME.pbm" id="VOLUME"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_INCREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_VOLUME_inc_up.pbm" id="VOLUME_INC_UP"/>
+			<IMAGE tag="DOWN" name="AB_VOLUME_inc_down.pbm" id="VOLUME_INC_DOWN"/>
+			<IMAGE tag="DISABLE" name="AB_VOLUME_inc_dis.pbm" id="VOLUME_INC_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="VOLUME_DECREASE" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_VOLUME_dec_up.pbm" id="VOLUME_DEC_UP"/>
+			<IMAGE tag="DOWN" name="AB_VOLUME_dec_down.pbm" id="VOLUME_DEC_DOWN"/>
+			<IMAGE tag="DISABLE" name="AB_VOLUME_dec_dis.pbm" id="VOLUME_DEC_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PLAY_BUTTON" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PLAY ON" name="AB_PLAY_UP.pbm" id="PLAY_UP"/>
+			<IMAGE tag="PLAY DOWN" name="AB_PLAY_DOWN.pbm" id="PLAY_DOWN"/>
+			<IMAGE tag="PAUSE ON" name="AB_PAUSE_UP.pbm" id="PAUSE_UP"/>
+			<IMAGE tag="PAUSE DOWN" name="AB_PAUSE_DOWN.pbm" id="PAUSE_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="STOP_BUTTON" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_STOP_UP.pbm" id="STOP_UP"/>
+			<IMAGE tag="DOWN" name="AB_STOP_DOWN.pbm" id="STOP_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="ONCE_AWAY" count="5" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="AB_REPEAT_UP.pbm" id="REPEAT_UP"/>
+			<IMAGE tag="DOWN" name="AB_REPEAT_DOWN.pbm" id="REPEAT_DOWN"/>
+			<IMAGE tag="OFF UP" name="AB_REPEAT_ONCE_UP.pbm" id="REPEAT_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="AB_REPEAT_ONCE_DOWN.pbm" id="REPEAT_OFF_DOWN"/>
+			<IMAGE tag="DISABLE" name="AB_REPEAT_DISABLE.pbm" id="REPEAT_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="MODE_SET" count="4" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SET UP" name="AB_SETTING_UP.pbm" id="SETTING_MODE_UP"/>
+			<IMAGE tag="SET DOWN" name="AB_SETTING_DOWN.pbm" id="SETTING_MODE_DOWN"/>
+			<IMAGE tag="OFF UP" name="AB_SETTING_OFF_UP.pbm" id="PLAY_MODE_UP"/>
+			<IMAGE tag="OFF DOWN" name="AB_SETTING_OFF_DOWN.pbm" id="PLAY_MODE_DOWN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PROGRESS_BAR" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PROGRESS_BAR" name="AB_progress_bar.pbm" id="PROGRESS_BAR"/>
+			<IMAGE tag="INDICATOR" name="AB_indicator.pbm" id="INDICATOR"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON0" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON0" name="AB_SECTION_BUTTON0.pbm" id="BUTTON0"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON1" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON1" name="AB_SECTION_BUTTON1.pbm" id="BUTTON1"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON2" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON2" name="AB_SECTION_BUTTON2.pbm" id="BUTTON2"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON3" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON3" name="AB_SECTION_BUTTON3.pbm" id="BUTTON3"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON4" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON4" name="AB_SECTION_BUTTON4.pbm" id="BUTTON4"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON5" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON5" name="AB_SECTION_BUTTON5.pbm" id="BUTTON5"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON6" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON6" name="AB_SECTION_BUTTON6.pbm" id="BUTTON6"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON7" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON7" name="AB_SECTION_BUTTON7.pbm" id="BUTTON7"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON8" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON8" name="AB_SECTION_BUTTON8.pbm" id="BUTTON8"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="SECTION_BUTTON9" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SECTION_BUTTON9" name="AB_SECTION_BUTTON9.pbm" id="BUTTON9"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="PROGRESS_RECT" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PROGRESS_RECT_EMPTY" name="AB_PROG_BAR_RECT_EMPTY.pbm" id="PROG_BAR_EMPTY"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_TEXT name="COMMON_COLOR" default_pos_flag="1">
+			<COLOR tag="Border" choice_color="BORDER" value="255,255,255,100"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100"/>
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,255,100"/>
+			<DIMENSION left="0" right="0" top="0" bottom="-3"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="AUDIO_FILE" default_pos_flag="1">
+			<COLOR tag="Hide Play color" choice_color="BACKGROUND" value="255,248,220,100" />
+			<COLOR tag="Section color" choice_color="TEXT" value="238,130,238,100" />
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SONG_TITLE" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,255,0,100" common_choice_color="BACKGROUND"/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="123" top="-1" bottom="19"/>
+		</COMP_TEXT>
+	</SKIN_LAYOUT>
+	<OUTPUT_FORMAT>
+		<STRINGS filename="resource_abrepeat_skins.c" image_id="IMG_ID_ABREPEAT" coordinate_struct="audply_point_struct" skin_struct="abrepeat_skin_struct" skin_struct_name="g_abrepeat_skins" project="MAUI" description="AP repeater main screen skin settings" tool_define="__MMI_AB_REPEATER__" background="MAIN_SKIN1_BG"/>
+		<FORMAT background_image="" common_color="1"/>
+		<ADDITIONAL_INFO name="VOLUME_BAR" info="1"/>
+		<ADDITIONAL_INFO name="PROGRESS_BAR" info="3"/>
+		<ADDITIONAL_INFO name="IMAGE_CONTAINS" contain_count="9" image_id="IMG_ID_ABREPEAT_ABSECTION_PLAYING,IMG_ID_ABREPEAT_ABSECTION_RECORDING,IMG_ID_ABREPEAT_ABSECTION_RECORDING_DOWN,IMG_ID_ABREPEAT_AB_SETSECTION,IMG_ID_ABREPEAT_AB_SETSECTION_DOWN,IMG_ID_ABREPEAT_AB_NONSETSECTION,IMG_ID_ABREPEAT_AB_NONSETSECTION_DOWN,"/>
+		<FILE_HEADERS file_name="gdi_lcd_config.h"/>
+		<FILE_HEADERS file_name="FrameworkStruct.h"/>
+		<FILE_HEADERS file_name="GlobalConstants.h"/>
+		<FILE_HEADERS file_name="FileMgr.h"/>
+		<FILE_HEADERS file_name="ABRepeaterDef.h"/>
+		<FILE_HEADERS file_name="ABRepeaterResDef.h"/>		
+	</OUTPUT_FORMAT>
+</SKIN_XML>

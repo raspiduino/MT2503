@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="label_color">#ffffffff</color>
+    <color name="function_label_color">#00000000</color>
+    <color name="label_color_hl0">#ffffffff</color>
+    <color name="balloon_color">#ff000000</color>
+    <color name="candidate_color">#ff000000</color>
+    <color name="active_candidate_color">#ff000000</color>
+    <color name="recommended_candidate_color">#ffe35900</color>
+    <color name="footnote_color">#ff343233</color>
+    <color name="composing_color">#ff000000</color>
+    <color name="composing_color_hl">#ffffffff</color>
+    <color name="composing_color_idle">#ff777777</color>
+    <color name="popup_label_color">#000000</color>
+
+    <color name="color_normal">#000000</color>
+    <color name="color_function">#FFFFFF</color>
+    <color name="color_highlight">#FFFFFF</color>
+    <color name="color_aux">#494949</color>
+    <color name="color_unable">#696969</color>
+    <color name="color_select">#000000</color>
+    <color name="color_unselect">#696969</color>
+    <color name="color_unclickable">#767676</color>
+    <color name="color_balloon">#000000</color>
+    
+    <color name="color_effect">#FFFFFF</color>
+    <color name="color_effect2">#000000</color>
+     
+	<color name="color_black">#FF000000</color>
+	<color name="color_white">#FFFFFFFF</color>
+	<color name="color_gray">#FFA0A0A0</color>
+	<color name="color_red">#FFFF0000</color>
+	<color name="color_green">#FF00FF00</color>
+	<color name="color_fading">#FF999999</color>
+	<color name="candidate_background">#bbffffff</color>
+	<color name="extend_background">#ffd1d1d1</color>
+	<color name="setting_popup_black">#00000000</color>
+	<color name="setting_popup_pressed">#FFE35900</color>
+	<color name="setting_popup_not_focus">#ffffffff</color>
+	<color name="candidate_normal">#FF959595</color>
+	<color name="candidate_recommended">#FF098ee9</color>
+	<color name="candidate_tab_normal">#FF4D4D4D</color>
+	<!--  color for handwriting setting trace colors -->
+	<drawable name="hw_trace_white">#FFFFFFFF</drawable>
+	<drawable name="hw_trace_green">#FF008000</drawable>
+	<drawable name="hw_trace_yellow">#FFFFC600</drawable>
+	<drawable name="hw_trace_blue">#FF2B8FFF</drawable>
+
+	<color name="hwtracewhite">#FFFFFFFF</color>
+	<color name="hwtracegreen">#FF008000</color>
+	<color name="hwtraceyellow">#FFFFC600</color>
+	<color name="hwtraceblue">#FF2B8FFF</color>
+	
+	<color name="color_highlight_smart_key">#FF6EC1F0</color>
+
+	<drawable name="input_method_fullscreen_background">#fff9f9f9</drawable>
+</resources>

@@ -1,0 +1,17 @@
+meta\ft\src\ft_fnc.c
+meta\ft\src\ft_fnc_audio.c
+meta\ft\src\ft_fnc_bt.c
+meta\ft\src\ft_fnc_custom.c
+meta\ft\src\ft_fnc_fat.c
+meta\ft\src\ft_fnc_fm.c
+meta\ft\src\ft_fnc_gps.c
+meta\ft\src\ft_fnc_l1rf.c
+meta\ft\src\ft_fnc_misc.c
+meta\ft\src\ft_fnc_misc_ex.c
+meta\ft\src\ft_fnc_nfc.c
+meta\ft\src\ft_fnc_nvram.c
+meta\ft\src\ft_fnc_util.c
+meta\ft\src\ft_fnc_wifi.c
+meta\ft\src\ft_main.c
+meta\ft\src\ft_mem.c
+meta\ft\src\ft_report.c

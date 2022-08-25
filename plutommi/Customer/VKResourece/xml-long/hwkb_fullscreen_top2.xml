@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="false" width="87.879%p"
+	height="94.5946%p" kb_width="13.75%p" kb_height="9.25%p" key_xmargin="3.031%p"
+	key_ymargin="2.7028%p" key_type="2">
+	<row start_pos_x="3.031%p" start_pos_y="5.4055%p">
+		<key code="8" label="\xa454" />
+	</row>
+</keyboard>

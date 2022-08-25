@@ -1,0 +1,164 @@
+
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   [AUTOGEN_QueryFileName_TS]
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   defines the memory map for the validation board
+; *
+; * Author:
+; * -------
+; *   Yinli Liang (mtk54166)     [AUTOGEN_GenVersion]
+; *
+; * Auto Generated Date:
+; * -------
+; *   [AUTOGEN_GenDate]
+; *
+; * Revision History:
+; * -------
+; * $Log: $
+; *
+; * 03 25 2014 yinli.liang
+; * [MAUI_03486390] [Tiny System] call for check in
+; * set a dummy end to restrict TINYSYS_ROM1 EV max size
+; ****************************************************************************/
+;
+;=========================================================================
+; This scatter file is auto-generated and please DO NOT change the content at will
+;=========================================================================
+
+TINYSYS_ROM1 [AUTOGEN_GetTINYSYS_ROM1BaseAndSize]
+{
+    TS_ROM1_GFH +0x0
+    {
+        * (TINY_SYS_ROM1_GFH)
+    }
+    TS_ROM1_READ_ONLY +0x0 
+    {
+         ts_bootarm.obj (C$$code,+First)
+; C++ related input sections
+         cpp_initialise.o              (+RO-CODE, +RO-DATA)
+         cpp_finalise.o                (+RO-CODE, +RO-DATA)
+         *                             (C$$pi_ctorvec)
+         *                             (C$$pi_dtorvec)
+         *                             (C$$ddtorvec)
+         *                             (C$$ctor)
+         *                             (C$$dtor)
+; for RVCT C++ initialize
+         init_aeabi.o                  (+RO-CODE, +RO-DATA)
+         *                             (.init_array)
+         *                             (.ARM.exidx)
+         
+         "*armlib/*.l"                 (+RO)
+         "*cpplib/*.l"                 (+RO)
+         *armlib\*.l                   (+RO)
+         *cpplib\*.l                   (+RO)
+         *armlib*                       (+RO-CODE, +RO-DATA)
+         *cpplib*                       (+RO-CODE, +RO-DATA)
+; ====== rtos-related lib ======
+         *nucleus.lib (+RO)
+         *nucleus_int.lib (+RO)
+         *nucleus_debug.lib (+RO)
+         *nucleus_v2.lib (+RO)
+         *nucleus_v2_int.lib (+RO)
+         *nucleus_v2_debug.lib (+RO)
+         *nucleus_v2_ctrl_code.lib (+RO)
+         csc.obj (+RO)
+         tcc.obj (+RO)
+         tms.obj (+RO)
+         evc.obj (+RO)
+         quc.obj (+RO)
+         pmc.obj (+RO)
+         smc.obj (+RO)
+         tct.obj (+RO)
+; default RO-CODE,RO-DATA
+         * (+RO-CODE,+RO-DATA)
+    }
+    TS_ROM1_READ_WRITE +0x0
+    {
+        .ANY (+RW)
+    }
+    TS_ROM1_ZI +0x0
+    {
+        .ANY (+ZI)
+    }
+    TS_ROM1_DUMMY_END [AUTOGEN_GetTS_ROM1_DUMMY_ENDBase] 0x4
+    {
+        ts_bootarm.obj (TS_ROM1_END)
+    }
+    TS_ROM1_SIGNATURE_SECTION +0x0
+    {
+        * (TINY_SYS_ROM1_SIGNATURE_SECTION)
+    }
+}
+
+TINYSYS_ROM2 [AUTOGEN_GetTINYSYS_ROM2BaseAndSize]
+{
+    TS_ROM2_GFH +0x0
+    {
+        * (TINY_SYS_ROM2_GFH)
+    }
+    TS_ROM2_READ_ONLY +0x0 
+    {
+        .ANY (+RO)
+    }
+    TS_ROM2_READ_WRITE +0x0
+    {
+        * (+RW)
+    }
+    TS_ROM2_ZI +0x0
+    {
+        * (+ZI)
+    }
+;[follow up] signature region should be the last exec-region, but CSCI_INFO is also need to be put at the last location 
+    TS_ROM2_SIGNATURE_SECTION +0x0 
+    {
+        * (TINY_SYS_ROM2_SIGNATURE_SECTION)
+    }
+    CSCI_DATA [AUTOGEN_GetCSCI_DATABaseAndSize]
+    {
+    	*.* (csci_static_*)
+    }
+}

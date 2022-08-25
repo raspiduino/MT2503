@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_dialer"
+	xml_cache_flag="true" bitmap_cache_flag="true" height="19.9%p"
+	width="32.5%p" key_type="0">
+	
+	<row start_pos_x="1.25%p" start_pos_y="1.4286%p">		
+		<key code="49" icon="@drawable/keyicon_1_dialer" icon_hl="@drawable/keyicon_highlight_1_dialer" />
+		<key code="50" icon="@drawable/keyicon_2_dialer" icon_hl="@drawable/keyicon_highlight_2_dialer" />
+		<key code="51" icon="@drawable/keyicon_3_dialer" icon_hl="@drawable/keyicon_highlight_3_dialer" />
+	</row>
+	
+	<row start_pos_x="1.25%p">
+		<key code="52" icon="@drawable/keyicon_4_dialer" icon_hl="@drawable/keyicon_highlight_4_dialer" />
+		<key code="53" icon="@drawable/keyicon_5_dialer" icon_hl="@drawable/keyicon_highlight_5_dialer" />
+		<key code="54" icon="@drawable/keyicon_6_dialer" icon_hl="@drawable/keyicon_highlight_6_dialer" />
+	</row>
+	
+	<row start_pos_x="1.25%p">
+		<key code="55" icon="@drawable/keyicon_7_dialer" icon_hl="@drawable/keyicon_highlight_7_dialer" />
+		<key code="56" icon="@drawable/keyicon_8_dialer" icon_hl="@drawable/keyicon_highlight_8_dialer" />
+		<key code="57" icon="@drawable/keyicon_9_dialer" icon_hl="@drawable/keyicon_highlight_9_dialer" />
+	</row>
+	
+	<row start_pos_x="1.25%p">		
+		<key code="42" icon="@drawable/keyicon_star_dialer" icon_hl="@drawable/keyicon_highlight_star_dialer" />
+		<key code="48" icon="@drawable/keyicon_0_dialer" icon_hl="@drawable/keyicon_highlight_0_dialer" />
+		<key code="35" icon="@drawable/keyicon_hash_dialer" icon_hl="@drawable/keyicon_highlight_hash_dialer" />
+	</row>
+	
+	<!-- single sim -->
+	<row row_id="1" start_pos_x="1.25%p">		
+		<key code="-25" key_type="1" width="49.5%p" icon="@drawable/keyicon_call_dialer" icon_hl="@drawable/keyicon_call_dialer" />
+		<key code="-3" key_type="2" width="49.5%p" icon="@drawable/keyicon_hide_dialer" icon_hl="@drawable/keyicon_hide_dialer" />
+	</row>
+	
+	<!-- single sim with video call-->
+	<row row_id="2" start_pos_x="1.25%p">
+		<key code="-25" key_type="1" icon="@drawable/keyicon_call_dialer" icon_hl="@drawable/keyicon_call_dialer" />
+		<key code="-27" key_type="1" icon="@drawable/keyicon_videocall_dialer" icon_hl="@drawable/keyicon_videocall_dialer" />
+		<key code="-3" key_type="2" icon="@drawable/keyicon_hide_dialer" icon_hl="@drawable/keyicon_hide_dialer" />
+	</row>
+	
+	<!-- dual sims -->
+	<row row_id="3" start_pos_x="1.25%p">
+		<key code="-25" key_type="1" icon="@drawable/keyicon_dualmode_call1_dialer" icon_hl="@drawable/keyicon_dualmode_call1_dialer" />
+		<key code="-26" key_type="1" icon="@drawable/keyicon_dualmode_call2_dialer" icon_hl="@drawable/keyicon_dualmode_call2_dialer" />
+		<key code="-3" key_type="2" icon="@drawable/keyicon_dualmode_hide_dialer" icon_hl="@drawable/keyicon_dualmode_hide_dialer" />
+	</row>
+	
+	<!-- dual sims with video call-->
+	<row row_id="4" start_pos_x="1.25%p">
+		<key code="-25" key_type="1" width="24.5%p" icon="@drawable/keyicon_dualmode_call1_dialer" icon_hl="@drawable/keyicon_dualmode_call1_dialer" />
+		<key code="-26" key_type="1" width="24.5%p" icon="@drawable/keyicon_dualmode_call2_dialer" icon_hl="@drawable/keyicon_dualmode_call2_dialer" />
+		<key code="-27" key_type="1" width="24.5%p" icon="@drawable/keyicon_videocall_dialer" icon_hl="@drawable/keyicon_videocall_dialer" />
+		<key code="-3" key_type="2" width="24.5%p" icon="@drawable/keyicon_dualmode_hide_dialer" icon_hl="@drawable/keyicon_dualmode_hide_dialer" />
+	</row>
+
+	<!-- emergency call -->
+	<row row_id="5" start_pos_x="1.25%p">		
+		<key code="-29" key_type="3" width="49.5%p" icon="@drawable/keyicon_emergency_call_dialer" icon_hl="@drawable/keyicon_emergency_call_dialer"  />
+		<key code="-3" key_type="2" width="49.5%p" icon="@drawable/keyicon_hide_dialer" icon_hl="@drawable/keyicon_hide_dialer" />
+	</row>
+		
+	<!-- dynamic sim -->
+	<row row_id="6" start_pos_x="1.25%p">		
+		<key code="-28" key_type="1" width="49.5%p" icon="@drawable/keyicon_call_dialer" icon_hl="@drawable/keyicon_call_dialer" />
+		<key code="-3" key_type="2" width="49.5%p" icon="@drawable/keyicon_hide_dialer" icon_hl="@drawable/keyicon_hide_dialer" />
+	</row>	
+
+</keyboard>

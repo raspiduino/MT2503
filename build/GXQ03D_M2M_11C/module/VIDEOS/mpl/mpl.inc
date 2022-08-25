@@ -1,0 +1,15 @@
+hal\video\common\include
+hal\video\decoder\include
+hal\video\vt_parser\include
+hal\video\mpl\inc
+hal\video\custom
+hal\video\demuxer\provider\inc
+hal\video\demuxer\mp4_parser\inc
+hal\video\demuxer\avi_parser\inc
+interface\hal\video
+media\stream\include
+sst\include
+media\common\include
+custom\video
+hal\video\fluency\include
+hal\system\dcmgr\inc

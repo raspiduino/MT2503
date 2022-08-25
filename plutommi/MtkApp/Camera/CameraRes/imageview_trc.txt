@@ -1,0 +1,234 @@
+[APP NAME] = IMAGEVIEWEX
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+/* --------------------------------------------------------------- */
+/* ------------------------- IMAGEVIEWER ------------------------- */
+/* --------------------------------------------------------------- */
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_ENTER_STATE,"[IMG][DRM] state from %d to %d, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_VALID,"[IMG][DRM] drm validate = %x, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_PRINT_INVALID,"[IMG][DRM] print invalid, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_MULTIPART_ODF,"[IMG][DRM] multipart odf, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_FILE,"[IMG][DRM] handle:%d, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_DISPLAY_VALID,"[IMG][DRM] display valid, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_DRM_PRINT_VALID,"[IMG][DRM] print valid, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_NO_PERMISSION,"[IMG][DRM] no drm permission, handle:%d, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_NOT_DRM_FILE,"[IMG][DRM] not drm file, handle:%d, line:%d")
+TRC_MSG(MMI_TRC_IMGVIEW_NOT_IMAGE_FILE,"[IMG][DRM] not image file, handle:%d, line:%d")
+
+/* --------------------------------------------------------------- */
+/* ------------------------- IMAGEVIEWER ADV------------------------- */
+/* --------------------------------------------------------------- */
+
+TRC_MSG(MMI_TRC_IMGADV_CONSUME_DRM_IF_NEED,"[IMGADV] DRM Consume? drm state = [%d], drm id = [%d]")
+TRC_MSG(MMI_TRC_IMGADV_CONSUME_DRM,"[IMGADV] Consumed DRM! drm state = [%d], drm id = [%d]")
+TRC_MSG(MMI_TRC_IMGADV_RESUME,"[IMGADV] Resume DRM! drm state = [%d], drm id = [%id]")
+TRC_MSG(MMI_TRC_IMGADV_DRM_CALLBACK_HDLR,"[IMGADV] DRM Callback! drm state = [%d], drm id = [%id]")
+TRC_MSG(MMI_TRC_IMGADV_DRM_CALLBACK_IN_APP,"[IMGADV] DRM Callback in Viewer's Screen")
+TRC_MSG(MMI_TRC_IMGADV_DRM_CALLBACK_IN_HISTORY,"[IMGADV] DRM Callback in History")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_CONSUME_DRM_IF_NEED,"[FMGR] DRM Consume? drm state = [%d], drm id = [%d]")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_CONSUME_DRM,"[FMGR] Consumed DRM! drm state = [%d], drm id = [%d]")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_RESUME,"[FMGR] Resume DRM! drm state = [%d], drm id = [%id]")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_DRM_CALLBACK_HDLR,"[FMGR] DRM Callback! drm state = [%d], drm id = [%id]")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_DRM_CALLBACK_IN_APP,"[FMGR] DRM Callback in Viewer's Screen")
+TRC_MSG(MMI_TRC_FMGR_VIEWER_DRM_CALLBACK_IN_HISTORY,"[FMGR] DRM Callback in History")
+TRC_MSG(MMI_TRC_IMGADV_BPP_FILE_HANDLE,"[IMGADV] bpp_file_handle = [%d]")
+TRC_MSG(MMI_TRC_IMGADV_BPP_CONSUME_DRM_ID,"[IMGADV] bpp consume drm_id = [%d]")
+
+TRC_MSG(MMI_TRC_IMGADV_ENTRY_SCREEN,"[IMGADV]mmi_imgadv_entry_app_screen_internal")
+TRC_MSG(MMI_TRC_IMGADV_CHECK_RESUME,"[IMGADV]g_imgadv_cntx.is_resume = %d")
+TRC_MSG(MMI_TRC_IMGADV_RESULT,"g_imgadv_cntx.result = %d")
+TRC_MSG(MMI_TRC_IMGADV_DEL_SCR_CB,"[IMGADV]mmi_imgadv_del_scr_callback")
+TRC_MSG(MMI_TRC_IMGADV_EXIT_SCREEN,"[IMGADV]mmi_imgadv_exit_app_screen")
+TRC_MSG(MMI_TRC_IMGADV_RESET,"[IMGADV]mmi_imgadv_reset_app")
+TRC_MSG(MMI_TRC_IMGADV_DECODE,"[IMGADV]mmi_imgadv_extract_image_to_cache_layer")
+TRC_MSG(MMI_TRC_IMGADV_GDI_HANDLE_RESULT,"[IMGADV]gdi_handle_result = %d")
+TRC_MSG(MMI_TRC_IMGADV_IS_ERR_DISP,"[IMGADV]g_imgadv_cntx.is_err_displayed = %d")
+TRC_MSG(MMI_TRC_IMGADV_EXTRACT_THUM,"[IMGADV]mmi_imgadv_extract_image_to_thumbnail_layer")
+TRC_MSG(MMI_TRC_IMGADV_DISP_POPUP,"[IMGADV]mmi_imgadv_display_error")
+
+/* --------------------------------------------------------------- */
+/* ------------------------- IMAGEVIEWER MAV------------------------- */
+/* --------------------------------------------------------------- */
+
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_DRAW_CALLBACK,"[IMGMAV]mmi_ivex_mav_draw_callback: result = %d, handle = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_STOP_DECODING,"[IMGMAV]mmi_ivex_stop_mav_if_need: is_mav = %d, handle = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_DRAW_FILE,"[IMGMAV]mmi_ivex_draw_mav_file: is_mav = %d, is_mav_decoding = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_DRAW_FILE_STARTED,"[IMGMAV]mmi_ivex_draw_mav_file: handle = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_PREV_KEY_PRESS, "[IMGMAV]mmi_ivex_shortcut_mav_prev_frame_press")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_NEXT_KEY_PRESS, "[IMGMAV]mmi_ivex_shortcut_mav_next_frame_press")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_PREV_KEY_REPEAT, "[IMGMAV]mmi_ivex_shortcut_mav_prev_frame_repeat")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_NEXT_KEY_REPEAT, "[IMGMAV]mmi_ivex_shortcut_mav_next_frame_repeat")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_PREV_KEY_RELEASE, "[IMGMAV]mmi_ivex_shortcut_mav_prev_frame_release")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_NEXT_KEY_RELEASE, "[IMGMAV]mmi_ivex_shortcut_mav_next_frame_release")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_SLIDING_BAR_OBSERVER, "[IMGMAV]mmi_ivex_sliding_bar_progess_observer: new_frame_index = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_GET_IMG_BASE_INFO, "[IMGMAV]mmi_ivex_get_image_base_info: is_mav = %d, original_width = %d, original_height = %d, mav_total_frames = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_ENTRY_VIEW_RESET_FRAME_INDEX, "[IMGMAV]mmi_ivex_entry_view_screen: reset mav frame index!!!")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_ENTRY_VIEW_EXT_RESET_FRAME_INDEX, "[IMGMAV]mmi_ivex_entry_view_screen_ext: reset mav frame index!!!")
+TRC_MSG(MMI_TRC_IMGVIEW_MAV_TILT, "[IMGMAV]mmi_ivex_mav_image_tilt_callback: gx = %d, gy = %d, gz = %d")
+TRC_MSG(MMI_TRC_MAV_LISTEN_START, "[IMGMAV]mmi_ivex_mav_start_listen_motion")
+TRC_MSG(MMI_TRC_MAV_LISTEN_STOP, "[IMGMAV]mmi_ivex_mav_stop_listen_motion")
+TRC_MSG(MMI_TRC_MAV_START_PULSE, "[IMGMAV]mmi_ivex_mav_motion_start_pulse")
+TRC_MSG(MMI_TRC_MAV_STOP_PULSE, "[IMGMAV]mmi_ivex_mav_motion_stop_pulse")
+TRC_MSG(MMI_TRC_MAV_PULSE, "[IMGMAV]mmi_ivex_mav_motion_pulse: direction = %d")
+
+TRC_MSG(MMI_TRC_IMGVIEW_SLIDING_BAR_INIT,"[IMGSB]sliding_bar_init")
+TRC_MSG(MMI_TRC_IMGVIEW_SLIDING_BAR_SET_PROGRESS,"[IMGSB]sliding_bar_set_progress_ex: progress = %d, redraw = %d, notify = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_SLIDING_BAR_SET_ORIENTATION,"[IMGSB]sliding_bar_set_active_layout: orientation = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_SLIDING_BAR_RELOCATE_SLIDER,"[IMGSB]sliding_bar_relocate_slider: progress = %d, x = %d, event_x = %d, event_y = %d")
+TRC_MSG(MMI_TRC_IMGVIEW_SLIDING_BAR_REDRAW, "[IMGSB]sliding_bar_redraw: orientation = %d")
+
+
+/* --------------------------------------------------------------- */
+/* ------------------------- ImageViewer EX APP------------------- */
+/* --------------------------------------------------------------- */
+TRC_MSG(MMI_TRC_IVAPP_ASM_STOP_CB,"[IVAPP]ASM stop cb")
+TRC_MSG(MMI_TRC_IVAPP_ASM_SUCCESS_CB,"[IVAPP]ASM success cb, VFF=%d")
+TRC_MSG(MMI_TRC_IVAPP_SWI_LAYER_DONE,"[IVAPP]Switch layer done, GIFI=%d,II.FI=%d")
+TRC_MSG(MMI_TRC_IVAPP_PRE_ENTRY_VIEW_SCR,"[IVAPP]pre-entry view scr, TIC=%d")
+TRC_MSG(MMI_TRC_IVAPP_ENTRY_VIEW_SCR,"[IVAPP]Entry view scr, VS=%d")
+TRC_MSG(MMI_TRC_IVAPP_ENTRY_VIEW_SCR_OVER,"[IVAPP]Entry view scr over, VS=%d")
+TRC_MSG(MMI_TRC_IVAPP_EXIT_VIEW_SCR,"[IVAPP]Exit view scr, RFF=%d")
+TRC_MSG(MMI_TRC_IVAPP_DEL_VIEW_SCR_CB,"[IVAPP]Del view scr cb")
+
+TRC_MSG(MMI_TRC_IVAPP_CREATE_ADM,"[IVAPP]Create ADM")
+TRC_MSG(MMI_TRC_IVAPP_DESTROY_ADM,"[IVAPP]Destroy ADM")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_LC,"[IVAPP]Malloc large cache")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_SC,"[IVAPP]Malloc small cache")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_LCC,"[IVAPP]Malloc lcd cache")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_APP,"[IVAPP]Malloc APP buf")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_SCR_OSD,"[IVAPP]Malloc SCR OSD")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_DB,"[IVAPP]Malloc DB")
+TRC_MSG(MMI_TRC_IVAPP_MALLOC_FILE_PATH,"[IVAPP]Malloc filepath")
+TRC_MSG(MMI_TRC_IVAPP_FREE_LC,"[IVAPP]Free large cache")
+TRC_MSG(MMI_TRC_IVAPP_FREE_SC,"[IVAPP]Free small cache")
+TRC_MSG(MMI_TRC_IVAPP_FREE_LCC,"[IVAPP]Free lcd cache")
+TRC_MSG(MMI_TRC_IVAPP_FREE_APP,"[IVAPP]Free APP buf")
+TRC_MSG(MMI_TRC_IVAPP_FREE_SCR_OSD,"[IVAPP]Free SCR OSD")
+TRC_MSG(MMI_TRC_IVAPP_FREE_DB,"[IVAPP]Free DB")
+TRC_MSG(MMI_TRC_IVAPP_FREE_FILE_PATH,"[IVAPP]Free filepath")
+TRC_MSG(MMI_TRC_IVAPP_CREATE_OSD_LAYER,"[IVAPP]Create OSD layer")
+TRC_MSG(MMI_TRC_IVAPP_CREATE_VIEW_LAYER,"[IVAPP]Create view layer")
+TRC_MSG(MMI_TRC_IVAPP_FREE_OSD_LAYER,"[IVAPP]Free OSD layer")
+TRC_MSG(MMI_TRC_IVAPP_FREE_VIEW_LAYER,"[IVAPP]Free view layer")
+
+TRC_MSG(MMI_TRC_IVAPP_SRV_MEDIALIB_ERRC,"[IVAPP]IVSRV error code, ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_GDI_ERRC,"[IVAPP]GDI error code, ret=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_DRAW_ANMI,"[IVAPP]Draw animation, IA=%d")
+TRC_MSG(MMI_TRC_IVAPP_DRAW_ANMI_1,"[IVAPP]Draw animation1, hdlr=%d")
+TRC_MSG(MMI_TRC_IVAPP_DECODE_DONE_CB,"[IVAPP]Decode done cb, ret=%d,hdlr=%d")
+TRC_MSG(MMI_TRC_IVAPP_STOP_ANMI,"[IVAPP]Stop animation, IA=%d,hdlr=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_GET_CURR_IMG,"[IVAPP]Get curr img, ret =%d,from_fmgr=%d,fid=%d,dox=%d,doy=%d,rox=%d,roy=%d,rw=%d,rh=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_CURR_CB,"[IVAPP]Get curr img cb, VS =%d,IS=%d,EG=%d,EC=%d,fid=%d,dox=%d,doy=%d,rox=%d,roy=%d,rw=%d,rh=%d,ifo=%d,IA=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_CURR_CB_OVER,"[IVAPP]Get curr img cb over")
+TRC_MSG(MMI_TRC_IVAPP_CURR_ABNORMAL,"[IVAPP]Curr abnormal,ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_CURR_LOADING,"[IVAPP]Draw cur img loading")
+TRC_MSG(MMI_TRC_IVAPP_CURR_ERROR,"[IVAPP]Draw cur img error")
+
+TRC_MSG(MMI_TRC_IVAPP_SWITCH_ABNORMAL,"[IVAPP]Switch abnormal,ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_PREPARE_SWITCH_INFO,"[IVAPP]Prepare switch info,VLW=%d")
+TRC_MSG(MMI_TRC_IVAPP_PREPARE_PREV,"[IVAPP]Prepare prev,IS=%d")
+TRC_MSG(MMI_TRC_IVAPP_PREPARE_PREV_OVER,"[IVAPP]Prepare prev over")
+TRC_MSG(MMI_TRC_IVAPP_GET_PRE_IMG,"[IVAPP]Get pre img, ret =%d,from_fmgr=%d,gifi=%d,cfid=%d,sfid=%d,dox=%d,doy=%d,rox=%d,roy=%d,rw=%d,rh=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_PREPARE_NEXT,"[IVAPP]Prepare next,IS=%d")
+TRC_MSG(MMI_TRC_IVAPP_PREPARE_NEXT_OVER,"[IVAPP]Prepare next over")
+TRC_MSG(MMI_TRC_IVAPP_GET_NEXT_IMG,"[IVAPP]Get next img, ret =%d,from_fmgr=%d,gifi=%d,cfid=%d,sfid=%d,dox=%d,doy=%d,rox=%d,roy=%d,rw=%d,rh=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_CHECK_SWI_VALID,"[IVAPP]Check switch valid,OS=%d,IOH=%d,IS=%d,OO=%d,VFF=%d,IV=%d")
+TRC_MSG(MMI_TRC_IVAPP_NEXT_RELEASE,"[IVAPP]Next release,IP=%d,SO=%d")
+TRC_MSG(MMI_TRC_IVAPP_PRE_RELEASE,"[IVAPP]Previous release,IP=%d,SO=%d")
+TRC_MSG(MMI_TRC_IVAPP_KEY_SWI_PREV,"[IVAPP]Key switch prev,SO=%d")
+TRC_MSG(MMI_TRC_IVAPP_KEY_SWI_NEXT,"[IVAPP]Key switch next,SO=%d")
+TRC_MSG(MMI_TRC_IVAPP_STOP_SWI_PREV,"[IVAPP]Stop switch prev")
+TRC_MSG(MMI_TRC_IVAPP_STOP_SWI_NEXT,"[IVAPP]Stop switch next")
+TRC_MSG(MMI_TRC_IVAPP_STOP_SWI_PREV_1,"[IVAPP][render stop]Switch prev")
+TRC_MSG(MMI_TRC_IVAPP_STOP_SWI_NEXT_1,"[IVAPP][render stop]Switch next")
+
+TRC_MSG(MMI_TRC_IVAPP_SWI_PREV,"[IVAPP][render start]Swi prev")
+TRC_MSG(MMI_TRC_IVAPP_SWI_NEXT,"[IVAPP][render start]Swi next")
+TRC_MSG(MMI_TRC_IVAPP_PREV_CYC_STOP_RENDER,"[IVAPP][render stop pen]Swi prev")
+TRC_MSG(MMI_TRC_IVAPP_PREV_CYC_STOP_RENDER_1,"[IVAPP][render stop ok]Swi prev")
+TRC_MSG(MMI_TRC_IVAPP_NEXT_CYC_STOP_RENDER,"[IVAPP][render stop pen]Swi next")
+TRC_MSG(MMI_TRC_IVAPP_NEXT_CYC_STOP_RENDER_1,"[IVAPP][render stop ok]Swi next")
+
+
+TRC_MSG(MMI_TRC_IVAPP_GET_ONE_CB,"[IVAPP]Get one cb,VS=%d,EG=%d,EC=%d,ifo=%d,IA=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_ONE_CB_OVER,"[IVAPP]Get one cb over")
+TRC_MSG(MMI_TRC_IVAPP_ENTRY_VIEW_SCR_EXT,"[IVAPP]Entry view scr ext, VS=%d")
+TRC_MSG(MMI_TRC_IVAPP_ENTRY_VIEW_SCR_EXT_OVER,"[IVAPP]Entry view scr ext over")
+TRC_MSG(MMI_TRC_IVAPP_EXIT_VIEW_SCR_EXT,"[IVAPP]Exit view scr, RFF=%d")
+TRC_MSG(MMI_TRC_IVAPP_DEL_VIEW_SCR_CB_EXT,"[IVAPP]Del view scr cb ext")
+
+TRC_MSG(MMI_TRC_IVAPP_OPTION_PLAY,"[IVAPP]Option play")
+TRC_MSG(MMI_TRC_IVAPP_OPTION_ERR_FW_MENU,"[IVAPP]Option err fw, MI=%d")
+TRC_MSG(MMI_TRC_IVAPP_OPTION_ENTRY_SEND_SCR,"[IVAPP]Option entry send scr, MI=%d")
+TRC_MSG(MMI_TRC_IVAPP_OPTION_INFO_SCR,"[IVAPP]Option info,BS=%d")
+TRC_MSG(MMI_TRC_IVAPP_OPTION_HELP_SCR,"[IVAPP]Option help,BS=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_GET_IMG_BASE_INFO,"[IVAPP]Get base info,VFF=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_IMG_BASE_INFO_1,"[IVAPP]Get base info1,ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_IMG_BASE_INFO_2,"[IVAPP]Get base info2,ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_GET_IMG_BASE_INFO_3,"[IVAPP]Get base info3,fc=%d,OW=%d,OH=%d")
+TRC_MSG(MMI_TRC_IVAPP_INIT_IMG_DIS_INFO,"[IVAPP]Init img info,ret=%d")
+TRC_MSG(MMI_TRC_IVAPP_INIT_IMG_DIS_INFO_OVER,"[IVAPP]Init img info,ow=%d,oh=%d,rw=%d,rh=%d,rox=%d,roy=%d,dox=%d,doy=%d,izia=%d,izoa=%d")
+TRC_MSG(MMI_TRC_IVAPP_DOUBLE_CHECK_FOLDER,"[IVAPP]Double check folder, TIC=%d")
+TRC_MSG(MMI_TRC_IVAPP_PRE_PREPARE_IMG_INFO,"[IVAPP]Pre-prepare imginfo, fid=%d,IDI=%d")
+TRC_MSG(MMI_TRC_IVAPP_PROC_MC,"[IVAPP]Process media change, fc=%d,TIC=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_PREP_ZOOMIN,"[IVAPP]Prepare zoomin,ZC=%d")
+TRC_MSG(MMI_TRC_IVAPP_PREP_ZOOMOUT,"[IVAPP]Prepare zoomout,ZC=%d")
+TRC_MSG(MMI_TRC_IVAPP_START_ZOOMIN,"[IVAPP][render start]Start zoomin")
+TRC_MSG(MMI_TRC_IVAPP_START_ZOOMOUT,"[IVAPP][render start]Start zoomout")
+TRC_MSG(MMI_TRC_IVAPP_STOP_ZOOMIN,"[IVAPP][render stop]Stop zoomin")
+TRC_MSG(MMI_TRC_IVAPP_STOP_ZOOMOUT,"[IVAPP][render stop]Stop zoomout")
+TRC_MSG(MMI_TRC_IVAPP_ZOOMIN_RELEASE,"[IVAPP][render stop]Zoomin release")
+TRC_MSG(MMI_TRC_IVAPP_ZOOMOUT_RELEASE,"[IVAPP][render stop]Zoomout release")
+TRC_MSG(MMI_TRC_IVAPP_INC_IMG_FULL,"[IVAPP][render stop]Increase to full")
+TRC_MSG(MMI_TRC_IVAPP_INC_IMG,"[IVAPP][render stop]Increase")
+TRC_MSG(MMI_TRC_IVAPP_START_ROTATE,"[IVAPP][render start]Start rotate")
+TRC_MSG(MMI_TRC_IVAPP_STOP_ROTATE,"[IVAPP][render stop]Stop rotate")
+TRC_MSG(MMI_TRC_IVAPP_SLIDE_CYC,"[IVAPP][render start]Start slide cyc")
+TRC_MSG(MMI_TRC_IVAPP_STOP_PLAY,"[IVAPP][render stop]Stop play")
+TRC_MSG(MMI_TRC_IVAPP_PLAY_SLEEP,"[IVAPP][render stop]Sleep play")
+
+TRC_MSG(MMI_TRC_START_SWI_LOADING,"[IVAPP][render start]Start swi loading")
+TRC_MSG(MMI_TRC_STOP_SWI_LOADING,"[IVAPP][render stop]Stop swi loading")
+TRC_MSG(MMI_TRC_START_CUR_LOADING,"[IVAPP][render start]Start cur loading")
+TRC_MSG(MMI_TRC_STOP_CUR_LOADING,"[IVAPP][render stop]Stop cur loading")
+
+TRC_MSG(MMI_TRC_START_OSD_FOUT,"[IVAPP][render start]Start OSD fout")
+TRC_MSG(MMI_TRC_STOP_OSD_FOUT,"[IVAPP][render stop]Stop OSD fout")
+TRC_MSG(MMI_TRC_START_OSD_FIN,"[IVAPP][render start]Start OSD fin")
+TRC_MSG(MMI_TRC_STOP_OSD_FIN,"[IVAPP][render stop]Stop OSD fin")
+TRC_MSG(MMI_TRC_OSD_FIN_OVER,"[IVAPP][render stop]OSD fin over")
+TRC_MSG(MMI_TRC_OSD_FOUT_OVER,"[IVAPP][render stop]OSD fout over")
+
+TRC_MSG(MMI_TRC_START_RENDER,"[IVAPP][render start]Start rend,RRC=%d")
+TRC_MSG(MMI_TRC_STOP_RENDER,"[IVAPP][render start]Stop rend,RRC=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_PLAY_NEW,"[IVAPP]Play from fix=%d")
+TRC_MSG(MMI_TRC_IVAPP_PLAY_SKIP_NO,"[IVAPP]Play PSN=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_OTHER_APP_VIEW,"[IVAPP]View from other APP")
+TRC_MSG(MMI_TRC_IVAPP_RESET_APP,"[IVAPP]Reset APP,VOFC=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_SAVE_INFO_INT,"[IVAPP]Save img info,fp=%d")
+
+TRC_MSG(MMI_TRC_CALCULATE_LAYER_POS,"[IVAPP]Calculate layer pos,dis=%d")
+
+TRC_MSG(MMI_TRC_IVAPP_PRINT_REQ,"[IVAPP]Print req,DW=%d")
+TRC_MSG(MMI_TRC_LISTEN_MOTION,"[IVAPP]Start listen")
+TRC_MSG(MMI_TRC_LISTEN_STOP,"[IVAPP]Stop listen,IRM=%d")
+TRC_MSG(MMI_TRC_IVAPP_TILT_CB,"[IVAPP]Tilt cb,driect=%d,UDR=%d")
+TRC_MSG(MMI_TRC_IVAPP_KEY_ENTRY,"[IVAPP]Key entry")
+TRC_MSG(MMI_TRC_IVAPP_KEY_OUT,"[IVAPP]Key exit")
+
+TRC_MSG(MMI_TRC_PEN_DOWN,"[IVAPP]Pen down hdlr,VS=%d,OS=%d,IS=%d,UDI=%d,X=%d,Y=%d")
+TRC_MSG(MMI_TRC_PEN_MOVE,"[IVAPP]Pen move hdlr,IS=%d,VS=%d,OS=%d,ZC=%d,VIR=%d,UDR=%d,TO=%d,IPD=%d,VLW=%d,SLW=%d,X=%d,Y=%d")
+TRC_MSG(MMI_TRC_PEN_MOVE_1,"[IVAPP]Pen move nozoom,DLOX=%d")
+TRC_MSG(MMI_TRC_PEN_UP,"[IVAPP]Pen up hdlr,ZC=%d,UDI=%d,TO=%d")
+TRC_MSG(MMI_TRC_PEN_DOWN_INTERVAL,"[IVAPP]Pen down interval,ticks=%d")
+TRC_MSG(MMI_TRC_UPDATE_ENLARGED_IMG_INFO,"[IVAPP]Update enlarged info,X=%d,Y=%d")

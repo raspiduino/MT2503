@@ -1,0 +1,41 @@
+這份文件主要是簡單的說明
+如何將換圖工具發布給不同需求的下游廠商
+
+舉例來說:
+甲廠商需要:123號桌布
+乙廠商需要:456號桌布
+
+說明如何切換這樣的需求進行發布, 就是本文主要的目的
+
+其實方法很簡單, 請進入fscommand資料夾內
+使用任何文字編輯工具將MENU.xml檔案打開
+在檔案的最上面可以找到一份與以下內容相似的文字
+
+<SETTING>
+	<WP enName="Mimosa"		ONOFF="true"/>
+	<WP enName="Girl"		ONOFF="true"/>
+	<WP enName="Clock"		ONOFF="true"/>
+	<WP enName="Horse"		ONOFF="true"/>
+	<WP enName="Daydream"		ONOFF="true"/>
+	<WP enName="Lighthouse"		ONOFF="true"/>
+	<WP enName="Puppy"		ONOFF="true"/>
+	<WP enName="Solar"		ONOFF="true"/>
+	<WP enName="Fish"		ONOFF="true"/>
+	<WP enName="Transformer"	ONOFF="true"/>
+</SETTING>
+
+從文字上可以輕易明白, 透過修改ONOFF的數據
+就可以切換目前的10個桌布的換圖功能是否開啟
+
+ONOFF可以寫入以下兩種值:
+true => 啟動該桌布的換圖選項
+false => 關閉該桌布的換圖選項
+
+===========================================================
+======================以下請特別注意=======================
+===========================================================
+使用時請特別注意:
+請至少保持3個桌布的ONOFF狀態值為true
+否則使用者切換語系時會有故障的情形發生
+
+2011 @ Intergrafx

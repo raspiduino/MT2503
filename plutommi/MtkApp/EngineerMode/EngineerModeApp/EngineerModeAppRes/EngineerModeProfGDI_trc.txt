@@ -1,0 +1,30 @@
+[APP NAME] = Engineer mode
+[SCOPE] = PLUTO, COSMOS
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_MEMCPY_START, "[EM][GDI] memcpy start, pair_index = %d")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_MEMCPY_END, "[EM][GDI] memcpy end, pair_index = %d, %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_COLOR_CONV_START, "[EM][GDI] color conversion start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_COLOR_CONV_END, "[EM][GDI] color conversion end, %d iterations in %d ms ... Temp:0x%x")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_ABLEND_START, "[EM][GDI] alpha blending start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_ABLEND_END, "[EM][GDI] alpha blending end, %d iterations in %d ms ... Temp:0x%x")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_TEST_START, "[EM][GDI] Test suite %d, case %d, start to run:")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_TEST_END,   "[EM][GDI] Test suite %d, case %d; result = %d, ends in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_TEST_DONE,  "[EM][GDI] Test suite %d done!")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_BLT_START, "[EM][GDI] blt start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_BLT_END, "[EM][GDI] blt end, #%d, %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_FLATTEN_START, "[EM][GDI] flatten start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_FLATTEN_END, "[EM][GDI] flatten end, case %d, %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_LT_START, "[EM][GDI] linear transform start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_LT_END, "[EM][GDI] linear transform end, case %d, %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_FRECT_START, "[EM][GDI] G2D fill rect start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_FRECT_END, "[EM][GDI] G2D fill rect end, case %d, %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_IMG_DECODE_START, "[EM][GDI] Image decode test start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_IMG_DECODE_END, "[EM][GDI] Image decode test end")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_9SLICE_START, "[EM][GDI] 9slice image decode start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_9SLICE_END, "[EM][GDI] 9slice image decode end, src_img is %d, dst_cf = %d, size=(%d,%d)->(%d,%d) , %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_ABM_START, "[EM][GDI] ABM image decode start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_ABM_END, "[EM][GDI] ABM image decode end, src_img is %d, dst_cf = %d, size=(%d,%d)->(%d,%d), %d times in %d ms")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_AB2_START, "[EM][GDI] AB2 image decode start")
+TRC_MSG(TRC_APP_EM_PROFILING_GDI_AB2_END, "[EM][GDI] AB2 image decode end, src_img is %d, dst_cf = %d, size=(%d,%d)->(%d,%d), %d times in %d ms")

@@ -1,0 +1,8 @@
+[APP NAME] = APP_BTNOTIFICATION
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_CONN_APP
+
+
+TRC_MSG(TRC_BT_NOTIFICATION_CURRENT_ADDRESS,                   "[BTNOTIFICATION]current_dev=[%d],current_address=[%x-%x-%x],enum=[%d]")
+TRC_MSG(TRC_BT_NOTIFICATION_PROC,                               "[BTNOTIFICATION]proc, evt_id=[%d],enum=[%d]")
+TRC_MSG(TRC_BT_NOTIFICATION_MRE,                                "[BTNOTIFICATION]mre, ret_code=[%d],error-code=[%d]")

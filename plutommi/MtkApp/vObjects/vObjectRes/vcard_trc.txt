@@ -1,0 +1,14 @@
+[APP NAME] = VCARD
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#starttrace
+TRC_MSG(TRC_MMI_PHB_VCARD_HIDE_SIM_ITEM,      "[vCard]cui_vcard_parse_vcard_run(): sim_id is %M, status is %d")
+TRC_MSG(TRC_MMI_PHB_VCARD_TYPE,               "[vCard]cui_vcard_parse_vcard_run(): vcard type is %M")
+TRC_MSG(TRC_MMI_VCARD_BUILD_RESULT,           "[vCard]mmi_vcard_writer_v21_to_file(): result is %d")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_SMS,            "[vCard]mmi_vcard_forward_sms(): check_folder result is %d")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_MMS,            "[vCard]mmi_vcard_forward_mms(): check_folder result is %d")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_BT,             "[vCard]mmi_vcard_forward_bt(): check_folder result is %d")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_EMAIL,          "[vCard]mmi_vcard_forward_email(): check_folder result is %d")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_MMS_CALLBACK,   "[vCard]mmi_vcard_forward_mms_call_back() is called")
+TRC_MSG(TRC_MMI_VCARD_SEND_BY_EMAIL_CALLBACK, "[vCard]mmi_vcard_forward_email_call_back() is called")

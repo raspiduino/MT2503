@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_phn_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" height="24.359%p" width="22.1%p"
+	key_type="0" repeat="false" balloon="true">
+
+	<row start_pos_x="1.25%p" start_pos_y="1.2821%p">
+		<key width="15.625%p" label="&quot;" code="34" />
+		<key label="&lt;" code="60" />
+		<key label="&gt;" code="62" />
+		<key label="{" code="123" />
+		<key width="15.625%p" label="," code="44" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" label="'" code="39" />
+		<key label="}" code="125" />
+		<key label="[" code="91" />
+		<key label="]" code="93" />			
+		<key width="15.625%p" label="`" code="96" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" label="\xa47c" code="-32" key_type="2" />
+		<key label="(" code="40" />
+		<key label=")" code="41" />	
+		<key label="^" code="94" />	
+		<key width="15.625%p" code="8" label="\xa454" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.25%p">
+		<key width="15.625%p" code="-3" label="\xa451" key_type="3" />
+		<key label="|" code="124" />
+		<key label="@" code="64" key_type="0" />
+		<key code="-1" label="\xa47a" key_type="4" />
+		<key width="15.625%p" code="13" label="\xa456" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" code="13" label="\xa45e" />
+		</key>
+	</row>
+</keyboard>
+
+

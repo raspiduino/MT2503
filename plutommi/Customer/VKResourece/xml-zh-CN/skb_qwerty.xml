@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	width="10%p" height="25.1163%p" key_type="0">
+
+	<row start_pos_x="0%p" start_pos_y="1.8605%p">
+		<keys splitter="|" labels="q|w|e|r|t|y|u|i|o|p"
+			codes="113|119|101|114|116|121|117|105|111|112" />
+	</row>
+
+	<row start_pos_x="5%p">
+		<keys splitter="|" labels="a|s|d|f|g|h|j|k|l" codes="97|115|100|102|103|104|106|107|108" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" label="\xa467" code="-2" key_type="2">
+			<toggle_state state_id="10" label="\xa468" code="-2" key_type="2" />
+			<toggle_state state_id="11" label="\xa468" code="-2" key_type="4" />
+		</key>
+		<keys splitter="|" labels="z|x|c|v|b|n|m" codes="122|120|99|118|98|110|109" />
+		<key width="15%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="12.5%p" code="-3" label="\xa451" key_type="11" />
+		<key width="12.5%p" label="\xa45a" code="-5" key_type="2" />
+		<key width="10%p" label="，" code="65292" />
+		<key width="30%p" label="\xa46b" code="32" key_type="2" />
+		<key width="10%p" label="。" code="12290" key_type="1"
+			popup_skb="@xml/xml-zh-CN/skb_popup_qwerty_fullstop" >
+			<toggle_state state_id="40" label="‘" code="8216" key_type="0" />
+			<toggle_state state_id="41" label="。" code="12290" key_type="1"
+			popup_skb="@xml/xml-zh-CN/skb_popup_qwerty_fullstop" />
+		</key>
+		<key width="12.5%p" label="\xa46f" code="-1" key_type="3"
+			popup_skb="@xml/skb_popup_symbol" />
+		<key width="12.5%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+
+</keyboard>

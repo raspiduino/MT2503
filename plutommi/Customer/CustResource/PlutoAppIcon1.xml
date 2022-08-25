@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Theme RES_THEME_ROOT="VUI\\LauncherAppList\\MainMenu"
+    preview="RES_THEME_ROOT\\Preview.jpg">
+
+  <Component name="MainMenu" imgPath="RES_THEME_ROOT">
+	<Image name="IMG_ID_APPLIST_ALARM_ICON"                  src="Alarm.png" />
+#if defined(__MMI_AUDIO_PLAYER__)
+	<Image name="IMG_ID_APPLIST_APLY_ICON"                   src="AudioPlayer.png" />
+#endif
+#ifdef __MMI_AZAAN_ALARM__
+	<Image name="IMG_ID_APPLIST_AALARM_ICON"                 src="Azaan_alarm.png" />
+#endif
+#if defined(__MMI_SEARCH_WEB_BAIDU__)
+	<Image name="IMG_ID_APPLIST_BAIDU_ICON"                  src="Baidu.png" />
+#endif
+#ifdef __MMI_BT_SUPPORT__
+	<Image name="IMG_ID_APPLIST_BT_ICON"                     src="BlueTooth.png" />
+#endif
+#if defined(__MMI_CALCULATOR__)
+	<Image name="IMG_ID_APPLIST_CALCULATOR_ICON"             src="Calculator.png" />
+#endif
+#if defined(__MMI_CALENDAR__)
+	<Image name="IMG_ID_APPLIST_CALENDAR_ICON"               src="Calendar.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_CLOG_ICON"                   src="CallLog.png" />
+#if defined(__MMI_CAMCORDER__)
+	<Image name="IMG_ID_APPLIST_CAMCORDER_ICON"              src="Camcorder.png" />
+#endif
+#if defined (__MMI_CAMERA__)
+	<Image name="IMG_ID_APPLIST_CAMERA_ICON"                 src="Camera.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_CONNECT_ICON"                src="Connect.png" />
+#if defined(__MMI_CURRENCY_CONVERTER__)
+	<Image name="IMG_ID_APPLIST_CURRENCY_ICON"               src="Currency.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_DIALER_ICON"                 src="Call.png" />
+#ifdef __MMI_EBOOK_READER__
+	<Image name="IMG_ID_APPLIST_EBOOK_ICON"                  src="Ebook.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_EMAIL_ICON"                  src="Email.png" />
+	<Image name="IMG_ID_APPLIST_FMGR_ICON"                   src="FMGR.png" />
+#ifdef __MMI_FM_RADIO__
+	<Image name="IMG_ID_APPLIST_FMRDO_ICON"                  src="FmRadio.png" />
+#endif
+#if defined(__MMI_BMI__) || defined(__MMI_MENSTRUAL__)
+	<Image name="IMG_ID_APPLIST_HEALTH_ICON"                 src="Health.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_IVIEWER_ICON"                src="ImageViewer.png" />
+	<Image name="IMG_ID_APPLIST_JAVA_ICON"                   src="Java.png" />
+	<Image name="IMG_ID_APPLIST_MPLYER_ICON"                 src="MediaPlayer.png" />
+	<Image name="IMG_ID_APPLIST_MESSAGE_ICON"                src="Message.png" />
+#if defined(__MMI_ATV_SUPPORT__)
+	<Image name="IMG_ID_APPLIST_MTV_ICON"                    src="MobileTV.png" />
+#endif
+#ifdef __MMI_NOTE_APP__
+	<Image name="IMG_ID_APPLIST_NOTE_ICON"                   src="Note.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_PHB_ICON"                    src="Contact.png" />
+#ifdef __MMI_PHOTOEDITOR__
+	<Image name="IMG_ID_APPLIST_PEDITOR_ICON"                src="PhotoEditor.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_PROFILES_ICON"               src="Profile.png" />
+#ifdef __SYNCML_SUPPORT__
+	<Image name="IMG_ID_APPLIST_PSYNC_ICON"                  src="PSync.png" />
+	<Image name="IMG_ID_APPLIST_SYNC_ICON"                   src="Sync.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_SETTING_ICON"                src="Setting.png" />
+	<Image name="IMG_ID_APPLIST_SERVICE_ICON"                src="SAT.png" />
+#ifdef __MMI_APPLIST_BARREL_SUPPORT__
+	<Image name="IMG_ID_APPLIST_BARREL_ICON"                 src="barrel.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_RECORDER_ICON"               src="SoundRecorder.png" />
+#if defined(__MMI_TODOLIST__)
+	<Image name="IMG_ID_APPLIST_TODO_ICON"                   src="Tasks.png" />
+#endif
+#if defined(__MMI_UNIT_CONVERTER__)
+	<Image name="IMG_ID_APPLIST_UCONVERTER_ICON"             src="Converter.png" />
+#endif
+#if defined(__MMI_VIDEO_PLAYER__)
+	<Image name="IMG_ID_APPLIST_VPLY_ICON"                   src="VideoPlayer.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_WIFI_ICON"                   src="WiFi.png" />
+#ifdef __MMI_BROWSER_2__
+	<Image name="IMG_ID_APPLIST_BROWSER_ICON"                src="Browser.png" />
+#endif
+#if defined (__MMI_WORLD_CLOCK__)
+	<Image name="IMG_ID_APPLIST_WCLOCK_ICON"                 src="WorldClock.png" />
+#endif
+#ifdef __SOCIAL_NETWORK_SUPPORT__
+	<Image name="IMG_ID_APPLIST_SNS_ICON"                    src="Sns.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_VCALL_ICON"                  src="VideoCall.png" />
+#if defined(__MMI_3D_GAME_INTERGRAFX__)
+	<Image name="IMG_ID_APPLIST_3DGAME_ICON"                 src="3dGame.png" />
+#endif
+	<Image name="IMG_ID_APPLIST_OPERA_ICON"                  src="Opera.png" />
+#if defined(__MMI_VIDEO_RECORDER__)
+	<Image name="IMG_ID_APPLIST_VREC_ICON"                   src="VideoRecorder.png" />
+#endif
+#ifdef __MMI_PROV_MESSAGE_SUPPORT__
+	<Image name="IMG_ID_APPLIST_SETTINGMSG_ICON"             src="setting_message.png" />
+#endif
+#ifdef __MMI_MOT_SUPPORT__
+	<Image name="IMG_ID_APPLIST_MOT_ICON"                    src="MOT.png" />
+#endif
+#if defined(__MMI_YOUTUBE_SHORTCUT__)
+	<Image name="IMG_ID_APPLIST_YOUTUBE_ICON"                src="youtube.png" />
+#endif
+  </Component>
+  
+  <Component name="Wallpaper" imgPath="RES_THEME_ROOT">
+    <Image name="IMG_ID_APP_LIST_THEME_WALLPAPER_0"          src="WALL01.jpg" />
+  </Component>
+
+</Theme>

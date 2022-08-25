@@ -1,0 +1,4 @@
+inet_ps\ntpd\src\empty_mmi\ntpd_hld.c
+inet_ps\ntpd\src\empty_mmi\ntpd_mem.c
+inet_ps\ntpd\src\empty_mmi\ntpd_util.c
+inet_ps\ntpd\src\empty_mmi\recvbuff.c

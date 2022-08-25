@@ -1,0 +1,47 @@
+[APP NAME] = MobileTVPlayer
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+
+/* --------------------------------------------------------------- */
+/* ------------------------- MOBILE TV PLAYER -------------------- */
+/* --------------------------------------------------------------- */
+TRC_MSG(MMI_TRC_MTV_VAL1,  "[MMI_MTV] va1=[%d], line=%d")
+TRC_MSG(MMI_TRC_MTV_VAL2,  "[MMI_MTV] va1=[%d], va2=[%d], line=%d")
+TRC_MSG(MMI_TRC_MTV_VAL3,  "[MMI_MTV] va1=[%d], va2=[%d], va3=[%d], line=%d")
+TRC_MSG(MMI_TRC_MTV_VAL4,  "[MMI_MTV] va1=[%d], va2=[%d], va3=[%d], va4=[%d], line=%d")
+TRC_MSG(MDI_TRC_MTV_SERVICE_ID,"[MMI_MTV] sid: %d, idx=%d, line=%d")
+
+TRC_MSG(MMI_TRC_MTV_KERNEL_STATE, "[MMI_MTV] kernel state: %Mmmi_mtv_player_kernel_state_enum -> %Mmmi_mtv_player_kernel_state_enum")
+TRC_MSG(MMI_TRC_MTV_PLAYER_STATE, "[MMI_MTV] player state: %Mmmi_mtv_player_player_state_enum -> %Mmmi_mtv_player_player_state_enum")
+TRC_MSG(MMI_TRC_MTV_RECORDER_STATE, "[MMI_MTV] recorder state: %Mmmi_mtv_player_recorder_state_enum -> %Mmmi_mtv_player_recorder_state_enum")
+TRC_MSG(MMI_TRC_MTV_BT_ANIM_TIMEOUT_HDLR, "[MMI_MTV] mmi_mtv_player_bt_anim_timeout_hdlr()")
+TRC_MSG(MMI_TRC_MTV_PRE_INTERRUPT_HDLR, "[MMI_MTV] mmi_mtv_player_pre_interrupt_hdlr(), prev_status=%d, status=%d")
+TRC_MSG(MMI_TRC_MTV_CHECK_STORAGE, "[MMI_MTV] mmi_mtv_player_check_storage(), restore=%d, prev_status=%d, status=%d")
+TRC_MSG(MMI_TRC_MTV_EXIT_USB_MODE_CALLBACK, "[MMI_MTV] mmi_mtv_player_exit_usb_mode_callback()")
+TRC_MSG(MMI_TRC_MTV_ENTER_USB_MODE_CALLBACK, "[MMI_MTV] mmi_mtv_player_enter_usb_mode_callback()")
+TRC_MSG(MMI_TRC_MTV_DISPLAY_ACCESS_DENIED, "[MMI_MTV] mmi_mtv_player_display_access_denied()")
+TRC_MSG(MMI_TRC_MTV_SERVICE_TIMEOUT_HDLR, "[MMI_MTV] mmi_mtv_player_service_timeout_hdlr()")
+TRC_MSG(MMI_TRC_MTV_BT_OPEN_CALLBACK, "[MMI_MTV] mmi_mtv_player_bt_open_callback(), result=%d")
+TRC_MSG(MMI_TRC_MTV_DEL_APP_MAIN_SCR_HDLR, "[MMI_MTV] mmi_mtv_player_del_app_main_scr_hdlr()")
+TRC_MSG(MMI_TRC_MTV_DEL_DELETING_SCR_HDLR, "[MMI_MTV] mmi_mtv_player_del_deleting_scr_hdlr()")
+TRC_MSG(MMI_TRC_MTV_TERMINATE_APP, "[MMI_MTV] mmi_mtv_player_terminate_app()")
+TRC_MSG(MMI_TRC_MTV_ENTER_APP_MAIN, "[MMI_MTV] mmi_mtv_player_enter_app_main()")
+TRC_MSG(MMI_TRC_MTV_DRAW_DYNAMIC_LABEL, "[MMI_MTV] mmi_mtv_player_draw_dynamic_label()")  
+TRC_MSG(MMI_TRC_MTV_CLEAR_DYNAMIC_LABEL, "[MMI_MTV] mmi_mtv_player_clear_dynamic_label()")  
+TRC_MSG(MMI_TRC_MTV_ASSIGN_SERVICE_INFO, "[MMI_MTV] mmi_mtv_player_assign_service_info()")
+TRC_MSG(MMI_TRC_MTV_ASSIGN_FAVORITE_SERVICE_INFO, "[MMI_MTV] mmi_mtv_player_assign_favorite_service_info()")
+TRC_MSG(MMI_TRC_MTV_ASSIGN_PROGRAM_INFO, "[MMI_MTV] mmi_mtv_player_assign_program_info()")
+TRC_MSG(MMI_TRC_MTV_DATE_TIME,  "[MMI_MTV] current date time: %d-%d-%d %d:%d:%d")
+TRC_MSG(MMI_TRC_MTV_PROGRAM_INFO,  "[MMI_MTV] program info[%d]: %d-%d-%d %d:%d:%d, duration=%d")
+TRC_MSG(MMI_TRC_MTV_BT_VOLUME_SYNC_HDLR, "[MMI_MTV] mmi_mtv_player_bt_volume_sync_hdlr(), volume=%d, is_mute=%d")
+TRC_MSG(MMI_TRC_MTV_DATE_TIME_UPDATE_HDLR, "[MMI_MTV] mmi_mtv_player_date_time_update_hdlr(), has_esg_info=%d")
+TRC_MSG(MMI_TRC_MTV_BT_POWER_OFF_NOTIFY_HDLR, "[MMI_MTV] mmi_mtv_player_bt_power_off_notify_hdlr(), player_state=%Mmmi_mtv_player_player_state_enum")
+TRC_MSG(MMI_TRC_MTV_LOWMO_LOCK_HDLR,  "[MMI_MTV] mmi_mtv_player_lawmo_lock_hdlr(), app_id=%d, cmd=%d")
+TRC_MSG(MMI_TRC_MTV_SIM_INFO,  "[MMI_MTV] sim_info: sim1_valid=[%d], sim2_valid=[%d]")
+TRC_MSG(MMI_TRC_MTV_SELECTED_SERVICE, "[MMI_MTV] selected_service=[%d], line=%d")
+TRC_MSG(MMI_TRC_MTV_PRE_HILIGHT_HDLR, "[MMI_MTV] pre_highlight_hdlr(), idx=[%d], force_stop=[%d]")
+TRC_MSG(MMI_TRC_MTV_HILIGHT_HDLR, "[MMI_MTV] highlight_hdlr=[%d]")
+TRC_MSG(MMI_TRC_MTV_POST_HILIGHT_HDLR, "[MMI_MTV] post_highlight_hdlr()")
+TRC_MSG(MMI_TRC_MTV_CHANNEL_LIST_TAP_CALLBACK, "[MMI_MTV] list_tap_callback(),type=%d, idx=%d")
+TRC_MSG(MMI_TRC_MTV_CA_STATE, "[MMI_MTV] ca_state=%Mmtv_ca_state_enum")
+TRC_MSG(MDI_TRC_MTV_SERVICE_LIST, "[MMI_MTV] service list: idx=%d, id=%d, type=%d, flag=%d")

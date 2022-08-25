@@ -1,0 +1,47 @@
+[中文版本]
+
+貴司您好
+
+Mediatek針對修改feature set的flavor release，導入一個新的release機制
+
+*帶給貴司的好處
+-Mediatek針對修改feature set的flavor release所釋放的軟件包，只會包含必要的檔案，能減少貴司merge code的成本
+
+*帶給貴司的改變
+-針對flavor release，貴司預設是拿到較小包的軟件包，而非原先的完整軟件包
+ 如果貴司想要取得完整軟件包，請直接聯繫Mediatek對應的支持窗口
+-貴司拿到的軟件包，會多一個filelist.txt的文檔，內容包含這次釋放的檔案清單
+-軟件包的merge code方式如下:
+ 拷背一份前一版的codebase出來，然後再較小包的軟件包merge進去，請移除原先的codegen DB，只保留新釋放的codegen DB
+
+*如何作到只釋放較小包的軟件包?
+-比對新版和前一版完整軟件包的檔案差異，只釋放差異的檔案給貴司
+-釋放的軟件包會固定包含兩個lib: wndrv和opera10int
+
+*是否每個Flavor release版本都會套用新的機制?
+-這個機制主要是運用到2011/6/20之後釋放的版本。如果您的軟件版本是在這個日期之前才拿到的，可能會收到完整軟件包而不是較小包的軟件包
+
+====================================================================================
+[English version]
+
+Dear customers,
+
+Mediatek introduces a release change for feature set changes release to you.
+
+*Benefits for you
+- Mediatek releases the minimal changes for feature set changes to reduce the merge efforts of customers.
+
+*Changes for you
+- You will get the minimal software package release for feature set changes by default, instead of full package release. 
+  You can request your Mediatek contact windows for full package release if needed.
+- You will find one filelist.txt file in the release package. It lists all the different files in this release.
+- The codebase merge way is changed as below:
+  *Copy previous flavor build codebase as a base and merge the minimal release package into it
+  *Please remove the existing codegen DB in previous codebase. Keep new codegen DB only/
+
+*How to only release the minimal changes?
+- Find all the differences between previous and current software package. Then only deliver the differences folders/files to you.
+- The release package may include two extra libraries because timestamp is used in the source codes : Wndrv and Opera10int
+
+*Does every version of flavor build request will apply this mechanism?
+- The mechanism mainly apply to the version after 2011/6/20. If your software version is older than this date, you may still receive the full package release

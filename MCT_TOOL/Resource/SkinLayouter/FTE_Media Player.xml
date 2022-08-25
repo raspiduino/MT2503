@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE SKIN_XML SYSTEM ".\Skinlayouter.dtd">-->
+<SKIN_XML>
+	<!--output_dll="MediaPlayerOutput.dll"-->
+	<XMLINFO toolname="Media Player(FTE)" date="22012006" version="1.0" output_dll=""/>
+	<DEFINE_CHOICE>
+		<CHOICE_TYPE name="skin_comp_type">
+			<CHOICE_ELEMENT value="IMAGE"/>
+			<CHOICE_ELEMENT value="TEXT"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_arrow_key">
+			<CHOICE_ELEMENT value="MAIN_PLAY"/>
+			<CHOICE_ELEMENT value="MAIN_STOP"/>
+			<CHOICE_ELEMENT value="MAIN_REWIND"/>
+			<CHOICE_ELEMENT value="MAIN_FORWARD"/>
+		</CHOICE_TYPE>
+		<CHOICE_TYPE name="choice_color">
+			<CHOICE_ELEMENT value="TEXT"/>
+			<CHOICE_ELEMENT value="TEXT ON"/>
+			<CHOICE_ELEMENT value="TEXT OFF"/>
+			<CHOICE_ELEMENT value="BORDER"/>
+			<CHOICE_ELEMENT value="BACKGROUND"/>
+		</CHOICE_TYPE>
+	</DEFINE_CHOICE>
+	<SKIN_SIZE value="240x320"/>
+	<SKIN_SIZE value="320x240"/>
+	<SKIN_SIZE value="240x400"/>
+	<SKIN_SIZE value="320x480"/>
+	<SKIN_NAME name=""/>
+	<SKIN_COMPONENTS>
+		<COMPONENT name="FIRSTLAYER_RGN" control_id="IDC_STATIC_TEXT_CONTROL1" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="300" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SECONDLAYER_RGN" control_id="IDC_STATIC_TEXT_CONTROL2" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="300" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="THIRDLAYER_RGN" control_id="IDC_STATIC_TEXT_CONTROL3" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="300" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TITLE_RGN" control_id="IDC_STATIC_TEXT_CONTROL4" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="134" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="ALBUM_RGN" control_id="IDC_STATIC_TEXT_CONTROL5" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="162" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="ARTIST_RGN" control_id="IDC_STATIC_TEXT_CONTROL6" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="189" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="SPECTRUM_RGN" control_id="IDC_STATIC_TEXT_CONTROL7" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="100" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="LYRICS_RGN" control_id="IDC_STATIC_TEXT_CONTROL8" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="120" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="META_RGN" control_id="IDC_STATIC_TEXT_CONTROL9" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="220" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="TIME_RGN" control_id="IDC_STATIC_TEXT_CONTROL10" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="470" default_pos_y="220" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="DURATION_RGN" control_id="IDC_STATIC_TEXT_CONTROL11" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="350" default_pos_y="250" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="POPUP_RGN" control_id="IDC_STATIC_TEXT_CONTROL12" choice_type="skin_comp_type" choice_value="TEXT" layerNum="1" default_pos_x="470" default_pos_y="250" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_SEPERATE_LINE" control_id="IDC_STATIC_IMAGE_CONTROL1" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="307" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_SEPERATE_LINE1" control_id="IDC_STATIC_IMAGE_CONTROL2" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="332" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_LOADING_BG" control_id="IDC_STATIC_IMAGE_CONTROL3" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="238" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_LOADING_ANI" control_id="IDC_STATIC_IMAGE_CONTROL4" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="385" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_PROGRESS_BAR_FG" control_id="IDC_STATIC_IMAGE_CONTROL7" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="378" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_PROGRESS_BTN" control_id="IDC_STATIC_IMAGE_CONTROL8" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="450" default_pos_y="397" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_PLAY_BTN" control_id="IDC_STATIC_IMAGE_CONTROL9" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="425" default_pos_y="397" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_PREV_BTN" control_id="IDC_STATIC_IMAGE_CONTROL10" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="525" default_pos_y="397" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_NEXT_BTN" control_id="IDC_STATIC_IMAGE_CONTROL11" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="355" default_pos_y="437" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_LSK_BTN" control_id="IDC_STATIC_IMAGE_CONTROL12" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="550" default_pos_y="437" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_RSK_BTN" control_id="IDC_STATIC_IMAGE_CONTROL13" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="458" default_pos_y="437" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_ZOOM_BTN" control_id="IDC_STATIC_IMAGE_CONTROL14" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="459" default_pos_y="373" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_SHUFFLE_ON_BTN" control_id="IDC_STATIC_IMAGE_CONTROL15" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="521" default_pos_y="393" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_REPEAT_OFF_BTN" control_id="IDC_STATIC_IMAGE_CONTROL16" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="427" default_pos_y="393" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_RATING_BTN0" control_id="IDC_STATIC_IMAGE_CONTROL17" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="387" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_VOLUME_SET_BG" control_id="IDC_STATIC_IMAGE_CONTROL18" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="374" default_pos_y="387" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_VOLUME_OFF" control_id="IDC_STATIC_IMAGE_CONTROL19" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="417" default_pos_y="461" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_VOLUME_BAR" control_id="IDC_STATIC_IMAGE_CONTROL20" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="392" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_VOLUME_BAR_BTN" control_id="IDC_STATIC_IMAGE_CONTROL29" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="380" default_pos_y="422" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_RATING_BG" control_id="IDC_STATIC_IMAGE_CONTROL21" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="350" default_pos_y="379" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_RATING_START" control_id="IDC_STATIC_IMAGE_CONTROL22" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="420" default_pos_y="530" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_TONEBAR_BG" control_id="IDC_STATIC_IMAGE_CONTROL23" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="383" default_pos_y="442" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_TONEBAR_FG" control_id="IDC_STATIC_IMAGE_CONTROL24" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="524" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_VOCAL_ON" control_id="IDC_STATIC_IMAGE_CONTROL25" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="459" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_RISING" control_id="IDC_STATIC_IMAGE_CONTROL26" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="524" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_FALLING" control_id="IDC_STATIC_IMAGE_CONTROL27" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="371" default_pos_y="396" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		<COMPONENT name="FTE_KURO_UNLOCK" control_id="IDC_STATIC_IMAGE_CONTROL28" choice_type="skin_comp_type" choice_value="IMAGE" layerNum="1" default_pos_x="478" default_pos_y="442" arrow_key_choice="AUDPLY_MAIN_DISABLED" generate_coordinate="0"/>
+		</SKIN_COMPONENTS>
+	<SKIN_LAYOUT name="default_skin" ref_image_name="MP_BG_VIDEO.gif">
+		<COMP_IMAGE name="FTE_SEPERATE_LINE" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="LINE" name="MP_LINE.png" id="MEDPLY_FTE_SEPERATE_LINE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_SEPERATE_LINE1" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="LINE" name="MP_LINE.png" id="MEDPLY_FTE_SEPERATE_LINE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_LOADING_BG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="LODING" name="MP_LOAD_BG.png" id="MEDPLY_FTE_LOADING_BG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_LOADING_ANI" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="LOADING" name="loading\0.png" id="MEDPLY_FTE_LOADING_ANI"/>
+			<IMAGE tag="AUDIO" name="MP_FULLSCREEN_ANI.gif" id="MEDPLY_FTE_AUDIO_ANI"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_PROGRESS_BAR_FG" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="FG" name="MP_PROGRESS_FILL.png" id="MEDPLY_FTE_PROGRESS_BAR_FG"/>
+			<IMAGE tag="MG" name="MP_PROGRESS_EMPTY.png" id="MEDPLY_FTE_PROGRESS_BAR_MG"/>
+			<IMAGE tag="DISABLE" name="MP_PROGRESS_EMPTY.png" id="MEDPLY_FTE_PROGRESS_BAR_BG_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_PROGRESS_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="NORMAL" name="MP_SCROLL_INDEX.png" id="MEDPLY_FTE_PROGRESS_BTN"/>
+			<IMAGE tag="HIGHLIGHT" name="MP_SCROLL_INDEX_HL.png" id="MEDPLY_FTE_PROGRESS_BTN_HL"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_PLAY_BTN" count="4" layout="2" default_pos_flag="1" arrow_keY="0">
+			<IMAGE tag="PLAY" name="MP_SK_PLAY.png" id="MEDPLY_FTE_PLAY_BTN"/>
+			<IMAGE tag="PLAY DIS" name="MP_SK_PLAY_DIS.png" id="MEDPLY_FTE_PLAY_BTN_DISABLE"/>
+			<IMAGE tag="PAUSE" name="MP_PAUSE.png" id="MEDPLY_FTE_PAUSE_BTN"/>
+			<IMAGE tag="PAUSE DIS" name="MP_PAUSE_DIS.png" id="MEDPLY_FTE_PAUSE_BTN_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_PREV_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="PREV" name="MP_SK_PREVIOUS.png" id="MEDPLY_FTE_PREV_BTN"/>
+			<IMAGE tag="DISABLE" name="MP_SK_PREVIOUS_DIS.png" id="MEDPLY_FTE_PREV_BTN_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_NEXT_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="NEXT" name="MP_SK_NEXT.png" id="MEDPLY_FTE_NEXT_BTN"/>
+			<IMAGE tag="DISABLE" name="MP_SK_NEXT_DIS.png" id="MEDPLY_FTE_NEXT_BTN_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_LSK_BTN" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="LSK" name="MP_SK_OPTION.png" id="MEDPLY_FTE_LSK_BTN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_RSK_BTN" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="RSK" name="MP_SK_BACK.png" id="MEDPLY_FTE_RSK_BTN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_ZOOM_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ZOOM" name="MP_SK_FULLSCREEN.png" id="MEDPLY_FTE_ZOOM_BTN"/>
+			<IMAGE tag="DISABLE" name="MP_SK_FULLSCREEN_DIS.png" id="MEDPLY_FTE_ZOOM_BTN_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_SHUFFLE_ON_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON" name="MP_SHUFFLE_ON.png" id="MEDPLY_FTE_SHUFFLE_ON_BTN"/>
+			<IMAGE tag="OFF" name="MP_SHUFFLE_OFF.png" id="MEDPLY_FTE_SHUFFLE_OFF_BTN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_REPEAT_OFF_BTN" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="MP_REPEAT_OFF.png" id="MEDPLY_FTE_REPEAT_OFF_BTN"/>
+			<IMAGE tag="ONE" name="MP_REPEAT_ONE.png" id="MEDPLY_FTE_REPEAT_ONE_BTN"/>
+			<IMAGE tag="ALL" name="MP_REPEAT_ALL.png" id="MEDPLY_FTE_REPEAT_ALL_BTN"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_RATING_BTN0" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="BTNO" name="MP_RATE_0.png" id="MEDPLY_FTE_RATING_BTN0"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_VOLUME_SET_BG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="SET" name="MP_VOLUME_BG.png" id="MEDPLY_FTE_VOLUME_SET_BG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_VOLUME_OFF" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="OFF" name="MP_VOLUME_OFF.png" id="MEDPLY_FTE_VOLUME_OFF_UP"/>
+			<IMAGE tag="ON" name="MP_VOLUME_ON.png" id="MEDPLY_FTE_VOLUME_ON_UP"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_VOLUME_BAR" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="BG" name="MP_VOLUME_EMPTY.png" id="MEDPLY_FTE_VOLUME_BAR_BG"/>
+			<IMAGE tag="FG" name="MP_VOLUME_TUNE.png" id="MEDPLY_FTE_VOLUME_BAR_FG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_VOLUME_BAR_BTN" count="2" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="BG" name="FMR_SCROLL_INDEX_03.png" id="MEDPLY_FTE_VOLUME_BTN"/>
+			<IMAGE tag="FG" name="FMR_SCROLL_INDEX_03_HL.png" id="MEDPLY_FTE_VOLUME_BTN_HL"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_RATING_BG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="BG" name="MP_RATE_POPUP_BG.png" id="MEDPLY_FTE_RATING_BG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_RATING_START" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="start" name="MP_RATE_POPUP_STAR.png" id="MEDPLY_FTE_RATING_START"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_TONEBAR_BG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="TONEBAR BG" name="MP_KURO_BG.png" id="MEDPLY_FTE_KURO_TONEBAR_BG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_TONEBAR_FG" count="1" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="TONEBAR FG" name="MP_KURO_KEY_INDEX.png" id="MEDPLY_FTE_KURO_TONEBAR_FG"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_VOCAL_ON" count="5" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="ON UP" name="MP_KURO_VOCAL_ON.png" id="MEDPLY_FTE_KURO_VOCAL_ON_UP"/>
+			<IMAGE tag="ON DOWN" name="MP_KURO_VOCAL_ON_DOWN.png" id="MEDPLY_FTE_KURO_VOCAL_ON_DOWN"/>
+			<IMAGE tag="OFF UP" name="MP_KURO_VOCAL_OFF.png" id="MEDPLY_FTE_KURO_VOCAL_OFF_UP"/>
+			<IMAGE tag="OFF DOWN" name="MP_KURO_VOCAL_OFF_DOWN.png" id="MEDPLY_FTE_KURO_VOCAL_OFF_DOWN"/>
+			<IMAGE tag="OFF DIS" name="MP_KURO_VOCAL_OFF_DIS.png" id="MEDPLY_FTE_KURO_VOCAL_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_RISING" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MP_KURO_KEY_INC.png" id="MEDPLY_FTE_KURO_RISING_UP"/>
+			<IMAGE tag="DOWN" name="MP_KURO_KEY_INC_DOWN.png" id="MEDPLY_FTE_KURO_RISING_DOWN"/>
+			<IMAGE tag="DISABLE" name="MP_KURO_KEY_INC_DIS.png" id="MEDPLY_FTE_KURO_RISING_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_FALLING" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MP_KURO_KEY_DEC.png" id="MEDPLY_FTE_KURO_FALLING_UP"/>
+			<IMAGE tag="DOWN" name="MP_KURO_KEY_DEC_DOWN.png" id="MEDPLY_FTE_KURO_FALLING_DOWN"/>
+			<IMAGE tag="DISABLE" name="MP_KURO_KEY_DEC_DIS.png" id="MEDPLY_FTE_KURO_FALLING_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_IMAGE name="FTE_KURO_UNLOCK" count="3" layout="2" default_pos_flag="1" arrow_key="0">
+			<IMAGE tag="UP" name="MP_KURO_UNLOCK.png" id="MEDPLY_FTE_KURO_UNLOCK_UP"/>
+			<IMAGE tag="DOWN" name="MP_KURO_UNLOCK_DOWN.png" id="MEDPLY_FTE_KURO_UNLOCK_DOWN"/>
+			<IMAGE tag="DISABLE" name="MP_KURO_UNLOCK_DIS.png" id="MEDPLY_FTE_KURO_UNLOCK_DISABLE"/>
+			<DIMENSION left="-1" right="-1" top="-1" bottom="-1"/>
+		</COMP_IMAGE>
+		<COMP_TEXT name="FIRSTLAYER_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="255,230,254,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="27"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SECONDLAYER_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="230,230,254,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="191"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="THIRDLAYER_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="230,230,230,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="109"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="TITLE_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="230,200,230,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="22"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="ALBUM_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="230,200,200,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="22"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="ARTIST_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="200,200,200,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="22"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="SPECTRUM_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="200,170,200,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="191"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="LYRICS_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="170,170,200,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="239" top="-1" bottom="191"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="META_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="170,170,170,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="95" top="-1" bottom="95"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="TIME_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="170,150,170,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="53" top="-1" bottom="11"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="DURATION_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="170,150,150,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="53" top="-1" bottom="11"/>
+		</COMP_TEXT>
+		<COMP_TEXT name="POPUP_RGN" default_pos_flag="1">
+			<COLOR tag="BackGround" choice_color="BACKGROUND" value="150,150,150,100" common_choice_color=""/>
+			<COLOR tag="Text" choice_color="TEXT" value="0,0,0,100" common_choice_color="TEXT"/>
+			<DIMENSION left="-1" right="209" top="-1" bottom="19"/>
+		</COMP_TEXT>
+	</SKIN_LAYOUT>
+	<OUTPUT_FORMAT>
+		<STRINGS filename="resource_mediaplayer_skins.c" image_id="IMG_ID" coordinate_struct="media_point_struct" skin_struct="medply_fte_skin_struct" skin_struct_name="g_medply_fte_skin" project="MAUI" description="Media player main screen skin settings" tool_define="__MMI_MEDIA_PLAYER__" background="MEDPLY_FTE_VIDEO_BG"/>
+		<FORMAT background_image="" common_color="1"/>
+		<ADDITIONAL_INFO name="FTE_SEPERATE_LINE" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_SEPERATE_LINE1" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_LOADING_BG" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_LOADING_ANI" positionstyle="1"/>
+		<ADDITIONAL_INFO name="OSD_LOADING_BG" positionstyle="1"/>
+		<ADDITIONAL_INFO name="OSD_LOADING_FG" positionstyle="1"/>
+		<ADDITIONAL_INFO name="FTE_PROGRESS_BAR_FG" positionstyle="1"/>
+		<ADDITIONAL_INFO name="FTE_VOLUME_SET_BG" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_VOLUME_OFF" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_VOLUME_BAR" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_RATING_BG" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_RATING_START" positionstyle="1"/>
+		<ADDITIONAL_INFO name="FTE_KURO_TONEBAR_BG" positionstyle="2"/>
+		<ADDITIONAL_INFO name="FTE_KURO_TONEBAR_FG" positionstyle="1"/>
+		<FILE_HEADERS file_name="PixtelDataTypes.h"/>
+		<FILE_HEADERS file_name="resource_mediaplayer_skins.h"/>
+		<FILE_HEADERS file_name="MediaPlayerResDef.h"/>
+	</OUTPUT_FORMAT>
+</SKIN_XML>

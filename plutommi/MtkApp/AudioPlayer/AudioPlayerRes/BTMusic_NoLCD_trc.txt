@@ -1,0 +1,36 @@
+[APP NAME] = AudioPlayer 
+[SCOPE] = PLUTO 
+[MODULE] = MOD_MMI_MEDIA_APP 
+
+#start trace
+TRC_MSG(MMI_BT_MUSIC_NOLCD_LAUNCH,"[BTMUSIC NOLCD]Launch, is active=[%d], is a2dp conn=[%d], is sink=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_DELAUNCH,"[BTMUSIC NOLCD]Delaunch , is active=[%d], is a2dp conn=[%d]")
+
+TRC_MSG(MMI_BT_MUSIC_NOLCD_SEND_CT_AVRCP_CMD,"[BTMUSIC NOLCD] ct cmd=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_SEND_AVRCP_CMD,"[BTMUSIC NOLCD] cmd=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_CHECK_A2DP_CONN,"[BTMUSIC NOLCD] conn=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_GET_ADDR_BY_ROLE,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_get_dev_addr_by_role, r=[%d],l=[%d],n=[%d],u=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_GET_SECOND_ADDR,"[BTMUSIC NOLCD]mmi_bt_music_nolcd_get_second_addr")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_IS_ACTIVE,"[BTMUSIC NOLCD] active=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_IS_STREAMING,"[BTMUSIC NOLCD]mmi_bt_music_nolcd_is_sink_streaming streaming=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_IS_WAIT_NOTIFY,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_is_wait_for_notify, wait for notify=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_INIT_VOL,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_init_volume")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_A2DP_CB,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_A2DP_cb, event=[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_IS_KARAOKE_ENABLE,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_is_karaoke_enable, enable =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_TRC_NOTIFY_CALLBACK,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_notify_callback_hdlr, result=[%d], paused =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_RESUME,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_resume_callback, result =[%d], is_interrupted =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_INTERRUPT,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_interrupt_callback, result =[%d], is_streaming =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_SWITCH_SRC,"[BTMUSIC NOLCD]mmi_bt_music_switch_src")
+TRC_MSG(MMI_TRC_BT_MUSIC_NOLCD_IS_A2DP_SINK,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_is_A2DP_sink, role =[%d], is_headset =[%d]")
+TRC_MSG(MMI_TRC_BT_MUSIC_CHECK_CONNECTION,"[BTMUSIC NOLCD] mmi_bt_music_check_connection,  A2DP_connc=[%d], role =[%d]")  
+TRC_MSG(MMI_BT_MUSIC_NOLCD_PLAY_PAUSE,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_play_pause, is_streaming =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_INC_VOL,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_inc_volume, vol =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_DEC_VOL,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_dec_volume, vol =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_PREV,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_prev")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_NEXT,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_next")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_KARAOKE,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_karaoke, timer_enable =[%d], ori =[%d], karaoke =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_KARAOKE_SWITCH,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_karaoke_switch, timer_enable =[%d], ori =[%d], karaoke =[%d]")
+TRC_MSG(MMI_BT_MUSIC_NOLCD_PROC,"[BTMUSIC NOLCD] mmi_bt_music_nolcd_proc, event =[%d]")
+TRC_MSG(MMI_BTMUSIC_NOLCD_AVRCP_REVERSE_CONTROL_HDLR,"[BTMUSIC NOLCD] avrcp reverse hdlr,  cmd =[%d], key =[%d]")
+
+#end trace

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="false" bitmap_cache_flag="false"
+	skb_bg="@drawable/popup_keyboard_background" kb_width="65%p" kb_height="15%p"
+	width="15.39%p" height="70.84%p" key_xmargin="0.65%p" key_ymargin="4.17%p"
+	key_type="5">
+
+	<row start_pos_x="3.85%p" start_pos_y="8.34%p">
+		<key label="？" code="65311" />
+		<key label="！" code="65281" />
+		<key label="；" code="65307" />
+		<key label="：" code="65306" />
+		<key label="、" code="12289" />
+		<key label="。" code="12290" />
+	</row>
+</keyboard>

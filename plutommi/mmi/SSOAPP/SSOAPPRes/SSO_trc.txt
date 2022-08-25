@@ -1,0 +1,30 @@
+[APP NAME] = SSO
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_INET_APP
+#don't change any value above
+
+#start trace
+#----------------- SSOAPPSrc.c ------------------------------------------------------
+TRC_MSG(MMI_SSO_HIGHLIGHT, "---[SSOAPPSrc.c] mmi_sso_highlight---")
+TRC_MSG(MMI_SSO_MAIN_PRE, "---[SSOAPPSrc.c] mmi_sso_main_pre already esit, then close---")
+TRC_MSG(MMI_SSO_MAIN, "---[SSOAPPSrc.c] mmi_sso_main---")
+TRC_MSG(MMI_SSO_LOGIN_BOOTUP, "---[SSOAPPSrc.c] mmi_sso_login_bootup---")
+TRC_MSG(MMI_SSO_LOGIN_OPT, "---[SSOAPPSrc.c] mmi_sso_login_opt---")
+TRC_MSG(MMI_SSO_ACCOUNTS_CSK, "---[SSOAPPSrc.c] mmi_sso_accounts_csk sso currentindex = %d, sns accounts total = %d---")
+TRC_MSG(MMI_SSO_ACCOUNTS_SNS_ENTRY, "---[SSOAPPSrc.c] mmi_sso_accounts_sns_entry sns currentindex = %d, sns current account status = %d---")
+TRC_MSG(MMI_SSO_ACCOUNTS_ENTRY, "---[SSOAPPSrc.c] mmi_sso_accounts_entry cloud account is_login = %d---")
+TRC_MSG(MMI_SSO_ACCOUNTS_TAB_CB, "---[SSOAPPSrc.c] mmi_sso_accounts_tap_cb tap_type = %d, sso current index = %d, sns account total = %d---")
+TRC_MSG(MMI_SSO_MAIN_LAUNCH_SNS, "---[SSOAPPSrc.c] mmi_sso_main_launch_sns listid = %d, paccounts = %d, total = %d---")
+TRC_MSG(MMI_SSO_SNS_READY, "---[SSOAPPSrc.c] mmi_sso_sns_not_ready_proc ready = %d---")
+TRC_MSG(MMI_SSO_SNS_LOGOUT_POPUP_CB_EXIT, "---[SSOAPPSrc.c] mmi_sso_sns_logout_popup_cb exit---")
+TRC_MSG(MMI_SSO_SNS_LOGOUT_POPUP_CB_CANCEL, "---[SSOAPPSrc.c] mmi_sso_sns_logout_popup_cb cancel---")
+TRC_MSG(MMI_SSO_SNS_LOGOUT_CB, "---[SSOAPPSrc.c] mmi_sso_sns_logout_cb result = %d---")
+TRC_MSG(MMI_SSO_SNS_UPGRADE, "---[SSOAPPSrc.c] mmi_sso_sns_pluging_upgrade_proc upgrade = %d---")
+TRC_MSG(MMI_SSO_LOGOUT_POPUP_CB_CANCEL, "---[SSOAPPSrc.c] mmi_sso_logout_popup_cb cancel---")
+TRC_MSG(MMI_SSO_LOGOUT_POPUP_CB_EXIT, "---[SSOAPPSrc.c] mmi_sso_logout_popup_cb exit---")
+TRC_MSG(MMI_SSO_LOGOUT_CB, "---[SSOAPPSrc.c] mmi_sso_logout_cb result = %d---")
+TRC_MSG(MMI_SSO_CHECKLIST_HILIGHT_HDLR, "---[SSOAPPSrc.c] mmi_sso_accounts_r_or_b_highlight_hdlr index = %d---")
+TRC_MSG(MMI_SSO_BACKUP_RESTORE_ABORT, "---[SSOAPPSrc.c]mmi_sso_backup_restore_abort contacts_s = %d, sms_s = %d---")
+TRC_MSG(MMI_SSO_BACKUP_RESTORE_SMS_CB, "---[SSOAPPSrc.c] mmi_sso_backup_restore_sms_cb result = %d cause = %d action = %d---")
+TRC_MSG(MMI_SSO_BACKUP_RESTORE_CONTACTS_CB, "---[SSOAPPSrc.c] mmi_sso_backup_restore_contacts_cb result = %d---")
+TRC_MSG(MMI_SSO_BACKUP_RESTORE_CONTACTS_CB2, "---[SSOAPPSrc.c] mmi_sso_backup_restore_contacts_cb result = %d---")

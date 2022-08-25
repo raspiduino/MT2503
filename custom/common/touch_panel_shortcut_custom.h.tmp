@@ -1,0 +1,121 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE. 
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*******************************************************************************/
+
+ /*******************************************************************************
+ * Filename:
+ * ---------
+ *  touch_panel_shortcut_custom.h
+ *
+ * Project:
+ * --------
+ *  Maui_Software
+ *
+ * Description:
+ * ------------
+ *  This file is defined for touch panel shortcut.
+ *
+ * Author:
+ * -------
+ *  Kun Liu   (mbj06075)
+ *
+ *------------------------------------------------------------------------------
+ * $Log$
+ *
+ * Jun 8 2009 mtk80019
+ * [MAUI_01866251] [FRM] Enhance debug infromation
+ * Revise framework header file.
+ *
+ * May 14 2009 mtk80019
+ * [MAUI_01832575] [FRM][Touch] Add short cut files to custom\common folder
+ * Codegen process will copy shortcut files to custom\app\project\ folder if __MMI_TOUCH_PANEL_SHORTCUT__ is defined.
+ *
+ * Jul 20 2007 MBJ06075
+ * [MAUI_00445202] Add touch panel shortcut support
+ * 
+ *
+ * Jul 9 2007 MBJ06075
+ * [MAUI_00445202] Add touch panel shortcut support
+ * Create
+ *
+ * 
+ *
+ * 
+ *
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *============================================================================
+ ****************************************************************************/
+
+#ifndef TOUCH_PANEL_SHORTCUT_CUSTOM_H
+#define TOUCH_PANEL_SHORTCUT_CUSTOM_H
+
+#if (defined(__MMI_TOUCH_PANEL_SHORTCUT__) && defined(PLUTO_MMI))
+
+#include "lcd_sw_inc.h"
+#include "touch_panel_custom.h"
+#include "kal_non_specific_general_types.h"
+#include "mmi_frm_gprot.h"
+
+/* Configs the size of the touch panel  */
+#define TP_SHORTCUT_HEIGHT         TOUCH_PANEL_COORD_Y_END - LCD_HEIGHT
+#define TP_SHORTCUT_WIDTH          LCD_WIDTH
+
+/* Defines the touch panel vertexs coordinate */
+#define TP_SHORTCUT_COORD_X_START  0
+#define TP_SHORTCUT_COORD_X_END    TP_SHORTCUT_WIDTH
+#define TP_SHORTCUT_COORD_Y_START  LCD_HEIGHT
+#define TP_SHORTCUT_COORD_Y_END    TOUCH_PANEL_COORD_Y_END
+
+/* Configs number of the touch panel shortcuts */
+#define TP_SHORTCUT_NUMBER         5
+
+typedef MMI_BOOL(*mmi_tp_shortcut_hdlr) (mmi_pen_point_struct pos, mmi_pen_event_type_enum event);
+
+typedef struct
+{
+    const mmi_pen_polygon_area_struct polygon;
+    mmi_tp_shortcut_hdlr hdlr;
+} tp_shortcut_area_struct;
+
+/* the touch panel total region. */
+extern const mmi_pen_polygon_area_struct g_tp_shortcut_total_polygon;
+
+/* the each touch panel's region and related pen event handler. */
+extern const tp_shortcut_area_struct g_tp_shortcut_area_tbl[TP_SHORTCUT_NUMBER];
+
+#endif /* #if (defined(__MMI_TOUCH_PANEL_SHORTCUT__) && defined(PLUTO_MMI)) */ 
+
+#endif /* TOUCH_PANEL_SHORTCUT_CUSTOM_H */ 
+

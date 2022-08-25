@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" width="9.6875%p" height="24.2858%p"
+	key_type="0">
+
+	<row start_pos_x="1.5625%p" start_pos_y="1.4286%p">
+		<key label="～" code="65374" />
+		<key label="＋" code="65291" />
+		<key label="×" code="215" />
+		<key label="÷" code="247" />
+		<key label="·" code="183" />
+		<key label="°" code="176" />
+		<key label="《" code="12298" />
+		<key label="》" code="12299" />
+		<key label="｛" code="65371" />
+		<key label="｝" code="65373" />
+	</row>
+
+	<row start_pos_x="1.5625%p">
+		<key label="©" code="169" />
+		<key label="￡" code="65505" />
+		<key label="€" code="8364" />
+		<key label="＾" code="65342" />
+		<key label="®" code="174" />
+		<key label="℃" code="8451" />
+		<key label="－" code="65293" />
+		<key label="＝" code="65309" />
+		<key label="【" code="12304" />
+		<key label="】" code="12305" />
+	</row>
+
+	<row start_pos_x="1.5625%p" width="10%p">
+		<key width="13.4375%p" label="\xa457" code="-6" key_type="2" />
+		<key label="™" code="8482" />
+		<key label="‘" code="8216" />
+		<key label="’" code="8217" />
+		<key label="￠" code="65504" />
+		<key label="︱" code="65073" />
+		<key label="＼" code="65340" />
+		<key label="√" code="8730" />
+		<key width="13.4375%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="1.5625%p">
+		<key width="13.4375%p" label="\xa45a" code="-3" key_type="3" />
+		<key width="13.4375%p" label="\xa457" code="-7"
+			key_type="2" />
+		<key width="10%p" label="§" code="167" key_type="0" />
+		<key width="23.125%p" label="\xa46b" code="32" key_type="2" />
+		<key width="10%p" label="…" code="8230" key_type="0" />
+		<key width="13.4375%p" label="\xa46f" code="-1" key_type="4" />
+		<key width="13.4375%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>
+
+

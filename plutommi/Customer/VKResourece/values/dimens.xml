@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+	<dimen name="key_height">50dip</dimen> 
+	<dimen name="status_bar_height">25sp</dimen>
+	<!-- candidate normal state -->
+	<dimen name="candidate_strip_height">42sp</dimen>
+	<dimen name="candidate_strip_start_x">0sp</dimen>  
+	<dimen name="candidate_c_font_size">22sp</dimen>
+	<dimen name="candidate_e_font_size">22sp</dimen> 
+	<dimen name="candidate_normal_e_gap">20sp</dimen>
+	<dimen name="candidate_normal_c_gap">11sp</dimen>
+    <dimen name="candidate_tab_x_gap">24sp</dimen>
+	<dimen name="container_right_button_width">36sp</dimen>
+	<dimen name="candidate_hw_c_gap">20sp</dimen>
+	<integer name="candidate_max_word_length">16</integer>
+	<!-- candidate popup hint-->
+    <dimen name="candidate_pop_min_width">40sp</dimen> 
+	<dimen name="popup_balloon_ypos">25sp</dimen>
+    <dimen name="candidate_balloon_padding_v">11sp</dimen>
+    <dimen name="candidate_balloon_padding_h">9sp</dimen>
+    <dimen name="balloon_height">36sp</dimen>
+    <dimen name="popup_balloon_textsize">30sp</dimen>
+	<!-- candidate extend popupwindow --> 
+	<integer name ="candidate_popup_font_size">20</integer>  
+	 <integer name ="candidate_popup_max_word_length">20</integer>  
+	<dimen name="candidate_back_edge_width">6sp</dimen>
+    <dimen name="candidate_pop_line_height">44sp</dimen>
+
+	<dimen name="textselection_cursor">40sp</dimen> 
+	<dimen name="hw_tolerance_distance">5sp</dimen>
+	<dimen name="x_bias_correction">0sp</dimen>
+	<dimen name="y_bias_correction">-10sp</dimen>
+	
+	<dimen name="move_tolerant">6sp</dimen> 
+
+	<dimen name="setting_hw_trace_width1">4sp</dimen>
+	<dimen name="setting_hw_trace_width2">6sp</dimen>
+	<dimen name="setting_hw_trace_width3">9sp</dimen>
+	<dimen name="setting_hw_trace_width4">6sp</dimen>
+	
+	
+	<dimen name="qwerty_port_normalkey">22sp</dimen>
+
+  <dimen name="qwerty_port_normalsmallkey">15sp</dimen>
+  <dimen name="qwerty_port_normalsmallkey_balloon">22sp</dimen>
+  <dimen name="qwerty_port_normalminikey">20sp</dimen>
+  <dimen name="qwerty_port_normalminikey_balloon">27sp</dimen>
+  <dimen name="qwerty_port_normalultrasmallkey">12sp</dimen>
+  <dimen name="qwerty_port_normalultrasmallkey_balloon">18sp</dimen>
+  <dimen name="qwerty_port_normalbigkey">30sp</dimen>
+  <dimen name="qwerty_port_normalbigkey_balloon">30sp</dimen>
+  <dimen name="qwerty_port_popupbigkey">30sp</dimen>
+  <dimen name="qwerty_port_popupbigkey_balloon">30sp</dimen>
+  
+	<dimen name="qwerty_port_normalkey_balloon">30sp</dimen>
+	<dimen name="qwerty_port_zhuyinkey">20sp</dimen>
+	<dimen name="qwerty_port_zhuyinkey_balloon">30sp</dimen>
+	<dimen name="qwerty_port_functionkey">24sp</dimen>
+	<dimen name="qwerty_port_functionkey_balloon">30sp</dimen>
+	<dimen name="qwerty_port_smileykey">14sp</dimen>
+	<dimen name="qwerty_port_smileykey_balloon">20sp</dimen>
+	<dimen name="qwerty_port_smileykey2">11sp</dimen>
+	<dimen name="qwerty_port_smileykey2_balloon">15sp</dimen>
+	<dimen name="qwerty_port_hwkey">20sp</dimen>
+	<dimen name="qwerty_port_hwkey_balloon">40sp</dimen>
+	<dimen name="qwerty_port_popupkey1">18sp</dimen>
+	<dimen name="qwerty_port_popupkey2">16.5sp</dimen>
+
+	<dimen name="phn_port_normalkey">25sp</dimen>
+	<dimen name="phn_port_normalkey_balloon">35sp</dimen>
+	<dimen name="phn_port_functionkey">24sp</dimen>
+	<dimen name="phn_port_functionkey_balloon">30sp</dimen>
+	<dimen name="phn_port_textsel_normalkey">16sp</dimen>
+	<dimen name="phn_port_textsel_normalkey_balloon">28sp</dimen>
+	<dimen name="phn_port_textsel_functionkey">16sp</dimen>
+	<dimen name="phn_port_textsel_functionkey_balloon">28sp</dimen>
+	<dimen name="phn_port_smileykey">20sp</dimen>
+	<dimen name="phn_port_smileykey_balloon">35sp</dimen>
+
+	<dimen name="phn_port_doublewordkey_eng1">15sp</dimen>
+	<dimen name="phn_port_doublewordkey_eng1_balloon">35sp</dimen>
+	<dimen name="phn_port_doublewordkey_eng2">19sp</dimen>
+	<dimen name="phn_port_doublewordkey_eng2_balloon">24sp</dimen>
+
+	<dimen name="phn_port_doublewordkey_sym1">23sp</dimen>
+	<dimen name="phn_port_doublewordkey_sym1_balloon">35sp</dimen>
+	<dimen name="phn_port_doublewordkey_sym2">18sp</dimen>
+	<dimen name="phn_port_doublewordkey_sym2_balloon">35sp</dimen>
+
+	<dimen name="phn_port_doublewordkey_zhu1">15sp</dimen>
+	<dimen name="phn_port_doublewordkey_zhu1_balloon">30sp</dimen>
+	<dimen name="phn_port_doublewordkey_zhu2">15sp</dimen>
+	<dimen name="phn_port_doublewordkey_zhu2_balloon">18sp</dimen>
+	   <dimen name="phn_port_doublewordkey_zhu3">15sp</dimen>
+
+	<dimen name="qwerty_land_normalkey">23sp</dimen>
+	<dimen name="qwerty_land_normalkey_balloon">30sp</dimen>
+	<dimen name="qwerty_land_functionkey">24sp</dimen>
+	<dimen name="qwerty_land_functionkey_balloon">30sp</dimen>
+	<dimen name="qwerty_land_smileykey">15.5sp</dimen>
+	<dimen name="qwerty_land_smileykey_balloon">19.5sp</dimen>
+	<dimen name="qwerty_land_hwkey">20sp</dimen>
+	<dimen name="qwerty_land_hwkey_balloon">40sp</dimen>
+	<dimen name="qwerty_land_popupkey1">23sp</dimen>
+	<dimen name="qwerty_land_popupkey2">16.5sp</dimen>
+
+	<dimen name="phn_land_normalkey">25sp</dimen>
+	<dimen name="phn_land_normalkey_balloon">35sp</dimen>
+	<dimen name="phn_land_functionkey">24sp</dimen>
+	<dimen name="phn_land_functionkey_balloon">30sp</dimen>
+	<dimen name="phn_land_textsel_normalkey">18sp</dimen>
+	<dimen name="phn_land_textsel_normalkey_balloon">30sp</dimen>
+	<dimen name="phn_land_textsel_functionkey">18sp</dimen>
+	<dimen name="phn_land_textsel_functionkey_balloon">30sp</dimen>
+	<dimen name="phn_land_smileykey">20sp</dimen>
+	<dimen name="phn_land_smileykey_balloon">35sp</dimen>
+
+	<dimen name="phn_land_doublewordkey_eng1">13sp</dimen>
+	<dimen name="phn_land_doublewordkey_eng1_balloon">35sp</dimen>
+	<dimen name="phn_land_doublewordkey_eng2">18sp</dimen>
+	<dimen name="phn_land_doublewordkey_eng2_balloon">25sp</dimen>
+
+	<dimen name="phn_land_doublewordkey_sym1">25sp</dimen>
+	<dimen name="phn_land_doublewordkey_sym1_balloon">35sp</dimen>
+	<dimen name="phn_land_doublewordkey_sym2">18sp</dimen>
+	<dimen name="phn_land_doublewordkey_sym2_balloon">35sp</dimen>
+
+	<dimen name="phn_land_doublewordkey_zhu1">13sp</dimen>
+	<dimen name="phn_land_doublewordkey_zhu1_balloon">35sp</dimen>
+	<dimen name="phn_land_doublewordkey_zhu2">18sp</dimen>
+	<dimen name="phn_land_doublewordkey_zhu2_balloon">20sp</dimen>
+	<dimen name="key_region_inter_gap">5sp</dimen>
+	
+	<dimen name="composing_height">18dip</dimen>
+	<dimen name="handwriting_panel_marginleft">4dip</dimen>
+</resources>

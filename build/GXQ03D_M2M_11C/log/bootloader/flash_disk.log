@@ -1,0 +1,8 @@
+Compiling hal\storage\flash\mtd\src\flash_disk.c ... 
+"hal\storage\flash\mtd\src\flash_disk.c", line 191: Warning:  #64-D: declaration does not declare anything
+  extern void waitNonBlockEraseDone();
+  ^
+"hal\storage\flash\mtd\src\flash_disk.c", line 191: Warning:  #1000-D: a storage class may not be specified here
+  extern void waitNonBlockEraseDone();
+  ^
+hal\storage\flash\mtd\src\flash_disk.c: 2 warnings, 0 errors

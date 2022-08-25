@@ -1,0 +1,35 @@
+
+
+; CPU_info_command
+SYStem.RESet
+SYStem.CPU ARM7EJS
+SYStem.JtagClock RTCK.
+sys.o cflush on
+SYStem.Up
+
+setup.IMASKHLL ON
+setup.IMASKASM ON
+
+; disable_watchdog
+D.S SD:0xA0030000 %LE %WORD 0x2200
+
+; bypass_CTIRQ1_precision_check
+; Avoiding assert at CTIRQ1/2
+D.S SD:0x83070008 %LE %WORD 0xABCD
+D.S SD:0x83070010 %LE %WORD 0x0003     ; bit0: disable CTIRQ1/2 timing check
+
+; specify_load_elf
+D.LOAD.ELF ..\build\GXQ61D_M2M_11C\GXQ61D_M2M_11C_PCB01_gprs_MT6261_S00.elf /RELPATH /PATH . 
+
+;加载应用程序ELF
+;D.LOAD.ELF track.axf /RELPATH /PATH . 
+
+
+;加载内存数据
+;D.LOAD.BINARY tracker_temp\RW_0 0x00200000 /byte /nosymbol /noclear
+
+;D.LOAD.BINARY tracker_temp\RW_0 0x00204000  /byte /nosymbol /noclear
+
+
+
+

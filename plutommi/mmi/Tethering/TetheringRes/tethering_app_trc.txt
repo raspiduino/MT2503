@@ -1,0 +1,16 @@
+[APP NAME] = TETHERING APP
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_CONN_APP
+
+#start trace
+
+TRC_MSG(MMI_TETHERING_USB_LAUNCH, "[USB_TETHERING APP] mmi_tethering_usb_launch")
+TRC_MSG(MMI_TETHERING_USB_ENTRY_CONFIRM, "[USB_TETHERING APP] mmi_tethering_usb_entry_confirm")
+TRC_MSG(MMI_TETHERING_USB_RECONNECT, "[USB_TETHERING APP] mmi_tethering_usb_reconnect, %d")
+TRC_MSG(MMI_TETHERING_USB_RECONNECT_CONFIRM, "[USB_TETHERING APP] mmi_tethering_usb_reconnect_confirm")
+TRC_MSG(MMI_TETHERING_USB_CANCEL_RECONNECT, "[USB_TETHERING APP] mmi_tethering_usb_cancel_reconnect")
+TRC_MSG(MMI_TETHERING_USB_RECONNECT_SCREEN_LEAVE_PROC, "[USB_TETHERING APP] mmi_tethering_usb_reconnect_screen_leave_proc")
+TRC_MSG(MMI_TETHERING_USB_TURN_ON, "[USB_TETHERING APP] mmi_tethering_usb_turn_on")
+TRC_MSG(MMI_TETHERING_USB_SWITCH_HDLR, "[USB_TETHERING APP] mmi_tethering_usb_switch_hdlr, result = %d")
+TRC_MSG(MMI_TETHERING_USB_GROUP_CLOSE, "[USB_TETHERING APP] mmi_tethering_usb_group_close")
+TRC_MSG(MMI_TETHERING_DISCONNECT_NOTIFY_HDLR, "[USB_TETHERING APP] mmi_tethering_disconnect_notify_hdlr, %d")

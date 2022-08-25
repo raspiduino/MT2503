@@ -1,0 +1,24 @@
+[APP NAME] = Search Web
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+
+TRC_MSG(TRC_MMI_SEARCH_WEB_READ_COMMON_HISTORY, "[SWeb] mmi_sweb_read_common_history(0x%x): (NVRAM)error = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_WRITE_COMMON_HISTORY, "[SWeb] mmi_sweb_write_common_history(0x%x): (NVRAM)error = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_PUT_INTO_HISTORY, "[SWeb] mmi_sweb_put_into_history(0x%x, ..): candidate# = %d, found = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_CLEAR_HISTORY, "[SWeb] mmi_sweb_clear_history(0x%x): candidate# = %d, found = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_HOT_KEY_IS_ENABLED, "[SWeb] mmi_search_web_hot_key_is_enabled(0x%x): #%d, T/F = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_TRIGGER_BY_HOT_KEY, "[SWeb] mmi_search_web_trigger_by_hot_key(0x%x)")
+
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_INIT_HOT_KEY, "[SWeb] mmi_sweb_baidu_init: hot_key = 0x%x, (NVRAM)error = %d; default = 0x%x")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_HOT_KEY_SET, "[SWeb] mmi_sweb_baidu_hot_key_set(0x%x): (NVRAM)error = %d, buffer_size = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_GENERATE_UID, "[SWeb] mmi_sweb_baidu_generate_uid: valid = %d, #%d, (NVRAM)error = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_REQUEST_BROWSING, "[SWeb] mmi_sweb_baidu_request_browsing(category = %d, ..): category_config = 0x%x")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_ENTRY_SEARCH_OPTIONS, "[SWeb] mmi_sweb_baidu_entry_search_options: (size = %d) * (%d + %d) < %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_MENU_SELECTED, "[SWeb] mmi_sweb_baidu_menu_selected_hdlr(menu_id = 0x%x), close_menu = %d, done = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_INIT_CNTX, "[SWeb] mmi_sweb_baidu_init_cntx: cntx = 0x%x")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_RELEASE_CNTX, "[SWeb] mmi_sweb_baidu_release_cntx: cntx = 0x%x")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_DELETE_SEARCH_BAR, "[SWeb] mmi_sweb_baidu_delete_search_bar_hdlr: cntx = 0x%x")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_ENTRY_SEARCH_BAR, "[SWeb] mmi_sweb_baidu_entry_search_bar: reset_input = %d, reserve_input_buffer = %d")
+TRC_MSG(TRC_MMI_SEARCH_WEB_BAIDU_READ_DEFAULT_CATEGORY, "[SWeb] mmi_search_web_baidu_open_search_bar: NVRAM => default_category = %d, error = %d")

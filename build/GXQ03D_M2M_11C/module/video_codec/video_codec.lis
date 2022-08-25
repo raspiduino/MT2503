@@ -1,0 +1,8 @@
+hal\video_codec\interface\src\H264SwDecCustomize.c
+hal\video_codec\interface\src\MP4SwDecCustomize.c
+hal\video_codec\interface\src\RVSwDecCustomize.c
+hal\video_codec\interface\src\VP8SwDecCustomize.c
+hal\video_codec\interface\src\hal_custom_video_codec_internal.c
+hal\video_codec\interface\src\vcodec_customization.c
+hal\video_codec\interface\src\vcodec_dcm.c
+hal\video_codec\interface\src\vcodec_demand_page.c

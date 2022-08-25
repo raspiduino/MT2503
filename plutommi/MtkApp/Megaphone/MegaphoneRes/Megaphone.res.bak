@@ -1,0 +1,87 @@
+/*Needed header files of the compile option in XML files */
+#include "mmi_features.h"
+
+#ifdef __MMI_BT_BOX__
+
+#include "CustResDef.h"
+#include "custom_mmi_default_value.h"
+
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<APP id="APP_MEGAPHONE"
+    #if defined(__MMI_APP_MANAGER_SUPPORT__)
+    package_name = "native.mtk.megaphone"
+    name = "STR_ID_MEGAPHONE_TITLE"
+    launch = "mmi_megaphone_launch"
+    #endif /*__MMI_APP_MANAGER_SUPPORT__*/
+>
+	<INCLUDE file="GlobalResDef.h"/>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--String Resource Area-->
+	<STRING id="STR_ID_MEGAPHONE_TITLE"/>
+	<STRING id="STR_ID_MEGAPHONE_POWER_ON"/>
+	<STRING id="STR_ID_MEGAPHONE_POWER_OFF"/>
+    <!--End String Resource Area-->
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--Image Resource Area-->   
+    <IMAGE id="IMG_ID_MEGAPHONE_PLAY_ANIMATION">CUST_IMG_PATH"\\\\MainLCD\\\\Megaphone\\\\Megaphone.jpg"</IMAGE> 
+    <IMAGE id="IMG_ID_MEGAPHONE_VOLUME">CUST_IMG_PATH"\\\\MainLCD\\\\Megaphone\\\\Speaker.jpg"</IMAGE> 
+    <!--End Image Resource Area-->
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+	
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--Menu Item Area-->
+    <!--End Menu Item Area-->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+	<!--Menu Tree Area-->
+	<MENU id="MENU_ID_MEGAPHONE_MAIN" type="APP_MAIN" str="STR_ID_MEGAPHONE_TITLE"
+        highlight="mmi_megaphone_highlight_menu" shortcut="ON" 
+        launch="mmi_megaphone_launch"/>
+	<!--End Menu Tree Area-->
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--Screen ID Area-->
+	<SCREEN id="GRP_ID_MEGAPHONE"/>	
+	<SCREEN id="SCR_ID_MEGAPHONE_MAIN"/>
+    <!--End Screen ID Area-->
+	<!--------------------------------------------------------------------------------------------------------------------->
+
+    
+	<!--------------------------------------------------------------------------------------------------------------------->
+	<!--Receiving Evt ID -->
+    /* Linein */
+    <RECEIVER id="EVT_ID_GPIO_LINEIN_PLUG_IN" proc="mmi_megaphone_proc" />
+    <RECEIVER id="EVT_ID_GPIO_LINEIN_PLUG_OUT" proc="mmi_megaphone_proc" />
+    /* Earphone */
+    <RECEIVER id="EVT_ID_GPIO_EARPHONE_PLUG_IN" proc="mmi_megaphone_proc" />
+    <RECEIVER id="EVT_ID_GPIO_EARPHONE_PLUG_OUT" proc="mmi_megaphone_proc" />
+	<!--End Receiving Evt ID -->
+	<!--------------------------------------------------------------------------------------------------------------------->
+
+    
+	<!--------------------------------------------------------------------------------------------------------------------->
+	<!--Sending Evt ID -->
+	<!--End Sending Evt ID -->
+	<!--------------------------------------------------------------------------------------------------------------------->
+	
+	
+	<!--------------------------------------------------------------------------------------------------------------------->
+	<!--NVRAM LID -->
+	  <CACHEDATA type="byte" id="NVRAM_MEGAPHONE_VOL" restore_flag="TRUE">
+        <DEFAULT_VALUE> [0X03] </DEFAULT_VALUE>
+        <DESCRIPTION>Megaphone volume</DESCRIPTION>
+    </CACHEDATA>
+	<!--End NVRAM LID -->
+	<!--------------------------------------------------------------------------------------------------------------------->
+</APP>
+
+#endif  //__MMI_BT_BOX__

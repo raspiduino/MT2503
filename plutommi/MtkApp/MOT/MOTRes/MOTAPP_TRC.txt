@@ -1,0 +1,6 @@
+[APP_NAME] = MOT
+[MODULE] = MOD_MMI_MEDIA_APP
+[SCOPE] = PLUTO
+
+TRC_MSG(MMI_TRC_MOT_LAUNCH, "[MOT] mmi_mot_launch, line: %d")
+TRC_MSG(MMI_TRC_MOT_MSG_TRACE, "[MOT]<MESSAGE><line: %d><var: %d>")

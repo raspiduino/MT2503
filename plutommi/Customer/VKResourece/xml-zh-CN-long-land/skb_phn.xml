@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_phn_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	height="24.2858%p" width="20.625%p" key_type="5">
+
+	<row start_pos_x="1.0417%p" start_pos_y="1.4286%p">
+		<key width="18.125%p" label="\xa479" code="65292" key_type="2">
+			<toggle_state state_id="20" width="18.125%p" code="-11" label="\xa452" popup_skb="@xml/skb_popup_qwerty_com" />
+			<toggle_state state_id="21" width="18.125%p" code="-11" label="\xa452" popup_skb="@xml/skb_popup_qwerty_com" />
+		</key>
+		<key label="1" label_aux="\?!@" code="49" />
+		<key label="2" label_aux="abc" code="50" />
+		<key label="3" label_aux="def" code="51" />
+		<key width="18.125%p" key_type="2" code="-12" label="\xa45b" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label="\xa458" code="12290" key_type="2" >
+			<toggle_state state_id="40" icon="@drawable/keyicon_separator"
+				icon_balloon="@drawable/popupicon_separator" code="8216" key_type="2" />
+			<toggle_state state_id="41" label="\xa458" code="12290" key_type="2" />
+		</key>
+		<key label="4" label_aux="ghi" code="52" />
+		<key label="5" label_aux="jkl" code="53" />
+		<key label="6" label_aux="mno" code="54" />
+		<key width="18.125%p" code="-13" key_type="2" label="\xa465" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" code="-2" key_type="2" label="\xa467">
+			<toggle_state state_id="10" width="17.917%p" label="\xa467" code="-2" key_type="2" />
+			<toggle_state state_id="11" width="17.917%p" label="\xa467" code="-2" key_type="4" />
+		</key>
+
+		<key label="7" label_aux="pqrs" code="55" />
+		<key label="8" label_aux="tuv" code="56" />
+		<key label="9" label_aux="wxyz" code="57" />
+		<key width="18.125%p" code="8" key_type="2" label="\xa454" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="18.125%p" label="\xa451" code="-3" key_type="3" />
+		<key label="\xa45a" code="-5" key_type="2" />
+		<key label="0" code="32" code_longpress="48" label_aux="\xa46c">
+			<toggle_state state_id="20" label="0" label_aux="@" code="64" code_longpress="48"/>
+			<toggle_state state_id="21" label="0" label_aux="/" code="47" code_longpress="48"/>
+		</key>
+		<key key_type="3" code="-1" label="\xa46e" popup_skb="@xml/skb_popup_symbol" />
+		<key width="18.125%p" code="13" key_type="2" label="\xa456">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skb_template key_xmargin="0.625%p" key_ymargin="1.2821%p"
+	kb_width="100%p" kb_height="39%p" skb_bg="@drawable/keyboard_background"
+	balloon_ratio_width="1.35f" balloon_ratio_height="1.4f">
+
+	<!-- Normal Key -->
+	<key_type id="0" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_normalkey" hltext_size1="@dimen/phn_port_normalkey" 
+		need_balloon="false" />
+
+	<!--
+		Normal Key supporting popup keyboard (no balloon now, same as Normal key)
+	-->
+	<key_type id="1" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_normalkey" hltext_size1="@dimen/phn_port_normalkey"
+		need_balloon="false" />
+
+	<!-- Function key -->
+	<key_type id="2" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_functionkey" hltext_size1="@dimen/phn_port_functionkey"
+		need_balloon="false" />
+
+	<!--
+		Function key supporting popup keyboard (no balloon now, same as Function key)
+	-->
+	<key_type id="3" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_function" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_functionkey" hltext_size1="@dimen/phn_port_functionkey"
+		need_balloon="false" />
+
+	<!-- Highlight Function key -->
+	<key_type id="4" bg="@drawable/highlight_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_highlight" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_functionkey" hltext_size1="@dimen/phn_port_functionkey"
+		need_balloon="false" />
+
+	<!--
+		Normal Key with two type word (num + alphabetic(>3)) (used by English
+		and Chinese Keyboard)
+	-->
+	<key_type id="5" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_asm="true" text_color1="@color/color_aux" text_color2="@color/color_normal" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/phn_port_doublewordkey_eng1" text_size2="@dimen/phn_port_doublewordkey_eng2" 
+		hltext_size1="@dimen/phn_port_doublewordkey_eng1" hltext_size2="@dimen/phn_port_doublewordkey_eng2" 
+		main_regx="0%p" main_regy="-25%p" aux_regx="0%p" aux_regy="10%p" need_balloon="false" />
+
+	<!-- Normal Key with two type word (num + symbol(=1)) -->
+	<key_type id="6" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_asm="true" text_color1="@color/color_normal" text_color2="@color/color_aux" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/phn_port_doublewordkey_sym1" text_size2="@dimen/phn_port_doublewordkey_sym2" 
+		hltext_size1="@dimen/phn_port_doublewordkey_sym1" hltext_size2="@dimen/phn_port_doublewordkey_sym2"
+		main_regx="-20%p" main_regy="0%p" aux_regx="20%p" aux_regy="5%p" need_balloon="false" />
+
+	<!-- Normal Key with two type word (used by zhuyin keyboard) -->
+	<key_type id="7" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_asm="true" text_color1="@color/color_aux" text_color2="@color/color_normal" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/phn_port_doublewordkey_zhu1" text_size2="@dimen/phn_port_doublewordkey_zhu2" 
+		hltext_size1="@dimen/phn_port_doublewordkey_zhu1" hltext_size2="@dimen/phn_port_doublewordkey_zhu2"
+		main_regx="0%p" main_regy="-25%p" aux_regx="0%p" aux_regy="10%p" need_balloon="false" />
+
+	<!-- Normal key with zhuyin phone keyboard last row-->
+	<key_type id="8" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_textsel_normalkey" hltext_size1="@dimen/phn_port_textsel_normalkey"
+		need_balloon="false" />
+
+	<!-- Normal Key with smiley keyboard -->
+	<key_type id="9" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_smileykey" hltext_size1="@dimen/phn_port_smileykey"
+		need_balloon="false" />
+
+	<!-- Normal Key no need balloon for space key -->
+	<key_type id="10" bg="@drawable/character_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_normal" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_normalkey" hltext_size1="@dimen/phn_port_normalkey"
+		need_balloon="false" />
+
+	<!-- unclickable key for symbol phone number keyboard -->
+	<key_type id="11" bg="@drawable/disable_bkg" hlbg="@drawable/highlight_bkg"
+		text_color1="@color/color_unclickable" hltext_color1="@color/color_highlight"
+		text_size1="@dimen/phn_port_normalkey" hltext_size1="@dimen/phn_port_normalkey"
+		need_balloon="false" />
+		
+	<!-- smart key with two type word, non-smart state -->
+	<key_type id="12" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  text_color1="@color/color_function" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/phn_port_functionkey" text_size2="@dimen/phn_port_functionkey" 
+		hltext_size1="@dimen/phn_port_functionkey" hltext_size2="@dimen/phn_port_functionkey" 
+		main_regx="0%p" main_regy="-10%p" aux_regx="0%p" aux_regy="10%p" need_balloon="false" />
+		
+	<!-- smart key with two type word, smart state -->
+	<key_type id="13" bg="@drawable/function_bkg" hlbg="@drawable/highlight_bkg" 
+	  text_color1="@color/color_highlight_smart_key" text_color2="@color/color_function" 
+		hltext_color1="@color/color_highlight" hltext_color2="@color/color_highlight"
+		text_size1="@dimen/phn_port_functionkey" text_size2="@dimen/phn_port_functionkey" 
+		hltext_size1="@dimen/phn_port_functionkey" hltext_size2="@dimen/phn_port_functionkey" 
+		main_regx="0%p" main_regy="-10%p" aux_regx="0%p" aux_regy="10%p" need_balloon="false" />
+		
+</skb_template>

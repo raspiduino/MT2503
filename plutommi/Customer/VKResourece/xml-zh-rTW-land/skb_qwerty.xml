@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" kb_width="100%p"
+	kb_height="64.375%p" width="9.7917%p" height="19.4175%p" key_type="0"
+	key_xmargin="0.2084%p" key_ymargin="0.4855%p">
+
+	<row start_pos_x="1.0417%p" start_pos_y="1.4564%p">
+		<keys splitter="|" labels="ㄅ|ㄉ|ˇ|ˋ|ㄓ|ˊ|˙|ㄚ|ㄞ|ㄢ"
+			codes="12549|12553|711|715|12563|714|729|12570|12574|12578" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<keys splitter="|" labels="ㄆ|ㄊ|ㄍ|ㄐ|ㄔ|ㄗ|ㄧ|ㄛ|ㄟ|ㄣ"
+			codes="12550|12554|12557|12560|12564|12567|12583|12571|12575|12579" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<keys splitter="|" labels="ㄇ|ㄋ|ㄎ|ㄑ|ㄕ|ㄘ|ㄨ|ㄜ|ㄠ|ㄤ"
+			codes="12551|12555|12558|12561|12565|12568|12584|12572|12576|12580" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<keys splitter="|" labels="ㄈ|ㄌ|ㄏ|ㄒ|ㄖ|ㄙ|ㄩ|ㄝ|ㄡ|ㄥ"
+			codes="12552|12556|12559|12562|12566|12569|12585|12573|12577|12581" />
+	</row>
+
+	<row start_pos_x="1.0417%p">
+		<key width="9.7917%p" label="\xa451" code="-3" key_type="3" />
+		<key width="9.7917%p" label="\xa45a" code="-5" key_type="2" />
+		<key width="9.7917%p" label="\xa469" code="44" code_longpress="-100" key_type="2" >
+		  <toggle_state state_id="12" key_type="4" />
+		</key>
+		<key width="19.5834%p" label="\xa46b" code="32" key_type="2">
+			<toggle_state state_id="30" label="-" code="713" />
+			<toggle_state state_id="31" label="\xa46b" code="32" />
+		</key>
+		<key width="9.7917%p" label="ㄦ" code="12582" />
+		<key width="9.7917%p" label="\xa46f" code="-1" key_type="3"
+			popup_skb="@xml/skb_popup_symbol" />
+		<key width="12.9167%p" label="\xa454" code="8" key_type="2" />
+		<key width="16.4584%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>

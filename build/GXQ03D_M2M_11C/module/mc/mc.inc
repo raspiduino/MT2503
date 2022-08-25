@@ -1,0 +1,10 @@
+drv\include
+hal\drv_def
+hal\storage\mc\inc
+inc
+hal\bluetooth\btif\include
+sst\include
+hal\system\regbase\inc
+hal\system\dma\inc
+hal\system\counter\inc
+hal\system\DP\inc

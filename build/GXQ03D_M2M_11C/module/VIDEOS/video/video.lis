@@ -1,0 +1,14 @@
+hal\video\common\src\vcodec_main.c
+hal\video\common\src\vcodec_v2_main.c
+hal\video\common\src\vfile_main.c
+hal\video\common\src\video_codec_utility_v2.c
+hal\video\common\src\vsrc_main.c
+hal\video\custom\custom_video_enc.c
+hal\video\custom\custom_video_enc_h264.c
+hal\video\custom\custom_video_enc_matv.c
+hal\video\custom\custom_video_enc_matv_mjpeg.c
+hal\video\custom\custom_video_enc_mjpeg.c
+hal\video\custom\custom_video_enc_mpeg4.c
+hal\video\custom\custom_video_enc_utility.c
+hal\video\custom\custom_video_enc_vt.c
+hal\video\renderer\src\video_renderer_task_thread_pool.c

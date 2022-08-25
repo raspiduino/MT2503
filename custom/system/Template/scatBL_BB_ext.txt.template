@@ -1,0 +1,135 @@
+;/*****************************************************************************
+;*  Copyright Statement:
+;*  --------------------
+;*  This software is protected by Copyright and the information contained
+;*  herein is confidential. The software may not be copied and the information
+;*  contained herein may not be used or disclosed except with the written
+;*  permission of MediaTek Inc. (C) 2007
+;*
+;*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+;*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+;*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+;*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+;*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+;*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+;*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+;*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+;*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+;*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+;*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+;*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+;*
+;*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+;*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+;*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+;*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+;*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+;*
+;*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+;*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+;*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+;*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+;*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+;*
+;*****************************************************************************/
+;
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   [AUTOGEN_QueryFileName_extBL]
+; *
+; * Project:
+; * --------
+; *   Maui_Software
+; *
+; * Description:
+; * ------------
+; *   defines the memory map for the validation board
+; *
+; * Author:
+; * -------
+; *   RaymondWT Chen (mtk05332)     [AUTOGEN_GenVersion]
+; *
+; * Auto Generated Date:
+; * -------
+; *   [AUTOGEN_GenDate]
+; *
+; * Revision History:
+; * -------
+; * $Log: $
+; *
+; * 01 28 2014 maoyuan.weng
+; * [MAUI_03484393] [IOT][FOTA] Download compressed binary
+; * 	<saved by Perforce>
+; * 	1. Add support for iot-fota to download compressed image
+; * 
+; ****************************************************************************/
+;
+;=========================================================================
+; This scatter file is auto-generated and please DO NOT change the content at will
+;=========================================================================
+;
+
+EXT_BOOTLOADER [AUTOGEN_GetEXT_BOOTLOADERBaseAndSize]
+{
+[AUTOGEN_GenEXT_BL_GFH_SECTION_OnlySV5]
+    EXT_READ_ONLY +0x0 
+    {
+         bl_bootarm.obj (VECTOR_TBL, +First)
+    }
+    EXT_READ_ONLY_HEAD +0x0 
+    {
+         bl_bootarm.obj (C$$code, +First)
+         *.obj (HEAD_BL)
+         * (INIT_CODE)
+    }
+[AUTOGEN_GenEXT_BL_SecInfo_OnlySV3]
+    EXT_READ_ONLY_TAIL +0x0 
+    {
+         * (+RO)
+    }
+    EXT_READ_WRITE [AUTOGEN_GetEXT_READ_WRITEBase] 
+    {
+         * (+RW, +ZI)
+    }
+    EXT_READ_ONLY_INT [AUTOGEN_GetEXT_READ_ONLY_INTBase]
+    {
+[AUTOGEN_GenEXT_READ_ONLY_INTInputSections]
+    }
+    REGION_INIT_SUB +0x0 
+    {
+         * (REGION_INIT_SUB)
+    }
+    EXT_READ_WRITE_INT [AUTOGEN_GetEXT_READ_WRITE_INTBase]
+    {
+[AUTOGEN_GenEXT_READ_WRITE_INTInputSections]
+    }
+[AUTOGEN_GenDA_SHAREInfo_ForMT6251]
+    STACK_AREA [AUTOGEN_GetSTACK_AREABase] 0x1000
+    {
+         bl_bootarm.obj               (STACK_POOL_INTSRAM)
+    }
+[AUTOGEN_GenEXT_BL_IOT_FOTA_WORKING_BUF]
+[AUTOGEN_GenEXT_BL_IOT_FOTA_IMAGE_BUF]
+[AUTOGEN_GenEXT_BL_IOT_FOTA_DECOMPRESSION_BUF]
+[AUTOGEN_GenEXT_BL_IOT_FOTA_RAM_DUMMY_END]
+    EXT_UN_INIT [AUTOGEN_GetEXT_UN_INITBase]
+    {
+         *                            (EXT_UN_INIT_RW, EXT_UN_INIT_ZI)
+         bl_cache.obj                 (BL_PAGETABLE)
+    }
+    SHARE_BUF [AUTOGEN_GetSHARE_BUFBaseAndSize]
+    {
+         *                            (MINI_EXT_DA_SHARE)
+    }
+	
+	
+[AUTOGEN_GenREAD_WRITE_SYS_RAMOrBL_INFO_NOR]
+    DUMMY_END [AUTOGEN_GetDUMMY_ENDBase] 0x04
+    {
+         bl_bootarm.obj (DUMMY_POOL)
+    }
+[AUTOGEN_GenEXT_BL_SIGNATURE_SECTION_OnlySV5]
+}
+

@@ -1,0 +1,70 @@
+HdRstDsp
+vWritePWM0
+vApiAudioSetMasterVolume
+AUD_DspSetCarrierShiftMode
+AUD_DspSetFmMute
+vRegWrite1BMsk
+VideoEncoderMallocCacheLineAlign
+VideoEncoderFreeCacheLineAlign
+VideoDecoderMallocCacheLineAlign
+VideoDecoderFreeCacheLineAlign
+VideoGetExtBuffer
+VideoInitExtBufferInternal
+VideoCommPushInputBuffExt
+VideoCommGetInputBuffDataExt
+VideoCommPopInputBuffExt
+VideoCommPushOutputBuffExt
+VideoCommPopOutputBuffExt
+VideoCommQueryOutputBuffExt
+mdi_camera_preview_start_with_capmode
+smulwb
+mmi_mtv_player_key_num_press
+VideoEncoderFreeCacheLineAlign
+mmi_mtv_player_entry_option_menu_screen
+mmi_mtv_player_system_closed_hdlr
+mmi_mtv_player_open_engine
+mmi_flight_mode_entry
+mmi_em_comm_mem_free
+mmi_em_comm_mem_free
+mmi_em_dev_fmr_init_cntx
+mmi_fm_show_color
+mmi_fm_select_adc_menu
+mmi_fm_gpio_writeIO
+mtv_alloc_ext_mem_impl
+FM_SetGpioReq
+mmi_sndrec_util_get_filename
+IspYuvHISR
+cam_capture_event_ind_hdlr
+cam_quickview_event_ind_hdlr
+vp8_de_alloc_frame_buffers
+vpx_codec_err_to_string
+stream_merger_putframe
+mmi_mtv_player_fullscr_osd_show_up
+mmi_mtv_player_fullscr_reset_osd_fade
+mmi_slk_obj_handle_group_deinit
+wavInternalRecord
+cam_mav_image_ready_event_ind_hdlr
+cam_mav_stitch_ready_event_ind_hdlr
+VappAlarmlistPage::onOpEvt(_mmi_event_struct*)
+VappWCCuiMainScr::showSelectCityPage()
+VappSoundRecorderRecordPage::updateRemainTimeText(bool)
+VappDateSettingCell::updateCell()
+VappTimeSettingCell::updateCell()
+VappMobileNetworkSettingPage::onCellReady()
+VappMonitorPchSettingPage::switchPch()
+VappSettingFWViewPage::updatePage(VcpFormItemBase*)
+VappSettingFWViewPage::updatePage(VcpFormItemBase*)
+VappCalGroupListPage::updateCalGroupListPageInt()
+VappCallSetPageMain::updateForm()
+VappFMRadioListAuto::onAutoScanDone()
+VappFMRadioListAuto::showWaitingPopup()
+VappMovieTheaterContentProvider::setCacheUnused(unsigned)
+VappMovieTheaterIndexPage::handleDevicePlugInOut(_mmi_event_struct*)
+VappAlarmEditPage::onToolbarClick(VfxObject*unsigned)
+VappMovieTheaterIndexPage::handleDevicePlugInOut(_mmi_event_struct*)
+VappAlarmEditPage::onToolbarClick(VfxObject*, unsigned)
+VappWCCui::onCitySelect(VfxObject*, unsigned short)
+VappDateSettingPage::UpdateDateSeperator(unsigned char)
+VappCalReminderListPage::getReminderString(unsigned char)
+VappCalBaseMenu::updateChangedCell(srv_tdl_event_id_struct*, unsigned)
+VappCallSetPageCf::sendSSReq(srv_ss_action_type_enum, const unsigned short*, unsigned)

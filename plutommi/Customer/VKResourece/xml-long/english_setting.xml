@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--//VERSION 1.0 BY FOX-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/english_setting" android:key="english_setting">
+
+	<PreferenceCategory android:title="@string/details_settings"
+		android:key="detail_setting"> 
+	</PreferenceCategory>
+</PreferenceScreen>

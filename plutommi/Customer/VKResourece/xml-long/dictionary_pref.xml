@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//VERSION 1.0 BY FOX-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:title="@string/custom_dic" android:key="custom_dic">
+	
+	<Preference android:title="@string/custom_dic_add_item"
+		android:key="add_item">
+	</Preference>
+	
+	<PreferenceCategory android:title="@string/custom_dic_item"
+			    android:key="custom_dictionary_item"> 
+	</PreferenceCategory>
+</PreferenceScreen>

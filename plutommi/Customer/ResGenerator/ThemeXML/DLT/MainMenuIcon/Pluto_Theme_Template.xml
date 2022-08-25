@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Theme isFullPath="TRUE" project="" version="" width="" height="" preview="YYYYY\\XXXXX\\Preview.jpg">
+
+  <Component name="MainMenu">
+    <Image name="IMG_ID_APPLIST_ALARM_ICON"                   src="YYYYY\\XXXXX\\Alarm.png" />
+    <Image name="IMG_ID_APPLIST_APLY_ICON"                    src="YYYYY\\XXXXX\\AudioPlayer.png" />
+    <Image name="IMG_ID_APPLIST_AALARM_ICON"                  src="YYYYY\\XXXXX\\Azaan_alarm.png" />
+    <Image name="IMG_ID_APPLIST_BAIDU_ICON"                   src="YYYYY\\XXXXX\\Baidu.png" />
+    <Image name="IMG_ID_APPLIST_BT_ICON"                      src="YYYYY\\XXXXX\\BlueTooth.png" />
+    <Image name="IMG_ID_APPLIST_CALCULATOR_ICON"              src="YYYYY\\XXXXX\\Calculator.png" />
+    <Image name="IMG_ID_APPLIST_CALENDAR_ICON"                src="YYYYY\\XXXXX\\Calendar.png" />
+    <Image name="IMG_ID_APPLIST_CLOG_ICON"                    src="YYYYY\\XXXXX\\CallLog.png" />
+    <Image name="IMG_ID_APPLIST_CAMCORDER_ICON"               src="YYYYY\\XXXXX\\Camcorder.png" />
+    <Image name="IMG_ID_APPLIST_CAMERA_ICON"                  src="YYYYY\\XXXXX\\Camera.png" />
+    <Image name="IMG_ID_APPLIST_CONNECT_ICON"                 src="YYYYY\\XXXXX\\Connect.png" />
+    <Image name="IMG_ID_APPLIST_CURRENCY_ICON"                src="YYYYY\\XXXXX\\Currency.png" />
+    <Image name="IMG_ID_APPLIST_DIALER_ICON"                  src="YYYYY\\XXXXX\\Call.png" />
+    <Image name="IMG_ID_APPLIST_EBOOK_ICON"	                  src="YYYYY\\XXXXX\\Ebook.png" />
+    <Image name="IMG_ID_APPLIST_EMAIL_ICON"		              src="YYYYY\\XXXXX\\Email.png" />
+    <Image name="IMG_ID_APPLIST_FMGR_ICON"                    src="YYYYY\\XXXXX\\FMGR.png" />
+    <Image name="IMG_ID_APPLIST_FMRDO_ICON"                   src="YYYYY\\XXXXX\\FmRadio.png" />
+    <Image name="IMG_ID_APPLIST_HEALTH_ICON"                  src="YYYYY\\XXXXX\\Health.png" />
+    <Image name="IMG_ID_APPLIST_IVIEWER_ICON"                 src="YYYYY\\XXXXX\\ImageViewer.png" />
+    <Image name="IMG_ID_APPLIST_JAVA_ICON"                    src="YYYYY\\XXXXX\\Java.png" />
+    <Image name="IMG_ID_APPLIST_MPLYER_ICON"                  src="YYYYY\\XXXXX\\MediaPlayer.png" />
+    <Image name="IMG_ID_APPLIST_MESSAGE_ICON"                 src="YYYYY\\XXXXX\\Message.png" />
+    <Image name="IMG_ID_APPLIST_MTV_ICON"                     src="YYYYY\\XXXXX\\MobileTV.png" />
+    <Image name="IMG_ID_APPLIST_NOTE_ICON"                    src="YYYYY\\XXXXX\\Note.png" />
+    <Image name="IMG_ID_APPLIST_PHB_ICON"                     src="YYYYY\\XXXXX\\Contact.png" />
+    <Image name="IMG_ID_APPLIST_PEDITOR_ICON"                 src="YYYYY\\XXXXX\\PhotoEditor.png" />
+    <Image name="IMG_ID_APPLIST_PROFILES_ICON"                src="YYYYY\\XXXXX\\Profile.png" />
+    <Image name="IMG_ID_APPLIST_PSYNC_ICON"                   src="YYYYY\\XXXXX\\PSync.png" />
+    <Image name="IMG_ID_APPLIST_SYNC_ICON"                    src="YYYYY\\XXXXX\\Sync.png" />
+    <Image name="IMG_ID_APPLIST_SETTING_ICON"                 src="YYYYY\\XXXXX\\Setting.png" />
+    <Image name="IMG_ID_APPLIST_SERVICE_ICON"                 src="YYYYY\\XXXXX\\SAT.png" />
+    <Image name="IMG_ID_APPLIST_BARREL_ICON"                  src="YYYYY\\XXXXX\\barrel.png" />
+    <Image name="IMG_ID_APPLIST_RECORDER_ICON"                src="YYYYY\\XXXXX\\SoundRecorder.png" />
+    <Image name="IMG_ID_APPLIST_TODO_ICON"                    src="YYYYY\\XXXXX\\Tasks.png" />
+    <Image name="IMG_ID_APPLIST_UCONVERTER_ICON"              src="YYYYY\\XXXXX\\Converter.png" />
+    <Image name="IMG_ID_APPLIST_VPLY_ICON"                    src="YYYYY\\XXXXX\\VideoPlayer.png" />
+    <Image name="IMG_ID_APPLIST_WIFI_ICON"                    src="YYYYY\\XXXXX\\WiFi.png" />
+    <Image name="IMG_ID_APPLIST_BROWSER_ICON"                 src="YYYYY\\XXXXX\\Browser.png" />
+    <Image name="IMG_ID_APPLIST_WCLOCK_ICON"                  src="YYYYY\\XXXXX\\WorldClock.png" />
+    <Image name="IMG_ID_APPLIST_SNS_ICON"                     src="YYYYY\\XXXXX\\Sns.png" />
+    <Image name="IMG_ID_APPLIST_VCALL_ICON"                   src="YYYYY\\XXXXX\\VideoCall.png" />
+    <Image name="IMG_ID_APPLIST_3DGAME_ICON"                  src="YYYYY\\XXXXX\\3dGame.png" />
+    <Image name="IMG_ID_APPLIST_OPERA_ICON"                   src="YYYYY\\XXXXX\\Opera.png" />
+    <Image name="IMG_ID_APPLIST_VREC_ICON"                    src="YYYYY\\XXXXX\\VideoRecorder.png" /> 
+    <Image name="IMG_ID_APPLIST_SETTINGMSG_ICON"              src="YYYYY\\XXXXX\\setting_message.png" />
+    <Image name="IMG_ID_APPLIST_MOT_ICON"                     src="YYYYY\\XXXXX\\MOT.png" />
+    <Image name="IMG_ID_APPLIST_YOUTUBE_ICON"                 src="YYYYY\\XXXXX\\Youtube.png" />
+  </Component>
+  <Component name="Wallpaper">
+    <Image name="IMG_ID_APP_LIST_THEME_WALLPAPER_0"           src="YYYYY\\XXXXX\\WALL01.jpg" />
+  </Component>
+</Theme>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	width="10%p" height="25.1163%p" key_type="0">
+
+	<row start_pos_x="0%p" start_pos_y="1.8605%p">
+		<key label="q" code="113" />
+		<key label="w" code="119" />
+		<key label="e" code="101" />
+		<key label="r" code="114" />
+		<key label="t" code="116" />
+		<key label="y" code="121" />
+		<key label="u" code="117" key_type="1" popup_skb="@xml/skb_special_alpha_igbo_u"  />
+		<key label="i"  code="105" key_type="1" popup_skb="@xml/skb_special_alpha_igbo_i" />
+		<key label="o" code="111" key_type="1" popup_skb="@xml/skb_special_alpha_igbo_o" />
+		<key label="p" code="112" />
+	</row>
+
+	<row start_pos_x="5%p">
+		<key label="a" code="97" />
+		<key label="s" code="115" />
+		<key label="d" code="100" />
+		<key label="f" code="102" />
+		<key label="g" code="103" />
+		<key label="h" code="104" />
+		<key label="j" code="106" />
+		<key label="k" code="107" />
+		<key label="l" code="108" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" label="\xa467" code="-2" key_type="2">
+			<toggle_state state_id="10" label="\xa468" code="-2" key_type="2" />
+			<toggle_state state_id="11" label="\xa468" code="-2" key_type="4" />
+		</key>
+		<key label="z" code="122" />
+		<key label="x" code="120" />
+		<key label="c" code="99"  />
+		<key label="v" code="118" />
+		<key label="b" code="98" />
+		<key label="n" code="110" key_type="1" popup_skb="@xml/skb_special_alpha_igbo_n" />
+		<key label="m" code="109" />
+		<key width="15%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="12.5%p" code="-3" label="\xa451" key_type="11" />
+		<key width="12.5%p" code="-5" label="\xa45a" key_type="3" />
+    <key width="10%p" key_type="0" label="\xa453" code="44" >
+      <toggle_state state_id="12" key_type="14" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		  <toggle_state state_id="13" key_type="13" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		</key>
+		<key width="30%p" code="32" label="\xa46b" key_type="2" />
+		<key width="10%p" code="46" label="." key_type="1" popup_skb="@xml/skb_popup_qwerty_fullstop" />
+		<key width="12.5%p" label="\xa46f" code="-1" key_type="3" popup_skb="@xml/skb_popup_symbol" />
+		<key width="12.5%p" code="13" label="\xa456" key_type="2">
+			<toggle_state state_id="2" code="13" label="\xa459" key_type="2" />
+			<toggle_state state_id="5" code="13" label="\xa45e" key_type="2" />
+		</key>
+	</row>
+
+</keyboard>

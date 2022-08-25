@@ -1,0 +1,149 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2005
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ *
+ *
+ * Project:
+ * --------
+ *  MAUI
+ *
+ * Description:
+ * ------------
+ *
+ *
+ * Author:
+ * -------
+ *   
+ *
+ *============================================================================
+ *             HISTORY
+ * Below this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *------------------------------------------------------------------------------
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ *
+ * removed!
+ * removed!
+ * removed!
+ 
+ 
+ 
+ *------------------------------------------------------------------------------
+ * Upper this line, this part is controlled by PVCS VM. DO NOT MODIFY!!
+ *============================================================================
+ ****************************************************************************/
+
+/****************************************************************************
+* Include Files                                                                
+*****************************************************************************/
+#ifndef DOWNLOAD_AGENT_NCENTER_PLUTO_H
+#define DOWNLOAD_AGENT_NCENTER_PLUTO_H
+
+#include "MMI_include.h"
+#if defined (__MMI_DOWNLOAD_AGENT__)
+#if defined (__MMI_NCENTER_SUPPORT__)
+#include "mmi_frm_events_gprot.h"
+#include "DLAgentSrvIProt.h"
+#include "wgui_categories_list.h"
+#include "wgui_categories.h"
+#include "wgui_categories_text_viewer.h"
+#include "Vsrv_ncenter.h"
+#include "mmi_frm_events_gprot.h"
+#include "DLAgentSrvIProt.h"
+#include "DLAgentAppScr.h"
+#include "DLAgentAppMain.h"
+#include "DLAgentSrvProt.h"
+#include "mmi_frm_scenario_gprot.h"
+#include "GlobalResDef.h"
+#include "Menucuigprot.h"
+#include "InlineCuiGprot.h"
+
+#ifdef __MMI_DOWNLOAD_AGENT__
+#include "mmi_rp_srv_downloadagent_def.h"
+#include "mmi_rp_app_downloadagent_def.h"
+#endif
+
+
+
+extern void mmi_da_show_ncenter(srv_da_job_struct *job, U32 type);
+extern void mmi_da_show_job_status(srv_da_job_struct*job);
+extern void mmi_da_update_all_cells(srv_da_job_struct *job);
+extern void mmi_da_update_failed_cells (srv_da_job_struct* job);
+extern void mmi_da_update_completed_cells(srv_da_job_struct* job);
+extern void mmi_da_ncenter_event_cb(vsrv_notification_handle handle, vsrv_nintent intent, void* userData, U32 userDataSize);
+extern void mmi_da_nmgr_event_cb(mmi_scenario_id scen_id, void *arg);
+extern void mmi_da_show_push_status(srv_da_push_item_struct *item);
+extern void mmi_da_show_push_obj_ncenter(srv_da_push_item_struct *job, U32 type);
+extern void DLAgentsetPushNotification(vsrv_notification_handle noti);
+extern void mmi_da_cancel_alert(srv_da_job_struct *job);
+extern MMI_BOOL mmi_da_any_job_present(void);
+#endif  //Necenter
+
+#endif  //Downlaod Agent
+#endif /* DOWNLOAD_AGENT_NCENTER_PLUTO_H */

@@ -1,0 +1,27 @@
+[APP NAME] = BG Sound
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_MEDIA_APP
+#start trace
+
+
+
+TRC_MSG(MMI_BGSND_MO_CALL_MAKE_CALL, "--- [BGSoundInCall.c] bgsnd_mo_call_make_call() => sound index = [%d] ---")
+TRC_MSG(MMI_BGSND_MO_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_mo_play_sound() ---")
+TRC_MSG(MMI_BGSND_MT_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_mt_play_sound() ---")
+
+TRC_MSG(MMI_BGSND_UTIL_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_util_play_sound() => sound index = [%d] ---")
+TRC_MSG(MMI_BGSND_UTIL_PLAY_SOUND_IN_CALL, "--- [BGSoundInCall.c] mmi_bgsnd_util_play_sound_in_call() => status = [%d], speech on = [%d] ---")
+TRC_MSG(MMI_BGSND_UTIL_PLAY_IN_CALL_CALLBACK, "--- [BGSoundInCall.c] mmi_bgsnd_util_play_in_call_callback() => sound index = [%d] ---")
+
+TRC_MSG(MMI_BGSND_UTIL_STOP_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_util_stop_play_sound() => status = [%d] ---")
+TRC_MSG(MMI_BGSND_UTIL_STOP_PLAY_SOUND_IN_CALL, "--- [BGSoundInCall.c] mmi_bgsnd_util_stop_play_sound_in_call() ---")
+TRC_MSG(MMI_BGSND_UTIL_STOP_PLAY_SOUND_END_CALL, "--- [BGSoundInCall.c] mmi_bgsnd_util_stop_play_sound_end_call() ---")
+
+TRC_MSG(MMI_BGSND_UTIL_SWITCH_SPEECH, "--- [BGSoundInCall.c] mmi_bgsnd_util_switch_speech() => speech on = [%d], request play = [%d]---")
+
+TRC_MSG(MMI_BGSND_UTIL_CM_STATUS, "--- [BGSoundInCall.c] status changed cm.status = [%d]---")
+TRC_MSG(MMI_BGSND_COMMON_MTMO_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_common_mtmo_play_sound() ---")
+TRC_MSG(MMI_BGSND_COMMON_MTMO_RESET_STATE, "--- [BGSoundInCall.c] mmi_bgsnd_common_mtmo_reset_state() allow_play = [%d]---")
+TRC_MSG(MMI_BGSND_COMMON_CM_STOP_PLAY_SOUND, "--- [BGSoundInCall.c] mmi_bgsnd_common_cm_stop_play_sound() ---")
+TRC_MSG(MMI_BGSND_UTIL_CALLING_CHANGE_STATE, "--- [BGSoundInCall.c] mmi_bgsnd_util_calling_change_state() is_on = [%d]---")
+TRC_MSG(MMI_BGSND_UTIL_DELETE_END_CALL_SCREEN, "--- [BGSoundInCall.c] mmi_bgsnd_util_delete_end_call_screen() ---")

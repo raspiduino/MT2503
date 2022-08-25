@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="false" width="14%p"
+	height="24.359%p" kb_width="100%p" kb_height="80%p" key_xmargin="0.25%p"
+	key_ymargin="0.25%p" key_type="2">
+
+	<row start_pos_x="1.25%p" start_pos_y = "80%p">
+		<key  code="-3" label="\xa451" key_type="2" />
+		<key  code="-5"  label="\xa45a" key_type="3" />		
+		<key  label="\xa46b" code="32" key_type="2" />
+		<key  label="\xa46f" code="-1" key_type="3"
+			popup_skb="@xml/skb_popup_symbol" />
+		<key code="-37" label="\xa471" key_type="3" />
+		<key  label="\xa454" code="8" key_type="2" />
+		<key label="\xa456" code="13">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>

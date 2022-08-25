@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" width="10%p" height="24.4445%p"
+	needshift_flag="true" key_type="8" >
+
+	<row start_pos_x="0%p" start_pos_y="1.1112%p">
+		<key label=":)" code="0" />
+		<key label=":(" code="0" />
+		<key label=";)" code="0" />
+		<key label=":D" code="0" />
+		<key label=":P" code="0" />
+		<key label=":-)" code="0" />
+		<key label=":-(" code="0" />
+		<key label=";-)" code="0" />
+		<key label=":-D" code="0" />
+		<key label=":-P" code="0" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key label=":$" code="0" />
+		<key label=":S" code="0" />
+		<key label="^-^" code="0" />
+		<key label="-.-!" code="0" />
+		<key label="=_0" code="0" />
+		<key label="-_-" code="0" />
+		<key label="T.T" code="0" />
+		<key label="@.@" code="0" />
+		<key label=":&lt;" code="0" />
+		<key label=":&gt;" code="0" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" label="\xa462" code="-6" key_type="2" />
+		<key label="&gt;&lt;" code="0" />
+		<key label="⊙⊙" code="0" />
+		<key label="∩_∩" code="0" />
+		<key label="^o^" code="0" />
+		<key label="+_+" code="0" />
+		<key label="=_=" code="0" />
+		<key label="^3^" code="0" />
+		<key width="15%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" code="-3" label="\xa451" key_type="11" />
+		<key width="10%p" label="\xa450" code="-7" key_type="2" >
+			<toggle_state state_id="9" label="o_O" code="0" key_type="8" />	
+		</key>
+		<key width="10%p" label="~~" code="0" />
+		<key width="30%p" label="\xa46b" code="32" key_type="2" />
+		<key width="10%p" label="Orz" code="0" />
+		<key width="10%p" label="\xa46f" code="-1" key_type="4" />
+		<key width="15%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+</keyboard>

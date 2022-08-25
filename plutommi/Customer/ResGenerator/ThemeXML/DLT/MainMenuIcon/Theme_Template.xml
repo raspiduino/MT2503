@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Theme isFullPath="TRUE" project="" version="" width="" height="" thumbnail="YYYYY\\XXXXX\\Thumbnail.jpg" preview="YYYYY\\XXXXX\\Preview.jpg">
+
+  <Component name="MainMenu">
+    <Image name="IMG_ID_VAPP_ALARM"                         src="YYYYY\\XXXXX\\Alarm.png" />
+    <Image name="VAPP_AM_IMG_APPMANAGER"                    src="YYYYY\\XXXXX\\AppManager.png" />
+    <Image name="IMG_ID_VAPP_WORLDCLOCK"                    src="YYYYY\\XXXXX\\WorldClock.png" />
+    <Image name="IMG_ID_VAPP_FMGR_MAINMENU_ICN"             src="YYYYY\\XXXXX\\FMGR.png" />
+    <Image name="IMG_ID_VAPP_MSG_MAIN"                      src="YYYYY\\XXXXX\\Message.png" />
+    <Image name="IMG_ID_VAPP_CLOG_MAIN_MENU"                src="YYYYY\\XXXXX\\CallLog.png" />
+    <Image name="IMG_ID_VAPP_GALLERY_APP_ICON"              src="YYYYY\\XXXXX\\Gallery.png" />
+    <Image name="IMG_ID_VAPP_FM"                            src="YYYYY\\XXXXX\\FmRadio.png" />
+    <Image name="IMG_ID_APP_SETTING_TITLE"                  src="YYYYY\\XXXXX\\Setting.png" />
+    <Image name="IMG_ID_VAPP_SNDREC"                        src="YYYYY\\XXXXX\\SoundRecorder.png" />
+    <Image name="IMG_ID_VAPP_MUSICPLY_ICON"                 src="YYYYY\\XXXXX\\Music.png" />
+    <Image name="MAIN_MENU_CAMCO_ICON"                      src="YYYYY\\XXXXX\\Camera.png" />
+    <Image name="MAIN_MENU_AUTOCAP_ICON"                    src="YYYYY\\XXXXX\\Autorama.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_MAINMENU"	src="YYYYY\\XXXXX\\MainMenu.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_HOME"		src="YYYYY\\XXXXX\\Home.png" />
+    <Image name="IMG_ID_VAPP_SAT"                           src="YYYYY\\XXXXX\\SAT.png" />
+    <Image name="IMG_ID_VAPP_CALCULATOR_MAIN_MENU_ICON"     src="YYYYY\\XXXXX\\Calculator.png" />
+    <Image name="IMG_ID_VAPP_CONVERTER"                     src="YYYYY\\XXXXX\\Converters.png" />
+    <Image name="IMG_ID_VAPP_CONTACT"                       src="YYYYY\\XXXXX\\Contact.png" />
+    <Image name="IMG_ID_VAPP_DIALER"                        src="YYYYY\\XXXXX\\Call.png" />
+    <Image name="IMG_ID_VAPP_CNMGR"                         src="YYYYY\\XXXXX\\CNMGR.png" />
+    <Image name="IMG_ID_VAPP_WLAN_MAIN_MENU"                src="YYYYY\\XXXXX\\WiFi.png" />
+    <Image name="IMG_ID_VAPP_NOTES_MAIN_MENU"               src="YYYYY\\XXXXX\\Note.png" />
+    <Image name="IMG_EMAIL_FTO_MAINMENU"                    src="YYYYY\\XXXXX\\Email.png" />
+    <Image name="IMG_ID_VAPP_SYNC"                          src="YYYYY\\XXXXX\\Sync.png" />
+    <Image name="IMG_ID_VAPP_TETHERING_MAINMENU"            src="YYYYY\\XXXXX\\Internet_Tethering.png" />
+    <Image name="IMG_ID_VAPP_CALENDAR"                      src="YYYYY\\XXXXX\\Calendar.png" />
+    <Image name="IMG_ID_VAPP_TASK"                          src="YYYYY\\XXXXX\\Tasks.png" />
+    <Image name="VAPP_IMG_ID_DLA_MAIN_ICON"                 src="YYYYY\\XXXXX\\DLAgent.png" />
+    <Image name="MAIN_MENU_ATV_ICON"                        src="YYYYY\\XXXXX\\MobileTV.png" />
+    <Image name="IMG_ID_APP_OPERA"                          src="YYYYY\\XXXXX\\Opera.png" />
+    <Image name="IMG_ID_VAPP_SNS_MAINMENU_ICN"              src="YYYYY\\XXXXX\\SNS.png" />
+    <Image name="IMG_ID_VAPP_BRW_BROWSER_ICON"              src="YYYYY\\XXXXX\\Browser.png" />
+    <Image name="MAIN_MENU_3D_CAMERA_ICON"                  src="YYYYY\\XXXXX\\mav.png" />
+    <Image name="IMG_ID_VAPP_SCREEN_LOCK_SHUTTLE_ICON"      src="YYYYY\\XXXXX\\ScreenLock.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_SHUTTLE"              src="YYYYY\\XXXXX\\LauncherShuttle.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_PAGE_TRANSITION_SETTING_APP_ICON"              src="YYYYY\\XXXXX\\HomeSwitch.png" />
+    <Image name="IMG_ID_VAPP_APP_ICON"                      src="YYYYY\\XXXXX\\IconShuttle.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_MM_BARREL_SETTING_APP_ICON"          src="YYYYY\\XXXXX\\Flip_FX.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_BARREL_SETTING_APP_ICON"   src="YYYYY\\XXXXX\\Flip_FX.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_JAVA"             src="YYYYY\\XXXXX\\Java.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_MRE"              src="YYYYY\\XXXXX\\MRE.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_MM_ICON_JAVA"                    src="YYYYY\\XXXXX\\Java.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_MM_ICON_MRE"                     src="YYYYY\\XXXXX\\MRE.png" /> 
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_MM_ICON_JAVA"              src="YYYYY\\XXXXX\\Java.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_MM_ICON_MRE"               src="YYYYY\\XXXXX\\MRE.png" />
+    <Image name="IMG_ID_VJAVA_MAINMENU_ICON"                src="Java.png" />
+  </Component>
+  <Component name="Wallpaper">
+    <Image name="IMG_ID_THEME_WALLPAPER_0"                  src="YYYYY\\XXXXX\\wp_01.jpg" />
+    <Image name="IMG_ID_THEME_WALLPAPER_THUMB_0"            src="YYYYY\\XXXXX\\wp_thumb_01.jpg" />
+  </Component>
+</Theme>

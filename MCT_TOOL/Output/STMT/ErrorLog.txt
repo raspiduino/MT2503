@@ -1,0 +1,7 @@
+
+/******************************ERROR LOG FOR STMT********************************/ 
+
+
+The Following ENUM(s) Couldn't Be Loaded Properly
+
+Enum Value

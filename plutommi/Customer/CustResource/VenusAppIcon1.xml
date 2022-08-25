@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Theme RES_THEME_ROOT="default\\Mainmenu_Icon2"
+    thumbnail="RES_THEME_ROOT\\Thumbnail.jpg"
+    preview="RES_THEME_ROOT\\Preview.jpg">
+
+  <Component name="MainMenu" imgPath="RES_THEME_ROOT">
+    <Image name="IMG_ID_VAPP_ALARM"                         src="Alarm.png" />
+    <Image name="VAPP_AM_IMG_APPMANAGER"                    src="AppManager.png" />
+    <Image name="IMG_ID_VAPP_WORLDCLOCK"                    src="WorldClock.png" />
+    <Image name="IMG_ID_VAPP_FMGR_MAINMENU_ICN"             src="FMGR.png" />
+    <Image name="IMG_ID_VAPP_MSG_MAIN"                      src="Message.png" />
+    <Image name="IMG_ID_VAPP_CLOG_MAIN_MENU"                src="CallLog.png" />
+    <Image name="IMG_ID_VAPP_GALLERY_APP_ICON"              src="Gallery.png" />
+    <Image name="IMG_ID_VAPP_FM"                            src="FmRadio.png" />
+    <Image name="IMG_ID_APP_SETTING_TITLE"                  src="Setting.png" />
+    <Image name="IMG_ID_VAPP_SNDREC"                        src="SoundRecorder.png" />
+    <Image name="IMG_ID_VAPP_MUSICPLY_ICON"                 src="Music.png" />
+    <Image name="MAIN_MENU_CAMCO_ICON"                      src="Camera.png" />
+#if defined(__AUTOCAP_PANORAMA_SUPPORT__) && defined(HORIZONTAL_CAMERA)
+    <Image name="MAIN_MENU_AUTOCAP_ICON"                    src="Autorama.png" />
+#endif /* defined(__AUTOCAP_PANORAMA_SUPPORT__) && defined(HORIZONTAL_CAMERA) */
+#if defined(__MMI_VUI_LAUNCHER_COSMOS__)
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_MAINMENU"          src="MainMenu.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_HOME"              src="Home.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_ICON_PREINSTALL_APP"    src="App_download.png" />
+#endif
+#if defined(__MMI_VUI_LAUNCHER_MM__)
+    <Image name="IMG_ID_VAPP_LAUNCHER_MM_ICON_PREINSTALL_APP"           src="App_download.png" />
+#endif
+    <Image name="IMG_ID_VAPP_SAT"                           src="SAT.png" />
+    <Image name="IMG_ID_VAPP_CALCULATOR_MAIN_MENU_ICON"     src="Calculator.png" />
+#if defined(__MMI_CONVERTER__)
+    <Image name="IMG_ID_VAPP_CONVERTER"                     src="Converters.png" />
+#endif /* defined(__MMI_CONVERTER__) */
+    <Image name="IMG_ID_VAPP_CONTACT"                       src="Contact.png" />
+    <Image name="IMG_ID_VAPP_DIALER"                        src="Call.png" />
+#if defined(__MMI_CBM_CONNECTION_MANAGER__)
+    <Image name="IMG_ID_VAPP_CNMGR"                         src="CNMGR.png" />
+#endif /* defined(__MMI_CBM_CONNECTION_MANAGER__) */
+#if defined(__MMI_WLAN_FEATURES__)
+    <Image name="IMG_ID_VAPP_WLAN_MAIN_MENU"                src="WiFi.png" />
+#endif /* defined(__MMI_WLAN_FEATURES__) */
+    <Image name="IMG_ID_VAPP_NOTES_MAIN_MENU"               src="Note.png" />
+#if defined(__MMI_EMAIL__)
+    <Image name="IMG_EMAIL_FTO_MAINMENU"                    src="Email.png" />
+#endif /* defined(__MMI_EMAIL__) */
+#if defined(__SYNCML_SUPPORT__)
+    <Image name="IMG_ID_VAPP_SYNC"                          src="Sync.png" />
+#endif /*defined(__SYNCML_SUPPORT__) */
+#if defined(__MMI_TETHERING__)
+    <Image name="IMG_ID_VAPP_TETHERING_MAINMENU"            src="Internet_Tethering.png" />
+#endif /* defined(__MMI_TETHERING__) */
+    <Image name="IMG_ID_VAPP_CALENDAR"                      src="Calendar.png" />
+    <Image name="IMG_ID_VAPP_TASK"                          src="Tasks.png" />
+    <Image name="VAPP_IMG_ID_DLA_MAIN_ICON"                 src="DLAgent.png" />
+    <Image name="MAIN_MENU_ATV_ICON"                        src="MobileTV.png" />
+#if defined(OPERA_BROWSER)
+    <Image name="IMG_ID_APP_OPERA"                          src="Opera.png" />
+#endif /* defined(OPERA_BROWSER) */
+#if defined(__MMI_SNS_CENTER__)
+    <Image name="IMG_ID_VAPP_SNS_MAINMENU_ICN"              src="SNS.png" />
+#endif /* defined(__MMI_SNS_CENTER__) */
+#if defined(__MMI_BROWSER_2__)
+    <Image name="IMG_ID_VAPP_BRW_BROWSER_ICON"              src="Browser.png" />
+#endif /* defined(__MMI_BROWSER_2__) */
+#if defined( __MULTIPLE_ANGLE_VIEW_SUPPORT__ ) || defined( __3D_IMAGE_SUPPORT__ )
+    <Image name="MAIN_MENU_3D_CAMERA_ICON"                  src="mav.png" />
+#endif /* defined(__MULTIPLE_ANGLE_VIEW_SUPPORT__) || (__3D_IMAGE_SUPPORT__) */
+#if defined (__MMI_VUI_SETTING_SCREEN_LOCK_SELECTION__)
+    <Image name="IMG_ID_VAPP_SCREEN_LOCK_SHUTTLE_ICON"      src="ScreenLock.png" />
+#endif /* defined (__MMI_VUI_SETTING_SCREEN_LOCK_SELECTION__) */
+#if defined(__MMI_VUI_SETTING_LAUNCHER_SELECTION__)
+    <Image name="IMG_ID_VAPP_LAUNCHER_SHUTTLE"              src="LauncherShuttle.png" />
+#endif
+#if defined(__MMI_VUI_HOME_SCREEN_SWITCH_EFFECT__)
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_PAGE_TRANSITION_SETTING_APP_ICON"              src="HomeSwitch.png" />
+#endif
+#if defined(__MMI_VUI_APP_ICON_ROBOT__) || defined(__MMI_VUI_APP_ICON_MM__) || defined(__MMI_VUI_DOWNLOADABLE_APP_ICON__)
+    <Image name="IMG_ID_VAPP_APP_ICON"                      src="IconShuttle.png" />
+#endif
+#if defined(__MMI_VUI_MAIN_MENU_SWITCH_EFFECT__)    
+    <Image name="IMG_ID_VAPP_LAUNCHER_MM_BARREL_SETTING_APP_ICON"          src="Flip_FX.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_COSMOS_MM_BARREL_SETTING_APP_ICON"   src="Flip_FX.png" />
+#endif /* defined (__MMI_VUI_MAIN_MENU_SWITCH_EFFECT__) */
+#if defined(__MMI_VUI_LAUNCHER_ROBOT__) && defined ( __J2ME__ )
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_MM_ICON_JAVA"              src="Java.png" />
+    <Image name="IMG_ID_VAPP_LAUNCHER_ROBOT_MM_ICON_MRE"               src="MRE.png" />
+#endif /* defined (__MMI_VUI_LAUNCHER_ROBOT__) && defined ( __J2ME__ ) */ 
+#if defined ( __J2ME__ )
+    <Image name="IMG_ID_VJAVA_MAINMENU_ICON"                src="Java.png" />
+    <Image name="IMG_ID_VJAVA_MAINMENU_TCARD_ICON"          src="TCard.png" />
+#endif
+  </Component>
+
+  <Component name="Wallpaper" imgPath="RES_THEME_ROOT">
+    <Image name="IMG_ID_THEME_WALLPAPER_0"                  src="wp_01.jpg" />
+    <Image name="IMG_ID_THEME_WALLPAPER_THUMB_0"            src="wp_thumb_01.jpg" />
+  </Component>
+
+</Theme>

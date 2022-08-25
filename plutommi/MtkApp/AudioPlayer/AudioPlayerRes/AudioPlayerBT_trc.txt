@@ -1,0 +1,103 @@
+[APP NAME] = AudioPlayer 
+[SCOPE] = PLUTO 
+[MODULE] = MOD_MMI_MEDIA_APP 
+
+#start trace
+TRC_MSG(MMI_TRC_AUDPLY_BT_LAUNCH,"[AUDPLY] mmi_bt_music_launch_fn, parent_group=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_DE_LAUNCH,"[AUDPLY] mmi_bt_music_de_launch_fn")
+TRC_MSG(MMI_TRC_AUDPLY_BT_PROC,"[AUDPLY] mmi_bt_music_proc, evt=%d")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_CB_START_IND,"[AUDPLY] mmi_bt_music_A2DP_cb_start_ind,is_streaming=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_CB_DISCONNECT_IND,"[AUDPLY] mmi_bt_music_A2DP_cb_disconnect_ind")
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_CB_SUSPEND_IND,"[AUDPLY] mmi_bt_music_A2DP_cb_suspend,is_streaming=%d")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_TRACH_CHANGED,"[AUDPLY] mmi_bt_music_avrcp_cb_track_changed, evt=%d")
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_EVT_STATUS,"[AUDPLY] mmi_bt_music_avrcp_cb_get_play_status, song_len=%d,  song_pos=%d, play_status=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_EVT_UPDATE_TITLE,"[AUDPLY] mmi_bt_music_avrcp_cb_update_title")
+TRC_MSG(MMI_TRC_AUDPLY_BT_EVT_ID,"[AUDPLY] mmi_audply_bt_evt_id, evt_id=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_STATUS_CHANGE,"[AUDPLY] mmi_bt_music_avrcp_notify_handler, play_status=%d, is_streaming=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_POWER_OFF,"[AUDPLY] mmi_bt_sepaker_power_off, result=%d, is_streaming=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BG_CB,"[AUDPLY] mmi_bt_speaker_background_callback_hdlr, result=%d, is_bt_music_premmpted=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SET_VOL,"[AUDPLY] mmi_btspeaker_set_volume_handler, volume=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_CONN_PAGE_ACTIVE,"[AUDPLY] mmi_bt_music_conn_page_active")
+TRC_MSG(MMI_TRC_BT_MUSIC_CONN_PAGE_INACTIVE,"[AUDPLY] mmi_bt_music_conn_page_inactive")
+TRC_MSG(MMI_TRC_BT_MUSIC_CONN_PAGE_CLOSE,"[AUDPLY] mmi_bt_music_conn_page_close")
+TRC_MSG(MMI_TRC_BT_MUSIC_STREAM_START_TIMEOUT,"[AUDPLY] mmi_bt_music_stream_start_timeout")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_NOWPLAYING_PAGE_DEINIT,"[AUDPLY] mmi_bt_music_nowplaying_page_deinit")
+TRC_MSG(MMI_TRC_BT_MUSIC_NOWPLAYING_PAGE_INIT,"[AUDPLY] mmi_bt_music_nowplaying_page_init")
+TRC_MSG(MMI_TRC_BT_MUSIC_NOWPLAYING_PAGE_ACTIVE,"[AUDPLY] mmi_bt_music_nowplaying_page_active")
+TRC_MSG(MMI_TRC_BT_MUSIC_NOWPLAYING_PAGE_INACTIVE,"[AUDPLY] mmi_bt_music_nowplaying_page_inactive")
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_CONNECT_CALLBACK_HDLR,"[AUDPLY] mmi_bt_music_a2dp_connect_callback_hdlr, nowplaying_page_is_present=%d, conn_page_is_present=%d")
+
+TRC_MSG(MMI_BT_MUSIC_TRC_AVRCP_HDLR,"[AUDPLY] mmi_bt_music_avrcp_cmd_hdlr, addr=%d, command=%d, key_events=%d")
+
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_POST_KEY_DOWN,"[AUDPLY] mmi_bt_music_post_key_down, key_code=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_A2DP_PROFILE,"[AUDPLY] mmi_bt_music_check_profile, A2DP=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_AVRCP_PROFILE,"[AUDPLY] mmi_bt_music_check_profile, AVRCP=%d")
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_CSK_KEY_DOWN,"[AUDPLY] mmi_audply_bt_csk_key_down, is_streaming=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_PREV_KEY_DOWN,"[AUDPLY] mmi_audply_bt_prev_key_down")
+TRC_MSG(MMI_TRC_AUDPLY_BT_NEXT_KEY_DOWN,"[AUDPLY] mmi_audply_bt_next_key_down")
+TRC_MSG(MMI_TRC_AUDPLY_BT_RSK_KEY_DOWN,"[AUDPLY] mmi_audply_bt_rsk_key_down")
+TRC_MSG(MMI_TRC_AUDPLY_BT_LSK_KEY_DOWN,"[AUDPLY] mmi_audply_bt_lsk_key_down")
+
+
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_POST_KEY_UP,"[AUDPLY] mmi_audply_bt_post_key_up, key_code=%d, csk_flag=%d")
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_CSK_KEY_UP,"[AUDPLY] mmi_audply_bt_csk_key_up, is_streaming=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_PREV_KEY_UP,"[AUDPLY] mmi_audply_bt_prev_key_up")
+TRC_MSG(MMI_TRC_AUDPLY_BT_NEXT_KEY_UP,"[AUDPLY] mmi_audply_bt_next_key_up")
+TRC_MSG(MMI_TRC_AUDPLY_BT_VOL_KEY_INC,"[AUDPLY] mmi_audply_bt_vol_inc_key_up")
+TRC_MSG(MMI_TRC_AUDPLY_BT_VOL_KEY_DEC,"[AUDPLY] mmi_audply_bt_vol_dec_key_up")
+TRC_MSG(MMI_TRC_AUDPLY_BT_RSK_KEY_UP,"[AUDPLY] mmi_audply_bt_rsk_key_up")
+TRC_MSG(MMI_TRC_AUDPLY_BT_LSK_KEY_UP,"[AUDPLY] mmi_audply_bt_lsk_key_up")
+
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_IS_A2DP_SINK,"[AUDPLY] mmi_bt_music_is_A2DP_sink, role=%d, is_headset=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_ENTRY_NOWPLAYING_PAGE,"[AUDPLY] mmi_bt_music_entry_nowplaying_page")
+TRC_MSG(MMI_TRC_BT_MUSIC_CONN_A2DP_CB,"[AUDPLY] mmi_bt_music_conn_A2DP_profile_cb, result=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_CONN_FAILED,"[AUDPLY] mmi_bt_music_conn_A2DP_conn_failed")
+TRC_MSG(MMI_TRC_BT_MUSIC_LSK_CONN,"[AUDPLY] mmi_bt_music_bt_link_lsk_hdlr")
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_CONN,"[AUDPLY] mmi_bt_music_bt_a2dp_conn")
+TRC_MSG(MMI_TRC_BT_MUSIC_NOT_AVAILABLE,"[AUDPLY] mmi_bt_music_bt_show_not_available")
+TRC_MSG(MMI_TRC_BT_MUSIC_DIALER_CONN_ALL,"[AUDPLY] mmi_bt_music_bt_music_dialer_conn_all")
+TRC_MSG(MMI_TRC_BT_MUSIC_SHOW_CONN_PAGE,"[AUDPLY] mmi_bt_music_show_bt_connect_page")
+
+
+
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_STOP_CMD,"[AUDPLY] Send stop cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_PLAY_CMD,"[AUDPLY] Send play cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_PAUSE_CMD,"[AUDPLY] Send pause cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_BACKWARD_CMD,"[AUDPLY] Send backward cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_FORWARD_CMD,"[AUDPLY] Send backward cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_VOLUME_UP_CMD,"[AUDPLY] Send volume up cmd to AVRCP, line=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_VOLUME_DOWN_CMD,"[AUDPLY] Send volume down cmd to AVRCP, line=%d")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_DISCONNECT,"[AUDPLY] mmi_bt_music_disconnect")
+TRC_MSG(MMI_TRC_BT_MUSIC_CLOSE_HDLR,"[AUDPLY] mmi_bt_music_close_hdlr")
+TRC_MSG(MMI_TRC_BT_MUSIC_CLOSE_CALLBACK,"[AUDPLY] mmi_bt_music_close_cb")
+TRC_MSG(MMI_TRC_BT_MUSIC_SHOW_POPUP_PROC,"[AUDPLY] mmi_bt_music_show_popup_proc_deinit")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_AUTO_CONN,"[AUDPLY] mmi_bt_music_auto_connect")
+TRC_MSG(MMI_TRC_BT_MUSIC_A2DP_AUTO_CONN,"[AUDPLY] mmi_bt_music_a2dp_auto_connect")
+
+TRC_MSG(MMI_TRC_BT_MUSIC_DEVICE_LIST_ENTRY,"[AUDPLY] mmi_bt_music_device_list_entry,  link_dev_num=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_PRE_ENTRY,"[AUDPLY] mmi_bt_music_pre_entry")
+TRC_MSG(MMI_TRC_BT_MUSIC_HIGHLIGHT_DEV_ADDR,"[AUDPLY] mmi_bt_music_dev_list_highlight_hdlr, item_index=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_HIGHLIGHT_DEV_ADDR_NULL,"[AUDPLY] mmi_bt_music_dev_list_highlight_hdlr")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_CT_AVRCP_CMD,"[AUDPLY] mmi_bt_music_send_ct_avrcp_command, cmd=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_SEND_TG_AVRCP_CMD,"[AUDPLY] mmi_bt_music_send_tg_avrcp_command, cmd=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_CHECK_CONNECTION,"[AUDPLY] mmi_bt_music_check_connection, cmd=%d")
+TRC_MSG(MMI_TRC_AUDPLY_BT_AVRCP_REVERSE_CONTROL_HDLR,"[AUDPLY] mmi_bt_music_avrcp_reverse_control_hdlr, command_type=%d, key_events=%d")
+TRC_MSG(MMI_TRC_BT_MUSIC_GET_DEV_ADDR_BY_ROLE,"[AUDPLY] mmi_bt_music_get_dev_addr_by_role, r=%d, address=0x%x:0x%x:0x%x")
+TRC_MSG(MMI_TRC_BT_MUSIC_GET_SECOND_ADDR,"[AUDPLY] mmi_bt_music_get_second_addr, first_addr=%d, second_addr=%d")
+TRC_MSG(MMI_BT_MUSIC_TRC_DEV_AVRCP_CB,"[AUDPLY] mmi_bt_music_registe_connected_dev_AVRCP_callback")
+TRC_MSG(MMI_BT_MUSIC_ENTER_SELECT_DEV_SCRN,"[AUDPLY] mmi_bt_music_enter_select_device_scrn")
+TRC_MSG(MMI_BT_MUSIC_ENTER_SELECT_DEV_SCRN_ADDRESS,"[AUDPLY] mmi_bt_music_enter_select_device_scrn, select_device_address=0x%x:0x%x:0x%x")
+TRC_MSG(MMI_TRC_BT_MUSIC_HIGHLIGHT_DEV_ADDR_INFO,"[AUDPLY] mmi_bt_music_dev_list_highlight_hdlr, hightlight_device_address=0x%x:0x%x:0x%x")
+TRC_MSG(MMI_BT_MUSIC_DISCONN_DEV_ADDRESS,"[AUDPLY] mmi_bt_music_dialer_disconn_evt_hdlr, disconnect_device_address=0x%x:0x%x:0x%x")
+TRC_MSG(MMI_TRC_AUDPLY_BT_A2DP_CB,"[AUDPLY] mmi_bt_music_A2DP_cb, event=%d")

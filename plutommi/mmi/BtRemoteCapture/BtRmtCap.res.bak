@@ -1,0 +1,65 @@
+/* Needed header files of the compile option in XML files, if you need others need to add here */
+#include "mmi_features.h"
+
+#include "custresdef.h"
+#include "CustomCfg.h"
+
+/* Need this line to tell parser that XML start, must after all #include. */
+<?xml version="1.0" encoding="UTF-8"?>
+
+/* APP tag, include your app name defined in MMIDataType.h */
+<APP id="APP_BTREMOTECAPTURE">
+
+	package_name="native.mtk.btremotecapture"
+    name="STR_ID_MAIN_MENU_BTREMOTECAPTURE_TEXT"
+    launch="mmi_btrmtcap_entry_main_message_menu"
+    package_proc="mmi_btnotification_package_proc"
+	
+    <!-- 
+    ***************************************************************
+    Include Area
+    ***************************************************************
+    -->
+    <INCLUDE file="mmi_rp_app_mainmenu_def.h"/>
+    <INCLUDE file="GlobalResDef.h"/>
+    <INCLUDE file="MainMenuDef.h"/>
+    <INCLUDE file="mmi_rp_srv_editor_def.h"/>
+    
+    <!-- 
+    ***************************************************************
+    string Area
+    ***************************************************************
+    -->
+    <STRING id="STR_ID_BTRMTCAP_APPLICATION_APP_NAME"/>
+    
+    <!-- 
+    ***************************************************************
+    image Area
+    ***************************************************************
+    --> 
+
+    <!-- 
+    ***************************************************************
+    MENU Area
+    ***************************************************************
+    -->  
+    <MENU id="MAIN_MENU_BTRMTCAP_MENUID" type="APP_MAIN" str="STR_ID_BTRMTCAP_APPLICATION_APP_NAME" img="IMG_BTNOTIFICATON_MAIN_MENU_ICON"
+        highlight="highlight_mainmenu_btnotification" shortcut="ON" shortcut_img="MAIN_MENU_BTNOTIFICATION_ICON" launch="mmi_bt_notification_lauch">    	
+    </MENU>
+    
+    <!-- 
+    ***************************************************************
+    SCREEN Area
+    ***************************************************************
+    -->
+    
+    <!-- 
+    ***************************************************************
+    event Area
+    ***************************************************************
+    -->
+   
+ </APP>
+
+#endif /* __MMI_BT_NOTIFICATION__ */
+

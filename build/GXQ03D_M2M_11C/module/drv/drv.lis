@@ -1,0 +1,6 @@
+drv\src\BC_drv.c
+drv\src\bf.c
+drv\src\e_compass_main.c
+drv\src\e_compass_sensor.c
+drv\src\sim_msdc_test.c
+hal\system\fota\src\fue_emmc_adapt.c

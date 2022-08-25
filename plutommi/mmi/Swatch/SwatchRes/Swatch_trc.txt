@@ -1,0 +1,10 @@
+[APP NAME] = Swatch
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+
+TRC_MSG(TRC_IDLE_SWATCH_ENTER,                   "[IDLE][SWATCH] mmi_idle_swatch_enter, trace: %d")
+TRC_MSG(TRC_IDLE_SWATCH_EXIT,                    "[IDLE][SWATCH] mmi_idle_swatch_exit, trace: %d")
+TRC_MSG(TRC_IDLE_SWATCH_PROC,                    "[IDLE][SWATCH] mmi_idle_swatch_proc, evt_id=%d")
+TRC_MSG(TRC_IDLE_SWATCH_TEST,                    "[IDLE][SWATCH] test_id=%d, result=%d")

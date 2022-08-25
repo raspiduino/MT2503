@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land"
+	skb_cache_flag="false" skb_bg="@drawable/popup_keyboard_background"
+	kb_width="26.25%p" kb_height="19.17%p" width="42.86%p" height="69.57%p"
+	key_xmargin="1.2%p" key_ymargin="4.35%p" key_type="5">
+	
+	<row start_pos_x="7.15%p" start_pos_y="8.7%p" >
+		<key code="-38" label="\xa47b" />
+		<key code="-39" label="\xa47c" />
+	</row>
+</keyboard>

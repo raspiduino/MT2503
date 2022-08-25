@@ -1,0 +1,88 @@
+STARTFONT 2.1
+COMMENT
+COMMENT  Copyright 1989 by Sony Corp.
+COMMENT
+COMMENT  Permission to use, copy, modify, and distribute this software and
+COMMENT  its documentation for any purpose and without fee is hereby granted,
+COMMENT  provided that the above copyright notices appear in all copies and
+COMMENT  that both those copyright notices and this permission notice appear
+COMMENT  in supporting documentation, and that the name of Sony Corp.
+COMMENT  not be used in advertising or publicity pertaining to distribution
+COMMENT  of the software without specific, written prior permission.  Sony
+COMMENT  Corp. makes no representations about the suitability of this
+COMMENT  software for any purpose.  It is provided "as is" without express or
+COMMENT  implied warranty.
+COMMENT
+COMMENT  SONY DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+COMMENT  SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+COMMENT  FITNESS, IN NO EVENT SHALL SONY BE LIABLE FOR ANY
+COMMENT  SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+COMMENT  RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+COMMENT  CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+COMMENT  CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+COMMENT
+FONT -Sony-Fixed-Medium-R-Normal--16-120-100-100-C-80-ISO8859-1
+SIZE 16 100 100
+FONTBOUNDINGBOX 8 16 0 -2
+STARTPROPERTIES 19
+FONTNAME_REGISTRY ""
+FOUNDRY "Sony"
+FAMILY_NAME "Fixed"
+WEIGHT_NAME "Medium"
+SLANT "R"
+SETWIDTH_NAME "Normal"
+ADD_STYLE_NAME ""
+PIXEL_SIZE 16
+POINT_SIZE 120
+RESOLUTION_X 100
+RESOLUTION_Y 100
+SPACING "C"
+AVERAGE_WIDTH 80
+CHARS 2
+STARTCHAR 0
+ENCODING 0
+SWIDTH 520 0
+DWIDTH 8 0
+BBX 8 16 0 -2
+BITMAP
+00
+00
+00
+00
+00
+00
+1c
+3e
+2c
+3c
+3c
+3c
+00
+00
+00
+00
+ENDCHAR
+STARTCHAR 1
+ENCODING 1
+SWIDTH 520 0
+DWIDTH 8 0
+BBX 8 16 0 -2
+BITMAP
+fa
+f4
+f4
+80
+88
+88
+88
+88
+88
+88
+a8
+88
+a8
+a8
+a8
+ff
+ENDCHAR
+ENDFONT

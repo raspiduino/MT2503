@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SystemTheme>
+
+#if defined(__COSMOS_MMI__)
+    <ThemePackage src="VenusTheme2.xml"/>
+#if !defined(LOW_COST_SUPPORT)
+    <ThemePackage src="VenusTheme1.xml"/>
+#endif /* !defined(LOW_COST_SUPPORT) */
+    <ThemePackage src="VenusTheme3.xml" isDownloadable="TRUE"/>
+
+#if defined(__MMI_VUI_APP_ICON_MM__)
+    <AppIconPackage src="VenusAppIcon1.xml" enum="__MMI_COSMOS_APP_ICON_MM__"/>
+#endif /* defined(__MMI_VUI_APP_ICON_MM__) */
+
+#if defined(__MMI_VUI_APP_ICON_ROBOT__)
+    <AppIconPackage src="VenusAppIcon2.xml" enum="__MMI_COSMOS_APP_ICON_ROBOT__"/>
+#endif /* defined(__MMI_VUI_APP_ICON_ROBOT__) */
+
+#elif defined(__MMI_APP_ICON_FW_SUPPORT__)
+    <AppIconPackage src="PlutoAppIcon1.xml"/>
+
+#endif /* defined(__COSMOS_MMI__) */
+
+</SystemTheme>

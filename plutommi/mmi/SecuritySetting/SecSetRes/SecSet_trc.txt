@@ -1,0 +1,23 @@
+[APP NAME] = Security Setting
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#start trace
+TRC_MSG(TRC_MMI_SECSET_MENU_PROC,       "[SecSet] mmi_secset_broadcast_menu_event(): Call menu proc 0x%x ---")
+TRC_MSG(TRC_MMI_SECSET_SSC_PROCESS,     "[SecSet] mmi_secset_ssc_process(0x%x): input_str_len = %d, accept = %d")
+TRC_MSG(TRC_MMI_SECSET_SSC_N_AVAILABLE_SIMS, "[SecSet] mmi_secset_ssc_get_n_available_sims(0x%x): count = %d")
+TRC_MSG(TRC_MMI_SECSET_MAKE_ECC,        "[SecSet] mmi_secset_make_emergency_call(grp_id = %d): is_ecc_number = %d")
+TRC_MSG(TRC_MMI_SECSET_SIM_AVAILABILITY_CHANGED, "[SecSet] mmi_secset_on_sim_availability_changed(): %Mmmi_sim_enum (%d, %d) -> (%d, %d) : (avai, cause)")
+TRC_MSG(TRC_MMI_SECSET_SIM_SET_CHV_LOCK_INPUT_DONE, "[SecSet] mmi_secset_sim_set_chv_lock_input_proc(): sim = %Mmmi_sim_enum, type = %d, target = %d")
+TRC_MSG(TRC_MMI_SECSET_SIM_CHANGE_CHV_INPUT_DONE, "[SecSet] mmi_secset_sim_change_chv_input_proc(): sim = %Mmmi_sim_enum, type = %d")
+TRC_MSG(TRC_MMI_SECSET_SIM_SET_OR_CHANGE_CHV_RESULT,   "[SecSet] mmi_secset_sim_set_or_change_chv_result_proc(): suc = %d, cause = %d, sim = %Mmmi_sim_enum, type = %d")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_NMGR_ENTRY,   "[SecSet] mmi_secset_hpveri_nmgr_entry(): sim = %Mmmi_sim_enum")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_CHV1_INPUT_DONE,  "[SecSet] mmi_secset_hpveri_chv1_input_proc(): sim = %Mmmi_sim_enum")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_CHV1_RESULT,  "[SecSet] mmi_secset_hpveri_chv1_result_proc(): sim = %Mmmi_sim_enum, suc = %d, cause = %d")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_SHOW_NEXT_OR_CLOSE_NEW, "[SecSet] mmi_secset_hpveri_show_next_or_close(): NEW, sim = %Mmmi_sim_enum")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_SHOW_NEXT_OR_CLOSE_RUNNING, "[SecSet] mmi_secset_hpveri_show_next_or_close(): RUNNING, sim = %Mmmi_sim_enum, ubchv = 0x%x, init_verifying = %d")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_GROUP_DEINIT, "[SecSet] mmi_secset_hpveri_grp_proc(): GROUP_DEINIT, grp_id = %d")
+TRC_MSG(TRC_MMI_SECSET_HPVERI_NMGR_NOTIFY,  "[SecSet] mmi_secset_hpveri_on_sim_availability_changed(): nmgr_notify sim = %Mmmi_sim_enum, cause = %d")
+TRC_MSG(TRC_MMI_SECSET_UBCHV_CREATE,    "[SecSet] mmi_secset_ubchv_create(): cntx = 0x%x, grp_id = %d")
+TRC_MSG(TRC_MMI_SECSET_UBCHV_CLOSE,     "[SecSet] mmi_secset_ubchv_close(0x%x)")
+TRC_MSG(TRC_MMI_SECSET_UBCHV_GROUP_DEINIT, "[SecSet] mmi_secset_ubchv_grp_proc(): GROUP_DEINIT, cntx = 0x%x")

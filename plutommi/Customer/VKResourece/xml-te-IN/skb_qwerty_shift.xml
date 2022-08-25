@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_port"
+	xml_cache_flag="true" bitmap_cache_flag="true" needshift_flag="true"
+	kb_height="50.84%p" key_xmargin="0.4%p" key_ymargin="0.8197%p" width="8.75%p" height="19.6722%p" key_type="0">
+
+
+  <row start_pos_x="1.6667%p" start_pos_y="1.6394%p" >
+    <key label="\xc66" code="-1000" />
+    <key label="\xc67" code="-1000" />
+    <key label="\xc68" code="-1000" />
+    <key label="\xc69" code="-1000" />
+    <key label="\xc6a" code="-1000" />
+    <key label="\xc6b" code="-1000" />
+    <key label="\xc6c" code="-1000" />
+    <key label="\xc6d" code="-1000" />
+    <key label="\xc6e" code="-1000" />
+    <key label="\xc6f" code="-1000" />
+    <key label="\xc58" code="-1000" />
+  </row>
+  
+  <row start_pos_x="1.6667%p" >
+    <key label="\xc1b" code="-1000" />
+    <key label="\xc1c" code="-1000" />
+    <key label="\xc1d" code="-1000" />
+    <key label="\xc1e" code="-1000" />
+    <key label="\xc1f" code="-1000" />
+    <key label="\xc20" code="-1000" />
+    <key label="\xc21" code="-1000" />
+    <key label="\xc22" code="-1000" />
+    <key label="\xc23" code="-1000" />
+    <key label="\xc24" code="-1000" />
+    <key label="\xc25" code="-1000" />
+  </row>
+
+  <row start_pos_x="1.6667%p" >
+    <key label="\xc26" code="-1000" />
+    <key label="\xc27" code="-1000" />
+    <key label="\xc28" code="-1000" />
+    <key label="\xc2a" code="-1000" />
+    <key label="\xc2b" code="-1000" />
+    <key label="\xc2c" code="-1000" />
+    <key label="\xc2d" code="-1000" />
+    <key label="\xc2e" code="-1000" />
+    <key label="\xc2f" code="-1000" />
+    <key label="\xc30" code="-1000" />
+    <key label="\xc31" code="-1000" />
+  </row>
+   
+  <row start_pos_x="1.6667%p" >
+    <key width="13.125%p" label="\xa468" code="-101" key_type="4" />
+    <key label="\xc32" code="-1000" />
+    <key label="\xc33" code="-1000" />
+    <key label="\xc35" code="-1000" />
+    <key label="\xc36" code="-1000" />
+    <key label="\xc37" code="-1000" />
+    <key label="\xc38" code="-1000" />
+    <key label="\xc39" code="-1000" />
+    <key label="\xc3d" code="-1000" />
+    <key width="13.125%p" label="\xa454" code="8" key_type="2" />
+  </row>
+
+  <row start_pos_x="1.6667%p" >
+    <key width="13.125%p" code="-3" label="\xa451" key_type="11" />
+    <key width="13.125%p" code="-5" label="\xa45a" key_type="2" />
+    <key label="\xc60" code="-1000" />
+    <key width="26.25%p" code="32" label="\xa46b" key_type="2" />
+    <key label="\xc61" code="-1000" />
+    <key width="13.125%p" label="\xa46f" code="-1" key_type="3"
+        popup_skb="@xml/skb_popup_symbol" />
+    <key width="13.125%p" code="13" label="\xa456" key_type="2">
+      <toggle_state state_id="2" code="13" label="\xa459" key_type="2" />
+      <toggle_state state_id="5" code="13" label="\xa45e" key_type="2" />
+    </key>
+  </row>
+    
+</keyboard>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:title="@string/handwriting_setting" android:key="general_settings">
+
+	<PreferenceCategory android:title="@string/hw_settings_trace_color"
+		android:key="hd_trace_color">
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/hw_settings_trace_width"
+		android:key="hd_trace_width">
+	</PreferenceCategory>   
+</PreferenceScreen>

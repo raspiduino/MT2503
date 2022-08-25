@@ -1,0 +1,23 @@
+[APP NAME] = DIALER
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_COMMON_APP
+
+#starttrace
+
+TRC_MSG(TRC_MMI_DIALER_HANDLE_DIALER_CLOSE_REQ,         "[DIALER] mmi_dialer_handle_dialer_close_req, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_HANDLE_DIALER_CHANGE_TYPE,       "[DIALER] mmi_dialer_handle_dialer_change_type, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_INSTANCE_CREATE,                 "[DIALER] mmi_dialer_instance_create, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH,                          "[DIALER] mmi_dialer_launch, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_EX,                       "[DIALER] mmi_dialer_launch_ex, trace: %d, type: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_STRING,                "[DIALER] mmi_dialer_launch_by_string, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_STRING_EX,             "[DIALER] mmi_dialer_launch_by_string_ex, trace: %d, type: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_KEY,                   "[DIALER] mmi_dialer_launch_by_key, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_KEY_EX,                "[DIALER] mmi_dialer_launch_by_key_ex, trace: %d, type: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_TRANSLATE_KEY,         "[DIALER] mmi_dialer_launch_by_translate_key, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_LAUNCH_BY_TRANSLATE_KEY_EX,      "[DIALER] mmi_dialer_launch_by_translate_key_ex, trace: %d, type: %d")
+TRC_MSG(TRC_MMI_DIALER_CLOSE,                           "[DIALER] mmi_dialer_close, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_IS_ACTIVE,                       "[DIALER] mmi_dialer_is_active, trace: %d, ret: %d")
+TRC_MSG(TRC_MMI_DIALER_GET_DIAL_STRING,                 "[DIALER] mmi_dialer_get_dial_string, trace: %d")
+TRC_MSG(TRC_MMI_DIALER_SEARCH_IS_ENABLE,                "[DIALER] mmi_dialer_search_is_enable, trace: %d, ret: %d")
+TRC_MSG(TRC_MMI_DIALER_SET_ENABLE,                      "[DIALER] mmi_dialer_search_set_enable, trace: %d, is_enable: %d")
+TRC_MSG(TRC_MMI_DIALER_ENTRY_SETTING,                   "[DIALER] mmi_dialer_search_entry_setting, trace: %d")

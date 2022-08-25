@@ -1,0 +1,262 @@
+# Define source file lists to SRC_LIST
+SRC_LIST = drv\src\mmsys_pwrmgr.c \
+           drv\src\mm_power_ctrl.c \
+           drv\src\mm_power_ctrl_mt6268.c \
+           drv\src\mm_power_ctrl_mt6236.c \
+           drv\src\mm_power_ctrl_mt6253.c \
+           drv\src\adc.c \
+           drv\src\bf.c \
+           drv\src\dbgprint.c \
+           drv\src\dma.c \
+           drv\src\drv_comm.c \
+           drv\src\gpt.c \
+           drv\src\kbdmain.c \
+           drv\src\pwic.c \
+           drv\src\rtc.c \
+           drv\src\gpio.c \
+           drv\src\uart.c \
+           drv\src\wdt.c \
+           drv\src\uart_dispatch.c \
+           drv\src\i2c_dual.c \
+           drv\src\pmic6318.c \
+           drv\src\pmic6318_test_api.c \
+           drv\src\pmic6326.c \
+           drv\src\pmic6326_ccci.c \
+           drv\src\pmu.c \
+           drv\src\pmu6253.c \
+           drv\src\pmu6236.c \
+           drv\src\pmic_MT6236PMU_drv.c \
+           drv\src\pmu6255.c \
+           drv\src\pmic_MT6255PMU_drv.c \
+           drv\src\pmu6276.c \
+           drv\src\pmu6573.c \
+           drv\src\pmic_MT6276PMU_drv.c \
+           drv\src\pmu6251.c \
+           drv\src\pmic_MT6251PMU_drv.c \
+           drv\src\upmu_common.c \
+           drv\src\b2spi.c \
+           drv\src\spi.c \
+           drv\src\flash_cfi.c \
+           drv\src\flash_user.c \
+           drv\src\flash_mtd.c \
+           drv\src\flash_mtd.renesas.c \
+           drv\src\flash_mtd.ramdisk.c \           
+           drv\src\NAND_MTD.c \
+           drv\src\msdc.c \
+           drv\src\sdio_drv.c \
+           drv\src\usb_phy_drv.c \
+           drv\src\usb_drv.c \
+           drv\src\usb_hcd.c \
+           drv\src\otg_drv.c \
+           drv\src\usbms_ram.c \
+           drv\src\usbms_msdc.c \
+           drv\src\lpwr.c \
+           drv\src\motion_sensor.c \
+           drv\src\e_compass_sensor.c \
+           drv\src\e_compass_main.c \
+           drv\src\upll_ctrl.c \
+           drv\src\drv_hisr.c \
+           drv\src\usblog_drv.c \
+           drv\src\pmu6253el.c \
+           drv\src\upmu_common.c \
+           drv\src\MT6302_SPI.c \
+           drv\src\simd.c \
+           drv\src\usim_drv.c \
+           drv\src\sim_msdc_test.c \
+           drv\src\drv_dummy.c \
+           drv\src\mm_intmem_mt6236.c \
+           drv\src\display_intmem.c \
+           drv\src\usb_dummy.c \
+           drv\src\switchControl1.c \
+           drv\src\switchControl0.c \
+           drv\src\switchControl2.c \
+           drv\src\switchControl_al.c \
+           drv\src\switchControl_mtk_1.c \
+           drv\src\switchControl_mtk_0.c \
+           drv\src\pfc.c \
+           drv\src\btif.c \
+           drv\src\rf_desense_test.c \
+           drv\src\dcl_pmu.c \
+           drv\src\dcl_pmu38.c \
+           drv\src\dcl_kbd.c \
+           drv\src\dcl_rwg.c \
+           drv\src\dcl_ts.c \
+           drv\src\dcl_uart.c \
+           drv\src\dcl_adc.c \
+           drv\src\dcl_rtc.c \
+           drv\src\dcl_wdt.c \
+           drv\src\dcl_i2c.c \
+           drv\src\dcl_gpio.c \
+           drv\src\dcl_gpt.c \
+           drv\src\dcl_irda.c \
+           drv\src\dcl_usb_drv.c \
+           drv\src\dcl_usb_hcd.c \
+           drv\src\dcl_otg_drv.c \
+           drv\src\dcl_memory_card.c \
+           drv\src\dcl_sim.c \
+           drv\src\icc_simd.c \
+           drv\src\icc_usim_drv.c \
+           drv\src\icc_switchControl1.c \
+           drv\src\icc_switchControl0.c \
+           drv\src\icc_switchControl2.c \
+           drv\src\icc_switchControl_al.c \
+           drv\src\icc_switchControl_mtk_1.c \
+           drv\src\icc_switchControl_mtk_0.c \
+           drv\src\icc_sim_common_mtk.c \
+           drv\src\dcl_sim.c \
+           drv\src\f8f9_drv.c \
+           drv\src\BC_drv.c \
+           drv\src\uscounter.c \
+           drv\src\rm.c \
+           drv\src\spi_hal.c
+
+#SD/MMC memory card select.
+ifneq ($(filter __MSDC_SD_MMC__, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\sd.c \
+	            drv\src\sd_drv.c
+endif
+
+#memory stick select.
+ifneq ($(filter __MSDC_MS__, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\ms.c \
+	            drv\src\ms_drv.c
+endif
+
+#memory stick pro select.
+ifneq ($(filter __MSDC_MSPRO__, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\mspro.c \
+           	  drv\src\mspro_drv.c
+endif
+
+ifneq ($(filter DRV_PWM_RWG, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\rwg.c
+endif
+
+ifeq ($(filter DRV_PWM_RWG, $(strip $(MODULE_DEFS))),)
+	 SRC_LIST += drv\src\pwm.c
+endif
+
+#Alerter don't exist.
+ifeq ($(filter DRV_ALERTER_NOT_EXIST, $(strip $(MODULE_DEFS))),)
+	 SRC_LIST += drv\src\alerter.c
+endif
+
+ifneq ($(filter __EVENT_BASED_TIMER__, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\event_timer.c
+endif
+
+ifeq ($(filter _NAND_FLASH_BOOTING_, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\flash_mtd.intel.c
+  SRC_LIST += drv\src\flash_mtd.amd.c
+  SRC_LIST += drv\src\flash_mtd_sf_dal.c
+  SRC_LIST += drv\src\flash_mtd_sf_common.c  
+endif
+
+ifneq ($(filter __NOR_SUPPORT_RAW_DISK__, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\flash_disk.c
+endif
+
+ifneq ($(filter __CARD_DOWNLOAD__, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\cdl.c
+endif
+
+ifneq ($(filter __FOTA_DM__, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\fota_partial.c
+endif
+
+ifneq ($(filter __SMART_PHONE_MODEM__ , $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\ccci.c \
+	      drv\src\ccci_uart_drv.c \
+	      drv\src\emimpu.c \
+	      drv\src\fs_ccci.c
+endif
+
+ifneq ($(filter __DSP_FCORE4__, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\mdci.c
+endif
+
+ifneq ($(filter __ACCDET_SUPPORT__, $(strip $(MODULE_DEFS))),)
+	ifeq ($(filter __L1_STANDALONE__, $(strip $(MODULE_DEFS))),)
+  	SRC_LIST += drv\src\accdet.c
+  endif 
+endif 
+
+ifneq ($(filter DRV_I2C_25_SERIES, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\sccb_v2.c
+endif
+
+ifneq ($(filter __SCCB_MODULE_V1__, $(strip $(MODULE_DEFS))),)
+	ifneq ($(filter __SUPPORT_SCCB_XXX_API__, $(strip $(MODULE_DEFS))),)
+  	SRC_LIST += drv\src\sccb.c
+  endif
+endif
+
+ifneq ($(filter JOGBALL_SUPPORT, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\kbd_jogball.c 
+endif
+
+ifneq ($(filter __DMA_UART_VIRTUAL_FIFO__, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\uart_vfifo.c 
+endif
+
+ifneq ($(strip $(TOUCH_PANEL_SUPPORT)), NONE)
+	SRC_LIST +=  drv\src\touch_panel.c \
+			drv\src\touch_panel_main.c \
+			drv\src\ts_drv.c 
+endif
+# Add by Kuohong
+# NAND driver build condition
+# #if ( defined(__NAND_FDM_50__) && (defined(__NFI_VERSION2__)||defined(__NFI_VERSION3_1__)) )
+ifneq ($(filter __NAND_FDM_50__, $(strip $(MODULE_DEFS))),)
+  ifneq ($(filter __NFI_VERSION2__, $(strip $(MODULE_DEFS))),)
+    SRC_LIST += drv\src\NAND_DAL.c
+    SRC_LIST += drv\src\NAND_MTD_FDM50.c
+    SRC_LIST += NAND_DevConfig.c
+  else 
+     ifneq ($(filter __NFI_VERSION3_1__, $(strip $(MODULE_DEFS))),)
+       SRC_LIST += drv\src\NAND_DAL.c
+       SRC_LIST += drv\src\NAND_MTD_FDM50.c
+       SRC_LIST += NAND_DevConfig.c
+     endif
+  endif
+endif
+# End Kuohong
+
+ifneq ($(filter MT6276, $(strip $(MODULE_DEFS))),)
+  SRC_LIST += drv\src\mm_power_ctrl_mt6276.c
+  SRC_LIST += drv\src\mm_intmem_mt6276.c
+endif
+
+ifneq ($(filter MT6255, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\mm_power_ctrl_mt6255.c
+	SRC_LIST += drv\src\mm_intmem_mt6255.c
+else
+ifneq ($(filter MT6256, $(strip $(MODULE_DEFS))),)
+	SRC_LIST += drv\src\mm_power_ctrl_mt6255.c
+  SRC_LIST += drv\src\mm_intmem_mt6255.c
+endif
+endif
+
+#  Define include path lists to INC_DIR
+INC_DIR = drv\include \
+          usb\include \
+          inc \
+          inc\hwdrv \
+          smi\include \
+          sst\include \
+          ps\ppp\include \
+          media\image\include \
+          dp_engine\che \
+          applib\misc\include \
+          ssf\inc \
+          fota\inc \
+          vendor\hp_fota\UA \
+          l1audio\inc \
+          irda\inc \
+          drv\drv_sec\include
+
+# Define the specified compile options to COMP_DEFS
+COMP_DEFS = APCS_INTWORK
+
+# Define the source file search paths to SRC_PATH
+SRC_PATH = drv\src

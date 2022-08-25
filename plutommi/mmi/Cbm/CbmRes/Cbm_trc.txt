@@ -1,0 +1,7 @@
+[APP NAME] = APP_CBM
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_CONN_APP
+
+# CBM APP
+TRC_MSG(MMI_CBM_DISPLAY_CSD_ICON, "[CBM] CBM display CSD icon: sim=%d state=%d")
+TRC_MSG(TRC_MMI_CBM_WLAN_SCAN_CALLBACK, "[CbmApp] WLAN scan callback, result[%d], ap_num[%d], wait[%d], query_type[%d].")

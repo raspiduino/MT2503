@@ -1,0 +1,20 @@
+Compiling custom\drv\misc_drv\_DEFAULT_BB\MT6261\custom_hw_default.c ... 
+"custom/codegen/GXQ03D_M2M_11C_BB/pwm_drv.h", line 35: Warning:  #47-D: incompatible redefinition of macro "DCL_NONE" (declared at line 32)
+  #define DCL_NONE   DCL_PWM4
+          ^
+"custom/common/PLUTO_MMI/nvram_common_defs.h", line 3464: Warning:  #47-D: incompatible redefinition of macro "NVRAM_EF_BT_INFO_SIZE" (declared at line 1946 of "interface/nvram/nvram_data_items.h")
+  #define NVRAM_EF_BT_INFO_SIZE            (sizeof(srv_bt_cm_nvram_struct))
+          ^
+"custom/common/PLUTO_MMI/nvram_common_defs.h", line 3466: Warning:  #47-D: incompatible redefinition of macro "NVRAM_EF_BT_SYS_INFO_SIZE" (declared at line 1949 of "interface/nvram/nvram_data_items.h")
+  #define NVRAM_EF_BT_SYS_INFO_SIZE        (sizeof(srv_bt_cm_sys_nvram_struct))
+          ^
+"custom/common/PLUTO_MMI/nvram_common_defs.h", line 3470: Warning:  #47-D: incompatible redefinition of macro "NVRAM_EF_BT_DEV_LIST_SIZE" (declared at line 1961 of "interface/nvram/nvram_data_items.h")
+  #define NVRAM_EF_BT_DEV_LIST_SIZE        (sizeof(srv_bt_cm_dev_struct_int))
+          ^
+"custom/common/PLUTO_MMI/nvram_common_defs.h", line 3472: Warning:  #47-D: incompatible redefinition of macro "NVRAM_EF_BT_DEV_LIST_TOTAL" (declared at line 1967 of "interface/nvram/nvram_data_items.h")
+  #define NVRAM_EF_BT_DEV_LIST_TOTAL       (SRV_BT_CM_MAX_PAIRED_DEVICE_LIST + SRV_BT_CM_MAX_USED_DEVICE_LIST)
+          ^
+"custom/common/PLUTO_MMI/nvram_common_defs.h", line 3474: Warning:  #47-D: incompatible redefinition of macro "NVRAM_EF_BT_DEV_LIST_INDEX_SIZE" (declared at line 1970 of "interface/nvram/nvram_data_items.h")
+  #define NVRAM_EF_BT_DEV_LIST_INDEX_SIZE  (sizeof(srv_bt_cm_nvram_dev_list_index_struct)) // 20 + 20(pad size)
+          ^
+custom\drv\misc_drv\_DEFAULT_BB\MT6261\custom_hw_default.c: 6 warnings, 0 errors

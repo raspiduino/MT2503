@@ -1,0 +1,16 @@
+[APP NAME] = APP_CCA
+[SCOPE] = PLUTO
+[MODULE] = MOD_MMI_INET_APP
+
+#starttrace    
+
+
+TRC_MSG(TRC_MMI_CCA_NMGR_CHECK, "[CcaApp] mmi_cca_nmgr_check(unread_num=%d, result=%d)")
+TRC_MSG(TRC_MMI_CCA_NMGR_NOTIFY, "[CcaApp]mmi_cca_nmgr_notify(receive new message)")
+TRC_MSG(TRC_MMI_CCA_NMGR_QUERY, "[CcaApp]mmi_cca_nmgr_query(is_busy=%d, unread_num=%d)")
+TRC_MSG(TRC_MMI_CCA_NMGR_ENTER, "[CcaApp]mmi_cca_nmgr_enter")
+TRC_MSG(TRC_MMI_CCA_ENTER_ROOT_GROUP, "[CcaApp]mmi_cca_enter_root_group(self_gid=%d, create=%d)")
+TRC_MSG(TRC_MMI_CCA_NOTIFY_GROUP_ENTERER, "[CcaApp]mmi_cca_notify_group_entered(self_gid=%d)")
+TRC_MSG(TRC_MMI_CCA_FORBIDDEN_SHOW, "[CcaApp]mmi_cca_forbidden_show(result=%d)")
+TRC_MSG(TRC_MMI_CCA_FORBIDDEN_SHOW_WITHOUT_SIM_CHECK, "[CcaApp]mmi_cca_forbidden_show_without_sim_check(result=%d)")
+TRC_MSG(TRC_MMI_CCA_FORBIDDEN_SHOW_WITHOUT_DM_CHECK, "[CcaApp]mmi_cca_forbidden_show_without_dm_check(result=%d)")

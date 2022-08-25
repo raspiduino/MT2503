@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XIMMakerLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10F8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "../_External/inc_customer" /I "../_External/inc_internal" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fo"Release/" /Fd"Release/" /FD /c 
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\sha1.c"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10F8.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\_External\inc_customer\XIMMakerLib.lib"  .\Release\sha1.obj .\Release\Utility.obj "
+<h3>Output Window</h3>
+Compiling...
+sha1.c
+Generating Code...
+Compiling...
+Utility.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: XIMMaker - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/XIMMaker.res" /d "NDEBUG" "R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XIMMaker.rc"" 
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10F9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\_External" /I "..\_External\inc_customer" /I "..\_External/inc_internal" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fo"Release/" /Fd"Release/" /FD /c 
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\DigitalSignature.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XGetopt.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XIMMaker.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10F9.tmp" 
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib M1MonCoeff.lib M1.lib XIMMakerLib.lib version.lib /nologo /subsystem:console /incremental:no /pdb:"Release/XIM_Maker.pdb" /machine:I386 /out:"Release/XIM_Maker.exe" /libpath:"..\_External\inc_customer" /libpath:"..\_External\inc_internal" 
+.\Release\DigitalSignature.obj
+.\Release\XGetopt.obj
+.\Release\XIMMaker.obj
+.\Release\XIMMaker.res
+.\Release\Utility.obj
+\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\_External\inc_customer\XIMMakerLib.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DigitalSignature.cpp
+XGetopt.cpp
+XIMMaker.cpp
+Utility.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib "MSVCRT" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+
+
+
+<h3>Results</h3>
+XIM_Maker.exe - 0 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: XIMMakerLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FD.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\_External\inc_customer" /I "..\_External\inc_internal" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\sha1.c"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FD.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\XIMMakerLib.lib" /libpath:"..\_External\inc_customer"  .\Debug\sha1.obj .\Debug\Utility.obj "
+<h3>Output Window</h3>
+Compiling...
+sha1.c
+Generating Code...
+Compiling...
+Utility.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: XIMMaker - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Debug/XIMMaker.res" /d "_DEBUG" "R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XIMMaker.rc"" 
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FE.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\_External" /I "..\_External\inc_customer" /I "..\_External/inc_internal" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\DigitalSignature.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XGetopt.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMaker\XIMMaker.cpp"
+"R:\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FE.tmp" 
+Creating temporary file "C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib M1MonCoeff.lib M1.lib XIMMakerLib.lib version.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/XIM_Maker.pdb" /debug /machine:I386 /nodefaultlib:"LIBCD" /nodefaultlib:"MSVCRT" /out:"Debug/XIM_Maker.exe" /pdbtype:sept /libpath:"..\_External\inc_internal" /libpath:"..\XIMMakerLib\Debug" 
+.\Debug\DigitalSignature.obj
+.\Debug\XGetopt.obj
+.\Debug\XIMMaker.obj
+.\Debug\XIMMaker.res
+.\Debug\Utility.obj
+\00_Perforce_STP1\MTKWGT\tools\flash_tool\utility_tool\XIMMaker_SV5_V1_20110409\XIMMakerLib\Debug\XIMMakerLib.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\mtk01569\LOCALS~1\Temp\RSP10FF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DigitalSignature.cpp
+XGetopt.cpp
+XIMMaker.cpp
+Utility.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+
+
+
+<h3>Results</h3>
+XIM_Maker.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

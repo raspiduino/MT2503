@@ -1,0 +1,5 @@
+Compiling custom\drv\common_drv\pwic_cust.c ... 
+"custom/codegen/GXQ03D_M2M_11C_BB/pwm_drv.h", line 35: Warning:  #47-D: incompatible redefinition of macro "DCL_NONE" (declared at line 32)
+  #define DCL_NONE   DCL_PWM4
+          ^
+custom\drv\common_drv\pwic_cust.c: 1 warning, 0 errors

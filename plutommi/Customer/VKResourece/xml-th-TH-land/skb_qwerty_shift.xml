@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard skb_template="@xml/skb_template_qwerty_land"
+	xml_cache_flag="true" bitmap_cache_flag="true" width="10%p" height="24.4445%p"
+	needshift_flag="true" key_type="0" >
+
+	<row start_pos_x="0.625%p" start_pos_y="1.1112%p">
+    <key width="9.091%p" label="ถ" code="\u0e16" />
+    <key width="9.091%p" label="ภ" code="\u0e20" />
+    <key width="9.091%p" label="ำ" code="\u0e33" />
+    <key width="9.091%p" label="โ" code="\u0e42" /> 
+    <key width="9.091%p" label="ฦ" code="\u0e26" />
+    <key width="9.091%p" label="ฎ" code="\u0e0e" />
+    <key width="9.091%p" label="ซ" code="\u0e0b" />
+    <key width="9.091%p" label="ณ" code="\u0e13" />
+    <key width="9.091%p" label="ญ" code="\u0e0d" />
+    <key width="9.091%p" label="ฯ" code="\u0e2f" />
+    <key width="9.091%p" label="฿" code="\u0e3f" />
+	</row>
+
+	<row start_pos_x="0%p">
+    <key label="ฤ" code="\u0e24" />
+    <key label="ฟ" code="\u0e1f" />
+    <key label="ฆ" code="\u0e06" />
+    <key label="ฏ" code="\u0e0f" />
+    <key label="ฌ" code="\u0e0c" />
+    <key label="ษ" code="\u0e29" />
+    <key label="ศ" code="\u0e28" />
+    <key label="ๆ" code="\u0e46" />
+    <key label="ฬ" code="\u0e2c" />
+    <key label="ฃ" code="\u0e03" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" label="\xa468" code="-101" key_type="4" />
+    <key label="ฑ" code="\u0e11" />
+    <key label="ธ" code="\u0e18" /> 
+    <key label="ฉ" code="\u0e09" />
+    <key label="ฐ" code="\u0e10" />
+    <key label="ฮ" code="\u0e2e" />
+    <key label="ฒ" code="\u0e12" />
+    <key label="ฝ" code="\u0e1d" />
+		<key width="15%p" label="\xa454" code="8" key_type="2" />
+	</row>
+
+	<row start_pos_x="0%p" >
+		<key width="15%p" code="-3" label="\xa451" key_type="11" />
+		<key width="10%p" label="\xa45a" code="-5" key_type="2"/>
+		<key width="10%p" key_type="0" label="\xa453" code="44" >
+      <toggle_state state_id="12" key_type="14" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		  <toggle_state state_id="13" key_type="13" label="\xa469" label_aux="\xa453" code="44" code_longpress="-100" 
+		    label_balloon="\xa453" label_balloon_longpress="\xa469" />
+		</key>
+		<key width="30%p" code="32" label="\xa46b" key_type="2" />
+		<key width="10%p" code="\u0e05" label="ฅ" key_type="0" />
+		<key width="10%p" label="\xa46f" code="-1" key_type="3" popup_skb="@xml/skb_popup_symbol"/>
+		<key width="15%p" label="\xa456" code="13" key_type="2">
+			<toggle_state state_id="2" label="\xa459" code="13" />
+			<toggle_state state_id="5" label="\xa45e" code="13" />
+		</key>
+	</row>
+	
+</keyboard>

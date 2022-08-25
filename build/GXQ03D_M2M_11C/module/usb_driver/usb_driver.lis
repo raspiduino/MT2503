@@ -1,0 +1,9 @@
+hal\connectivity\usb_driver\src\dcl_otg_drv.c
+hal\connectivity\usb_driver\src\dcl_usb_drv.c
+hal\connectivity\usb_driver\src\dcl_usb_hcd.c
+hal\connectivity\usb_driver\src\upll_ctrl.c
+hal\connectivity\usb_driver\src\usb_dummy.c
+hal\connectivity\usb_driver\src\usb_phy_drv.c
+hal\connectivity\usb_driver\src\usblog_drv.c
+hal\connectivity\usb_driver\src\usbms_cdrom.c
+hal\connectivity\usb_driver\src\usbms_ram.c

@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------
+   0       108                                            NVRAM_EF_SYS_LID                    
+   0       108                                            NVRAM_EF_SYS_LID                    
+   9         6                                  NVRAM_EF_CAT_TIMESTAMP_LID                    
+  15       262                                 NVRAM_EF_L1_AGCPATHLOSS_LID                    
+  16       666                            NVRAM_EF_L1_RAMPTABLE_GSM850_LID                    
+  17       666                            NVRAM_EF_L1_RAMPTABLE_GSM900_LID                    
+  18       666                           NVRAM_EF_L1_RAMPTABLE_DCS1800_LID                    
+  19       666                           NVRAM_EF_L1_RAMPTABLE_PCS1900_LID                    
+  28        10                                     NVRAM_EF_L1_AFCDATA_LID                    
+  29        46                                        NVRAM_EF_L1_TXIQ_LID                    
+  30       210                               NVRAM_EF_L1_RFSPECIALCOEF_LID                    
+  31        18                       NVRAM_EF_L1_INTERSLOT_RAMP_GSM850_LID                    
+  32        18                       NVRAM_EF_L1_INTERSLOT_RAMP_GSM900_LID                    
+  33        18                      NVRAM_EF_L1_INTERSLOT_RAMP_DCS1800_LID                    
+  34        18                      NVRAM_EF_L1_INTERSLOT_RAMP_PCS1900_LID                    
+  35        34                             NVRAM_EF_L1_CRYSTAL_AFCDATA_LID                    
+  36         6                             NVRAM_EF_L1_CRYSTAL_CAPDATA_LID                    
+  37        22                NVRAM_EF_L1_GMSK_TX_POWER_ROLLBACK_TABLE_LID                    
+  43         6                           NVRAM_EF_L1_CLOAD_FREQ_OFFSET_LID                    
+  98        66                                    NVRAM_EF_BARCODE_NUM_LID                    
+  99       314                                       NVRAM_EF_CAL_FLAG_LID                    
+ 100      1354                                 NVRAM_EF_CAL_DATA_CHECK_LID                    
+ 161        12                                    NVRAM_EF_IMEI_IMEISV_LID                    
+ 162       190                                            NVRAM_EF_SML_LID                    
+ 162       190                                            NVRAM_EF_SML_LID                    
+  79        49                            NVRAM_EF_BTRADIO_MTK_BT_CHIP_LID                    
+ 183         0                                        NVRAM_EF_BT_INFO_LID                    
+ 184      3400                                    NVRAM_EF_BT_DEV_LIST_LID                    
+ 185         0                              NVRAM_EF_BT_DEV_LIST_INDEX_LID                    
+ 186         0                                    NVRAM_EF_BT_SYS_INFO_LID                    
+   6      2570                                  NVRAM_EF_SYS_EXCEPTION_LID                    
+   7      1466                                 NVRAM_EF_SYS_STATISTICS_LID                    
+ 121         0                                      NVRAM_EF_BAND_INFO_LID                    
+ 122      1382                                     NVRAM_EF_TST_FILTER_LID                    
+ 123         0                                   NVRAM_EF_PORT_SETTING_LID                    
+ 154      9300                                      NVRAM_EF_SMSAL_SMS_LID                    
+ 155         0                             NVRAM_EF_SMSAL_MAILBOX_ADDR_LID            CUSTPACK
+ 156         0                             NVRAM_EF_SMSAL_COMMON_PARAM_LID            CUSTPACK
+ 157         0                                     NVRAM_EF_SMSAL_SMSP_LID                    
+ 158         0                                     NVRAM_EF_SMSAL_MWIS_LID                    
+ 159         0                                  NVRAM_EF_CB_DEFAULT_CH_LID            CUSTPACK
+ 160         0                                     NVRAM_EF_CB_CH_INFO_LID                    
+ 147         0                                NVRAM_EF_TCM_PDP_PROFILE_LID                    
+ 148         0                                       NVRAM_EF_CFU_FLAG_LID                    
+ 149         0                             NVRAM_EF_MM_EQPLMN_LOCIGPRS_LID                    
+ 151         0                                    NVRAM_EF_ALS_LINE_ID_LID            CUSTPACK
+ 152         0                                          NVRAM_EF_MSCAP_LID            CUSTPACK
+ 125         0                                NVRAM_EF_CLASSMARK_RACAP_LID                    
+ 126         0                                     NVRAM_EF_SIM_ASSERT_LID                    
+ 127         0                                       NVRAM_EF_RTC_DATA_LID                    
+ 128      2002                                        NVRAM_EF_NET_PAR_LID                    
+ 171         0                                       NVRAM_EF_CSM_ESSP_LID                    
+ 138         0                              NVRAM_EF_CUST_HW_LEVEL_TBL_LID                    
+ 139         0                           NVRAM_EF_UEM_MANUFACTURE_DATA_LID                    
+ 140         0                                   NVRAM_EF_UEM_RMI_DATA_LID                    
+ 141         0                               NVRAM_EF_GPS_SETTING_DATA_LID                    
+ 164         0                                    NVRAM_EF_MS_SECURITY_LID            CUSTPACK
+ 166      5556                                   NVRAM_EF_PHB_LN_ENTRY_LID                    
+ 167         0                                NVRAM_EF_PHB_LN_TYPE_SEQ_LID                    
+ 173         0                                NVRAM_EF_SYS_CACHE_OCTET_LID                    
+ 177         0                                 NVRAM_EF_RAC_PREFERENCE_LID            CUSTPACK
+ 168         0                        NVRAM_EF_PS_CONFORMANCE_TESTMODE_LID                    
+ 180         0                                     NVRAM_EF_TST_CONFIG_LID                    
+ 187         0                                     NVRAM_EF_AT_PROFILE_LID                    
+ 188         0                                    NVRAM_EF_USR_PWR_CLS_LID                    
+2560       130                                            NVRAM_EF_ADC_LID                    
+2816         0                                NVRAM_EF_TOUCHPANEL_PARA_LID                    
+  65      2595                       Package file size
+  66       726                             Info file A
+  67       726                             Info file B
+  68      1536                              Extra size
+--------------------------------------------------------------------------
+NVRAM_COMPRESS=0

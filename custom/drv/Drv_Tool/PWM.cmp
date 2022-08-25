@@ -1,0 +1,15 @@
+[Device Choice]
+MAIN_LCD_BL
+SUB_LCD_BL
+LED_KP
+VIBRATOR
+FLASHLIGHT
+OTHERS
+NONE
+[pwm.h_HEADER]
+
+#ifndef _PWM_DRV_H
+#define _PWM_DRV_H
+[pwm.h_TAILER]
+
+#endif /*_PWM_DRV_H */
